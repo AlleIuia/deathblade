@@ -62,7 +62,7 @@ Atk/Move Speed Feast
 - All Deathblade builds run a pet with the <span class="skill-mention" data-glossary-id="specializationstat">Specialization</span> stat bonus.
 - Optimize <span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span> nodes or compare <span class="skill-mention" data-glossary-id="bracelet">bracelets</span>/equipment [here!](../resources.md#ark-passive-calculator)
 - Always press the next skill during your current skill's animation (skill queuing).
-- If unsure, select <span class="skill-mention" data-skill-id="grudge">Grudge</span> and <span class="skill-mention" data-skill-id="ambushmaster">Ambush Master</span> as your <span class="skill-mention" data-glossary-id="abilitystone">Ability Stone</span> engravings.
+- If unsure, select <span class="skill-mention" data-skill-id="grudge">Титаноборец</span> and <span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span> as your <span class="skill-mention" data-glossary-id="abilitystone">Ability Stone</span> engravings.
 - <span class="skill-mention" data-glossary-id="trixion">Trixion</span> practice requires equipping maxed <span class="skill-mention" data-skill-id="spiritabsorption">Spirit Absorption</span> and <span class="skill-mention" data-skill-id="maxmp">Max MP</span> engravings.
 - <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Optimized Training 1</span> may help smooth things out at lower gem levels.
 
@@ -122,9 +122,9 @@ Atk/Move Speed Feast
 </summary>
 <div class="engraving-card-body" markdown>
 
-**Pros:**{: .best-for } Stronger than <span class="skill-mention" data-skill-id="curseddoll">Cursed Doll</span> by ~1% late game.
+**Pros:**{: .best-for } Stronger than <span class="skill-mention" data-skill-id="curseddoll">Голем</span> by ~1% late game.
 
-**Cons:**{: .tradeoff } Scales with <span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span> <span class="skill-mention" data-glossary-id="relicbook">relic books</span>.
+**Cons:**{: .tradeoff } Scales with <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> <span class="skill-mention" data-glossary-id="relicbook">relic books</span>.
 
 </div>
 </details>
@@ -207,7 +207,7 @@ The cooldown reduction is the core of the class: the cycle resets so you can sta
 ### Party Synergies
 
 - Turning Slash: +4% outgoing and +5% directional damage for 12s.
-- <span class="skill-mention" data-skill-id="maelstrom">Maelstrom</span>: +12.8% Attack/Move Speed for 6s and improves orb generation.
+- <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>: +12.8% Attack/Move Speed for 6s and improves orb generation.
 
 ### Playstyle
 

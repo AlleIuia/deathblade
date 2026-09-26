@@ -1,35 +1,37 @@
-# Deathblade Class Guide
+# Гайд на клинка смерти | by Henstly
 
 ![Deathblade path flowchart](assets/shared/flowchart-deathblade-paths.svg)
 
 <div class="grid cards" markdown>
 
--   🌸 **Remaining Energy**
+-   🌸 **Остаточчная энергия**
 
     ---
 
-    Punishing but rewarding gameplay.
+    Набирай шарики, сбрасывай кд и наноси урон со всех кнопок.
 
-    [Get started →](remaining-energy/essentials.md)
+    [Начать →](remaining-energy/essentials.md)
 
--   ⚡ **Surge**
+-   ⚡ **Твердая воля**
 
     ---
 
-    Nimble repositioning for one massive hit.
+    Копи стаки и наноси один мощный удар.
 
-    [Get started →](surge/essentials.md)
+    [Начать →](surge/essentials.md)
 
 </div>
 
 ---
 
-**What do the build names mean?** Names like 333, 313, 111, and 222 are shorthand for each build's Ark Grid Core assignment, not a difficulty rating. Choose a build for more information.
+**Что за обозначения в названиях сборок?** Названия вроде 333, 111 и 222 — это сокращенное обозначение конфигурации ядер в созведиях для каждой сборки, а не показатель сложности. Цифры сокращаются в зависимости от положения ядра в игре в списке. Выберите сборку, чтобы узнать подробности.
 
-## Additional Resources
+## Дополнительные ресурсы
 
-*(Shared by both playstyles, see [Additional Resources](resources.md) for links, calculators, and bonus content.)*
+*(Подходят для обоих стилей игры;ссылки, калькуляторы и бонусный контент см. в разделе [Дополнительные ресурсы](resources.md).)*
 
 ---
 
-**About:** This site adapts KR Deathblade research for NA. The class has enough quirks that the context behind it is worth knowing. It's easy to fork [this repo](https://github.com/interlockme/deathblade) and get a working site if you want your own spin.
+**О сайте:** Данный сайт был адаптирован для RU региона с EU вы можете самостоятельно взять сайт и адаптировать его под свой класс или сделать гайд со своим видением клинка [репозиторий](https://github.com/interlockme/deathblade). Информация на сайте соответвует не на **100%** EU версии. Какая то ифнормация была описана орентируясь на моё видение и видение игроков на клинках RU региона. А так же часть информация взята с игкров региона KR.
+
+**Если вы со мной не согласный или хотите задать вопрос** вы можете написать мне в Discord | @henstly. 

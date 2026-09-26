@@ -64,7 +64,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
     ```
 
     - Adds Earth Cleaver CD instead of Wind Cut DMG to accommodate a lack of Ark Grid.
-    - If you're a beginner, swap <span class="skill-mention" data-skill-id="raidcaptain">Raid Captain</span> for <span class="skill-mention" data-skill-id="curseddoll">Cursed Doll</span> until you're more experienced with the class.
+    - If you're a beginner, swap <span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span> for <span class="skill-mention" data-skill-id="curseddoll">Голем</span> until you're more experienced with the class.
 
 ## Ark Setup
 
@@ -300,7 +300,7 @@ Use the Breaking Moon cycle and its follow-up when available, then repeat the re
 2. Do NOT worry about Raid Captain efficiency; Keen Blunt Weapon is just as inefficient or worse!
     - Breaking Moon's Critical Damage bonus to the next Surge (biggest hit) is additive to Keen Blunt Weapon.
     - Raid Captain fully buffs the empowered Surge and can make use of <span class="skill-mention" data-rune-name="Rage" data-rune-tier="legendary">Rage</span>/<span class="skill-mention" data-skill-id="atropine">Atropine</span> for the follow-up.
-3. <span class="skill-mention" data-skill-id="bladeassault">Blade Assault</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
+3. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
       - It's still useful for <span class="skill-mention" data-skill-id="atropine">Atropine</span> openers, or it can be saved to greed with <span class="skill-mention" data-glossary-id="pushimmunity">push immunity</span>/Hyper Awakening.
 4. It seems more complicated than it really is, watch [this video](https://www.youtube.com/watch?v=4bwhDT--0fo) to see how a full rotation plays out.
 
@@ -359,7 +359,7 @@ An alternative to the default rotation. It builds a stack reserve, so you're nev
 { .lead }
 
 1. Use a <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span> (recommended) or proceed to #2.
-      - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Flash Blink</span> awakening.
+      - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> awakening.
 2. Generate one orb, build at least 40 stacks, then Surge to refill all 3 orbs.
 
 *Atropine usage:*

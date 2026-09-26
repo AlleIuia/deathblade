@@ -16,7 +16,7 @@
 **Tradeoff:**{: .tradeoff } Slightly lower orb generation and a less forgiving rotation.
 
 - Uses Fatal Wave as two fast casts (<span class="skill-mention" data-glossary-id="ftfcombo">FTF</span> combo) via a skill reset.
-- Head Hunt is always free for counters, recovery, purify, or <span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span> upkeep.
+- Head Hunt is always free for counters, recovery, purify, or <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> upkeep.
 - High gem efficiency: Fatal Wave and Deathly Slash are most of your DPS.
 - Susceptible to high ping or low FPS, but you can compensate with a few changes.
 
@@ -349,7 +349,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 === "Openers"
 
-    Openers stack <span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span> and apply <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently. If it feels overwhelming, just apply synergy and Surge at full orbs; that's all you need to start the alternating cycles.
+    Openers stack <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> and apply <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently. If it feels overwhelming, just apply synergy and Surge at full orbs; that's all you need to start the alternating cycles.
 
     *From 3 orbs (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span>):*
     { .lead }
@@ -365,7 +365,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     </div>
 
-    1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Blade Assault</span></span> + <span class="skill-inline"><span class="skill-inline-name">FTF</span></span> is interchangeable with Cycle **2**.
+    1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> + <span class="skill-inline"><span class="skill-inline-name">FTF</span></span> is interchangeable with Cycle **2**.
     2. It's efficient to use <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Atropine</span> after Deathly Slash, with Blade Assault available.
 
     *From zero/partial orbs:*
@@ -392,9 +392,9 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     </div>
 
-    1. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Head Hunt</span></span> when a little short on orbs, just cast if unsure.
+    1. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> when a little short on orbs, just cast if unsure.
     2. Use spare Twin Shadows/Maelstrom stacks and/or Blitz Rush if you miss major skills.
-    3. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Head Hunt</span></span> instead of <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Twin Shadows</span></span> for a cycle to recover stacks if they run out.
+    3. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> instead of <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Двойная плеть</span></span> for a cycle to recover stacks if they run out.
     4. Use Maelstrom + FTF combo earlier if waiting on main orb generation skills.
     5. Hold Deathly Slash until the next Cycle **1** if it's out of sync. DPS loss, but easier.
 

@@ -118,7 +118,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 - Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize Evolution nodes.
 - <span class="skill-mention" data-ap-id="chaosinfusion" data-level="1">Chaos Infusion 1</span> + <span class="skill-mention" data-ap-id="orbcontrol" data-level="1">Orb Control 1</span> can be used if your Surge DPS share is consistently over 50%.
-- This build is capable of using <span class="skill-mention" data-skill-id="raidcaptain">Raid Captain</span> + <span class="skill-mention" data-skill-id="massincrease">Mass Increase</span> with the least drawbacks.
+- This build is capable of using <span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span> + <span class="skill-mention" data-skill-id="massincrease">Mass Increase</span> with the least drawbacks.
 
 </details>
 
@@ -195,7 +195,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 <div class="skill-compare-row" markdown>
 <div class="skill-compare-col" markdown>
-<span class="skill-compare-title"><span class="skill-inline" data-skill-id="darkaxel"><span class="skill-inline-name">Dark Axel</span></span> · Default</span>
+<span class="skill-compare-title"><span class="skill-inline" data-skill-id="darkaxel"><span class="skill-inline-name">Аксель</span></span> · Default</span>
 
 The build's signature. It recreates RE's Surge using two skills: Dark Axel carries you over the boss, then Deathly Slash precisely slams you into its back.
 
@@ -212,7 +212,7 @@ The build's signature. It recreates RE's Surge using two skills: Dark Axel carri
 
 </div>
 <div class="skill-compare-col" markdown>
-<span class="skill-compare-title"><span class="skill-inline" data-skill-id="spincutter"><span class="skill-inline-name">Spincutter</span></span> (3-3-1) · Alternative</span>
+<span class="skill-compare-title"><span class="skill-inline" data-skill-id="spincutter"><span class="skill-inline-name">Разрубающие лезвия</span></span> (3-3-1) · Alternative</span>
 
 Can replace Dark Axel if you find it more useful on bosses with a small hitbox or Mordum Extreme.
 
@@ -226,7 +226,7 @@ Can replace Dark Axel if you find it more useful on bosses with a small hitbox o
 
 </div>
 <div class="skill-compare-foot" markdown>
-**Best of both:** Swap freely by content, or :ratJAM: run Lv 4 Spincutter instead of <span class="skill-mention" data-skill-id="headhunt">Head Hunt</span> when <span class="skill-mention" data-glossary-id="counter">Counter</span> isn't needed.
+**Best of both:** Swap freely by content, or :ratJAM: run Lv 4 Spincutter instead of <span class="skill-mention" data-skill-id="headhunt">Хитроумный финт</span> when <span class="skill-mention" data-glossary-id="counter">Counter</span> isn't needed.
 </div>
 </div>
 
@@ -354,7 +354,7 @@ After the opener, alternate between these two cycles as needed for ceiling DPS:
       - At 15+ stacks before Death Trance, you can skip both the WC precast and SA finisher for two cycles in a row.
 4. It seems more complicated than it really is, watch [this video](https://www.youtube.com/watch?v=V1UQhE37Yjs) to see how a full rotation plays out.
 
-It helps to think of everything within <span class="skill-inline" data-skill-id="deathtrance"><span class="skill-inline-name">Death Trance</span></span> and <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Deathly Slash</span></span> as 53 stacks, and the Wind Cut Precast or Surprise Attack finisher as flexible options that give you the 7+ stacks needed to complete a 60+ stack Surge.
+It helps to think of everything within <span class="skill-inline" data-skill-id="deathtrance"><span class="skill-inline-name">Боевой транс</span></span> and <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> as 53 stacks, and the Wind Cut Precast or Surprise Attack finisher as flexible options that give you the 7+ stacks needed to complete a 60+ stack Surge.
 </details>
 
 </div>
@@ -365,7 +365,7 @@ It helps to think of everything within <span class="skill-inline" data-skill-id=
 3. It's better to cast a ~59 stack Surge if the alternative is waiting more than 1.5 seconds.
 4. Delaying Deathly Slash + Surge by more than 1.75 seconds to ensure a back attack is a DPS loss.
 5. Delaying *only* Surge by more than 1 second to ensure a back attack is also a DPS loss.
-6. <span class="skill-mention" data-skill-id="bladeassault">Blade Assault</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
+6. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
       - It's still useful for openers, or it can be saved to greed with <span class="skill-mention" data-glossary-id="pushimmunity">push immunity</span>/Hyper Awakening.
 
 *Note: The timing to enter Death Trance in cycles without a precast is right as Surge hits. It's unforgiving but it can be improved with a macro that fires the Identity key 2-3x very quickly without any downsides, increasing CPM/QoL.*
@@ -374,7 +374,7 @@ It helps to think of everything within <span class="skill-inline" data-skill-id=
 { .lead }
 
 1. Use a <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span> (recommended) or proceed to #2.
-      - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Flash Blink</span> awakening.
+      - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> awakening.
 2. Generate one orb, build at least 40 stacks, then Surge to refill all 3 orbs.
 
 *Atropine usage:*

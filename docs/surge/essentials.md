@@ -34,7 +34,7 @@ Atk/Move Speed Feast
 <details class="setup-note" data-kind="example" open markdown>
 <summary><span class="setup-note-tag">Alt</span>Mana Food + Maelstrom Bleed<span class="setup-note-arrow"></span></summary>
 
-- Otherwise, use ![](../assets/shared/icon-striploin.png){: .food-option-icon } <span class="food-option-connector">or</span> ![](../assets/shared/icon-steak.png){: .food-option-icon } <span class="food-option-connector">or</span> ![](../assets/shared/icon-azena.png){: .food-option-icon } <span class="food-option-connector food-option-connector-plus">+</span> ![](../assets/shared/icon-feast.png){: .food-option-icon } and equip <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Legendary Bleed</span> rune on <span class="skill-mention" data-skill-id="maelstrom">Maelstrom</span>. Higher ceiling, lower floor.
+- Otherwise, use ![](../assets/shared/icon-striploin.png){: .food-option-icon } <span class="food-option-connector">or</span> ![](../assets/shared/icon-steak.png){: .food-option-icon } <span class="food-option-connector">or</span> ![](../assets/shared/icon-azena.png){: .food-option-icon } <span class="food-option-connector food-option-connector-plus">+</span> ![](../assets/shared/icon-feast.png){: .food-option-icon } and equip <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Legendary Bleed</span> rune on <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>. Higher ceiling, lower floor.
 
 </details>
 
@@ -44,7 +44,7 @@ Atk/Move Speed Feast
 - All Deathblade builds run a pet with the <span class="skill-mention" data-glossary-id="specializationstat">Specialization</span> stat bonus.
 - Optimize <span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span> nodes or compare <span class="skill-mention" data-glossary-id="bracelet">bracelets</span>/equipment [here!](../resources.md#ark-passive-calculator)
 - Always press the next skill during your current skill's animation (skill queuing).
-- If unsure, select <span class="skill-mention" data-skill-id="grudge">Grudge</span> and <span class="skill-mention" data-skill-id="ambushmaster">Ambush Master</span> as your <span class="skill-mention" data-glossary-id="abilitystone">Ability Stone</span> engravings.
+- If unsure, select <span class="skill-mention" data-skill-id="grudge">Титаноборец</span> and <span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span> as your <span class="skill-mention" data-glossary-id="abilitystone">Ability Stone</span> engravings.
 - <span class="skill-mention" data-glossary-id="trixion">Trixion</span> practice requires equipping maxed <span class="skill-mention" data-skill-id="spiritabsorption">Spirit Absorption</span> and <span class="skill-mention" data-skill-id="maxmp">Max MP</span> engravings.
 - <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Optimized Training 1</span> may help smooth things out at lower gem levels.
 
@@ -112,7 +112,7 @@ Atk/Move Speed Feast
 
 **Pros:**{: .best-for } Highest damage bonus.
 
-**Cons:**{: .tradeoff } Requires <span class="skill-mention" data-skill-id="maelstrom">Maelstrom</span> management for damage.
+**Cons:**{: .tradeoff } Requires <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> management for damage.
 
 </div>
 </details>
@@ -128,12 +128,12 @@ Atk/Move Speed Feast
 </summary>
 <div class="engraving-card-body" markdown>
 
-Pair with <span class="skill-mention" data-skill-id="curseddoll">Cursed Doll</span> if you're just starting out
+Pair with <span class="skill-mention" data-skill-id="curseddoll">Голем</span> if you're just starting out
 { .food-req }
 
 **Pros:**{: .best-for } A safe default with few drawbacks.
 
-**Cons:**{: .tradeoff } Additive to 111's <span class="skill-mention" data-skill-id="breakingmoon">Breaking Moon</span> bonus.
+**Cons:**{: .tradeoff } Additive to 111's <span class="skill-mention" data-skill-id="breakingmoon">Неуловимый пируэт</span> bonus.
 
 </div>
 </details>
@@ -153,7 +153,7 @@ Pair with <span class="skill-mention" data-skill-id="curseddoll">Cursed Doll</sp
 
 **Pros:**{: .best-for } Highest damage bonus.
 
-**Cons:**{: .tradeoff } Requires <span class="skill-mention" data-skill-id="maelstrom">Maelstrom</span> management to maintain damage and offset the Attack Speed penalty.
+**Cons:**{: .tradeoff } Requires <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> management to maintain damage and offset the Attack Speed penalty.
 
 </div>
 </details>
@@ -180,7 +180,7 @@ Not the end of the world if you're forced to use it
 
 <details class="engraving-card" data-accent="combo" open markdown>
 <summary>
-<span class="engraving-card-name"><span class="skill-mention" data-skill-id="raidcaptain">Raid Captain</span> + <span class="skill-mention" data-skill-id="massincrease">Mass Increase</span> 🦁 🐆</span>
+<span class="engraving-card-name"><span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span> + <span class="skill-mention" data-skill-id="massincrease">Mass Increase</span> 🦁 🐆</span>
 <span class="engraving-card-badges" markdown>
 <span class="engraving-card-badge engraving-card-badge-ceiling">★ Ceiling</span>
 <span class="engraving-card-badge engraving-card-badge-food">Food Option</span>
@@ -194,7 +194,7 @@ Not the end of the world if you're forced to use it
 
 **Pros:**{: .best-for } This is ceiling. Efficient damage scaling for 111; 222's short cycles also lessen the burden of its penalties.
 
-**Cons:**{: .tradeoff } Doubles up on <span class="skill-mention" data-skill-id="maelstrom">Maelstrom</span> and situational shackles, only recommended if you know what you're doing.
+**Cons:**{: .tradeoff } Doubles up on <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> and situational shackles, only recommended if you know what you're doing.
 
 </div>
 </details>
@@ -230,7 +230,7 @@ Aim to enter Death Trance with 3 orbs whenever possible.
 
 - Turning Slash: +4% outgoing and +5% directional damage for 12s.
 - Surprise Attack: +4% outgoing and +5% directional damage for 6s.
-- <span class="skill-mention" data-skill-id="maelstrom">Maelstrom</span>: +12.8% Attack/Move Speed for 6s.
+- <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>: +12.8% Attack/Move Speed for 6s.
 
 ### Playstyle
 

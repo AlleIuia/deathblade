@@ -15,7 +15,7 @@
 
 **Tradeoff:**{: .tradeoff } Lower damage ceiling, but easier to recover from mistakes.
 
-- Head Hunt is always free for counters, recovery, purify, or <span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span> upkeep.
+- Head Hunt is always free for counters, recovery, purify, or <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> upkeep.
 - Accessible from a 14p Star core as 113 (Arts), a transitional core-limited option.
 - Move on to [333 (Ceiling)](333-ceiling.md) when you're ready, or stay here if you prefer!
 
@@ -293,7 +293,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 === "Openers"
 
-    Openers stack <span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span> and apply <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently. If it feels overwhelming, just apply synergy and Surge at full orbs; that's all you need to start the alternating cycles.
+    Openers stack <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> and apply <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently. If it feels overwhelming, just apply synergy and Surge at full orbs; that's all you need to start the alternating cycles.
 
     *From 3 orbs (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span>):*
     { .lead }
@@ -309,14 +309,14 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     </div>
 
-    1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Blade Assault</span></span> is interchangeable with Cycle **2**.
+    1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> is interchangeable with Cycle **2**.
     2. It's efficient to use <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Atropine</span> after Deathly Slash, with Blade Assault available.
 
     *From zero/partial orbs:*
     { .lead }
 
     1. Cycle **1** if Deathly Slash is available, otherwise start from Maelstrom + Cycle **2**.
-    2. Prioritize Turning Slash earlier for synergy and Deathly Slash last for <span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span>/RE buff.
+    2. Prioritize Turning Slash earlier for synergy and Deathly Slash last for <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>/RE buff.
 
 === "Recovery"
 
@@ -337,9 +337,9 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
     </div>
 
     1. 313 plays similarly, just Turning Slash → Fatal Wave instead of <span class="skill-mention" data-glossary-id="ftfcombo">FTF</span>.
-    2. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Head Hunt</span></span> when a little short on orbs, just cast if unsure.
+    2. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> when a little short on orbs, just cast if unsure.
     3. Use spare Twin Shadows/Maelstrom stacks and/or Blitz Rush if you miss major skills.
-    4. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Head Hunt</span></span> instead of <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Twin Shadows</span></span> for a cycle to recover stacks if they run out.
+    4. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> instead of <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Двойная плеть</span></span> for a cycle to recover stacks if they run out.
     5. Use Maelstrom + Fatal Wave earlier if waiting on main orb generation skills.
 
 === "TL;DR:"

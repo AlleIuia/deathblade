@@ -4,3 +4,5 @@ site/
 .vscode/
 project-context.md
 Archive.zip
+.venv/
+.DS_Store

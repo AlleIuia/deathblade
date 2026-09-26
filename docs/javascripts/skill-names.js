@@ -20,33 +20,33 @@
 (function () {
   window.DB_SKILL_NAMES = {
     // Remaining Energy
-    voidstrike: "Void Strike",
-    twinshadows: "Twin Shadows",
-    soulabsorber: "Soul Absorber",
-    deathsentence: "Death Sentence",
-    fatalwave: "Fatal Wave",
+    voidstrike: "Искусство меча",
+    twinshadows: "Двойная плеть",
+    soulabsorber: "Длань Авесты",
+    deathsentence: "Смертный приговор",
+    fatalwave: "Воздушные шакрамы",
 
     // Surge
-    windcut: "Wind Cut",
-    deathtrance: "Death Trance",
-    surpriseattack: "Surprise Attack",
-    breakingmoon: "Breaking Moon",
+    windcut: "Неумолимое притяжение",
+    deathtrance: "Боевой транс",
+    surpriseattack: "Внезапный выпад",
+    breakingmoon: "Неуловимый пируэт",
     bladedance: "Blade Dance",
-    darkaxel: "Dark Axel",
-    upperslash: "Upper Slash",
-    fallstar: "Fallstar",
+    darkaxel: "Аксель",
+    upperslash: "Восходящий вихрь",
+    fallstar: "Полярная звезда",
 
     // Shared between both families
-    maelstrom: "Maelstrom",
-    turningslash: "Turning Slash",
-    deathlyslash: "Deathly Slash",
-    surge: "Surge",
-    bladeassault: "Blade Assault",
-    flashblink: "Flash Blink",
-    blitzrush: "Blitz Rush",
-    earthcleaver: "Earth Cleaver",
-    headhunt: "Head Hunt",
-    spincutter: "Spincutter",
+    maelstrom: "Плащ клинков",
+    turningslash: "Иссечение",
+    deathlyslash: "Убийственная сталь",
+    surge: "Концентрация воли",
+    bladeassault: "Призрачные клинки",
+    flashblink: "Сверхновая",
+    blitzrush: "Охота за головами",
+    earthcleaver: "Двуручный хват",
+    headhunt: "Хитроумный финт",
+    spincutter: "Разрубающие лезвия",
 
     // Not skills (consumables - see skill-data.js's DB_SKILL_EXTRAS for
     // their tooltip text), but still shown by name wherever a
@@ -58,22 +58,23 @@
     // above), shown by name wherever a Food Requirement pill, a bare
     // food icon, or an Engravings section food mention resolves one of
     // these by id (see skill-tooltip.js's attachFoodOption/attachBareIcon).
-    striploin: "Striploin Steak Meal",
-    steak: "Herb Steak Meal",
-    azena: "Azena's Blessing",
-    feast: "Atk/Move Speed Feast",
-    vernesewine: "Vernese Wine",
-    ealynsblessing: "Ealyn's Blessing",
+    striploin: "Филейный стейк с грибами",
+    steak: "Сливочный отборный кролик",
+    Tomat: "Томатная фаршированная рыба",
+    azena: "Благословение Азены",
+    feast: "Урон оружия(1800)/Иваентовая еда",
+    vernesewine: "Бирнийское вино",
+    ealynsblessing: "Шато де розе",
 
     // Also not skills (engravings - same DB_SKILL_EXTRAS pattern again),
     // shown by name wherever an .engraving-chip/.engraving-card-name or a
     // bare .skill-mention prose reference resolves one of these by id.
-    grudge: "Grudge",
-    ambushmaster: "Ambush Master",
-    raidcaptain: "Raid Captain",
-    adrenaline: "Adrenaline",
-    keenbluntweapon: "Keen Blunt Weapon",
-    curseddoll: "Cursed Doll",
+    grudge: "Титаноборец",
+    ambushmaster: "Бесшумный убийца",
+    raidcaptain: "Неутомимый натиск",
+    adrenaline: "Адреналин",
+    keenbluntweapon: "Моргенштерн",
+    curseddoll: "Голем",
     massincrease: "Mass Increase",
     maxmp: "Max MP Increase",
     spiritabsorption: "Spirit Absorption",

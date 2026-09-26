@@ -220,7 +220,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 Cast Spincutter to approach the boss, use the opener and continue to loop the main cycle afterwards.
 
-The opener stacks <span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span> and applies <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently as you build up to the encounter's first Surge.
+The opener stacks <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> and applies <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently as you build up to the encounter's first Surge.
 
 *Opener from zero orbs:*
 { .lead }
@@ -242,9 +242,9 @@ The opener stacks <span class="skill-mention" data-skill-id="adrenaline">Adrenal
 </script>
 </div>
 
-1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Deathly Slash</span></span> is only available every other rotation. Just keep going if it's on cooldown.
+1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> is only available every other rotation. Just keep going if it's on cooldown.
 2. Use Spincutter during downtime to reposition, or hold it to dodge upcoming attacks.
-3. Use <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Blade Assault</span></span> for damage, or hold it for Hyper Awakening or a clutch recovery.
+3. Use <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> for damage, or hold it for Hyper Awakening or a clutch recovery.
 4. The rotation is bottlenecked entirely by Soul Absorber's cooldown. It is what it is.
     - You can skip Earth Cleaver if Soul Absorber's off cooldown already.
 

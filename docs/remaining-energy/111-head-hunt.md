@@ -258,7 +258,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 === "Openers"
 
-    Openers stack <span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span> and apply <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently. If it feels overwhelming, just apply synergy and Surge at full orbs; that's all you need to start the alternating cycles.
+    Openers stack <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> and apply <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently. If it feels overwhelming, just apply synergy and Surge at full orbs; that's all you need to start the alternating cycles.
 
     *From 3 orbs (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span>):*
     { .lead }
@@ -274,7 +274,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     </div>
 
-    1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Blade Assault</span></span> is interchangeable with Cycle **2**.
+    1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> is interchangeable with Cycle **2**.
     2. It's efficient to use <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Atropine</span> after Deathly Slash, with Blade Assault available.
 
     *From zero/partial orbs:*

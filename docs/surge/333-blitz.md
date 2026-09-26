@@ -257,8 +257,8 @@ Apply damage <span class="skill-mention" data-glossary-id="synergy">synergy</spa
 </div>
 
 1. The final Surprise Attack can often be skipped with surplus stacks and expected raid downtime.
-2. Consider delaying Maelstrom by 1 to 3 skills when uptime drops to ensure it covers Surge (<span class="skill-mention" data-skill-id="raidcaptain">Raid Captain</span>).
-3. <span class="skill-mention" data-skill-id="bladeassault">Blade Assault</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
+2. Consider delaying Maelstrom by 1 to 3 skills when uptime drops to ensure it covers Surge (<span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span>).
+3. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
       - It's still useful for <span class="skill-mention" data-skill-id="atropine">Atropine</span> openers, or it can be saved to greed with <span class="skill-mention" data-glossary-id="pushimmunity">push immunity</span>/Hyper Awakening.
 
 <div class="setup-panel" data-accent="lavender" markdown>
@@ -276,7 +276,7 @@ Apply damage <span class="skill-mention" data-glossary-id="synergy">synergy</spa
 { .lead }
 
 1. Use a <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span> (recommended) or proceed to #2.
-      - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Flash Blink</span> awakening.
+      - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> awakening.
 2. Generate one orb, build at least 40 stacks, then Surge to refill all 3 orbs.
 
 ## DPS Spread

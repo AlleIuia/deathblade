@@ -1341,7 +1341,7 @@
       <div class="ap-gear-card ap-gear-card--engr-core">
         <p class="ap-gear-card-title">Engravings</p>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-engr-grudge-level"><span class="skill-mention" data-skill-id="grudge">Grudge</span></label>
+          <label class="ap-calc-field-label" for="ap-engr-grudge-level"><span class="skill-mention" data-skill-id="grudge">Титаноборец</span></label>
           <select id="ap-engr-grudge-level" class="ap-engr-grudge-level">
             <option value="0 Nodes">0 Nodes</option>
             <option value="1 Nodes">1 Node</option>
@@ -1351,7 +1351,7 @@
           </select>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-engr-ambush-level"><span class="skill-mention" data-skill-id="ambushmaster">Ambush Master</span></label>
+          <label class="ap-calc-field-label" for="ap-engr-ambush-level"><span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span></label>
           <select id="ap-engr-ambush-level" class="ap-engr-ambush-level">
             <option value="0 Nodes">0 Nodes</option>
             <option value="1 Nodes">1 Node</option>
@@ -1361,7 +1361,7 @@
           </select>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-engr-adrenaline-level"><span class="skill-mention" data-skill-id="adrenaline">Adrenaline</span></label>
+          <label class="ap-calc-field-label" for="ap-engr-adrenaline-level"><span class="skill-mention" data-skill-id="adrenaline">Адреналин</span></label>
           <select id="ap-engr-adrenaline-level" class="ap-engr-adrenaline-level">
             <option value="0 Nodes">0 Nodes</option>
             <option value="1 Nodes">1 Node</option>
@@ -1372,7 +1372,7 @@
         </div>
 
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-engr-rc-level"><span class="skill-mention" data-skill-id="raidcaptain">Raid Captain</span></label>
+          <label class="ap-calc-field-label" for="ap-engr-rc-level"><span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span></label>
           <select id="ap-engr-rc-level" class="ap-engr-rc-level">
             <option value="0 Nodes">0 Nodes</option>
             <option value="1 Nodes">1 Node</option>
@@ -1382,7 +1382,7 @@
           </select>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-engr-kbw-level"><span class="skill-mention" data-skill-id="keenbluntweapon">Keen Blunt Weapon</span></label>
+          <label class="ap-calc-field-label" for="ap-engr-kbw-level"><span class="skill-mention" data-skill-id="keenbluntweapon">Моргенштерн</span></label>
           <select id="ap-engr-kbw-level" class="ap-engr-kbw-level">
             <option value="0 Nodes">0 Nodes</option>
             <option value="1 Nodes">1 Node</option>
@@ -1392,7 +1392,7 @@
           </select>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-engr-cd-level"><span class="skill-mention" data-skill-id="curseddoll">Cursed Doll</span></label>
+          <label class="ap-calc-field-label" for="ap-engr-cd-level"><span class="skill-mention" data-skill-id="curseddoll">Голем</span></label>
           <select id="ap-engr-cd-level" class="ap-engr-cd-level">
             <option value="0 Nodes">0 Nodes</option>
             <option value="1 Nodes">1 Node</option>

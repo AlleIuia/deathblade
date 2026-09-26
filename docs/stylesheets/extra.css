@@ -21,21 +21,21 @@
    var() reference can't be concatenated with a trailing alpha suffix
    like that, so there's no way to express it via variable at all. */
 :root {
-  --dbc-pink: #ee83ab;         /* primary accent - Difficulty bar, danger admonition border, headers */
-  --dbc-pink-rgb: 238, 131, 171;
-  --dbc-teal: #4db6ac;         /* Trixion DPS bar, h3 headings, "good"/on-track stat variant */
-  --dbc-teal-rgb: 77, 182, 172;
-  --dbc-lavender: #a79bc4;     /* stat-label text, muted secondary accent - most-used color on the site */
-  --dbc-lavender-rgb: 167, 155, 196;
-  --dbc-purple: #b39ddb;       /* h2 headings, Evolution-category accent */
-  --dbc-purple-rgb: 179, 157, 219;
-  --dbc-lilac: #cfc9dd;        /* light lavender body/label text */
-  --dbc-slate: #6f6a80;        /* muted purple-gray secondary text */
-  --dbc-slate-rgb: 111, 106, 128;
-  --dbc-red: #e57373;          /* danger/error accent, replaces Material's default #ff1744 */
-  --dbc-red-rgb: 229, 115, 115;
-  --dbc-rose: #f48fb1;         /* secondary pink accent */
-  --dbc-rose-rgb: 244, 143, 177;
+  --dbc-pink: #e56c7e;         /* primary accent - Difficulty bar, danger admonition border, headers */
+  --dbc-pink-rgb: 229, 108, 126;
+  --dbc-teal: #59c08f;         /* Trixion DPS bar, h3 headings, "good"/on-track stat variant */
+  --dbc-teal-rgb: 89, 192, 143;
+  --dbc-lavender: #a6a2ad;     /* stat-label text, muted secondary accent - most-used color on the site */
+  --dbc-lavender-rgb: 166, 162, 173;
+  --dbc-purple: #a8a2b2;       /* h2 headings, Evolution-category accent */
+  --dbc-purple-rgb: 168, 162, 178;
+  --dbc-lilac: #d2ced6;        /* light lavender body/label text */
+  --dbc-slate: #75707e;        /* muted purple-gray secondary text */
+  --dbc-slate-rgb: 117, 112, 126;
+  --dbc-red: #e05a6e;          /* danger/error accent, replaces Material's default #ff1744 */
+  --dbc-red-rgb: 224, 90, 110;
+  --dbc-rose: #f07f90;         /* secondary pink accent */
+  --dbc-rose-rgb: 240, 127, 144;
   --dbc-gold: #e6b422;         /* warn/conditional accent */
   --dbc-gold-rgb: 230, 180, 34;
   --dbc-orange: #f0a868;       /* on-crit damage category accent */
@@ -44,13 +44,13 @@
   --dbc-blue-rgb: 100, 181, 246;
   --dbc-blue-bright: #448aff;  /* Material's default admonition/info blue */
   --dbc-sky: #7ec4e8;          /* additional damage category accent */
-  --dbc-pink-bright: #ffb3cf;  /* hover/active state pink - links, tabs, chips, section tracker */
-  --dbc-arrow: #cf99c7;        /* rotation-line chevron color (.arrow/.arrow-swap) */
-  --dbc-green: #66bb6a;        /* rune-chip "uncommon" tier, tripod-chip tier 2 */
-  --dbc-green-rgb: 102, 187, 106;
+  --dbc-pink-bright: #ffa3b0;  /* hover/active state pink - links, tabs, chips, section tracker */
+  --dbc-arrow: #b8b2c0;        /* rotation-line chevron color (.arrow/.arrow-swap) */
+  --dbc-green: #6ecb85;        /* rune-chip "uncommon" tier, tripod-chip tier 2 */
+  --dbc-green-rgb: 110, 203, 133;
   --dbc-violet: #c77dff;       /* rune-chip "epic" tier, .skill-card border/hover glow */
   --dbc-violet-rgb: 199, 125, 255;
-  --dbc-header-footer-bg: #1d1d20; /* matches the rendered color of a lavender
+  --dbc-header-footer-bg: #1c1c1e; /* matches the rendered color of a lavender
     .setup-panel note (rgba(--dbc-purple-rgb, 0.045) over the page bg) - picked
     to make the header/tabs bar and footer read as the same "surface" as those
     notes instead of their own separate near-black shade */
@@ -62,31 +62,31 @@
      source of truth now instead of N copies that could drift apart. */
   --dbc-gold-dark: #26210f;        /* dark gold tint - the
     2nd Pre-Ark Grid option card, and .page-banner-warning, pairs with --dbc-gold */
-  --dbc-rose-dark: #241a20;        /* dark rose tint - the 1st
+  --dbc-rose-dark: #39070A;        /* dark rose tint - the 1st
     .grid.cards/.prearc-cards option card, a rank-1 gem badge's on-fill text, and
     cycle-num-1's on-fill text, pairs with --dbc-rose */
-  --dbc-teal-dark: #0a1f1c;        /* darkest teal tint - on-fill text for a rank-1
+  --dbc-teal-dark: #142C1C;        /* darkest teal tint - on-fill text for a rank-1
     Cooldown gem badge and cycle-num-2, pairs with --dbc-teal (see also
     --dbc-teal-card-bg below, a different/lighter teal-family tint) */
-  --dbc-teal-card-bg: #16221f;     /* the 2nd .grid.cards option card and 3rd
+  --dbc-teal-card-bg: #16261c;     /* the 2nd .grid.cards option card and 3rd
     .prearc-cards option card background, pairs with --dbc-teal */
   --dbc-surface-muted: #1d1d21;    /* plain-table row background + the 1st/2nd
     gearing-value cards - a muted dark surface with no accent color tie-in */
-  --dbc-gem-name-muted: #d8d2de;   /* rank-2 gem item name text + an alt-gem's bolded name */
+  --dbc-gem-name-muted: #d6d2d8;   /* rank-2 gem item name text + an alt-gem's bolded name */
   --dbc-chip-surface: #1c1c1f;     /* background shared by the build-compare share-link
     tooltip and the image-lightbox close button, both bordered in --dbc-purple */
-  --dbc-chip-text: #cbb9e8;        /* text color paired with --dbc-chip-surface above */
+  --dbc-chip-text: #cfc9d6;        /* text color paired with --dbc-chip-surface above */
   --dbc-chip-surface-hover: #232327; /* hover background for those same two --dbc-purple-bordered controls */
   --dbc-muted-text: #7a7580;       /* faint gray label text - a "no diff" build-compare
     note, an engraving loadout hint, and an Ark Passive tier's point count */
   --dbc-muted-text-alt: #8a849a;   /* placeholder-style input text, shared by the CPM and bid calculators' "muted" fields */
   --dbc-muted-text-soft: #9c96a8;  /* soft gray label text, shared by an Ark Passive calc popover filename and a stat badge */
-  --dbc-rose-text-soft: #f4c9d9;   /* soft pink text - an engraving food chip label and a loadout note's bolded text */
-  --dbc-rose-deep: #a8446b;        /* deep/muted rose - dark enough for the DPS
+  --dbc-rose-text-soft: #f4cccc;   /* soft pink text - an engraving food chip label and a loadout note's bolded text */
+  --dbc-rose-deep: #770819;        /* deep/muted rose - dark enough for the DPS
     distribution chart's white overlay label to read clearly on top of it,
     unlike the much lighter pastel --dbc-rose */
-  --dbc-rose-deep-rgb: 168, 68, 107;
-  --dbc-violet-dark: #241a33;      /* dark violet tint, same darkness as
+  --dbc-rose-deep-rgb: 119, 8, 25;
+  --dbc-violet-dark: #26222c;      /* dark violet tint, same darkness as
     --dbc-rose-dark/--dbc-gold-dark/--dbc-teal-dark - on-fill text for
     cycle-num-4, pairs with --dbc-violet (already used for epic-tier
     rune chips/.skill-card glow elsewhere on the site) */
@@ -97,7 +97,7 @@
   --md-default-fg-color: #e8e6ee;
   --md-default-fg-color--light: #c9c6d4;
   --md-accent-fg-color: var(--dbc-pink); /* softer than Material's default vibrant #f50056 hover pink */
-  --md-accent-fg-color--transparent: #ee83ab1a;
+  --md-accent-fg-color--transparent: #e56c7e1a;
 }
 
 /* Material's "black" primary preset hardcodes header/tabs background via
@@ -200,6 +200,39 @@ html {
 .md-nav__title[for] {
   background-color: var(--dbc-header-footer-bg) !important;
 }
+
+/* ---------- Nav + tabs: the two playstyle sections carry red/green ----------
+   "Remaining Energy" and "Surge" are the top-level split of the whole site,
+   so they wear that split directly instead of the shared active color - the
+   moment --dbc-purple became a plain gray these two read as *dimmed* text
+   rather than as a heading, and they disagreed with the header tab bar,
+   which Material colors from --md-accent-fg-color (red for both).
+   Matched positionally: 2nd and 3rd top-level entry, which is stable as long
+   as mkdocs.yml's nav keeps Home first and Additional Resources last. Material
+   emits no per-item class/id to hang a name off, so there is no way to target
+   these by label from CSS alone.
+   The [data-md-level="0"] + direct-child chain is what keeps this off the
+   table of contents: the TOC is rendered as an <li> INSIDE the primary nav's
+   4th item and its own entries carry .md-nav__item--nested too, so a plain
+   descendant selector would paint whichever TOC heading happened to sit at
+   position 2. The two expanded section sub-navs are likewise excluded by
+   their data-md-level="1". .md-tabs is a separate markup tree with the same
+   item order, hence the paired selectors. !important outranks both the neutral
+   active rule above and Material's own --md-accent-fg-color tab rule; the
+   active tab then steps up to the brighter tone of its own hue so "which
+   section am I in" is still carried by brightness, not by an unrelated hue. */
+nav[data-md-level="0"] > .md-nav__list > .md-nav__item--nested:nth-of-type(2) > .md-nav__link,
+.md-tabs__list > .md-tabs__item:nth-of-type(2) > .md-tabs__link {
+  color: var(--dbc-rose) !important;
+  font-weight: 700;
+}
+nav[data-md-level="0"] > .md-nav__list > .md-nav__item--nested:nth-of-type(3) > .md-nav__link,
+.md-tabs__list > .md-tabs__item:nth-of-type(3) > .md-tabs__link {
+  color: var(--dbc-teal) !important;
+  font-weight: 700;
+}
+.md-tabs__item--active:nth-of-type(2) > .md-tabs__link { color: var(--dbc-pink-bright) !important; }
+.md-tabs__item--active:nth-of-type(3) > .md-tabs__link { color: var(--dbc-green) !important; }
 
 /* ---------- Search modal: same two Material defaults, same fix ---------- */
 /* The "N matching documents" meta strip at the top of each result group
@@ -550,8 +583,8 @@ h3 { color: var(--dbc-teal); }
   margin-right: 5px;
 }
 .md-typeset .tag-legend-dmg { background-color: var(--dbc-rose); }
-.md-typeset .tag-legend-util { background-color: var(--dbc-teal); }
-.md-typeset .tag-legend-immune { background-color: var(--dbc-blue); }
+.md-typeset .tag-legend-util { background-color: var(--dbc-teal); border-radius: 50%; }
+.md-typeset .tag-legend-immune { background-color: var(--dbc-blue); transform: rotate(45deg); }
 .md-typeset .tag-legend-warn { background-color: var(--dbc-gold); }
 
 /* ---------- Skill legend tables (Essentials pages) ---------- */
@@ -968,7 +1001,7 @@ h3 { color: var(--dbc-teal); }
 }
 .md-typeset .gem-col-title {
   font-weight: 700;
-  color: #e8e3f0;
+  color: #e8e4e8;
 }
 .md-typeset .gem-col-dmg .gem-col-title { color: var(--dbc-rose); }
 .md-typeset .gem-col-cd .gem-col-title { color: var(--dbc-teal); }
@@ -1036,7 +1069,7 @@ h3 { color: var(--dbc-teal); }
 }
 .md-typeset .gem-item-name {
   font-size: 0.92em;
-  color: #b8b2c0;
+  color: #b8b4b8;
 }
 /* gem-dps-tooltip.js used to set a native `title` (damage-share on hover)
    on plain, non-expandable rows, and this rule restored the cursor:help
@@ -1072,12 +1105,12 @@ h3 { color: var(--dbc-teal); }
 
 /* Rank floor (rank 3+, and the base tone rank 1/2 override below) -
    quiet but never low-contrast enough to read as "skip this one". */
-.md-typeset .gem-col-dmg .gem-item-rank { background-color: rgba(var(--dbc-rose-rgb), 0.11); color: #c99bab; }
-.md-typeset .gem-col-cd .gem-item-rank { background-color: rgba(var(--dbc-teal-rgb), 0.11); color: #86bdb3; }
+.md-typeset .gem-col-dmg .gem-item-rank { background-color: rgba(var(--dbc-rose-rgb), 0.11); color: #e05a6e; }
+.md-typeset .gem-col-cd .gem-item-rank { background-color: rgba(var(--dbc-teal-rgb), 0.11); color: #59c08f; }
 
 /* Rank 2 - a clear step up from the floor, still short of rank 1. */
-.md-typeset .gem-col-dmg .gem-item[data-rank="2"] .gem-item-rank { background-color: rgba(var(--dbc-rose-rgb), 0.18); color: #eab3c6; }
-.md-typeset .gem-col-cd .gem-item[data-rank="2"] .gem-item-rank { background-color: rgba(var(--dbc-teal-rgb), 0.18); color: #a4d9d0; }
+.md-typeset .gem-col-dmg .gem-item[data-rank="2"] .gem-item-rank { background-color: rgba(var(--dbc-rose-rgb), 0.18); color: #f07f90; }
+.md-typeset .gem-col-cd .gem-item[data-rank="2"] .gem-item-rank { background-color: rgba(var(--dbc-teal-rgb), 0.18); color: #6ecb85; }
 .md-typeset .gem-item[data-rank="2"] .gem-item-name { color: var(--dbc-gem-name-muted); }
 
 /* Rank 1 - the unambiguous default. Full accent color plus a soft
@@ -1095,7 +1128,7 @@ h3 { color: var(--dbc-teal); }
 .md-typeset .gem-col-cd .gem-item[data-rank="1"] .gem-item-rank { background-color: var(--dbc-teal); color: var(--dbc-teal-dark); }
 .md-typeset .gem-item[data-rank="1"] .gem-item-name {
   font-weight: 600;
-  color: #f0e6ea;
+  color: #f0e4e6;
 }
 
 /* Expandable rows - <details> standing in for the plain <div>, laid
@@ -1216,7 +1249,7 @@ h3 { color: var(--dbc-teal); }
 }
 .md-typeset .gem-alt {
   font-size: 0.85em;
-  color: #948da3;
+  color: #948e98;
   line-height: 1.5;
 }
 .md-typeset .gem-alt p {
@@ -1549,7 +1582,7 @@ h3 { color: var(--dbc-teal); }
   margin-left: 0.15em;
   border: 1px solid #4a4650;
   border-radius: 50%;
-  color: #9b95a8;
+  color: #9b969e;
   font-size: 0.7em;
   font-style: normal;
   line-height: 1;
@@ -3058,9 +3091,9 @@ h3 { color: var(--dbc-teal); }
 .md-typeset details.engraving-card[data-accent="mass"]:hover,
 .md-typeset details.engraving-card[data-accent="mass"][open] { border-color: rgba(var(--dbc-purple-rgb), 0.6); }
 
-.md-typeset details.engraving-card[data-accent="combo"] { border-color: rgba(211, 150, 198, 0.35); background-color: rgba(211, 150, 198, 0.05); }
+.md-typeset details.engraving-card[data-accent="combo"] { border-color: rgba(229, 108, 126, 0.35); background-color: rgba(229, 108, 126, 0.05); }
 .md-typeset details.engraving-card[data-accent="combo"]:hover,
-.md-typeset details.engraving-card[data-accent="combo"][open] { border-color: rgba(211, 150, 198, 0.6); }
+.md-typeset details.engraving-card[data-accent="combo"][open] { border-color: rgba(229, 108, 126, 0.6); }
 
 /* Deep pastel red - Cursed Doll's own in-game engraving color, kept
    within the same low-opacity pastel treatment as the other accents
@@ -3189,9 +3222,9 @@ h3 { color: var(--dbc-teal); }
 /* Orchid - the same blended pink/lavender the old combo card used, still
    reserved for a combined-engraving ceiling pick. */
 .md-typeset .engraving-card-badge-ceiling {
-  color: #d396c6;
-  background-color: rgba(211, 150, 198, 0.14);
-  border-color: rgba(211, 150, 198, 0.4);
+  color: #e56c7e;
+  background-color: rgba(229, 108, 126, 0.14);
+  border-color: rgba(229, 108, 126, 0.4);
 }
 
 /* Cards no longer collapse (see the summary rule above), so the arrow
@@ -7494,10 +7527,10 @@ h3 { color: var(--dbc-teal); }
 .md-typeset .ap-calc-footnote .bible-import-status {
   display: block;
   margin-top: 0.3em;
-  color: #7fd8b8;
+  color: #59c08f;
 }
 .md-typeset .ap-calc-footnote .bible-import-status-error {
-  color: #f0a8a8;
+  color: #e05a6e;
 }
 /* Warning list is left-aligned prose, not right-aligned footnote text -
    right-aligning wrapped sentences makes them hard to read, and these can
@@ -7555,7 +7588,7 @@ h3 { color: var(--dbc-teal); }
   padding: 0.9em 1em 1em;
   border-radius: 10px;
   border: 1px solid rgba(var(--dbc-purple-rgb), 0.3);
-  background-color: #1c1a22;
+  background-color: #1c1c1e;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
   text-align: left;
   font-size: 1.05em;
@@ -7612,12 +7645,12 @@ h3 { color: var(--dbc-teal); }
 }
 .md-typeset .ap-calc-popover-msg {
   font-size: 0.78em;
-  color: #7fd8b8;
+  color: #59c08f;
   min-height: 1.2em;
   text-align: right;
 }
 .md-typeset .ap-calc-popover-msg-error {
-  color: #f0a8a8;
+  color: #e05a6e;
 }
 
 @media screen and (max-width: 480px) {
@@ -8985,7 +9018,7 @@ body.page-333-blitz input[type="text"] {
   padding: 0.75em 0.9em 0.8em;
   border-radius: 10px;
   border: 1px solid rgba(var(--dbc-purple-rgb), 0.3);
-  background-color: #1c1a22;
+  background-color: #1c1c1e;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
   text-align: left;
   white-space: normal;
@@ -9129,7 +9162,7 @@ body.page-333-blitz input[type="text"] {
   padding: 0.65em 0.8em 0.7em;
   border-radius: 10px;
   border: 1px solid rgba(var(--dbc-purple-rgb), 0.3);
-  background-color: #1c1a22;
+  background-color: #1c1c1e;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
   text-align: left;
   white-space: normal;

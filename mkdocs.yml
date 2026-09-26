@@ -6,7 +6,7 @@ theme:
   palette:
     scheme: slate
     primary: black
-    accent: pink
+    accent: red
   font:
     text: Poppins
     code: Roboto Mono
@@ -30,7 +30,7 @@ theme:
     - search.highlight
 
 extra_css:
-  - stylesheets/extra.css?v=88
+  - stylesheets/extra.css?v=89
 
 # Load order matters: several widgets read a shared data file
 # (build-data.js/skill-data.js/skill-names.js/ap-node-names.js) or the
@@ -70,12 +70,13 @@ extra_css:
 # for the full breakdown.
 extra_javascript:
   - javascripts/site-utils.js?v=10
+  - javascripts/header-links.js?v=1
   - javascripts/lazy-calculators.js?v=16
   - javascripts/extra.js?v=2
-  - javascripts/build-data.js?v=4
+  - javascripts/build-data.js?v=5
   - javascripts/build-stats-badge.js?v=1
   - javascripts/skill-data.js?v=11
-  - javascripts/skill-names.js?v=6
+  - javascripts/skill-names.js?v=7
   - javascripts/rune-data.js?v=1
   - javascripts/skill-setup.js?v=8
   - javascripts/essentials-table.js?v=5
@@ -85,7 +86,7 @@ extra_javascript:
   - javascripts/ap-node-effects.js?v=4
   - javascripts/ark-passive-tree.js?v=7
   - javascripts/gem-priority.js?v=6
-  - javascripts/pentagon-badge.js?v=4
+  - javascripts/pentagon-badge.js?v=5
   - javascripts/rotation-line.js?v=14
   - javascripts/skill-tooltip.js?v=14
   - javascripts/ark-passive-tooltip.js?v=4
