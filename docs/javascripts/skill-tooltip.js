@@ -643,6 +643,17 @@
     // trigger inside that span's own (same reason as the .food-option
     // skip just above).
     if (trigger.closest(".food-req-item")) return;
+    // A Skill Setup card's rune chip (skill-setup.js's .rune-chip) wires
+    // itself as ONE trigger via rune-tooltip.js's attachRune, showing the
+    // rune's own tier table rather than any skill's - so its icon is part
+    // of that chip's hoverable area, not a skill mention in its own right.
+    // Same reason as the .food-req-item skip above: without this the icon
+    // inside a chip whose id happens to also name a real skill would get
+    // wired as a second, independent, nested skill tooltip on top of the
+    // rune one. A rune icon that resolves to no skill at all bails out on
+    // lookupData on the next line anyway, but relying on that is fragile -
+    // the skip states the intent directly.
+    if (trigger.closest(".rune-chip")) return;
     var match = ICON_ID_RE.exec(trigger.getAttribute("src") || "");
     if (!match) return;
     var id = match[1];

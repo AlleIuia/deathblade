@@ -12,8 +12,8 @@
 // closed it for Ark Passive nodes.
 //
 // Also attaches to bare prose mentions of a rune outside any Skill Setup
-// card entirely (e.g. a Runes Quick Tip like "Use Legendary Purify on
-// Head Hunt if needed") via `.skill-mention[data-rune-name]` - same
+// card entirely (e.g. a Runes Quick Tip like "Use Солум on Spincutter if
+// needed") via `.skill-mention[data-rune-name]` - same
 // markup/CSS as skill-tooltip.js's own `.skill-mention[data-skill-id]`
 // and ark-passive-tooltip.js's `.skill-mention[data-ap-id]` bare-prose
 // mentions (see those files and extra.css's "Bare prose mentions with no
@@ -25,8 +25,12 @@
 // DB_RUNE_EFFECTS has for that rune instead of guessing one - see
 // buildAllTiersTip below. Author a specific tier by hand when the prose
 // states one, e.g. `<span class="skill-mention" data-rune-name="Purify"
-// data-rune-tier="legendary">Legendary Purify</span>`; omit data-rune-tier
-// entirely (just `data-rune-name="Galewind"`) when it doesn't.
+// data-rune-tier="legendary">Легендарный Солум</span>`; omit
+// data-rune-tier entirely (just `data-rune-name="Galewind"`) when it
+// doesn't. Note the two halves: data-rune-name is the ASCII id (it has
+// to be - see buildHeader on why a display name there can't find an
+// icon), while the text in between is what the reader sees and is the
+// page's own language.
 //
 // A chip whose tier has no DB_RUNE_EFFECTS entry (an untiered rune, or a
 // rune not in that file at all) is left as a plain chip with no tooltip -
@@ -72,6 +76,17 @@
   // wrong art). hideOnError still collapses the <img> to nothing if a
   // given rune's icon file is ever missing, same fail-quietly rule as
   // every other icon on the site.
+  // `name` here is whatever the trigger's data-rune-name says, which is
+  // an ascii id on a Skill Setup chip but could be a display name on a
+  // hand-written prose mention, so BOTH the icon path and the title go
+  // through rune-data.js's maps rather than off `name` directly: the icon
+  // needs DB_RUNE_IDS to turn a name into the id the .png is filed under
+  // (a name like "Джар" has no rune-icons/джар.png, so requesting it
+  // 404s into a silently missing icon), and the title needs
+  // DB_RUNE_NAMES so the header reads as the game's own name for the
+  // rune rather than the raw id a chip happens to carry. Both fall back
+  // to the raw name when a rune is missing from those maps, so an unknown
+  // value still shows something readable instead of nothing.
   // `tier` (optional) fills the icon's background with that tier's own
   // rarity color (.skill-tip-icon-rarity-<tier> in extra.css, shared with
   // ark-core-badge.js's own tooltip icon - see that file's comment) so a
@@ -86,14 +101,15 @@
   // answer, don't guess one" instinct as the rest of that fallback.
   function buildHeader(name, tier) {
     var header = el("div", "skill-tip-header");
+    var id = (window.DB_RUNE_IDS && window.DB_RUNE_IDS[String(name).toLowerCase()]) || String(name).toLowerCase();
     var icon = document.createElement("img");
     icon.className = "skill-tip-icon skill-tip-icon-rarity-" + (tier || "neutral");
-    icon.src = window.SiteUtils.iconSrc(SITE_ROOT, "rune-icons/" + name.toLowerCase() + ".png");
+    icon.src = window.SiteUtils.iconSrc(SITE_ROOT, "rune-icons/" + id + ".png");
     icon.alt = "";
     icon.loading = "lazy";
     window.SiteUtils.hideOnError(icon, "display");
     header.appendChild(icon);
-    header.appendChild(el("div", "skill-tip-title", name));
+    header.appendChild(el("div", "skill-tip-title", (window.DB_RUNE_NAMES && window.DB_RUNE_NAMES[id]) || name));
     return header;
   }
 
@@ -104,24 +120,36 @@
   // per-tier (rune-tip-tier-<tier>) to echo the chip's own green/blue/
   // epic/legendary coloring (see .rune-chip.rune-* in extra.css) rather
   // than the flat muted color a "just show the level" AP label needs.
+  //
+  // The tier's own NAME comes from rune-data.js's DB_RUNE_TIER_NAMES
+  // ("Легендарный"), not from capitalizing the key - the keys stay
+  // english because they're also data-rune-tier values in markdown, JSON
+  // and extra.css class names, and a site in one language shouldn't have
+  // its tier renamed three times in three places. Falls back to the old
+  // capitalize-the-key behavior for a tier missing from that map, so an
+  // unexpected value still renders.
+  function tierLabel(tier) {
+    return (window.DB_RUNE_TIER_NAMES && window.DB_RUNE_TIER_NAMES[tier]) || tier.charAt(0).toUpperCase() + tier.slice(1);
+  }
+
   function buildTip(name, tier, text) {
     var tip = el("div", "skill-tip md-typeset");
     tip.setAttribute("role", "tooltip");
     tip.appendChild(buildHeader(name, tier));
-    tip.appendChild(el("div", "rune-tip-tier rune-tip-tier-" + tier, tier.charAt(0).toUpperCase() + tier.slice(1)));
+    tip.appendChild(el("div", "rune-tip-tier rune-tip-tier-" + tier, tierLabel(tier)));
     tip.appendChild(el("p", "skill-tip-note", text));
     return tip;
   }
 
   // Canonical display order for a rune's tiers - matches the in-game
   // rarity ladder, not object key insertion order (a rune missing e.g.
-  // Uncommon, like Rage, still lists Rare/Epic/Legendary in that order,
+  // Uncommon, like vision, still lists Rare/Epic/Legendary in that order,
   // not whatever order rune-data.js happened to write the keys in).
   var TIER_ORDER = ["uncommon", "rare", "epic", "legendary"];
 
   // Fallback for a `.skill-mention[data-rune-name]` with no data-rune-tier -
-  // a prose mention whose tier genuinely varies ("the next best Galewind
-  // or Vision rune that's available") has no single tier to show, so this
+  // a prose mention whose tier genuinely varies ("the next best Агель
+  // or Ульд rune that's available") has no single tier to show, so this
   // lists every tier DB_RUNE_EFFECTS actually has for the rune instead of
   // guessing one. Each tier gets its own real, full-fidelity effect text
   // (not a merged/computed number) - unlike DB_SKILL_EXTRAS' hand-verified
@@ -129,9 +157,9 @@
   // own summed total, see that file's own sourcing note), there's no safe
   // way to auto-merge two or three rune tiers' full sentences into one
   // number at render time when more than one number in the sentence
-  // changes per tier (Focus's is a single "-10%/-20%/-30%/-40%" swap and
-  // could merge cleanly, but Purify's wording doesn't change at all
-  // between tiers except the leading percentage, while Vision changes TWO
+  // changes per tier (Марх's is a single "10%/20%/30%/40%" swap and
+  // could merge cleanly, but Солум's wording doesn't change at all
+  // between tiers except the leading percentage, while Ульд changes TWO
   // numbers per tier) - showing each tier's real line is the only way to
   // stay accurate for all of them without special-casing which ones are
   // "safe" to squash.
@@ -143,7 +171,7 @@
       var text = entry[tier];
       if (!text) return;
       var row = el("div", "skill-tip-all-row");
-      row.appendChild(el("div", "rune-tip-tier rune-tip-tier-" + tier, tier.charAt(0).toUpperCase() + tier.slice(1)));
+      row.appendChild(el("div", "rune-tip-tier rune-tip-tier-" + tier, tierLabel(tier)));
       row.appendChild(el("p", "skill-tip-note", text));
       tip.appendChild(row);
     });

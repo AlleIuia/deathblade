@@ -293,7 +293,7 @@
   // top (source: the stone's own tooltip, Lv.1-4). Goes to 0 whenever
   // Adrenaline is set to "Not Used" - matching the in-game reality that
   // skipping the engraving loses both halves together. Deliberately kept
-  // OUT of the manual "Attack Power %" field (and its tooltip's source
+  // OUT of the manual "Сила атаки %" field (and its tooltip's source
   // list) so the two can never be double-counted; this is added on top of
   // gearAttackPowerPercentTotal instead, same as Atropine.
   //
@@ -1007,9 +1007,9 @@
 
   const COMBINED_KEYSTONES = ["crit+master", "crit+pulv", "master+pulv"];
   const KEYSTONE_LABELS = {
-    "crit+master": "Critical + Master",
-    "crit+pulv": "Critical + Pulverize",
-    "master+pulv": "Master + Pulverize",
+    "crit+master": "Критический + Мастерский удар",
+    "crit+pulv": "Критический + Сокрушение",
+    "master+pulv": "Мастерский удар + Сокрушение",
   };
 
   // Top Combinations: per-root UI-only state for previewing a non-best
@@ -2081,7 +2081,7 @@
     // comment) - so the Top Combinations list's underlying RANKING always
     // reflects the true ranking, pin or no pin. (renderGrid can still
     // force the pinned combo into the visible 5th row - with its own
-    // true rank number shown instead of a fake "5th Best" - if it's
+    // true rank number shown instead of a fake "5-я лучшая" - if it's
     // drifted below true 5th place; see renderGrid's own comment. That's
     // a display-only substitution and doesn't change what's computed
     // here.)
@@ -2224,31 +2224,31 @@
 
     const rows = [
       {
-        label: ["Crit Rate +", ...trip("3.4", "4.2", "5"), "% & Crit Hit Damage +", { tier: "fixed", text: "1.5" }, "%"],
+        label: ["Шанс крит. удара +", ...trip("3.4", "4.2", "5"), "% и крит. урон +", { tier: "fixed", text: "1.5" }, "%"],
         ...tiers((t) => critLikeGain("braceletRate", t, "critRateDual")),
       },
       {
-        label: ["Crit Damage +", ...trip("6.8", "8.4", "10"), "% & Crit Hit Damage +", { tier: "fixed", text: "1.5" }, "%"],
+        label: ["Крит. урон +", ...trip("6.8", "8.4", "10"), "% и крит. урон +", { tier: "fixed", text: "1.5" }, "%"],
         ...tiers((t) => critLikeGain("braceletDmg", t, "critDmgDual")),
       },
       {
-        label: ["Crit Rate +", ...trip("3.4", "4.2", "5"), "%"],
+        label: ["Шанс крит. удара +", ...trip("3.4", "4.2", "5"), "%"],
         ...tiers((t) => critLikeGain("braceletRate", t, null)),
       },
       {
-        label: ["Crit Damage +", ...trip("6.8", "8.4", "10"), "%"],
+        label: ["Крит. урон +", ...trip("6.8", "8.4", "10"), "%"],
         ...tiers((t) => critLikeGain("braceletDmg", t, null)),
       },
       {
-        label: ["Crit Stat +", ...trip("80", "100", "120")],
-        note: "Set your current bracelet's Crit Stat so this isn't double-counted.",
+        label: ["Стат крита +", ...trip("80", "100", "120")],
+        note: "Укажите текущий стат крита браслета, чтобы не учитывать его дважды.",
         low: critStatGain(CRIT_STAT_TABLE.Low),
         mid: critStatGain(CRIT_STAT_TABLE.Mid),
         high: critStatGain(CRIT_STAT_TABLE.High),
       },
       {
-        label: ["Outgoing Damage +", ...trip("4.5", "5", "5.5"), "% & Skill Cooldown +", { downside: true, text: "2" }, "%"],
-        note: "Estimated damage accounts for +CDR% penalty.",
+        label: ["Наносимый урон +", ...trip("4.5", "5", "5.5"), "% и откат умений +", { downside: true, text: "2" }, "%"],
+        note: "Расчётный урон учитывает штраф +CDR%.",
         // Surge uses the temporary flat -1 override (see
         // DAMAGE_CD_SURGE_TABLE above) instead of the divided-by-penalty
         // figures RE still uses. isSurge comes from the selected build's
@@ -2258,23 +2258,23 @@
         high: braceSpecConfig(inputs).isSurge ? DAMAGE_CD_SURGE_TABLE.High : DAMAGE_CD_TABLE.High,
       },
       {
-        label: ["Outgoing Damage +", ...trip("2", "2.5", "3"), "% & Damage to Staggered +", ...trip("4", "4.5", "5"), "%"],
-        note: "Assumes " + (STAGGER_DPS_SHARE * 100).toFixed(0) + "% of all DPS happens during stagger windows.",
+        label: ["Наносимый урон +", ...trip("2", "2.5", "3"), "% и урон по оглушённым +", ...trip("4", "4.5", "5"), "%"],
+        note: "Assumes " + (STAGGER_DPS_SHARE * 100).toFixed(0) + "% всего урона приходится на окна оглушения.",
         low: OUTGOING_DMG_TABLE.Low + STAGGER_DMG_TABLE.Low * STAGGER_DPS_SHARE,
         mid: OUTGOING_DMG_TABLE.Mid + STAGGER_DMG_TABLE.Mid * STAGGER_DPS_SHARE,
         high: OUTGOING_DMG_TABLE.High + STAGGER_DMG_TABLE.High * STAGGER_DPS_SHARE,
       },
       {
-        label: ["Outgoing Damage +", ...trip("2", "2.5", "3"), "%"],
+        label: ["Наносимый урон +", ...trip("2", "2.5", "3"), "%"],
         low: OUTGOING_DMG_TABLE.Low,
         mid: OUTGOING_DMG_TABLE.Mid,
         high: OUTGOING_DMG_TABLE.High,
       },
       {
         id: "addB",
-        label: ["Additional Damage +", ...trip("2.5", "3", "3.5"), "% & Dmg vs Demon/Archdemon +", { tier: "fixed", text: "2.5" }, "%"],
+        label: ["Дополнительный урон +", ...trip("2.5", "3", "3.5"), "% и урон по демонам/архидемонам +", { tier: "fixed", text: "2.5" }, "%"],
         note:
-          "Displayed value assumes a Demon/Archdemon target. Additional Damage portion alone: " +
+          "Показанное значение считает целью демона/архидемона. Только доля доп. урона: " +
           formatPctBare(addDmgGain("braceletAddB", "Low")) + "/" +
           formatPctBare(addDmgGain("braceletAddB", "Mid")) + "/" +
           formatPctBare(addDmgGain("braceletAddB", "High")) + ".",
@@ -2291,14 +2291,14 @@
       },
       {
         id: "addA",
-        label: ["Additional Damage +", ...trip("3", "3.5", "4"), "%"],
+        label: ["Дополнительный урон +", ...trip("3", "3.5", "4"), "%"],
         low: addDmgGain("braceletAddA", "Low"),
         mid: addDmgGain("braceletAddA", "Mid"),
         high: addDmgGain("braceletAddA", "High"),
       },
       {
-        label: ["Back Attack Damage +", ...trip("2.5", "3", "3.5"), "%"],
-        note: "Assumes " + (BACK_ATTACK_DPS_SHARE * 100).toFixed(0) + "% of all DPS comes from skills that are labeled as a back attack.",
+        label: ["Урон атаки в спину +", ...trip("2.5", "3", "3.5"), "%"],
+        note: "Assumes " + (BACK_ATTACK_DPS_SHARE * 100).toFixed(0) + "% всего урона приходится на умения, помеченные как атака в спину.",
         low: BACK_DMG_TABLE.Low * BACK_ATTACK_DPS_SHARE,
         mid: BACK_DMG_TABLE.Mid * BACK_ATTACK_DPS_SHARE,
         high: BACK_DMG_TABLE.High * BACK_ATTACK_DPS_SHARE,
@@ -2315,7 +2315,7 @@
       const k = specGainPerPoint(deathbladeSpecMultiplier, cfg.share, cfg.awakeningShare);
       rows.push({
         id: "spec",
-        label: ["Spec Stat +", ...trip("80", "100", "120")],
+        label: ["Стат спец. +", ...trip("80", "100", "120")],
         low: k * 80,
         mid: k * 100,
         high: k * 120,
@@ -2327,7 +2327,7 @@
         // with the explanation in its hover tooltip rather than a
         // permanent note block under the table.
         specDmgOnly: true,
-        specDmgOnlyNote: "This line only reflects direct damage share from Spec - it doesn't capture any non-damage effects Spec offers.",
+        specDmgOnlyNote: "Эта строка отражает только долю прямого урона от «Специализации» — её прочие, недеструктивные эффекты здесь не учтены.",
       });
     }
 
@@ -2371,55 +2371,55 @@
           gearApTotal(wp + deltaWp * wpPercentMult, mainStat, baseApMult, flatAp, percentApMult, supApBuff) / baselineAp - 1;
 
         rows.push({
-          label: ["STR/DEX/INT +", ...trip("12000", "14000", "16000")],
+          label: ["СИЛ/ЛОВ/ДУХ +", ...trip("12000", "14000", "16000")],
           low: statGain(12000),
           mid: statGain(14000),
           high: statGain(16000),
         });
         rows.push({
-          label: ["Weapon Power +", ...trip("7200", "8100", "9000")],
+          label: ["Сила оружия +", ...trip("7200", "8100", "9000")],
           low: wpGain(7200),
           mid: wpGain(8100),
           high: wpGain(9000),
         });
         rows.push({
           label: [
-            "On hit, Weapon Power +",
+            "При попадании сила оружия +",
             ...trip("1160", "1320", "1480"),
-            ", Atk/Move Speed +",
+            ", сила атаки/передвижение +",
             { tier: "fixed", text: "1" },
-            "% for 10s (max 6x)",
+            "% на 10 сек. (макс. 6 раз)",
           ],
           note:
             "Assumes " +
             ONHIT_WP_STACK_ASSUMPTION +
-            " of 6 max stacks on average. Atk/Move Speed part is ignored.",
+            " в среднем из 6 максимальных стаков. Часть с силой атаки/передвижением не учитывается.",
           low: wpGain(1160 * ONHIT_WP_STACK_ASSUMPTION),
           mid: wpGain(1320 * ONHIT_WP_STACK_ASSUMPTION),
           high: wpGain(1480 * ONHIT_WP_STACK_ASSUMPTION),
         });
         rows.push({
           label: [
-            "Weapon Power +",
+            "Сила оружия +",
             ...trip("6900", "7800", "8700"),
-            " & on hit, +",
+            " & при попадании, +",
             ...trip("130", "140", "150"),
-            " (30s CD, max 30x)",
+            " (откат 30 сек., макс. 30 раз)",
           ],
-          note: "Assumes a " + PERIODIC_WP_FIGHT_MINUTES + "-minute fight duration.",
+          note: "Предполагается, что " + PERIODIC_WP_FIGHT_MINUTES + "-минутный бой.",
           low: wpGain(6900 + periodicWpAvgBonus(PERIODIC_WP_FIGHT_MINUTES, 130)),
           mid: wpGain(7800 + periodicWpAvgBonus(PERIODIC_WP_FIGHT_MINUTES, 140)),
           high: wpGain(8700 + periodicWpAvgBonus(PERIODIC_WP_FIGHT_MINUTES, 150)),
         });
         rows.push({
           label: [
-            "Weapon Power +",
+            "Сила оружия +",
             ...trip("7200", "8100", "9000"),
-            " & >50% HP: on hit, +",
+            " & >50% HP: при попадании, +",
             ...trip("2000", "2200", "2400"),
-            " for 5s",
+            " на 5 сек.",
           ],
-          note: "Assumes " + (HP_GATED_WP_UPTIME * 100).toFixed(0) + "% buff uptime.",
+          note: "Assumes " + (HP_GATED_WP_UPTIME * 100).toFixed(0) + "% времени активности эффекта.",
           low: wpGain(7200 + 2000 * HP_GATED_WP_UPTIME),
           mid: wpGain(8100 + 2200 * HP_GATED_WP_UPTIME),
           high: wpGain(9000 + 2400 * HP_GATED_WP_UPTIME),
@@ -2830,12 +2830,12 @@
     const necklaceCombos = comboSix(necklaceOut, necklaceAdd);
     const necklace = [
       {
-        label: ["Outgoing Damage +", ...trip("0.55", "1.2", "2"), "%"],
+        label: ["Наносимый урон +", ...trip("0.55", "1.2", "2"), "%"],
         ...necklaceOut,
         combos: necklaceCombos.first,
       },
       {
-        label: ["Additional Damage +", ...trip("0.7", "1.6", "2.6"), "%"],
+        label: ["Дополнительный урон +", ...trip("0.7", "1.6", "2.6"), "%"],
         ...necklaceAdd,
         combos: necklaceCombos.second,
       },
@@ -2901,12 +2901,12 @@
     const ringCombos = comboSix(ringDmg, ringRate);
     const rings = [
       {
-        label: ["Crit Damage +", ...trip("1.1", "2.4", "4"), "%"],
+        label: ["Крит. урон +", ...trip("1.1", "2.4", "4"), "%"],
         ...ringDmg,
         combos: ringCombos.first,
       },
       {
-        label: ["Crit Rate +", ...trip("0.4", "0.95", "1.55"), "%"],
+        label: ["Шанс крит. удара +", ...trip("0.4", "0.95", "1.55"), "%"],
         ...ringRate,
         combos: ringCombos.second,
       },
@@ -2981,12 +2981,12 @@
         const earringCombos = comboSix(earringAp, earringWp);
         earrings = [
           {
-            label: ["Attack Power +", ...trip("0.4", "0.95", "1.55"), "%"],
+            label: ["Сила атаки +", ...trip("0.4", "0.95", "1.55"), "%"],
             ...earringAp,
             combos: earringCombos.first,
           },
           {
-            label: ["Weapon Power +", ...trip("0.8", "1.8", "3"), "%"],
+            label: ["Сила оружия +", ...trip("0.8", "1.8", "3"), "%"],
             ...earringWp,
             combos: earringCombos.second,
           },
@@ -3059,23 +3059,23 @@
 
           universal = [
             {
-              label: ["Weapon Power +", ...trip("195", "480", "960")],
+              label: ["Сила оружия +", ...trip("195", "480", "960")],
               low: universalWpDeltaGain(ACC_FLAT_WP_TABLE.Low),
               mid: universalWpDeltaGain(ACC_FLAT_WP_TABLE.Mid),
               high: universalWpDeltaGain(ACC_FLAT_WP_TABLE.High),
             },
             {
-              label: ["Attack Power +", ...trip("80", "195", "390")],
+              label: ["Сила атаки +", ...trip("80", "195", "390")],
               low: universalApDeltaGain(ACC_FLAT_AP_TABLE.Low),
               mid: universalApDeltaGain(ACC_FLAT_AP_TABLE.Mid),
               high: universalApDeltaGain(ACC_FLAT_AP_TABLE.High),
             },
             {
-              label: ["Quality STR/DEX/INT (Max − Min): ", ...trip("1935", "2083", "2679")],
+              label: ["Качество СИЛ/ЛОВ/ДУХ (макс. − мин.): ", ...trip("1935", "2083", "2679")],
               low: universalStatDeltaGain(ACC_QUALITY_MAIN_STAT_TABLE.Low),
               mid: universalStatDeltaGain(ACC_QUALITY_MAIN_STAT_TABLE.Mid),
               high: universalStatDeltaGain(ACC_QUALITY_MAIN_STAT_TABLE.High),
-              note: "Maximum difference between a minimum-quality and maximum-quality accessory: Ring +1,935, Earring +2,083, Necklace +2,679.",
+              note: "Максимальная разница между аксессуаром минимального и максимального качества: кольцо +1935, серьга +2083, ожерелье +2679.",
             },
           ];
         }
@@ -3218,17 +3218,17 @@
   // only so every slot has the same shape.
   const AVB_SLOT_LABELS = {
     necklace: {
-      name: "Necklace", line1: "Additional Damage", line2: "Outgoing Damage", gridLabel: "Additional Dmg",
+      name: "Necklace", line1: "Дополнительный урон", line2: "Наносимый урон", gridLabel: "Доп. урон",
       hasGrid: true, hasFlat: true, hasOther: false, hasWpRow: true, hasLineRatioRow: false, line1Table: ACC_NECKLACE_ADD_TABLE, line2Table: ACC_NECKLACE_OUT_TABLE,
       otherLine1Default: "Mid", otherLine2Default: "High",
     },
     ring: {
-      name: "Ring", line1: "Crit Rate", line2: "Crit Damage", gridLabel: "Crit Rate/Dmg",
+      name: "Ring", line1: "Шанс крит. удара", line2: "Крит. урон", gridLabel: "Шанс крита/урон",
       hasGrid: true, hasFlat: false, hasOther: true, hasWpRow: true, hasLineRatioRow: false, line1Table: RING_RATE_TABLE, line2Table: ACC_RING_DMG_TABLE,
       otherLine1Default: "Mid", otherLine2Default: "High",
     },
     earring: {
-      name: "Earring", line1: "Attack Power %", line2: "Weapon Power %", gridLabel: "",
+      name: "Earring", line1: "Сила атаки %", line2: "Сила оружия %", gridLabel: "",
       hasGrid: false, hasFlat: false, hasOther: true, hasWpRow: true, hasLineRatioRow: true, line1Table: ACC_EARRING_AP_TABLE, line2Table: ACC_EARRING_WP_TABLE,
       otherLine1Default: "High", otherLine2Default: "Mid",
     },
@@ -4072,6 +4072,25 @@
   const SURGE_IDENTITY_ATTACK_SPEED = 20; // Surge's own Identity gauge, always on for Surge - not a togglable source.
   const EALYN_ATTACK_SPEED = 3; // Ealyn's Blessing - Surge-only alternative to Vernese Wine/Mana Food, Attack Speed only (no Move Speed counterpart, unlike Wine). Its own checkbox was removed along with the readout below (it had no effect on anything else) - kept here as a source reference only.
   const MASS_INCREASE_ATTACK_SPEED_PENALTY = 10;
+  // Display name for an engraving row, read from the site-wide
+  // DB_SKILL_NAMES (skill-names.js) rather than spelled out here. Those
+  // entries were already translated to the game's own Russian names
+  // ("Keen Blunt Weapon" -> "Моргенштерн", "Cursed Doll" -> "Голем"), so
+  // the calculator used to be the one place on the site still showing the
+  // English label - the same engraving named two different ways depending
+  // on which page you were on.
+  //
+  // The `label` property on each row below stays ENGLISH on purpose: it is
+  // a lookup KEY, not display text. stoneKeyByLabel (see its own use below)
+  // resolves each row's ability-stone table by it, and bible-import.js keys
+  // the game export it parses on the same English names. Display comes from
+  // the map; the key never moves. Falls back to the English label if a name
+  // is ever missing from the map, so a row can't render blank.
+  function engravingName(row) {
+    var known = row.id && window.DB_SKILL_NAMES && window.DB_SKILL_NAMES[row.id];
+    return known || row.label;
+  }
+
   const SURGE_ATTACK_SPEED_CAP = 140; // Same 140% AS/MS cap Raid Captain's Move Speed uses (RAID_CAPTAIN_MOVE_SPEED_CAP above) - Attack Speed shares the identical class cap, just tracked separately since nothing here multiplies against it.
 
   function surgeEffectiveAttackSpeed(engrInputs, yearning) {
@@ -4369,7 +4388,7 @@
   // where engrInputs.stone1/2 are shared and unchanging across every
   // candidateFlagSets entry, it's a wash on the ranking (same as Mana
   // Food would be there) but still lands correctly in each candidate's
-  // own totalMult - which is what the "Ability Stone Base AP" row in
+  // own totalMult - which is what the "Базовая сила атаки (камень)" row in
   // computeEngravingComparison's own `rows` reads back out.
   // Adrenaline's own Ability Stone was missing from this function entirely
   // until now: unlike Grudge/Ambush/RC/CD/MI's stones (which bump their
@@ -4744,14 +4763,14 @@
         scenario(label + " + " + manaFoodLabel(base, inputs), side, false, true),
       ].sort((x, y) => y.index - x.index)[0];
     }
-    const aBest = bestOf("Setup A", svsA);
-    const bBest = bestOf("Setup B", svsB);
+    const aBest = bestOf("Сборка A", svsA);
+    const bBest = bestOf("Сборка B", svsB);
     const aWins = aBest.index >= bBest.index;
     const winner = aWins ? aBest : bBest;
     const runnerUp = aWins ? bBest : aBest;
     return {
       winnerLabel: winner.label,
-      otherLabel: aWins ? "Setup B" : "Setup A",
+      otherLabel: aWins ? "Сборка B" : "Сборка A",
       pctVsRunnerUp: winner.index / runnerUp.index - 1,
     };
   }
@@ -4861,9 +4880,10 @@
     const runnerUp = candidates[1] || null;
 
     const rows = [
-      { label: "Grudge", gain: grudgeGain(engrInputs, inputs) },
-      { label: "Ambush Master", gain: ambushMasterGain(engrInputs, inputs) },
+      { id: "grudge", label: "Grudge", gain: grudgeGain(engrInputs, inputs) },
+      { id: "ambushmaster", label: "Ambush Master", gain: ambushMasterGain(engrInputs, inputs) },
       {
+        id: "adrenaline",
         label: "Adrenaline",
         gain: adrenalineContributionGain(isolatedInputs, engrInputs),
         // Same inline "i" icon (native `title`, see renderComparisonRows'
@@ -4877,19 +4897,20 @@
         // (kbwRealizedGainPct/adrenalineGridRatio's own with-vs-without
         // grid search), so one shared note text keeps them consistent
         // instead of drifting into two slightly different wordings.
-        note: "Recomputes the best setup with vs without, so the winning keystone/split can flip. Follows Adrenaline Uptime % setting from the Ark Passive section above.",
+        note: "Пересчитывает лучшую сборку с этим узлом и без него, поэтому победитель может смениться. Следует настройке «Время активности Адреналина, %» из раздела А.Р.К. выше.",
       },
-      { label: "Raid Captain", gain: raidCaptainGain(engrInputs, inputs) },
+      { id: "raidcaptain", label: "Raid Captain", gain: raidCaptainGain(engrInputs, inputs) },
       {
+        id: "keenbluntweapon",
         label: "Keen Blunt Weapon",
         gain: kbwContributionGain(isolatedInputs),
         // Same methodology note as Adrenaline's above, worded for KBW
         // specifically (no uptime/AP half to mention here) - see that
         // row's own comment for why the two share this note's first
         // sentence verbatim rather than each inventing their own phrasing.
-        note: "Recomputes the best setup with vs without, so the winning keystone/split can flip.",
+        note: "Пересчитывает лучшую сборку с этим узлом и без него, поэтому победитель может смениться.",
       },
-      { label: "Cursed Doll", gain: cursedDollGain(engrInputs, inputs) },
+      { id: "curseddoll", label: "Cursed Doll", gain: cursedDollGain(engrInputs, inputs) },
       // Mass Increase stays Surge-only in this reference table too, same
       // reasoning as the pool/candidateFlagSets exclusion above (RE never
       // runs it, and its -10% Attack Speed drawback isn't modeled) -
@@ -4897,10 +4918,10 @@
       // table has no per-row spec toggle like the checkbox/wine rows
       // above do.
       engrInputs.spec !== "re"
-        ? { label: "Mass Increase", gain: massIncreaseGain(engrInputs, inputs) }
+        ? { id: "massincrease", label: "Mass Increase", gain: massIncreaseGain(engrInputs, inputs) }
         : null,
       {
-        label: "Ability Stone Base AP",
+        label: "Базовая сила атаки (камень)",
         gain: abilityStoneBaseApGain(inputs, engrInputs),
         // Mirrors engravingStoneImpliesBaseAp's own threshold check
         // (5+ total nodes across BOTH isolated stone slots combined, not
@@ -4908,7 +4929,7 @@
         // otherwise has no way to tell why this row reads 0% even with a
         // stone slotted, if the other slot isn't carrying enough to clear
         // the combined threshold.
-        note: "Only applies once Stone 1 + Stone 2 add up to Lv.5 or higher combined.",
+        note: "Применяется, только когда Камень 1 + Камень 2 в сумме дают 5 ур. или выше.",
       },
       {
         label: "Mana Food",
@@ -4919,7 +4940,7 @@
         // manaFoodContributionGain/engravingCandidateMultiplier), so
         // there's nothing for the tooltip to explain there.
         note: engrInputs.spec === "surge"
-          ? "Includes using the Bleed rune on Maelstrom. Not tied to any one engraving."
+          ? "Учитывает использование руны «Джар» на «Плащ клинков». Не привязано к конкретной гравировке."
           : null,
       },
     ].filter(Boolean);
@@ -5277,7 +5298,7 @@
   // "1st"/"2nd"/"3rd"/"4th"... - only used for a pinned combo that has
   // drifted below the visible top 5 (see renderGrid's own comment on
   // pinnedDisplayCell) and needs an honest true-rank label instead of a
-  // fake "5th Best".
+  // fake "5-я лучшая".
   function ordinal(n) {
     const rem100 = n % 100;
     if (rem100 >= 11 && rem100 <= 13) return n + "th";
@@ -5389,7 +5410,7 @@
       }
       if (pctEl) pctEl.textContent = cell.pctOfBest.toFixed(2) + "%";
       if (deltaEl) {
-        deltaEl.textContent = rank === 1 ? "Best" : (cell.pctOfBest - ranked[0].pctOfBest).toFixed(2) + "% vs best";
+        deltaEl.textContent = rank === 1 ? "Best" : (cell.pctOfBest - ranked[0].pctOfBest).toFixed(2) + "% от лучшей";
       }
       rowEl.classList.toggle("ap-calc-result-row-best", rank === 1);
       rowEl.classList.toggle("ap-calc-result-row-active", state.previewRank === rank);
@@ -5437,12 +5458,12 @@
     const titleEl = cardEl && cardEl.querySelector(".ap-stat-card-title");
     if (titleEl) {
       if (pinnedCell) {
-        const rankLabels = { 1: "Best", 2: "2nd Best", 3: "3rd Best", 4: "4th Best", 5: "5th Best" };
+        const rankLabels = { 1: "Best", 2: "2-я лучшая", 3: "3-я лучшая", 4: "4-я лучшая", 5: "5-я лучшая" };
         const rankLabel = rankLabels[pinnedTrueRank] || (pinnedTrueRank ? ordinal(pinnedTrueRank) + " Best" : null);
-        titleEl.textContent = rankLabel ? "Pinned Setup (" + rankLabel + ")" : "Pinned Setup";
+        titleEl.textContent = rankLabel ? "Закреплённая сборка (" + rankLabel + ")" : "Закреплённая сборка";
       } else {
-        const rankTitles = { 1: "Best Setup", 2: "2nd Best Setup", 3: "3rd Best Setup", 4: "4th Best Setup", 5: "5th Best Setup" };
-        titleEl.textContent = rankTitles[cardRank] || "Best Setup";
+        const rankTitles = { 1: "Лучшая сборка", 2: "2-я сборка", 3: "3-я сборка", 4: "4-я сборка", 5: "5-я сборка" };
+        titleEl.textContent = rankTitles[cardRank] || "Лучшая сборка";
       }
     }
     if (cardEl) {
@@ -5591,7 +5612,7 @@
         // Small always-visible tag (not a permanent note block) so the
         // row stays one line tall - the explanation lives in this badge's
         // own hover tooltip instead of a paragraph under the table.
-        const badge = window.SiteUtils.el("span", "ap-brace-label-caveat", "dmg only");
+        const badge = window.SiteUtils.el("span", "ap-brace-label-caveat", "только урон");
         badge.title = row.specDmgOnlyNote;
         badge.setAttribute("role", "img");
         badge.setAttribute("aria-label", row.specDmgOnlyNote);
@@ -5664,12 +5685,12 @@
   // enforceBvbLineControls), its own hover tooltip already explains the
   // assumption, so a second icon repeating the same thing elsewhere was
   // redundant.
-  const SPEC_NOTE_TEXT_RE = "This only reflects Spec's damage share on RE - it doesn't capture CDR or orb gen.";
+  const SPEC_NOTE_TEXT_RE = "Отражает только долю урона «Специализации» на RE — без учёта CDR и генерации Сфер.";
   // Surge has no orb mechanic to omit in the first place - only CDR is
   // left uncaptured here, so the RE wording's "or orb gen" half is
   // dropped rather than carried over as a dead phrase for a mechanic
   // Surge doesn't have.
-  const SPEC_NOTE_TEXT_SURGE = "This only reflects Spec's damage share on Surge - it doesn't capture CDR.";
+  const SPEC_NOTE_TEXT_SURGE = "Отражает только долю урона «Специализации» на Surge — без учёта CDR.";
   function renderBvbCard(root, prefix, side, isSurgeSpec) {
     const card = root.querySelector(".ap-bvb-card-" + prefix);
     if (!card) return;
@@ -5714,8 +5735,8 @@
     const diffEl = root.querySelector(".ap-bvb-diff");
     if (diffEl) {
       const aWins = result.aVsB >= 0;
-      const winner = aWins ? "Bracelet A" : "Bracelet B";
-      diffEl.textContent = winner + " wins by " + formatBvbPct(Math.abs(result.aVsB));
+      const winner = aWins ? "Браслет A" : "Браслет B";
+      diffEl.textContent = winner + " выигрывает на " + formatBvbPct(Math.abs(result.aVsB));
       diffEl.classList.toggle("ap-bvb-diff-a", aWins);
       diffEl.classList.toggle("ap-bvb-diff-b", !aWins);
     }
@@ -5778,7 +5799,7 @@
     const diffEl = root.querySelector(".ap-avb-diff");
     if (diffEl) {
       const aWins = result.aVsB >= 0;
-      diffEl.textContent = "Accessory " + (aWins ? "A" : "B") + " wins by " + formatBvbPct(Math.abs(result.aVsB));
+      diffEl.textContent = "Accessory " + (aWins ? "A" : "B") + " выигрывает на " + formatBvbPct(Math.abs(result.aVsB));
       // .ap-avb-diff's own base class is .ap-esvs-diff (see its markup in
       // resources.md), not .ap-bvb-diff - so the winner accent has to come
       // from .ap-esvs-diff-a/-b, not .ap-bvb-diff-a/-b. An earlier version
@@ -5812,7 +5833,7 @@
       // own rows.sort call), same ranking renderComparisonRows above relies
       // on - no best-row highlight applied though, same as that renderer
       // (see extra.css's .ap-brace-compare-footer-note comment for why).
-      const labelTd = window.SiteUtils.el("td", "ap-brace-row-label", row.label);
+      const labelTd = window.SiteUtils.el("td", "ap-brace-row-label", engravingName(row));
       tr.appendChild(labelTd);
       ["p14", "relic17", "ancient17", "relic20", "ancient20"].forEach((key) => {
         const gradeClass = key === "p14" ? "ap-arkgrid-merged" : key.indexOf("relic") === 0 ? "ap-arkgrid-relic" : "ap-arkgrid-ancient";
@@ -5824,11 +5845,11 @@
   }
 
   // ----- Engraving Comparison rendering -----
-  const MANAFOOD_TIP_BASE_TEXT = "Only accurate if the Main Stat input in Character Data doesn't already include Mana Food's Main Stat bonus.";
+  const MANAFOOD_TIP_BASE_TEXT = "Точно, только если в поле основного стата в «Данных персонажа» уже не учтён бонус основного стата от Mana Food.";
   // 222's own gearing more easily clears the Bleed rune's stat threshold
   // without Mana Food's help - worth flagging, but only for the one build
   // it's actually about, so it's appended rather than said unconditionally.
-  const MANAFOOD_TIP_222_SUFFIX = " 222 may not need Mana Food to equip Maelstrom Bleed.";
+  const MANAFOOD_TIP_222_SUFFIX = " 222 может не требовать Mana Food для экипировки «Джар» на «Плащ клинков».";
   // Contribution rows are a single value per engraving (not a Low/Mid/
   // High trio), so this doesn't reuse renderComparisonRows - closer to
   // renderArkGridComparison's own bespoke-shape renderer just above.
@@ -5887,7 +5908,7 @@
       icon.className = "skill-icon ap-engr-feast-icon";
       icon.src = window.SiteUtils.iconSrc(SITE_ROOT, "icon-feast.png");
       icon.alt = "Feast";
-      icon.title = "Assumes an Atk/Move Speed feast is active.";
+      icon.title = "Предполагается, что активна еда «Атака/скорость передвижения».";
       icon.loading = "lazy";
       // "display" mode (not the default visibility:hidden) - a missing
       // icon should collapse the gap entirely rather than leave a blank
@@ -5913,8 +5934,13 @@
     const msEl = root.querySelector(".ap-engr-ms-readout");
     if (msEl) {
       const rcEfficiency = Math.max(0, Math.min(100, (result.moveSpeed - 100) / (RAID_CAPTAIN_MOVE_SPEED_CAP - 100) * 100));
-      msEl.textContent = "Raid Captain Efficiency: " + rcEfficiency.toFixed(2) + "% ";
-      msEl.title = "% of Raid Captain's potential damage bonus you're capturing - 0% means never above base Move Speed, 100% means capped (140% Move Speed) the entire fight.";
+      // Engraving name interpolated from DB_SKILL_NAMES, same reason as
+      // engravingName() above - so this line says "Эффективность
+      // «Неутомимого натиска»: ..." and can't drift from the row label
+      // elsewhere on the page if the name is ever re-translated.
+      const rcName = (window.DB_SKILL_NAMES && window.DB_SKILL_NAMES.raidcaptain) || "Raid Captain";
+      msEl.textContent = "Эффективность «" + rcName + "»: " + rcEfficiency.toFixed(2) + "% ";
+      msEl.title = "Доля от бонуса урона, который даёт «" + rcName + "», которую вы получаете: 0% — скорость передвижения никогда не выше базовой, 100% — всё время боя на максимуме (140% скорости передвижения).";
       appendFeastIcon(msEl);
     }
 
@@ -5982,7 +6008,7 @@
       };
       result.rows.forEach((row) => {
         const tr = document.createElement("tr");
-        const labelTd = window.SiteUtils.el("td", "ap-brace-row-label", row.label);
+        const labelTd = window.SiteUtils.el("td", "ap-brace-row-label", engravingName(row));
         if (row.note) {
           // Same .ap-brace-info-icon pattern as renderComparisonRows'
           // own identical use above (native `title` hover instead of a
@@ -6064,8 +6090,8 @@
         overallBestEl.style.display = "";
         const pct = overallBest.pctVsOther * 100;
         overallBestEl.textContent =
-          "Overall Best Setup: " + overallBest.comboLabel + " with " + overallBest.foodLabel +
-          " (+" + Math.abs(pct).toFixed(2) + "% vs the best " + overallBest.otherFoodLabel + " setup).";
+          "Итоговая лучшая сборка: " + overallBest.comboLabel + " with " + overallBest.foodLabel +
+          " (+" + Math.abs(pct).toFixed(2) + "% от лучшей " + overallBest.otherFoodLabel + " setup).";
       }
     }
   }
@@ -6086,7 +6112,7 @@
     set(".ap-esvs-" + prefix + "-vs-none", formatBvbPct(side.vsNeither));
     set(".ap-esvs-" + prefix + "-keystone", side.splitLabel + " + " + side.keystoneLabel);
     // Same 3-row breakdown as Best Combo/Runner-Up's fillCard (see
-    // engravingCandidateBreakdown's own comment) - "Ability Stone Base AP"
+    // engravingCandidateBreakdown's own comment) - "Базовая сила атаки (камень)"
     // moves into this group too now (was previously the only breakdown
     // row this card had, sitting right under vs No Setup on its own). No
     // separate "Keystone/Crit" row - see fillCard's own comment for why.
@@ -6123,7 +6149,7 @@
     const diffEl = root.querySelector(".ap-esvs-diff");
     if (diffEl) {
       const aWins = result.aVsB >= 0;
-      diffEl.textContent = (aWins ? "Setup A" : "Setup B") + " wins by " + formatBvbPct(Math.abs(result.aVsB));
+      diffEl.textContent = (aWins ? "Сборка A" : "Сборка B") + " выигрывает на " + formatBvbPct(Math.abs(result.aVsB));
       diffEl.classList.toggle("ap-esvs-diff-a", aWins);
       diffEl.classList.toggle("ap-esvs-diff-b", !aWins);
     }
@@ -6144,8 +6170,8 @@
         overallBestEl.style.display = "";
         const pct = overallBest.pctVsRunnerUp * 100;
         overallBestEl.textContent =
-          "Overall Best: " + overallBest.winnerLabel +
-          " (+" + pct.toFixed(2) + "% vs the best " + overallBest.otherLabel + " setup).";
+          "Итоговая лучшая: " + overallBest.winnerLabel +
+          " (+" + pct.toFixed(2) + "% от лучшей " + overallBest.otherLabel + " setup).";
       }
     }
   }
@@ -6429,12 +6455,12 @@
     try {
       parsed = JSON.parse(text);
     } catch (e) {
-      showPopoverMessage(popoverEl, "That's not valid JSON - check for a truncated paste.", true);
+      showPopoverMessage(popoverEl, "Это не корректный JSON — проверьте, не обрезалась ли вставка.", true);
       return;
     }
     const data = extractImportData(parsed);
     if (!data) {
-      showPopoverMessage(popoverEl, "Doesn't look like a Deathblade Ark Passive Calculator export.", true);
+      showPopoverMessage(popoverEl, "Не похоже на экспорт калькулятора А.Р.К. Клинка смерти.", true);
       return;
     }
     const activeId = getActivePresetId();
@@ -6452,15 +6478,15 @@
     resetAvbMemory(root);
     saveInputs(root, activeId);
     update(root);
-    let msg = "Imported into Preset " + activeId + ".";
+    let msg = "Импортировано в пресет " + activeId + ".";
     // Tell the person when something in their paste didn't take, instead
     // of letting it fail silently - a stale/renamed select option value
     // or an id that doesn't exist on this page otherwise looks identical
     // to a successful import (see applyFieldData's skippedOut comment).
     if (skipped.length) {
       msg += " " + skipped.length + " field" + (skipped.length === 1 ? "" : "s") +
-        " in that data didn't match anything on this page and " +
-        (skipped.length === 1 ? "was" : "were") + " left as-is: " + skipped.join(", ") + ".";
+        " в этих данных не нашлось ничего для этой страницы, и " +
+        (skipped.length === 1 ? "was" : "were") + " оставлено как есть: " + skipped.join(", ") + ".";
     }
     showPopoverMessage(popoverEl, msg, skipped.length > 0);
   }
@@ -7049,7 +7075,7 @@
       if (msEl) {
         msEl.min = range.min;
         msEl.max = range.max;
-        msEl.title = "This accessory's own Main Stat (" + cfg.name + " range: " + range.min.toLocaleString() + "-" + range.max.toLocaleString() + ").";
+        msEl.title = "Основной стат этого аксессуара (" + cfg.name + " range: " + range.min.toLocaleString() + "-" + range.max.toLocaleString() + ").";
         // Clamp whatever was already typed into the new slot's range -
         // switching Ring -> Necklace otherwise leaves e.g. 12897 sitting
         // in a 15178-17857 field, which the browser flags as :invalid
@@ -7747,8 +7773,8 @@
         resetEl.addEventListener("click", () => {
           const activeId = getActivePresetId();
           const confirmed = window.confirm(
-            "Reset Preset " + activeId + " to defaults? This clears Preset " +
-            activeId + " only - your other presets aren't affected."
+            "Сбросить пресет " + activeId + " к значениям по умолчанию? Это очистит пресет " +
+            activeId + " только — остальные пресеты не затрагиваются."
           );
           if (confirmed) {
             resetInputs(root);
@@ -7796,8 +7822,8 @@
           copyBtn.addEventListener("click", () => {
             const text = popoverEl.querySelector(".ap-calc-popover-textarea").value;
             window.SiteUtils.copyToClipboard(text)
-              .then(() => showPopoverMessage(popoverEl, "Copied to clipboard.", false))
-              .catch(() => showPopoverMessage(popoverEl, "Couldn't access the clipboard - select the text above and copy manually.", true));
+              .then(() => showPopoverMessage(popoverEl, "Скопировано в буфер обмена.", false))
+              .catch(() => showPopoverMessage(popoverEl, "Не удалось обратиться к буферу обмена — выделите текст выше и скопируйте вручную.", true));
           });
         }
 
@@ -7814,7 +7840,7 @@
           loadBtn.addEventListener("click", () => {
             const text = popoverEl.querySelector(".ap-calc-popover-textarea").value.trim();
             if (!text) {
-              showPopoverMessage(popoverEl, "Paste your exported JSON above, or choose a file below.", true);
+              showPopoverMessage(popoverEl, "Вставьте экспортированный JSON выше или выберите файл ниже.", true);
               return;
             }
             applyImportText(root, popoverEl, text);

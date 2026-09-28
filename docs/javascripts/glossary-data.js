@@ -30,12 +30,13 @@
 // See glossary-tooltip.js for how this file gets read.
 window.DB_GLOSSARY = {
   trixion: {
-    term: "Trixion",
-    def: "A practice sandbox room where you can freely test skills, stats, and builds against a training dummy without spending any resources.",
+    term: "Тризион",
+    def: "Попасть можно, нажав F2 — «Песнь Тризиона». В Беатрис выберите «Тренировка», затем в списке — легендарного манекена. Тризион — это место, где можно поставить руны, гравировки и самоцветы, которых у вас нет, и попробовать протестировать билд и потренироваться.",
   },
   abilitystone: {
-    term: "Ability Stone",
-    def: "An equipment piece that grants Vitality and enhances the power of your equipped combat engravings.",
+    term: "Фетранит",
+    icon: "abilitystone",
+    def: "Фетранит даёт Живучесть и усиливает установленные боевые гравировки — насколько именно, зависит от бонуса сделанной огранки.",
   },
   bracelet: {
     term: "Bracelet",
@@ -46,8 +47,8 @@ window.DB_GLOSSARY = {
     def: "A collectible recipe that permanently boosts a specific combat engraving's power account-wide as you collect more.",
   },
   specializationstat: {
-    term: "Specialization",
-    def: "A primary combat stat that drives Deathblade's Death Orb generation rate, Surge damage, and the cooldown reduction gained from Death Trance.",
+    term: "Мастерство",
+    def: "Основной боевой стат, от которого зависят скорость генерации сфер у Клинка смерти, урон Твёрдой воли и сокращение перезарядки от Боевого транса.",
   },
   // Unlike every other entry here, this one keeps its numbers: back
   // attack's damage/crit bonus is a flat engine constant (not a per-skill

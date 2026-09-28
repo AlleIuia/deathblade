@@ -20,7 +20,7 @@
 //                             1.0-1.3 scale documented in extra.css next
 //                             to .stat-bar-track-teal - NOT the build's
 //                             own min/max. Don't rescale this per family.
-//   trixion === null       -> "Not measured", no bar (e.g. Standard)
+//   trixion === null       -> "Не измерено", no bar (e.g. Standard)
 //   trixionConfirmed=false -> .stat-bar-fill-unconfirmed (diagonal stripe)
 //                             instead of .stat-bar-fill-teal
 //
@@ -78,24 +78,24 @@
 
     var diffPct = Math.max(0, Math.min(100, (data.difficulty / 10) * 100));
     el.appendChild(buildStatEl(
-      "Difficulty",
+      "Сложность",
       fmtDifficulty(data.difficulty) + " / 10",
       barTrack(null, null, diffPct)
     ));
 
     if (data.trixion == null) {
-      el.appendChild(buildStatEl("Trixion DPS", "Not measured", null));
+      el.appendChild(buildStatEl("DPS в Тризионе", "Не измерено", null));
     } else {
       var trixPct = Math.max(0, Math.min(100, ((data.trixion - 1.0) / 0.3) * 100));
       var fillClass = data.trixionConfirmed ? "stat-bar-fill-teal" : "stat-bar-fill-unconfirmed";
       el.appendChild(buildStatEl(
-        "Trixion DPS",
+        "DPS в Тризионе",
         data.trixion.toFixed(2) + " Multiplier",
         barTrack(fillClass, "stat-bar-track-teal", trixPct)
       ));
     }
 
-    el.appendChild(buildStatEl("Playstyle", data.playstyle, null));
+    el.appendChild(buildStatEl("Стиль игры", data.playstyle, null));
   }
 
   window.SiteUtils.registerRenderer(".build-stats[data-build]", renderStats);

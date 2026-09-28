@@ -3,7 +3,7 @@
 // changes needed here, just point your build/essentials pages' JSON blocks
 // at your own data.
 //
-// Renders the "## Ark Setup" section's Ark Passive tree (Evolution /
+// Renders the "## Система А.Р.К." section's Ark Passive tree (Evolution /
 // Enlightenment / Leap) as a native widget instead of a static
 // argrid-tree*.png screenshot of the full in-game grid.
 //
@@ -172,7 +172,7 @@
         return Number(a) - Number(b);
       })
       .map(function (key) {
-        return { label: key === "unknown" ? "Tier ?" : "Tier " + key, nodes: byTier[key] };
+        return { label: key === "unknown" ? "Ступень ?" : "Ступень " + key, nodes: byTier[key] };
       });
   }
 

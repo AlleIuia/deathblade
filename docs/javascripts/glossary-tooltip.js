@@ -37,6 +37,7 @@
 // mkdocs.yml.
 (function () {
   var el = window.SiteUtils.el;
+  var SITE_ROOT = window.SiteUtils.detectSiteRoot("glossary-tooltip.js");
 
   // Same shape as skill-tooltip.js's own buildTip (title + note, "skill-tip
   // md-typeset" wrapper so the reused .skill-tip-title/.skill-tip-note
@@ -46,8 +47,30 @@
   function buildTip(data) {
     var tip = el("div", "skill-tip md-typeset");
     tip.setAttribute("role", "tooltip");
-    tip.appendChild(el("div", "skill-tip-title", data.term));
-    tip.appendChild(el("p", "skill-tip-note", data.def));
+    // An entry may carry an `icon` id - resolved by the same icon-<id>.png
+    // convention (and the same .skill-tip-header/.skill-tip-icon pair) that
+    // skill-tooltip.js uses, so a term whose reader benefits from seeing the
+    // thing (an Ability Stone, say) shows it instead of only naming it.
+    // hideOnError collapses the <img> on a miss, so an id with no file just
+    // falls back to the plain title with no gap left behind.
+    if (data.icon) {
+      var header = el("div", "skill-tip-header");
+      var icon = document.createElement("img");
+      icon.className = "skill-tip-icon";
+      icon.src = window.SiteUtils.iconSrc(SITE_ROOT, "icon-" + data.icon + ".png");
+      icon.alt = "";
+      icon.loading = "lazy";
+      window.SiteUtils.hideOnError(icon, "display");
+      header.appendChild(icon);
+      header.appendChild(el("div", "skill-tip-title", data.term));
+      tip.appendChild(header);
+    } else {
+      tip.appendChild(el("div", "skill-tip-title", data.term));
+    }
+    // Only add the note paragraph when there actually is a definition - an
+    // entry may be term-only, and an empty <p> would still render (with its
+    // own margin) as a bubble holding just the title plus a gap under it.
+    if (data.def) tip.appendChild(el("p", "skill-tip-note", data.def));
     return tip;
   }
 

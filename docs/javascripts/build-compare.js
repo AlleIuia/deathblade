@@ -7,7 +7,7 @@
 // Comparison" heading on essentials.md. Replaces what used to be a static
 // markdown table PLUS a separate pick-two-and-overlay widget below it with
 // one card: a real <table> up top (the table content, unchanged) and the
-// two-build picker underneath (pentagon overlay + a "Key Differences"
+// two-build picker underneath (pentagon overlay + a "Ключевые различия"
 // panel), so there's one visual unit instead of two that repeat the same
 // numbers and duplicate the same links.
 //
@@ -26,7 +26,7 @@
 //
 //   Shareable links: once a reader picks a pair, the URL updates to
 //   ?a=<build-id>&b=<build-id> (no address-bar change on a plain page
-//   load, only after an actual selection) and a "Copy link" button sits
+//   load, only after an actual selection) and a "Скопировать ссылку" button sits
 //   under the dropdowns for grabbing it without touching the address
 //   bar. Opening a link with those params pre-selects that exact pair on
 //   load, overriding data-build-a/data-build-b if both are present.
@@ -82,7 +82,7 @@
 
     var thead = document.createElement("thead");
     var headRow = document.createElement("tr");
-    ["Build", "Difficulty", "Trixion DPS", "Playstyle", "Best For"].forEach(function (label) {
+    ["Билд", "Сложность", "DPS в Тризионе", "Стиль игры", "Кому подходит"].forEach(function (label) {
       var th = document.createElement("th");
       th.textContent = label;
       headRow.appendChild(th);
@@ -268,7 +268,7 @@
     return select;
   }
 
-  // "Key Differences" panel - for each axis where the two builds aren't
+  // "Ключевые различия" panel - for each axis where the two builds aren't
   // essentially tied, a small pill goes under whichever build comes out
   // ahead on it, labeled with the axis and the size of the gap. Chosen
   // over any kind of bar: bars scaled to a 0-10 (or even a per-pair
@@ -286,7 +286,7 @@
 
     var title = document.createElement("div");
     title.className = "build-compare-diffcard-title";
-    title.textContent = "Key Differences";
+    title.textContent = "Ключевые различия";
     card.appendChild(title);
 
     var chipsA = [];
@@ -306,7 +306,7 @@
     if (chipsA.length === 0 && chipsB.length === 0) {
       var same = document.createElement("div");
       same.className = "build-compare-diffcard-empty";
-      same.textContent = "These builds are nearly identical across every axis.";
+      same.textContent = "Эти билды почти не отличаются ни по одной из осей.";
       body.appendChild(same);
     } else {
       [
@@ -329,7 +329,7 @@
         if (chips.length === 0) {
           var none = document.createElement("span");
           none.className = "build-compare-diffcard-none";
-          none.textContent = "No clear edge";
+          none.textContent = "Явного преимущества нет";
           chipRow.appendChild(none);
         } else {
           chips.forEach(function (text) {
@@ -429,7 +429,7 @@
     wrapA.className = "build-compare-select-wrap";
     var dotA = document.createElement("span");
     dotA.className = "build-compare-select-dot";
-    var selectA = buildSelect(compareBuilds, buildA.id, "First build to compare");
+    var selectA = buildSelect(compareBuilds, buildA.id, "Первый билд для сравнения");
     wrapA.appendChild(dotA);
     wrapA.appendChild(selectA);
 
@@ -441,7 +441,7 @@
     wrapB.className = "build-compare-select-wrap";
     var dotB = document.createElement("span");
     dotB.className = "build-compare-select-dot";
-    var selectB = buildSelect(compareBuilds, buildB.id, "Second build to compare");
+    var selectB = buildSelect(compareBuilds, buildB.id, "Второй билд для сравнения");
     wrapB.appendChild(dotB);
     wrapB.appendChild(selectB);
 
@@ -461,8 +461,8 @@
     shareBtn.type = "button";
     shareBtn.className = "build-compare-share-btn";
     shareBtn.innerHTML = COPY_ICON;
-    shareBtn.setAttribute("aria-label", "Copy link to this comparison");
-    shareBtn.setAttribute("data-tooltip", "Copy link to this comparison");
+    shareBtn.setAttribute("aria-label", "Скопировать ссылку на это сравнение");
+    shareBtn.setAttribute("data-tooltip", "Скопировать ссылку на это сравнение");
     headerRow.appendChild(shareBtn);
 
     container.appendChild(headerRow);
@@ -489,22 +489,22 @@
     var shareResetTimer = null;
     function resetShareBtn() {
       shareBtn.innerHTML = COPY_ICON;
-      shareBtn.setAttribute("data-tooltip", "Copy link to this comparison");
-      shareBtn.setAttribute("aria-label", "Copy link to this comparison");
+      shareBtn.setAttribute("data-tooltip", "Скопировать ссылку на это сравнение");
+      shareBtn.setAttribute("aria-label", "Скопировать ссылку на это сравнение");
     }
     shareBtn.addEventListener("click", function () {
       copyToClipboard(window.location.origin + shareUrlFor(buildA.id, buildB.id))
         .then(function () {
           clearTimeout(shareResetTimer);
           shareBtn.innerHTML = CHECK_ICON;
-          shareBtn.setAttribute("data-tooltip", "Link copied");
-          shareBtn.setAttribute("aria-label", "Link copied");
+          shareBtn.setAttribute("data-tooltip", "Ссылка скопирована");
+          shareBtn.setAttribute("aria-label", "Ссылка скопирована");
           shareResetTimer = setTimeout(resetShareBtn, 1800);
         })
         .catch(function () {
           clearTimeout(shareResetTimer);
-          shareBtn.setAttribute("data-tooltip", "Couldn't copy - copy from address bar");
-          shareBtn.setAttribute("aria-label", "Couldn't copy - copy from address bar");
+          shareBtn.setAttribute("data-tooltip", "Не получилось скопировать — скопируйте из адресной строки");
+          shareBtn.setAttribute("aria-label", "Не получилось скопировать — скопируйте из адресной строки");
           shareResetTimer = setTimeout(resetShareBtn, 2400);
         });
     });

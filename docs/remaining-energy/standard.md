@@ -1,4 +1,4 @@
-# Standard 🌱
+# Стандарт (без ядер) 🌱
 
 <div class="build-card-row" markdown>
 <div class="build-card" data-updated="2026-09-15" markdown>
@@ -33,7 +33,7 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Note</span>About This Build<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>About This Build<span class="setup-note-arrow"></span></summary>
 
 Since this is a beginner legacy build, this guide strays slightly from the norm to offer a smoother experience without deep min-maxing. For instance, you won't need mana food or stimulants to enjoy the gameplay.
 
@@ -44,7 +44,7 @@ Since this is a beginner legacy build, this guide strays slightly from the norm 
 
 *New to Deathblade entirely? [Surge](../surge/essentials.md) is generally more beginner-friendly and outperforms RE Standard.*
 
-## Skill Codes
+## Код билда {#skill-codes}
 
 <!-- Paste the exported skill-code string (from the in-game loadout share
      feature) into the fenced code block below. Each `=== "Tab Name"` block is
@@ -55,7 +55,7 @@ Since this is a beginner legacy build, this guide strays slightly from the norm 
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="danger" open markdown>
-<summary><span class="setup-note-tag">Warn</span>Before Importing<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Внимание</span>Before Importing<span class="setup-note-arrow"></span></summary>
 
 Make sure you've read [Essentials](essentials.md), then apply both "<span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span>" and "Skill" to be safe. For [Gems](#gems), follow the guide.
 
@@ -70,7 +70,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
     5F7D5490D9E2C0E26CF09BBA7300EE3738585110117637ED10C8C1ED04B5AF1E35B6428D7172B4FB399678D0F83CE64D3232A844396609F8F5466877D357B98D
     ```
 
-## Ark Setup
+## Система А.Р.К. {#ark-setup}
 
 <!-- ark-passives / ark-cores JSON below use the site-wide node/core id
      vocabulary - each ark-passives node only needs its id + invested level,
@@ -117,14 +117,14 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Ark Passive<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize Evolution nodes.
+- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Note</span>Ark Grid<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Ark Grid<span class="setup-note-arrow"></span></summary>
 
 <div class="ark-cores" data-family="re" markdown>
 <script type="application/json">
@@ -145,7 +145,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Skill Setup
+## Набор навыков {#skill-setup}
 
 <!-- Full skill-setup schema (id/level/tripods/rune/subtitle/picks) is in
      javascripts/skill-setup.js's "EASY EDIT GUIDE" comment. Names, icons, and
@@ -175,9 +175,9 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Runes<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Runes<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Epic Wealth</span> on Soul Absorber for extra orb generation until you're more familiar with the class.
+- Use <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> on Soul Absorber for extra orb generation until you're more familiar with the class.
 
 </details>
 
@@ -185,7 +185,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Gems
+## Гемы {#gems}
 
 <!-- Ranked skill-id lists per column (dmg/cd), top = highest priority.
      Full schema, including the expandable "alts" form for a swappable
@@ -210,7 +210,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Rotation
+## Ротация {#rotation}
 
 <!-- Each `.rotation-line` is a compact JSON step list of skill ids in
      order - names/icons resolve automatically, same id vocabulary as Skill
@@ -254,7 +254,7 @@ The opener stacks <span class="skill-mention" data-skill-id="adrenaline">Адр�
 1. Use spare Twin Shadows or Maelstrom stacks to recover if it'll help you reach 3 orbs.
     - If not, just AFK or Surge with 2 orbs and AFK. Welcome to Standard Remaining Energy.
 
-## DPS Spread
+## Распределение Урона {#dps-spread}
 
 <!-- data-labels / data-values / data-ids are three parallel comma-separated
      lists, ordered highest % first - update after a fresh Trixion recording

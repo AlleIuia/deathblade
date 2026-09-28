@@ -1402,7 +1402,7 @@
           </select>
         </div>
         <div class="ap-calc-field-row ap-engr-mi-row">
-          <label class="ap-calc-field-label"><span class="skill-mention" data-skill-id="massincrease">Mass Increase</span> <input type="checkbox" class="ap-engr-mi-optin" checked title="Its -10% Attack Speed drawback isn't modeled here - uncheck this if you'd rather leave it out of the best-combo search."></label>
+          <label class="ap-calc-field-label"><span class="skill-mention" data-skill-id="massincrease">Карающая длань</span> <input type="checkbox" class="ap-engr-mi-optin" checked title="Its -10% Attack Speed drawback isn't modeled here - uncheck this if you'd rather leave it out of the best-combo search."></label>
           <select id="ap-engr-mi-level" class="ap-engr-mi-level" aria-label="Mass Increase Node Level">
             <option value="0 Nodes">0 Nodes</option>
             <option value="1 Nodes">1 Node</option>
@@ -1420,7 +1420,7 @@
           <input type="number" id="ap-engr-maelstrom-uptime" class="ap-engr-maelstrom-uptime" min="0" max="100" step="1" value="85">
         </div>
         <div class="ap-calc-field-row ap-engr-manafood-row">
-          <label class="ap-engr-checkbox-label" title="Only accurate if the Main Stat input in Character Data doesn't already include Mana Food's Main Stat bonus."><input type="checkbox" id="ap-engr-manafood" class="ap-engr-manafood" checked> <span class="ap-engr-manafood-label">Mana Food (+Maelstrom Bleed)</span></label>
+          <label class="ap-engr-checkbox-label" title="Only accurate if the Main Stat input in Character Data doesn't already include Mana Food's Main Stat bonus."><input type="checkbox" id="ap-engr-manafood" class="ap-engr-manafood" checked> <span class="ap-engr-manafood-label">Mana Food (+Maelstrom Джар)</span></label>
           <select id="ap-engr-manafood-amount" class="ap-engr-manafood-amount" aria-label="Mana Food Amount">
             <option value="6000" selected>6000 DEX</option>
             <option value="12000">12000 DEX</option>

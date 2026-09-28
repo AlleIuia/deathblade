@@ -21,34 +21,43 @@
    var() reference can't be concatenated with a trailing alpha suffix
    like that, so there's no way to express it via variable at all. */
 :root {
-  --dbc-pink: #e56c7e;         /* primary accent - Difficulty bar, danger admonition border, headers */
-  --dbc-pink-rgb: 229, 108, 126;
-  --dbc-teal: #59c08f;         /* Trixion DPS bar, h3 headings, "good"/on-track stat variant */
-  --dbc-teal-rgb: 89, 192, 143;
-  --dbc-lavender: #a6a2ad;     /* stat-label text, muted secondary accent - most-used color on the site */
-  --dbc-lavender-rgb: 166, 162, 173;
-  --dbc-purple: #a8a2b2;       /* h2 headings, Evolution-category accent */
+  /* ---------- Accent palette: five hues ----------
+     These used to be seventeen near-identical names for what is really five
+     colors, and the eye reads two names as two competing accents even when
+     the hexes differ by a couple of percent - a "teal" sitting next to a
+     "green" looked like a second signal, not the same one in a different
+     place. Each family now has exactly one shade, and the old names stay as
+     aliases so all ~700 existing call sites keep working untouched. */
+  --dbc-purple: #a8a2b2;        /* the neutral: panel/table borders, tints, muted labels */
   --dbc-purple-rgb: 168, 162, 178;
-  --dbc-lilac: #d2ced6;        /* light lavender body/label text */
-  --dbc-slate: #75707e;        /* muted purple-gray secondary text */
-  --dbc-slate-rgb: 117, 112, 126;
-  --dbc-red: #e05a6e;          /* danger/error accent, replaces Material's default #ff1744 */
+  --dbc-lavender: var(--dbc-purple);
+  --dbc-lavender-rgb: var(--dbc-purple-rgb);
+  --dbc-red: #e05a6e;           /* attention: h2 headings, table borders + edge glow, warn badges */
   --dbc-red-rgb: 224, 90, 110;
-  --dbc-rose: #f07f90;         /* secondary pink accent */
-  --dbc-rose-rgb: 240, 127, 144;
-  --dbc-gold: #e6b422;         /* warn/conditional accent */
-  --dbc-gold-rgb: 230, 180, 34;
-  --dbc-orange: #f0a868;       /* on-crit damage category accent */
-  --dbc-orange-rgb: 240, 168, 104;
-  --dbc-blue: #64b5f6;         /* info accent */
-  --dbc-blue-rgb: 100, 181, 246;
-  --dbc-blue-bright: #448aff;  /* Material's default admonition/info blue */
-  --dbc-sky: #7ec4e8;          /* additional damage category accent */
-  --dbc-pink-bright: #ffa3b0;  /* hover/active state pink - links, tabs, chips, section tracker */
-  --dbc-arrow: #b8b2c0;        /* rotation-line chevron color (.arrow/.arrow-swap) */
-  --dbc-green: #6ecb85;        /* rune-chip "uncommon" tier, tripod-chip tier 2 */
+  --dbc-rose: var(--dbc-red);
+  --dbc-rose-rgb: var(--dbc-red-rgb);
+  --dbc-pink: var(--dbc-red);
+  --dbc-pink-rgb: var(--dbc-red-rgb);
+  --dbc-green: #6ecb85;         /* positive/utility: h3 headings, tip badges, CD gems, nav-active */
   --dbc-green-rgb: 110, 203, 133;
-  --dbc-violet: #c77dff;       /* rune-chip "epic" tier, .skill-card border/hover glow */
+  --dbc-teal: var(--dbc-green);
+  --dbc-teal-rgb: var(--dbc-green-rgb);
+  --dbc-gold: #e6b422;          /* warn/conditional accent */
+  --dbc-gold-rgb: 230, 180, 34;
+  --dbc-blue: #64b5f6;          /* info: immunity tag, T1 tripod, Enlightenment column */
+  --dbc-blue-rgb: 100, 181, 246;
+  --dbc-sky: var(--dbc-blue);
+  /* Unrelated to the five above - body/label tints, a rarity color and
+     Material's own defaults, left exactly as they were. */
+  --dbc-lilac: #d2ced6;         /* light lavender body/label text */
+  --dbc-slate: #75707e;         /* muted purple-gray secondary text */
+  --dbc-slate-rgb: 117, 112, 126;
+  --dbc-orange: #f0a868;        /* on-crit damage category accent */
+  --dbc-orange-rgb: 240, 168, 104;
+  --dbc-blue-bright: #448aff;   /* Material's default admonition/info blue */
+  --dbc-pink-bright: #ffa3b0;   /* hover/active state pink - links, tabs, chips, section tracker */
+  --dbc-arrow: #b8b2c0;         /* rotation-line chevron color (.arrow/.arrow-swap) */
+  --dbc-violet: #c77dff;        /* rune-chip "epic" tier - a rarity color, NOT the site's accent */
   --dbc-violet-rgb: 199, 125, 255;
   --dbc-header-footer-bg: #1c1c1e; /* matches the rendered color of a lavender
     .setup-panel note (rgba(--dbc-purple-rgb, 0.045) over the page bg) - picked
@@ -170,9 +179,16 @@ html {
      the "sometimes it still shows blue" case.
    Hover already lands on the site's pink via Material's own
    --md-accent-fg-color hookup, so active/current is set to the site's
-   purple instead (same var as h2 headings/Evolution accent) - keeps
-   "hovering" and "this is where you are" visually distinct rather than
-   two shades of the same pink.
+   green (--dbc-green) instead - keeps "hovering" and "this is where you
+   are" clearly distinct rather than two shades of the same pink.
+   Green rather than the site's purple on purpose: --dbc-purple is
+   #a8a2b2, a desaturated lavender-gray all but identical to
+   --dbc-lavender (#a6a2ad) that the inactive links use, so "active" read
+   as a barely-darker gray instead of a color. Every active state in the
+   left sidebar - the current page, the ancestor section link
+   ("Остаточная энергия"), and whichever entry of the integrated TOC
+   (toc.integrate, so the page's own H2/H3 list sits in the same column as
+   the page list) you have scrolled to - is one signal and one color.
    !important: the compiled selector for the code-child case
    (".md-nav__item .md-nav__link--active code") has higher specificity
    than a plain ".md-nav__link--active code" override would, and
@@ -181,7 +197,7 @@ html {
 .md-nav__link--active,
 .md-nav__link--active code,
 .md-nav__item--active > .md-nav__link {
-  color: var(--dbc-purple) !important;
+  color: var(--dbc-green) !important;
 }
 
 /* Material gives every label-based nav title a generic background -
@@ -232,7 +248,18 @@ nav[data-md-level="0"] > .md-nav__list > .md-nav__item--nested:nth-of-type(3) > 
   font-weight: 700;
 }
 .md-tabs__item--active:nth-of-type(2) > .md-tabs__link { color: var(--dbc-pink-bright) !important; }
-.md-tabs__item--active:nth-of-type(3) > .md-tabs__link { color: var(--dbc-green) !important; }
+/* Surge's active tab is RED, not a brighter tone of its own teal. That is a
+   deliberate break from the "step up to the brighter tone of the same hue"
+   rule the two rules above follow: red is a second, unmistakable signal
+   sitting against the shared green active color the rest of the chrome uses
+   (see .md-nav__link--active), so a glance at the tab bar says which
+   specialization the page belongs to without reading the label. Teal stays
+   as the Surge tab's resting color, so the tab still reads as "Surge" when
+   you are elsewhere. --dbc-red rather than --dbc-rose or --dbc-pink: rose
+   is already Remaining Energy's resting color and pink-bright its active
+   one, so either of those would collide with the neighbouring tab instead
+   of contrasting with it. */
+.md-tabs__item--active:nth-of-type(3) > .md-tabs__link { color: var(--dbc-red) !important; }
 
 /* ---------- Search modal: same two Material defaults, same fix ---------- */
 /* The "N matching documents" meta strip at the top of each result group
@@ -293,7 +320,7 @@ h1, h2, h3 {
    the difficulty bar everywhere else) rather than the orphaned #e64a89
    this rule used to carry, which matched nothing else on the site. */
 .md-typeset h1 { color: var(--dbc-pink); }
-h2 { color: var(--dbc-purple); } /* muted lavender, used sparingly as an accent, not a fill color */
+h2 { color: var(--dbc-red); } /* section headings, red to pair with the red-bordered setup panels */
 h3 { color: var(--dbc-teal); }
 
 /* ---------- Lead paragraph (opt-in) ---------- */
@@ -311,7 +338,7 @@ h3 { color: var(--dbc-teal); }
 }
 
 /* ---------- Section breathing room (H2s read as chapter breaks) ---------- */
-/* Dense guide pages (Skill Codes -> Ark Setup -> Skill Setup -> Gems ->
+/* Dense guide pages (Skill Codes -> Система А.Р.К. -> Skill Setup -> Gems ->
    Rotation) previously gave every H2 the same spacing as any other heading,
    so a long page read as one continuous scroll of colored boxes. A little
    extra top margin plus a faint top border makes each H2 read as the start
@@ -619,7 +646,8 @@ h3 { color: var(--dbc-teal); }
    there. */
 .md-typeset .skills-table table {
   min-width: 560px;
-  border: 1px solid rgba(var(--dbc-purple-rgb), 0.3);
+  border: 1px solid rgba(var(--dbc-red-rgb), 0.18);
+  box-shadow: 0 0 16px -4px rgba(var(--dbc-red-rgb), 0.35);
   border-radius: 10px;
   overflow: hidden;
   background-color: rgba(var(--dbc-purple-rgb), 0.045);
@@ -649,7 +677,8 @@ h3 { color: var(--dbc-teal); }
    add visual noise for no readability gain. Wrap the markdown table in
    <div class="food-alt-table" markdown>...</div>. */
 .md-typeset .food-alt-table table {
-  border: 1px solid rgba(var(--dbc-purple-rgb), 0.3);
+  border: 1px solid rgba(var(--dbc-red-rgb), 0.18);
+  box-shadow: 0 0 16px -4px rgba(var(--dbc-red-rgb), 0.35);
   border-radius: 10px;
   overflow: hidden;
   background-color: rgba(var(--dbc-purple-rgb), 0.045);
@@ -822,11 +851,21 @@ h3 { color: var(--dbc-teal); }
    brightening genuinely has nowhere left to go), never flips to a
    darken. */
 .md-typeset .skill-mention {
-  transition: filter 0.15s ease;
+  /* Resting affordance. Until now the only hint that a term opens a tooltip
+     was cursor:help plus a brightness bump on hover, so nothing on the page
+     said which words were live - you had to happen to sweep the cursor over
+     them. A faint dotted underline marks them without spending another hue:
+     it reads as "defined term" the way a glossary does, and it stays quiet
+     because it is the same neutral every panel border already uses. */
+  text-decoration: underline dotted rgba(var(--dbc-purple-rgb), 0.4);
+  text-underline-offset: 0.2em;
+  transition: filter 0.15s ease, text-decoration-color 0.15s ease;
 }
 .md-typeset .skill-mention.skill-tip-anchor:hover,
 .md-typeset .skill-mention.skill-tip-anchor:focus-visible {
   filter: brightness(1.3);
+  text-decoration-color: rgba(var(--dbc-red-rgb), 0.7);
+  text-decoration-thickness: 1.5px;
 }
 
 /* ---------- Skill role tags (Essentials skill tables) ---------- */
@@ -1799,7 +1838,7 @@ h3 { color: var(--dbc-teal); }
 /* Structure: a <details> sitting after the card's normal .rotation-line
    stages, still inside the same .cycle-card-multi box:
    <details class="cycle-alt-branch" markdown>
-   <summary markdown="span">Alternative &middot; Awakening Follow-Up<span class="cycle-alt-arrow"></span></summary>
+   <summary markdown="span">Альтернатива &middot; Пробуждение на добивке<span class="cycle-alt-arrow"></span></summary>
    <div class="rotation-line" markdown>...its own steps...</div>
    </details>
 
@@ -2421,8 +2460,9 @@ h3 { color: var(--dbc-teal); }
    floating in the card" with no visual boundary telling you where the
    table starts, this reads as a distinct sub-panel instead. */
 .md-typeset .build-compare {
-  border: 1px solid rgba(var(--dbc-purple-rgb), 0.3);
+  border: 1px solid rgba(var(--dbc-red-rgb), 0.18);
   background-color: rgba(var(--dbc-purple-rgb), 0.045);
+  box-shadow: 0 0 16px -4px rgba(var(--dbc-red-rgb), 0.35);
   border-radius: 10px;
   padding: 1.1em 1.2em 1.1em;
   margin: 1em 0 1.5em;
@@ -2444,7 +2484,7 @@ h3 { color: var(--dbc-teal); }
      Fixed + explicit per-column percentages spreads that width out on
      purpose instead of leaving it to the browser's guess. */
   table-layout: fixed;
-  border: 1px solid rgba(var(--dbc-purple-rgb), 0.16);
+  border: 1px solid rgba(var(--dbc-red-rgb), 0.12);
   border-radius: 8px;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.025);
@@ -2510,7 +2550,7 @@ h3 { color: var(--dbc-teal); }
      .build-compare-body below supplies the actual gap via its own
      margin-top, sized to already account for this padding. */
   padding: 0.6em 2.1em 0.6em;
-  border-top: 1px solid rgba(var(--dbc-purple-rgb), 0.18);
+  border-top: 1px solid rgba(var(--dbc-red-rgb), 0.12);
 }
 .md-typeset .build-compare-controls {
   display: flex;
@@ -2537,7 +2577,7 @@ h3 { color: var(--dbc-teal); }
 }
 .md-typeset .build-compare-select {
   background-color: var(--md-default-bg-color);
-  border: 1px solid rgba(var(--dbc-purple-rgb), 0.35);
+  border: 1px solid rgba(var(--dbc-red-rgb), 0.3);
   border-radius: 6px;
   color: var(--md-default-fg-color);
   padding: 0.35em 0.6em;
@@ -2554,7 +2594,7 @@ h3 { color: var(--dbc-teal); }
 }
 .md-typeset .build-compare-select:focus {
   outline: none;
-  border-color: var(--dbc-purple);
+  border-color: var(--dbc-red);
 }
 .md-typeset .build-compare-vs {
   font-size: 0.75em;
@@ -2578,7 +2618,7 @@ h3 { color: var(--dbc-teal); }
   width: 1.8em;
   height: 1.8em;
   background: none;
-  border: 1px solid rgba(var(--dbc-purple-rgb), 0.25);
+  border: 1px solid rgba(var(--dbc-red-rgb), 0.25);
   border-radius: 6px;
   color: var(--dbc-lavender);
   opacity: 0.7;
@@ -2588,8 +2628,8 @@ h3 { color: var(--dbc-teal); }
 }
 .md-typeset .build-compare-share-btn:hover {
   opacity: 1;
-  color: var(--dbc-purple);
-  border-color: rgba(var(--dbc-purple-rgb), 0.5);
+  color: var(--dbc-red);
+  border-color: rgba(var(--dbc-red-rgb), 0.5);
 }
 .md-typeset .build-compare-share-btn svg {
   display: block;
@@ -2783,7 +2823,7 @@ h3 { color: var(--dbc-teal); }
    there) in Cursed Doll's place, with no Cursed Doll card at all.
 
    Two pieces, both living inside a shared .setup-panel[data-accent="lavender"]
-   (same wrapper as Ark Setup/Skill Setup, for the same "curated card, not a
+   (same wrapper as Система А.Р.К./Skill Setup, for the same "curated card, not a
    bolted-on admonition" reason - see that section's own comment):
 
    1. .engraving-loadout - a single-glance strip. Fixed engravings render as
@@ -2819,16 +2859,16 @@ h3 { color: var(--dbc-teal); }
    <div class="engraving-cards" markdown>
    <details class="engraving-card" data-accent="captain" open markdown>
    <summary>
-   <span class="engraving-card-name">Raid Captain</span>
+   <span class="engraving-card-name">Неутомимый натиск</span>
    <span class="engraving-card-badges" markdown>
-   <span class="engraving-card-badge engraving-card-badge-top">★ Recommended</span>
-   <span class="engraving-card-badge engraving-card-badge-food">Food Required</span>
+   <span class="engraving-card-badge engraving-card-badge-top">★ Рекомендуемая</span>
+   <span class="engraving-card-badge engraving-card-badge-food">Еда обязательна</span>
    </span>
    <span class="engraving-card-arrow"></span>
    </summary>
    <div class="engraving-card-body" markdown>
 
-   ![](icon){: .skill-icon } Vernese Wine + ![](icon){: .skill-icon } Feast
+   ![](icon){: .skill-icon } Бирнийское вино + ![](icon){: .skill-icon } Урон оружия(1800)/Иваентовая еда
    { .food-req }
 
    **Best For:**{: .best-for } players who want top ceiling damage.
@@ -2888,6 +2928,14 @@ h3 { color: var(--dbc-teal); }
 .md-typeset .engraving-loadout-group {
   display: block;
 }
+/* The two groups in the loadout are not equals: the first is the fixed core
+   every build here shares, the second is the reader's actual decision - so
+   the core group's label is simply set larger. Nothing else about the two
+   rows differs; an earlier attempt gave the core a filled green panel and a
+   pill label, which outweighed the chips it was meant to introduce. */
+.md-typeset .engraving-loadout-group-always .engraving-loadout-label {
+  font-size: 0.8rem;
+}
 .md-typeset .engraving-loadout-group > p {
   display: flex;
   flex-wrap: wrap;
@@ -2943,7 +2991,7 @@ h3 { color: var(--dbc-teal); }
 }
 /* A fixed engraving can still carry a hard food requirement (e.g. Raid
    Captain on the RE page, where it's always equipped but pointless without
-   Atk/Move Speed feast) - it doesn't get its own card to explain that (it's
+   Урон оружия(1800)/Иваентовая еда) - it doesn't get its own card to explain that (it's
    not a choice), so the requirement has to read directly off the chip
    instead. Pink accent (matches .food-required-lead's own "required"
    color) plus the same feast icon used everywhere else on the site for
@@ -2983,7 +3031,7 @@ h3 { color: var(--dbc-teal); }
    Usage, inside the same .engraving-loadout-group as the chip:
    <span class="engraving-chip engraving-chip-food">...Raid Captain</span>
    <span class="engraving-loadout-note">![](icon){: .skill-icon } requires
-   Atk/Move Speed feast</span> */
+   Урон оружия(1800)/Иваентовая еда</span> */
 .md-typeset .engraving-loadout-note {
   display: inline-flex;
   vertical-align: middle;
@@ -3079,28 +3127,28 @@ h3 { color: var(--dbc-teal); }
 }
 
 
-.md-typeset details.engraving-card[data-accent="captain"] { border-color: rgba(var(--dbc-rose-rgb), 0.35); background-color: rgba(var(--dbc-rose-rgb), 0.05); }
+.md-typeset details.engraving-card[data-accent="captain"] { border-color: rgba(var(--dbc-red-rgb), 0.15); background-color: rgba(var(--dbc-red-rgb), 0.02); }
 .md-typeset details.engraving-card[data-accent="captain"]:hover,
-.md-typeset details.engraving-card[data-accent="captain"][open] { border-color: rgba(var(--dbc-rose-rgb), 0.6); }
+.md-typeset details.engraving-card[data-accent="captain"][open] { border-color: rgba(var(--dbc-red-rgb), 0.28); }
 
-.md-typeset details.engraving-card[data-accent="kbw"] { border-color: rgba(var(--dbc-teal-rgb), 0.35); background-color: rgba(var(--dbc-teal-rgb), 0.05); }
+.md-typeset details.engraving-card[data-accent="kbw"] { border-color: rgba(var(--dbc-red-rgb), 0.15); background-color: rgba(var(--dbc-red-rgb), 0.02); }
 .md-typeset details.engraving-card[data-accent="kbw"]:hover,
-.md-typeset details.engraving-card[data-accent="kbw"][open] { border-color: rgba(var(--dbc-teal-rgb), 0.6); }
+.md-typeset details.engraving-card[data-accent="kbw"][open] { border-color: rgba(var(--dbc-red-rgb), 0.28); }
 
-.md-typeset details.engraving-card[data-accent="mass"] { border-color: rgba(var(--dbc-purple-rgb), 0.35); background-color: rgba(var(--dbc-purple-rgb), 0.05); }
+.md-typeset details.engraving-card[data-accent="mass"] { border-color: rgba(var(--dbc-red-rgb), 0.15); background-color: rgba(var(--dbc-red-rgb), 0.02); }
 .md-typeset details.engraving-card[data-accent="mass"]:hover,
-.md-typeset details.engraving-card[data-accent="mass"][open] { border-color: rgba(var(--dbc-purple-rgb), 0.6); }
+.md-typeset details.engraving-card[data-accent="mass"][open] { border-color: rgba(var(--dbc-red-rgb), 0.28); }
 
-.md-typeset details.engraving-card[data-accent="combo"] { border-color: rgba(229, 108, 126, 0.35); background-color: rgba(229, 108, 126, 0.05); }
+.md-typeset details.engraving-card[data-accent="combo"] { border-color: rgba(var(--dbc-green-rgb), 0.38); background-color: rgba(var(--dbc-green-rgb), 0.05); }
 .md-typeset details.engraving-card[data-accent="combo"]:hover,
-.md-typeset details.engraving-card[data-accent="combo"][open] { border-color: rgba(229, 108, 126, 0.6); }
+.md-typeset details.engraving-card[data-accent="combo"][open] { border-color: rgba(var(--dbc-green-rgb), 0.6); }
 
 /* Deep pastel red - Cursed Doll's own in-game engraving color, kept
    within the same low-opacity pastel treatment as the other accents
    above so it doesn't clash. */
-.md-typeset details.engraving-card[data-accent="cursed"] { border-color: rgba(var(--dbc-red-rgb), 0.35); background-color: rgba(var(--dbc-red-rgb), 0.05); }
+.md-typeset details.engraving-card[data-accent="cursed"] { border-color: rgba(var(--dbc-red-rgb), 0.15); background-color: rgba(var(--dbc-red-rgb), 0.02); }
 .md-typeset details.engraving-card[data-accent="cursed"]:hover,
-.md-typeset details.engraving-card[data-accent="cursed"][open] { border-color: rgba(var(--dbc-red-rgb), 0.6); }
+.md-typeset details.engraving-card[data-accent="cursed"][open] { border-color: rgba(var(--dbc-red-rgb), 0.28); }
 
 /* Explicit resets for the same reason .setup-note/.skill-card need them -
    Material's base .md-typeset details rule sets its own border/background/
@@ -3142,6 +3190,27 @@ h3 { color: var(--dbc-teal); }
    card-collapse-disabling trick above isn't undone anywhere else. */
 .md-typeset .engraving-card-name {
   pointer-events: auto;
+}
+/* The engraving chips and card names show the item's own icon (icon-<id>.png,
+   the same file skill-tooltip.js resolves from the id), so "what do I equip"
+   is answerable by picture alone. img.skill-icon's own defaults are tuned for
+   inline prose mentions: 1.1em off a 0.8em chip would come out around 9px -
+   too small to recognise an engraving by. Sized up here, and the 4px left
+   margin that default carries (meant to clear a preceding word) dropped in
+   favour of a single gap after the icon. */
+.md-typeset .engraving-chip img.skill-icon {
+  height: 20px;
+  width: 20px;
+  margin: 0 0.45em 0 0;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.md-typeset .engraving-card-name img.skill-icon {
+  height: 28px;
+  width: 28px;
+  margin: 0 0.35em 0 0;
+  border-radius: 4px;
+  vertical-align: middle;
 }
 .md-typeset .engraving-cards details.engraving-card:focus-within {
   box-shadow: none;
@@ -3219,12 +3288,15 @@ h3 { color: var(--dbc-teal); }
   background-color: rgba(var(--dbc-rose-rgb), 0.14);
   border-color: rgba(var(--dbc-rose-rgb), 0.4);
 }
-/* Orchid - the same blended pink/lavender the old combo card used, still
-   reserved for a combined-engraving ceiling pick. */
+/* "Ceiling" - the ★ Потолок badge that rides the combined-engraving pair
+   card, so it follows that card's green. Was a hardcoded orchid (#e56c7e and
+   its rgb triplet) from before the palette was consolidated; the hex also
+   happened to be the retired --dbc-pink value, which is now an alias of red,
+   so leaving it would have read as a red badge on a green card. */
 .md-typeset .engraving-card-badge-ceiling {
-  color: #e56c7e;
-  background-color: rgba(229, 108, 126, 0.14);
-  border-color: rgba(229, 108, 126, 0.4);
+  color: var(--dbc-green);
+  background-color: rgba(var(--dbc-green-rgb), 0.14);
+  border-color: rgba(var(--dbc-green-rgb), 0.4);
 }
 
 /* Cards no longer collapse (see the summary rule above), so the arrow
@@ -3264,7 +3336,7 @@ h3 { color: var(--dbc-teal); }
 /* Small muted requirement line under a card title, before the descriptive
    sentence below it. Usage: a line of icon(s) + text wrapped in
    `{ .food-req }`, e.g.:
-   ![](icon){: .skill-icon } Vernese Wine + ![](icon){: .skill-icon } Feast
+   ![](icon){: .skill-icon } Бирнийское вино + ![](icon){: .skill-icon } Урон оружия(1800)/Иваентовая еда
    { .food-req } */
 .md-typeset .food-req {
   display: flex;
@@ -7212,7 +7284,7 @@ h3 { color: var(--dbc-teal); }
    past next to the row's other small circular icon, where a wider red
    pill with an actual word on it draws the eye the way .setup-note-tag's
    own Warn pill does elsewhere on the site. Auto width (not
-   .setup-note-tag's fixed 52px column - this isn't stacked in a column
+   .setup-note-tag's own min-width floor - this isn't stacked in a column
    of same-purpose siblings that need to align) sized from the "WARN"
    text itself via padding. */
 .md-typeset .ap-brace-warn-icon {
@@ -8435,7 +8507,7 @@ body.page-333-blitz input[type="text"] {
    these is just a hook for any future visual distinction - nothing
    currently keys off it. */
 .md-typeset .skill-card[open] {
-  border-color: rgba(var(--dbc-violet-rgb), 0.6);
+  border-color: rgba(var(--dbc-rose-rgb), 0.6);
 }
 /* A little softness/polish to match the rest of the site's pastel feel -
    closed cards glow faintly on hover so the grid feels touchable rather
@@ -8444,16 +8516,24 @@ body.page-333-blitz input[type="text"] {
 /* No translateY lift here on purpose - the card's transform is already
    owned by skill-setup.js's masonry positioning (an inline style, which
    always wins over a stylesheet transform even on :hover), so this stays
-   to glow/border-only feedback that layers on top of it instead. */
+   to glow/border-only feedback that layers on top of it instead.
+   Rose, not violet: these three states (open border, hover border, and
+   the icon glow just below) are the accent color a skill card shows the
+   moment you touch it, and the site's own accent is red - --dbc-rose is
+   the same hover pink .gem-item-icon and the rotation chips already use.
+   Violet was left over from when --dbc-violet doubled as the card accent,
+   which read as a random purple ring on a red-themed page. --dbc-violet
+   itself stays exactly as it is: it's still the correct color for an EPIC
+   rune's own tier chip, which is a rarity, not a theme. */
 .md-typeset .skill-card:not([open]):hover {
-  border-color: rgba(var(--dbc-violet-rgb), 0.4);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(var(--dbc-violet-rgb), 0.15);
+  border-color: rgba(var(--dbc-rose-rgb), 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(var(--dbc-rose-rgb), 0.15);
 }
 .md-typeset .skill-card-icon {
   transition: box-shadow 0.15s ease;
 }
 .md-typeset .skill-card:hover .skill-card-icon {
-  box-shadow: 0 0 0 1px rgba(var(--dbc-violet-rgb), 0.55), 0 0 10px rgba(var(--dbc-violet-rgb), 0.4);
+  box-shadow: 0 0 0 1px rgba(var(--dbc-rose-rgb), 0.55), 0 0 10px rgba(var(--dbc-rose-rgb), 0.4);
 }
 /* Overrides the sitewide details:not([open]) opacity dimming (meant for
    ??? admonitions) — a skill card is core reference content, not optional
@@ -8644,28 +8724,31 @@ body.page-333-blitz input[type="text"] {
 .md-typeset .tripod-chip.tripod-chip-empty {
   visibility: hidden;
 }
-/* Rune chip — text pill instead of an icon (no rune icon set either),
-   colored by the site's four rune tiers: uncommon < rare < epic <
+/* Rune chip — the site's four rune tiers: uncommon < rare < epic <
    legendary (the actual Lost Ark rarity names - see rune-data.js's own
    header comment on why this file's class suffixes match those names
    instead of the chip's display colors).
-   FIXED width (not min-width - min-width still let a wide name like
-   "Galewind" grow past a short one like "Rage"'s box, so the group was
-   still misaligned - this needs a hard ceiling, not just a floor) +
-   centered, truncating text so the rune name's length never changes this
-   chip's own width - if it did, the tripod chips sitting to its left
-   (same flex row, whole group right-aligned via .skill-card-chips'
-   margin-left: auto) would shift left/right card to card depending on
-   which rune each row happens to use, instead of lining up in a column
-   down the grid. 10ch comfortably fits every rune name currently in use
-   ("Galewind" is the longest at 8) with room to spare; text-overflow
-   safety net in case a future rune name runs longer. */
+   This base rule is the plain filled-pill shape, kept as the fallback for
+   a rune with no art file - see .rune-chip-tile below, which is what every
+   rune actually renders as today. Fixed width (not min-width - min-width
+   still let a wide name like "Galewind" grow past a short one like
+   "Rage"'s box, so the group was still misaligned - this needs a hard
+   ceiling, not just a floor) + centered, truncating text so the rune
+   name's length never changes this chip's own width - if it did, the
+   tripod chips sitting to its left (same flex row, whole group
+   right-aligned via .skill-card-chips' margin-left: auto) would shift
+   left/right card to card depending on which rune each row happens to
+   use, instead of lining up in a column down the grid. 10ch comfortably
+   fits every rune name currently in use ("Galewind" is the longest at 8)
+   with room to spare; text-overflow safety net in case a future rune
+   name runs longer. */
 .md-typeset .rune-chip {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 10ch;
+  gap: 0.3em;
+  min-width: 10ch;
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 0.64rem;
@@ -8677,6 +8760,20 @@ body.page-333-blitz input[type="text"] {
   white-space: nowrap;
   flex-shrink: 0;
   transition: border-color 0.15s ease;
+}
+/* Rune icon (skill-setup.js's .rune-chip-icon) - sized off the chip's own
+   font-size rather than a fixed px so it tracks the 0.64rem chip text at
+   every zoom level. This is the bare-icon fallback sizing, kept for a rune
+   whose art file 404s (skill-setup.js's own error handler drops the whole
+   tile, but the rule still has to hold if an <img> is ever handed a chip
+   directly); a rune that DOES ship art is sized by the .rune-chip-tile-box
+   rules further down instead, which inset it to a fixed px inside the
+   tile. */
+.md-typeset .rune-chip .rune-chip-icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 .md-typeset .rune-chip.rune-uncommon {
   background-color: rgba(var(--dbc-green-rgb), 0.14);
@@ -8706,7 +8803,9 @@ body.page-333-blitz input[type="text"] {
    (brighten the tier's own border rather than jump to a flat accent, no
    new background layered on top of the existing fill). Own rune-* class
    in each selector so every tier brightens its own color, not just the
-   tier written last in the cascade. */
+   tier written last in the cascade. These are the plain-pill states only -
+   a tiled chip has no border of its own, so the .rune-chip-tile-box rules
+   further down brighten the tile's border instead. */
 .md-typeset .rune-chip.rune-uncommon.skill-tip-anchor:hover,
 .md-typeset .rune-chip.rune-uncommon.skill-tip-anchor:focus-visible {
   border-color: rgba(var(--dbc-green-rgb), 0.8);
@@ -8722,6 +8821,120 @@ body.page-333-blitz input[type="text"] {
 .md-typeset .rune-chip.rune-epic.skill-tip-anchor:hover,
 .md-typeset .rune-chip.rune-epic.skill-tip-anchor:focus-visible {
   border-color: rgba(var(--dbc-violet-rgb), 0.85);
+}
+/* Icon-tiled chip - what a rune with art actually renders as (skill-setup.js
+   adds .rune-chip-tile at build time, the moment it wraps the rune's <img>
+   in a .rune-chip-tile-box, and takes both back off on that img's error
+   event, so a rune with no art file falls back to the plain filled pill
+   above with no second render path).
+
+   The chip itself drops its own fill/border/padding and goes back to being
+   just the hover target for the "icon + name" pair; the rarity color moves
+   onto a tile box wrapping the icon, which is what actually gets colored.
+
+   The icon fills that box's content area edge to edge, so the box's
+   box-sizing: border-box width IS the icon's size and the only thing
+   between the art and the outside is the box's own 2px border. That
+   border is therefore the whole rarity read, and there is deliberately NO
+   background-color on the box: every rune-icons/*.png is an opaque stone
+   tablet covering ~89% of its own 64x64 frame, so at a 2px inset a fill
+   would be reduced to a 1px sliver either side of the art - effectively
+   invisible, and dead CSS pretending to be a design decision. An earlier
+   pass here had it the other way round (3px inset, 0.4-alpha fill doing
+   the identifying) and the glyph read as a small stamp in the middle of a
+   colored box; the icon being the square is worth more than the fill.
+   Dropping the fill is what lets the icon be this big, and rarity is not
+   actually lost - it just moved from a wash behind the art to a ring
+   around it, the same convention every other icon on the site already
+   wears (.skill-card-icon, .gem-item-icon, .skill-tip-icon).
+
+   The name stays as plain text to the right, with no fill of its own and no
+   background at all, picking up the chip's per-tier text color as-is.
+   Fixed box so every tile is the same size regardless of which rune it is
+   and the chips row still lines up card to card - the same reason the text
+   pill needs its width ceiling above. 32px rather than the 22px .tripod-
+   chip next to it because the rune art is mostly a dark stone tablet with
+   a thin bright glyph on it (measured: only ~21% of pixels are the bright
+   yellow mark, ~11% for poison/vision, and mean luminance is ~85/255), so
+   at the tripods' size the glyph all but disappears into the card. The
+   0.75rem label matches the taller tile - the inherited 0.64rem chip text
+   left the word looking like a caption under a thumbnail. */
+.md-typeset .rune-chip.rune-chip-tile {
+  min-width: 0;
+  padding: 0;
+  gap: 0.4em;
+  border: 0;
+  background-color: transparent;
+  /* The base .rune-chip clips (overflow: hidden) so a long rune name
+     ellipsizes; the tile's own border and hover glow draw OUTSIDE the box,
+     so that clip has to go here or it eats them. */
+  overflow: visible;
+  text-overflow: clip;
+  transition: color 0.15s ease;
+}
+.md-typeset .rune-chip .rune-chip-tile-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+}
+.md-typeset .rune-chip .rune-chip-tile-box .rune-chip-icon {
+  /* 100% of the content box, i.e. 32px minus the 2px border on each side -
+     the art IS the square, with nothing but the tier-colored ring outside
+     it. Fixed px rather than 100% so the art can't be squeezed by a
+     long rune name in the flex row next to it. */
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+.md-typeset .rune-chip.rune-chip-tile .rune-chip-label {
+  font-size: 0.75rem;
+}
+/* Per-tier ring, same colors as the text pill's own .rune-chip.rune-*
+   rules above but opaque enough to carry the rarity on its own - it's the
+   only colored thing left on the tile (see this block's comment on why the
+   fill went away). Alphas sit at 0.7 so the ring reads as a solid line
+   rather than a tinted edge. */
+.md-typeset .rune-chip.rune-uncommon .rune-chip-tile-box {
+  border-color: rgba(var(--dbc-green-rgb), 0.7);
+}
+.md-typeset .rune-chip.rune-rare .rune-chip-tile-box {
+  border-color: rgba(var(--dbc-blue-rgb), 0.7);
+}
+.md-typeset .rune-chip.rune-epic .rune-chip-tile-box {
+  border-color: rgba(var(--dbc-violet-rgb), 0.75);
+}
+.md-typeset .rune-chip.rune-legendary .rune-chip-tile-box {
+  border-color: rgba(var(--dbc-orange-rgb), 0.75);
+}
+/* Hover/focus cue for the tiled layout - the same border-brighten the text
+   pill's rules further up do, retargeted onto the tile box (the chip has no
+   border of its own in this layout) plus a soft tier-colored glow, the same
+   treatment the gem-row icon hovers use. */
+.md-typeset .rune-chip.rune-uncommon.skill-tip-anchor:hover .rune-chip-tile-box,
+.md-typeset .rune-chip.rune-uncommon.skill-tip-anchor:focus-visible .rune-chip-tile-box {
+  border-color: rgba(var(--dbc-green-rgb), 0.9);
+  box-shadow: 0 0 8px rgba(var(--dbc-green-rgb), 0.45);
+}
+.md-typeset .rune-chip.rune-rare.skill-tip-anchor:hover .rune-chip-tile-box,
+.md-typeset .rune-chip.rune-rare.skill-tip-anchor:focus-visible .rune-chip-tile-box {
+  border-color: rgba(var(--dbc-blue-rgb), 0.9);
+  box-shadow: 0 0 8px rgba(var(--dbc-blue-rgb), 0.45);
+}
+.md-typeset .rune-chip.rune-epic.skill-tip-anchor:hover .rune-chip-tile-box,
+.md-typeset .rune-chip.rune-epic.skill-tip-anchor:focus-visible .rune-chip-tile-box {
+  border-color: rgba(var(--dbc-violet-rgb), 0.9);
+  box-shadow: 0 0 8px rgba(var(--dbc-violet-rgb), 0.45);
+}
+.md-typeset .rune-chip.rune-legendary.skill-tip-anchor:hover .rune-chip-tile-box,
+.md-typeset .rune-chip.rune-legendary.skill-tip-anchor:focus-visible .rune-chip-tile-box {
+  border-color: rgba(var(--dbc-orange-rgb), 0.9);
+  box-shadow: 0 0 8px rgba(var(--dbc-orange-rgb), 0.45);
 }
 /* rune-tooltip.js's tooltip - same "muted label line under the title"
    idea as .ap-node-tip-level (see that rule's own comment), but tinted
@@ -8843,7 +9056,7 @@ body.page-333-blitz input[type="text"] {
   margin: 0.2em 0;
 }
 
-/* ---------- Ark Grid Order Cores (Ark Setup section) ---------- */
+/* ---------- Ark Grid Order Cores (Система А.Р.К. section) ---------- */
 /* Rendered by javascripts/ark-core-badge.js from a JSON blob - see that
    file's header comment for the authoring format. Small and compact on
    purpose: this replaces a full ordercores-*.png screenshot (the whole
@@ -8854,7 +9067,7 @@ body.page-333-blitz input[type="text"] {
    rather than the Relic-red this used to reach for from the core icon art
    (sun.png/moon.png/star.png are Relic-quality gems) - the red read as an
    unrelated, more saturated component bolted onto a page whose build
-   cards and Ark Setup panel are both already pink, instead of a variant
+   cards and Система А.Р.К. panel are both already pink, instead of a variant
    of them. */
 .md-typeset .ark-core-row {
   display: grid;
@@ -9440,13 +9653,16 @@ body.page-333-blitz input[type="text"] {
    compact variant below overrides this to auto-fill instead of auto-fit
    for a different reason - see its own comment.)
 
-   Column accents intentionally reuse hues already meaningful elsewhere on
-   the site rather than lifting the in-game gold/blue/green directly:
-   amber (var(--dbc-orange), same as .ark-core-dot-on/.rune-legendary) for Evolution,
-   lavender (var(--dbc-purple), same as .setup-panel[data-accent="lavender"]) for
-   Enlightenment, teal (var(--dbc-teal), same as .tag-util/.gem-col-cd) for Leap -
-   so this reads as three accents from this site's own palette, not a
-   re-skin of the game's UI or of mokokompendium's reference layout. */
+   Column accents track the game's own gold/blue/green, reused as the
+   nearest hue this site already has rather than copied pixel-exact:
+   amber (var(--dbc-orange), same as .ark-core-dot-on/.rune-legendary) for
+   Evolution against in-game gold, blue (var(--dbc-blue)) for Enlightenment
+   against in-game blue, teal (var(--dbc-teal), same as .tag-util/.gem-col-cd)
+   for Leap against in-game green - so all three columns read as one family
+   with the game's own colour identity intact. Enlightenment used to be
+   lavender (var(--dbc-purple)); the game's outline for that column is
+   blue, confirmed against in-game screenshots, and lavender was the one
+   column that did not match. */
 .md-typeset .ark-passives {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -9482,7 +9698,7 @@ body.page-333-blitz input[type="text"] {
   transition: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
 }
 .md-typeset .ark-passive-col[data-column="evolution"] { border-color: rgba(var(--dbc-orange-rgb), 0.22); }
-.md-typeset .ark-passive-col[data-column="enlightenment"] { border-color: rgba(var(--dbc-purple-rgb), 0.22); }
+.md-typeset .ark-passive-col[data-column="enlightenment"] { border-color: rgba(var(--dbc-blue-rgb), 0.22); }
 .md-typeset .ark-passive-col[data-column="leap"] { border-color: rgba(var(--dbc-teal-rgb), 0.22); }
 /* Same hover treatment as .ark-core-item below it (border brightens,
    background lifts slightly, accent-colored glow) so the two widget
@@ -9494,9 +9710,9 @@ body.page-333-blitz input[type="text"] {
   box-shadow: 0 0 0 1px rgba(var(--dbc-orange-rgb), 0.15), 0 0 10px rgba(var(--dbc-orange-rgb), 0.2);
 }
 .md-typeset .ark-passive-col[data-column="enlightenment"]:hover {
-  border-color: rgba(var(--dbc-purple-rgb), 0.5);
+  border-color: rgba(var(--dbc-blue-rgb), 0.5);
   background-color: rgba(255, 255, 255, 0.04);
-  box-shadow: 0 0 0 1px rgba(var(--dbc-purple-rgb), 0.15), 0 0 10px rgba(var(--dbc-purple-rgb), 0.2);
+  box-shadow: 0 0 0 1px rgba(var(--dbc-blue-rgb), 0.15), 0 0 10px rgba(var(--dbc-blue-rgb), 0.2);
 }
 .md-typeset .ark-passive-col[data-column="leap"]:hover {
   border-color: rgba(var(--dbc-teal-rgb), 0.5);
@@ -9523,7 +9739,7 @@ body.page-333-blitz input[type="text"] {
   font-weight: 600;
 }
 .md-typeset .ark-passive-col[data-column="evolution"] .ark-passive-col-title { color: var(--dbc-orange); }
-.md-typeset .ark-passive-col[data-column="enlightenment"] .ark-passive-col-title { color: var(--dbc-purple); }
+.md-typeset .ark-passive-col[data-column="enlightenment"] .ark-passive-col-title { color: var(--dbc-blue); }
 .md-typeset .ark-passive-col[data-column="leap"] .ark-passive-col-title { color: var(--dbc-teal); }
 
 /* Tiers render as a simple vertical stack, one per line, in reading
@@ -9576,7 +9792,7 @@ body.page-333-blitz input[type="text"] {
   box-shadow: 0 0 0 1px rgba(var(--dbc-orange-rgb), 0.45), 0 0 6px rgba(var(--dbc-orange-rgb), 0.25);
 }
 .md-typeset .ark-passive-col[data-column="enlightenment"] .ark-passive-node-icon {
-  box-shadow: 0 0 0 1px rgba(var(--dbc-purple-rgb), 0.45), 0 0 6px rgba(var(--dbc-purple-rgb), 0.25);
+  box-shadow: 0 0 0 1px rgba(var(--dbc-blue-rgb), 0.45), 0 0 6px rgba(var(--dbc-blue-rgb), 0.25);
 }
 .md-typeset .ark-passive-col[data-column="leap"] .ark-passive-node-icon {
   box-shadow: 0 0 0 1px rgba(var(--dbc-teal-rgb), 0.45), 0 0 6px rgba(var(--dbc-teal-rgb), 0.25);
@@ -9600,7 +9816,7 @@ body.page-333-blitz input[type="text"] {
    always-on column ring (same alpha jump as img.skill-icon.skill-tip-
    anchor's hover elsewhere) and lifts the name to that same column
    color, rather than introducing a new accent - a node's column
-   identity (orange/purple/teal) is core to reading this widget, so the
+   identity (orange/blue/teal) is core to reading this widget, so the
    hover cue reinforces it instead of overriding it with a flat lavender/
    purple the way .skill-inline-name does. No background fill, same
    "ring, not a highlight block" language as .skill-mention/.food-req-
@@ -9618,11 +9834,11 @@ body.page-333-blitz input[type="text"] {
 }
 .md-typeset .ark-passive-col[data-column="enlightenment"] .ark-passive-node.skill-tip-anchor:hover .ark-passive-node-icon,
 .md-typeset .ark-passive-col[data-column="enlightenment"] .ark-passive-node.skill-tip-anchor:focus-visible .ark-passive-node-icon {
-  box-shadow: 0 0 0 1px rgba(var(--dbc-purple-rgb), 0.8), 0 0 8px rgba(var(--dbc-purple-rgb), 0.45);
+  box-shadow: 0 0 0 1px rgba(var(--dbc-blue-rgb), 0.8), 0 0 8px rgba(var(--dbc-blue-rgb), 0.45);
 }
 .md-typeset .ark-passive-col[data-column="enlightenment"] .ark-passive-node.skill-tip-anchor:hover .ark-passive-node-name,
 .md-typeset .ark-passive-col[data-column="enlightenment"] .ark-passive-node.skill-tip-anchor:focus-visible .ark-passive-node-name {
-  color: var(--dbc-purple);
+  color: var(--dbc-blue);
 }
 .md-typeset .ark-passive-col[data-column="leap"] .ark-passive-node.skill-tip-anchor:hover .ark-passive-node-icon,
 .md-typeset .ark-passive-col[data-column="leap"] .ark-passive-node.skill-tip-anchor:focus-visible .ark-passive-node-icon {
@@ -9661,8 +9877,8 @@ body.page-333-blitz input[type="text"] {
   background-color: rgba(var(--dbc-orange-rgb), 0.14);
 }
 .md-typeset .ark-passive-col[data-column="enlightenment"] .ark-passive-node-level[data-maxed="true"] {
-  color: var(--dbc-purple);
-  background-color: rgba(var(--dbc-purple-rgb), 0.14);
+  color: var(--dbc-blue);
+  background-color: rgba(var(--dbc-blue-rgb), 0.14);
 }
 .md-typeset .ark-passive-col[data-column="leap"] .ark-passive-node-level[data-maxed="true"] {
   color: var(--dbc-teal);
@@ -9672,10 +9888,10 @@ body.page-333-blitz input[type="text"] {
 /* Compact variant - one or more Ark Passive columns pasted as a
    supplementary reference inside a setup-note body (e.g. 333-ceiling.md's
    "Orb Circulation 5" alternative), rather than the page's own full-size
-   "## Ark Setup" widget. Same widget, same JSON shape, just scaled down
+   "## Система А.Р.К." widget. Same widget, same JSON shape, just scaled down
    across every part (icon, text, padding) so it reads as a small aside
    next to the note's own bullet list instead of a second full-weight
-   Ark Setup section competing with the real one higher up the page. */
+   Система А.Р.К. section competing with the real one higher up the page. */
 .md-typeset .ark-passives.ark-passives-compact {
   margin: 0.7em 0 0;
   /* auto-fill instead of the base rule's auto-fit: auto-fit collapses
@@ -9736,7 +9952,7 @@ body.page-333-blitz input[type="text"] {
 }
 
 /* ==========================================================================
-   Setup panel + setup notes — Ark Setup / Skill Setup sections
+   Setup panel + setup notes — Система А.Р.К. / Skill Setup sections
    ========================================================================== */
 /* .setup-panel wraps a section's widget (.ark-cores or .skill-setup) AND
    its own follow-up notes in one shared card, e.g.:
@@ -9753,7 +9969,7 @@ body.page-333-blitz input[type="text"] {
    </div>
    </div>
 
-   data-accent - "pink" (matches .build-card, use for Ark Setup) or
+   data-accent - "pink" (matches .build-card, use for Система А.Р.К.) or
                  "lavender" (matches .build-compare/.skill-card, use for
                  Skill Setup).
 
@@ -9775,10 +9991,10 @@ body.page-333-blitz input[type="text"] {
   background-color: rgba(var(--dbc-rose-rgb), 0.045);
 }
 .md-typeset .setup-panel[data-accent="lavender"] {
-  border: 1px solid rgba(var(--dbc-purple-rgb), 0.3);
+  border: 1px solid rgba(var(--dbc-red-rgb), 0.3);
   background-color: rgba(var(--dbc-purple-rgb), 0.045);
 }
-/* "neutral" - for Ark Setup specifically, now that it holds the Ark
+/* "neutral" - for Система А.Р.К. specifically, now that it holds the Ark
    Passive tree's own three tinted column cards plus the pink-accented
    Ark Grid cores cards. A pink outer panel on top of those competed with
    them instead of framing them, so this is a quiet gray/white surface
@@ -9794,7 +10010,7 @@ body.page-333-blitz input[type="text"] {
   margin: 0;
 }
 /* When both widgets share one setup-panel (Ark Passive tree above Ark
-   Grid Order Cores - both are "Ark Setup" content, kept together instead
+   Grid Order Cores - both are "Система А.Р.К." content, kept together instead
    of two separate cards), previously divided with a hairline border like
    .setup-notes gets from the widget above it. Dropped the divider (and
    the extra padding-top it justified) so the core row instead sits the
@@ -9830,7 +10046,7 @@ body.page-333-blitz input[type="text"] {
   padding-top: 1.1em;
 }
 /* A bare .setup-notes with no widget above it (e.g. the Standard build's
-   Ark Setup, which has no ark-cores badge to attach to) still gets the
+   Система А.Р.К., which has no ark-cores badge to attach to) still gets the
    full card treatment via its own .setup-panel wrapper - just without a
    divider, since there's nothing above to divide from. */
 .md-typeset .setup-panel > .setup-notes:first-child {
@@ -10006,13 +10222,14 @@ body.page-333-blitz input[type="text"] {
 .md-typeset .setup-note-tag {
   display: inline-block;
   flex-shrink: 0;
-  width: 52px;
+  min-width: 52px;
   text-align: center;
   font-size: 0.6rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  padding: 0.18em 0;
+  padding: 0.18em 0.5em;
+  white-space: nowrap;
   border-radius: 999px;
   border: 1px solid transparent;
 }
@@ -10163,7 +10380,7 @@ body.page-333-blitz input[type="text"] {
    <div class="setup-panel" data-accent="pink" markdown>
    <div class="setup-notes" markdown>
 
-   <p class="food-required-lead">Mana food and Atk/Move Speed feast are
+   <p class="food-required-lead">Mana food and Урон оружия(1800)/Иваентовая еда are
    **required** to play Ark Grid Remaining Energy as intended.</p>
 
    <div class="food-options" markdown>
@@ -10376,6 +10593,234 @@ body.page-333-blitz input[type="text"] {
 .image-lightbox-close:hover {
   border-color: rgba(var(--dbc-purple-rgb), 0.75);
   background-color: var(--dbc-chip-surface-hover);
+}
+
+/* ============================================================
+   CUSTOM CURSOR
+   ============================================================
+   Two states sitewide: the kursor2 character at rest (over ordinary
+   content - prose, tables, headings), the kursor blade over anything
+   clickable. It sits in its own section near the end because it is the one
+   rule in this file that deliberately outranks everything above it - see the
+   !important note.
+
+   HOW SIZING WORKS, since it is the counterintuitive part: the `cursor`
+   property has NO size. `cursor: url(x.png) 2 3` draws the image at its
+   INTRINSIC pixel size - no width, no height, no em, nothing that could
+   scale it. The only way to change the on-screen size is to change the
+   PNG's dimensions, which is why there are four PNGs here and not one.
+
+   Those four exist because `cursor` also accepts a LIST of images, and the
+   user agent picks whichever entry best matches the current display
+   density:
+       cursor: url(small.png) <hotspot>, url(large.png) <hotspot>, fallback
+   So the 40x40 files are used 1:1 on a 1x screen and the 80x80 files on a
+   2x screen - drawn at 40 CSS px = 80 device px, also 1:1. Either way the
+   cursor is 40 CSS px and sharp; a lone 40x40 image would be upscaled and
+   soft on every retina display. Each image carries its OWN hotspot, hence
+   two numbers per rule. The small one is listed FIRST because older Safari
+   honours only the first list entry, and 40px is what such a browser gets.
+
+   THE IMAGES: each is a downscale of a matching original in docs/assets/.
+   Nothing points CSS at an original - browsers cap custom cursors at
+   128x128, so ~99.5% of those pixels could never be displayed anyway, and
+   the originals weigh ~250 KB apiece against under 8 KB scaled, which is a
+   real download on every page for a picture nobody sees at full size.
+
+   Regenerating all four derivatives after editing an original:
+       # square original (kursor.png, 704x704) - one step each
+       sips -z 40 40 docs/assets/kursor.png --out docs/assets/kursor-40.png
+       sips -z 80 80 docs/assets/kursor.png --out docs/assets/kursor-80.png
+       # Kursor2.png (712x746) is DELIBERATELY distorted, not fitted: the
+       # target boxes are portrait 36x40 and 72x80, which stretches the art
+       # ~6% more vertically than horizontally and gives the character the
+       # elongated shape it now has. This one is meant to look stretched, so
+       # there is no aspect-ratio-preserving step and no --padToHeightWidth
+       # padding here - sips -z resamples to exactly the given box. Note sips
+       # takes HEIGHT before WIDTH, and the capital K in the filename:
+       # macOS is case-insensitive so a lowercase path works locally, but the
+       # commands above are what also work on a case-sensitive filesystem.
+       # To make it more elongated still, lower the width (34x40, 32x40) or
+       # raise the height (36x44, 36x48) - keep the two sizes at exactly 2x
+       # each other or the density list stops working.
+       sips -z 40 36 docs/assets/Kursor2.png --out docs/assets/kursor2-40.png
+       sips -z 80 72 docs/assets/Kursor2.png --out docs/assets/kursor2-80.png
+
+   THE SIZE: 40px CSS. Went 40 -> 24 -> 16 -> 24 -> 32 -> 40 across passes;
+   16px was illegible (the blade's yellow glyph on the stone is a couple of
+   pixels across) and read as a coloured smudge. To resize, regenerate all
+   four PNGs at 2x the number you want and update both hotspots per rule.
+
+   THE TWO STATES ARE DIFFERENT SHAPES, which is deliberate but worth
+   knowing: the blade (the resting state) is a square 40x40, the character
+   (the hover state) a portrait 36x40, so the cursor box narrows by 4px the
+   moment it turns into the character. The blade is drawn corner to corner,
+   so a portrait box would only shrink it; matching its box to the
+   character's would cost more than the 4px is worth. Both are still "40px"
+   as far as anyone measures them.
+
+   HOTSPOTS: deliberately different per image, because the two artworks put
+   their "point" in different places and each image needs its own.
+   kursor-40/80 is a blade: the hotspot is its tip, sitting under the
+   pointer the way a real arrow's tip does.
+   kursor2-40/80 is a whole character carrying its own little arrow glyph in
+   the top-left corner: its hotspot is that glyph's tip instead, so the
+   pointer parks inside the drawn arrow and the character trails behind it
+   rather than being pinned to the click point. All four values were read off
+   the alpha channel (first opaque pixel scanning top-left to bottom-right)
+   and are accurate to about a pixel, invisible at 40px. Re-measure the same
+   way if either artwork is redrawn.
+
+   WHY !important: this file sets `cursor` in about 40 places - pointer on
+   every card, chip, tab and collapsible row, help on every tooltip trigger,
+   default on a few pinned rows. Those all exist to say "this is
+   hoverable / clickable", which is exactly what the blade is saying here,
+   so left to specificity they would win and these cursors would only ever
+   show over empty page background - i.e. almost nowhere, since this site is
+   mostly interactive. Overriding them is the point.
+
+   WHY RULE 2 IS A LIST AND NOT `*`: a `body *:hover` swap is simpler, and it
+   was tried in both directions - but since the pointer is over SOMETHING
+   essentially always, it meant the hover state was never visible anywhere
+   on the site, which is exactly how one of the previous passes looked in
+   practice. The list below is the compromise: broad enough that the
+   character shows over everything genuinely clickable, narrow enough that
+   the blade still holds over text you might want to select. It is a
+   maintenance surface - a new clickable component given its own
+   `cursor: pointer` rule in this file needs its class added to the list
+   too, or it will quietly show the blade instead of the character. The list
+   was generated by reading every `cursor: pointer`/`help`/`default` selector
+   in this file, so it should already be complete. */
+
+/* --- 1. At rest: the kursor blade, hotspot on its tip - the way a real
+      arrow's tip sits under the pointer. Set on <body> alone and inherited
+      down, since cursor is an inherited property: every element that isn't
+      hovered and doesn't set its own picks this up. --- */
+body {
+  cursor: url("../assets/kursor-40.png") 2 2, url("../assets/kursor-80.png") 5 3, auto !important;
+}
+
+/* --- 2. The kursor2 character, over anything clickable; hotspot on the tip
+      of the little arrow it carries in its own top-left corner. Native
+      interactive elements first, then the component classes this file itself
+      gives a `cursor: pointer`/`help`. A hovered <details> matches with the
+      pointer anywhere inside it, which is what makes whole rows (gem rows,
+      skill cards, setup notes) light up rather than just their <summary>.
+
+      The whole list is wrapped in :where() on purpose, and that is the load-
+      bearing trick of this block. :where() contributes ZERO specificity, so
+      every argument inside it counts for nothing and the entire selector
+      collapses to (0,1,0) - the single `:hover` outside it. Written as a
+      plain comma list instead, the same 43 selectors would range up to
+      (0,4,3), which out-specified BOTH the Blitz paw (0,2,2) and most of
+      rule 4's informational cursors, and they lost. A list that is easy to
+      extend is worthless if extending it silently changes what it beats.
+
+      Consequence: the character is (0,1,0), so the resting blade on <body>
+      (0,0,1) is always the loser when the pointer is on one of these, the
+      paw (0,2,1) always wins on Blitz, and rule 4 only has to clear
+      (0,1,0) - which one attribute selector or one class does comfortably. --- */
+:where(
+  a,
+  button,
+  summary,
+  label,
+  select,
+  details,
+  [role="button"],
+  [tabindex]:not([tabindex="-1"]),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled),
+  .skill-tip-anchor,
+  .skill-card,
+  .rotation-line,
+  .rotation-practice-toggle,
+  .cycle-card,
+  .build-compare-share-btn,
+  .cpm-calc-recent-chip,
+  .cpm-calc-recent-clear,
+  .bid-calc-copy-btn:not(:disabled),
+  .ap-calc-result-row,
+  .ap-result-pin,
+  .ap-build-chip,
+  .ap-build-dock-trigger,
+  .ap-brace-info-icon,
+  .ap-brace-warn-icon,
+  .ap-brace-label-caveat,
+  .ap-gear-optional-badge,
+  .ap-ot1-indicator,
+  .ap-calc-pair-check,
+  .ap-engr-checkbox-label,
+  .ap-bvb-inline-check,
+  .ap-calc-footnote button,
+  .ap-calc-popover-actions button,
+  .ark-core-item-tip,
+  .skill-situational-tag,
+  .emoji-wiggle,
+  .tiger-emoji
+):hover {
+  cursor: url("../assets/kursor2-40.png") 2 2, url("../assets/kursor2-80.png") 4 5, auto !important;
+}
+
+/* --- 3. The 333 Blitz paw print, which extra.js scopes to that one page on
+      purpose ("its own tiny signature touch ... rather than a sitewide
+      cursor change"). Needs a *:hover form of its own, because the plain
+      (0,1,1) loses rule 2's `body a:hover` (0,1,2) - equal on the class
+      column, so the type column decides and 2 beats 1. That paw is a 26px
+      inline SVG rather than a PNG, so it needs no density list. --- */
+body.page-333-blitz,
+body.page-333-blitz *,
+body.page-333-blitz *::before,
+body.page-333-blitz *::after,
+body.page-333-blitz *:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><g fill="%23f0a868" stroke="%23161718" stroke-width="1"><ellipse cx="12" cy="16.5" rx="6" ry="5"/><ellipse cx="5" cy="8" rx="2.2" ry="2.8"/><ellipse cx="9.3" cy="4" rx="2" ry="2.6"/><ellipse cx="14.7" cy="4" rx="2" ry="2.6"/><ellipse cx="19" cy="8" rx="2.2" ry="2.8"/></g></svg>') 12 14, auto !important;
+}
+
+/* --- 4. Cursors that still carry information neither artwork can, so they
+      outrank both states. Rule 2's heaviest selectors reach (0,4,1), so
+      these carry a :hover form to stay above that. None of them overlap
+      rule 2's list in practice - checkboxes and radios appear there only as
+      :not(:disabled), and text fields, the lightbox and the bookmarklet are
+      not listed at all. --- */
+.md-typeset input[type="text"],
+.md-typeset input[type="text"]:hover,
+.md-typeset input[type="number"],
+.md-typeset input[type="number"]:hover,
+.md-typeset textarea,
+.md-typeset textarea:hover,
+.md-typeset [contenteditable],
+.md-typeset [contenteditable]:hover {
+  cursor: text !important;
+}
+.md-typeset .ap-calc-field-row input:disabled,
+.md-typeset .ap-calc-field-row input:disabled:hover,
+.md-typeset .ap-calc-field-row select:disabled,
+.md-typeset .ap-calc-field-row select:disabled:hover,
+.md-typeset .ap-calc-field-row input:disabled *,
+.md-typeset .ap-calc-field-row select:disabled * {
+  cursor: not-allowed !important;
+}
+.md-typeset .ap-calc-footnote .bible-import-bookmarklet,
+.md-typeset .ap-calc-footnote .bible-import-bookmarklet:hover {
+  cursor: grab !important;
+}
+.md-typeset .ap-calc-footnote .bible-import-bookmarklet:active {
+  cursor: grabbing !important;
+}
+.md-typeset img.zoomable-image,
+.md-typeset img.zoomable-image:hover {
+  cursor: zoom-in !important;
+}
+/* The lightbox overlay gets zoom-OUT rather than the zoom-in above - it is
+   the "click anywhere to close" surface, not a thing you click to open. Its
+   own rule because of that, hence not a comma list on the previous one. It
+   also lives OUTSIDE .md-typeset (image-lightbox.js appends it to <body>),
+   which is why it needs a `body` prefix of its own. */
+body .image-lightbox-overlay,
+body .image-lightbox-overlay:hover,
+body .image-lightbox-overlay *,
+body .image-lightbox-overlay *:hover {
+  cursor: zoom-out !important;
 }
 
 /* ============================================================

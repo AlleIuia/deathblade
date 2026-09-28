@@ -1,4 +1,4 @@
-# 111 (Head Hunt) 🔪
+# 111 (Классика) 🔪
 
 <div class="build-card-row" markdown>
 <div class="build-card" data-updated="2026-09-19" markdown>
@@ -29,7 +29,7 @@
 </div>
 </div>
 
-## Skill Codes
+## Код билда {#skill-codes}
 
 <!-- Paste the exported skill-code string (from the in-game loadout share
      feature) into the fenced code block below. Each `=== "Tab Name"` block is
@@ -40,7 +40,7 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="danger" open markdown>
-<summary><span class="setup-note-tag">Warn</span>Before Importing<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Внимание</span>Before Importing<span class="setup-note-arrow"></span></summary>
 
 Make sure you've read [Essentials](essentials.md), then apply both "<span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span>" and "Skill" to be safe. For [Gems](#gems), follow the guide.
 
@@ -55,7 +55,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
     C289D8EB08E331EA88A2C65A57DD383C979E48ABE184E47D357E8FB1E3E01A8DF959893AEA9B7713908581D63D17398B194369FAE09C50791B5BF3022A729D92
     ```
 
-## Ark Setup
+## Система А.Р.К. {#ark-setup}
 
 <!-- ark-passives / ark-cores JSON below use the site-wide node/core id
      vocabulary - each ark-passives node only needs its id + invested level,
@@ -113,14 +113,14 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Ark Passive<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize Evolution nodes.
+- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Note</span><span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span><span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span><span class="setup-note-arrow"></span></summary>
 
 - Playable with zero Ark Grid investment, but not recommended.
 
@@ -130,7 +130,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Skill Setup
+## Набор навыков {#skill-setup}
 
 <!-- Full skill-setup schema (id/level/tripods/rune/subtitle/picks) is in
      javascripts/skill-setup.js's "EASY EDIT GUIDE" comment. Names, icons, and
@@ -160,14 +160,14 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Runes<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Runes<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Purify">Purify</span> on Head Hunt if absolutely necessary.
+- Use <span class="skill-mention" data-rune-name="Purify">Солум</span> on Head Hunt if absolutely necessary.
 
 </details>
 
 <details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Note</span>Options & Tripods<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Options & Tripods<span class="setup-note-arrow"></span></summary>
 
 - You can use Swift Fingers <span class="skill-mention" data-glossary-id="tripod">tripod</span> on Blitz Rush for increased DPS and QoL.
     - It's a DPC loss unless you can make use of the increased CPM/comfort.
@@ -181,7 +181,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Gems
+## Гемы {#gems}
 
 <!-- Ranked skill-id lists per column (dmg/cd), top = highest priority.
      Full schema, including the expandable "alts" form for a swappable
@@ -206,7 +206,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Rotation
+## Ротация {#rotation}
 
 <!-- Each `.rotation-line` is a compact JSON step list of skill ids in
      order - names/icons resolve automatically, same id vocabulary as Skill
@@ -260,7 +260,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     Openers stack <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> and apply <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently. If it feels overwhelming, just apply synergy and Surge at full orbs; that's all you need to start the alternating cycles.
 
-    *From 3 orbs (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span>):*
+    *From 3 orbs (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
     { .lead }
 
     <div class="rotation-line">
@@ -275,7 +275,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
     </div>
 
     1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> is interchangeable with Cycle **2**.
-    2. It's efficient to use <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Atropine</span> after Deathly Slash, with Blade Assault available.
+    2. It's efficient to use <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> after Deathly Slash, with Blade Assault available.
 
     *From zero/partial orbs:*
     { .lead }
@@ -290,7 +290,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     <details class="setup-note" data-kind="tip" open>
 
-    <summary><span class="setup-note-tag">Tip</span>Recovery Video<span class="setup-note-arrow"></span></summary>
+    <summary><span class="setup-note-tag">Советы</span>Recovery Video<span class="setup-note-arrow"></span></summary>
 
     Watch this 54-minute [111 recovery video](https://www.youtube.com/watch?v=z8KE3HG_ggg) or consider an easier build.
 
@@ -302,7 +302,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     1. Use spare Twin Shadows/Maelstrom stacks and/or Blitz Rush if you miss major skills.
 
-## DPS Spread
+## Распределение Урона {#dps-spread}
 
 <!-- data-labels / data-values / data-ids are three parallel comma-separated
      lists, ordered highest % first - update after a fresh Trixion recording

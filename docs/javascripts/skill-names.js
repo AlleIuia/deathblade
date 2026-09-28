@@ -31,7 +31,7 @@
     deathtrance: "Боевой транс",
     surpriseattack: "Внезапный выпад",
     breakingmoon: "Неуловимый пируэт",
-    bladedance: "Blade Dance",
+    bladedance: "Блиц",
     darkaxel: "Аксель",
     upperslash: "Восходящий вихрь",
     fallstar: "Полярная звезда",
@@ -51,8 +51,8 @@
     // Not skills (consumables - see skill-data.js's DB_SKILL_EXTRAS for
     // their tooltip text), but still shown by name wherever a
     // .skill-inline mention or skill-tooltip.js resolves them by id.
-    atropine: "Atropine",
-    stimulant: "Stimulant",
+    atropine: "Ардопин-Х",
+    stimulant: "Мощная «Эйфория»",
 
     // Also not skills (food items - same DB_SKILL_EXTRAS pattern as
     // above), shown by name wherever a Food Requirement pill, a bare
@@ -60,11 +60,11 @@
     // these by id (see skill-tooltip.js's attachFoodOption/attachBareIcon).
     striploin: "Филейный стейк с грибами",
     steak: "Сливочный отборный кролик",
-    Tomat: "Томатная фаршированная рыба",
+    fish: "Томатная фаршированная рыба",
     azena: "Благословение Азены",
     feast: "Урон оружия(1800)/Иваентовая еда",
     vernesewine: "Бирнийское вино",
-    ealynsblessing: "Шато де розе",
+    ealynsblessing: "Шато де Розе",
 
     // Also not skills (engravings - same DB_SKILL_EXTRAS pattern again),
     // shown by name wherever an .engraving-chip/.engraving-card-name or a
@@ -75,9 +75,9 @@
     adrenaline: "Адреналин",
     keenbluntweapon: "Моргенштерн",
     curseddoll: "Голем",
-    massincrease: "Mass Increase",
-    maxmp: "Max MP Increase",
-    spiritabsorption: "Spirit Absorption",
+    massincrease: "Карающая длань",
+    maxmp: "Источник маны",
+    spiritabsorption: "Стремительность",
 
     // Also not a skill (it's a rune-proc DPS source, not something you
     // slot/level) - exists here only so dps-chart.js's "## Trixion DPS"

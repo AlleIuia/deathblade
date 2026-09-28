@@ -1,33 +1,41 @@
-# Essentials
+# Основы {#essentials}
 
 <div class="setup-panel" data-accent="pink" markdown>
 <div class="setup-notes" markdown>
 
-<p class="food-required-lead">Mana food and Atk/Move Speed feast are <strong>required</strong> to play <span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span> Remaining Energy as intended.</p>
+   <p class="food-required-lead">Еда на ману и скорость атаки «Урон оружия(1800)/Иваентовая еда» <strong>обязательны</strong>, чтобы играть в «Остаточной энергии» как задумано.</p>
 
 <div class="food-options" markdown>
 
 <div class="food-option" markdown>
 ![](../assets/shared/icon-striploin.png){: .food-option-icon }
 
-Striploin Steak Meal
+Филейный стейк с грибами
 </div>
 
-<span class="food-option-connector">or</span>
+<span class="food-option-connector">или</span>
 
 <div class="food-option" markdown>
 ![](../assets/shared/icon-steak.png){: .food-option-icon }
 
-Herb Steak Meal
+Сливочный отборный кролик
 </div>
 
-<span class="food-option-connector">or</span>
+<span class="food-option-connector">или</span>
 
 <div class="food-option" markdown>
 ![](../assets/shared/icon-azena.png){: .food-option-icon }
 
-Azena's Blessing
+Благословение Азены
 { .food-option-tag }
+</div>
+
+<span class="food-option-connector">или</span>
+
+<div class="food-option" markdown>
+![](../assets/shared/icon-fish.png){: .food-option-icon }
+
+Томатная фаршированная рыба
 </div>
 
 <span class="food-option-connector food-option-connector-plus">+</span>
@@ -35,54 +43,43 @@ Azena's Blessing
 <div class="food-option" markdown>
 ![](../assets/shared/icon-feast.png){: .food-option-icon }
 
-Atk/Move Speed Feast
+Урон оружия(1800)/Иваентовая еда
 </div>
 
 </div>
 
 <details class="setup-note" data-kind="example" markdown>
-<summary><span class="setup-note-tag">Alt</span>You can lower mana use at a DPS loss to save gold and skip mana food!<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Альтернатива</span>Можно снизить расход маны ценой небольшой потери DPS, сэкономив золото и отказавшись от еды на ману!<span class="setup-note-arrow"></span></summary>
 
 <div class="food-alt-table" markdown>
 
-| Where | Change |
+| Где | Что менять |
 |---|---|
-| Evolution Ark | Raise <span class="skill-mention" data-ap-id="illicitspell">Illicit Spell</span> instead of <span class="skill-mention" data-ap-id="limitbreakevo">Limit Break</span> (unimportant content only) |
-| Leap Ark | <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Release Potential 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Instant Spell 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Awakening Amplifier 1</span> ★ |
-| Head Hunt | Magick Control tripod, <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Focus</span> <span class="skill-mention" data-glossary-id="rune">rune</span>, or set to Lv 1 (Fatal Wave only)|
-| Maelstrom | <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Legendary Focus</span> rune (easier builds with excess orb generation only) |
+| «Экспансия» А.Р.К. | Берите «<span class="skill-mention" data-ap-id="illicitspell">Запретное знание</span>» вместо «<span class="skill-mention" data-ap-id="limitbreakevo">Исключительный дар</span>» (только для неважного контента) |
+| «Прогресс» А.Р.К. | <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Божественное вдохновение 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Пробужденное сознание 1</span> ★ |
+| Плащ клинков | руна «<span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span>» (только для более лёгких билдов с избытком генерации сфер) |
 
 </div>
 
 </details>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Quick Tips<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Короткая база о блейде<span class="setup-note-arrow"></span></summary>
 
-- All Deathblade builds run a pet with the <span class="skill-mention" data-glossary-id="specializationstat">Specialization</span> stat bonus.
-- Optimize <span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span> nodes or compare <span class="skill-mention" data-glossary-id="bracelet">bracelets</span>/equipment [here!](../resources.md#ark-passive-calculator)
-- Always press the next skill during your current skill's animation (skill queuing).
-- If unsure, select <span class="skill-mention" data-skill-id="grudge">Титаноборец</span> and <span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span> as your <span class="skill-mention" data-glossary-id="abilitystone">Ability Stone</span> engravings.
-- <span class="skill-mention" data-glossary-id="trixion">Trixion</span> practice requires equipping maxed <span class="skill-mention" data-skill-id="spiritabsorption">Spirit Absorption</span> and <span class="skill-mention" data-skill-id="maxmp">Max MP</span> engravings.
-- <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Optimized Training 1</span> may help smooth things out at lower gem levels.
-
-</details>
-
-<!-- TODO: drop this whole block once the September balance patch ships -->
-<details class="setup-note" data-kind="danger" markdown>
-<summary><span class="setup-note-tag">Warn</span>09/16/26 Balance Patch<span class="setup-note-arrow"></span></summary>
-
-- Blitz Rush gained a 27% cast speed tripod and 20% more attack range.
-- Turning Slash's after-effect now also applies <span class="skill-mention" data-glossary-id="synergy">Synergy</span>.
-- Surge's buffed coefficient increased DPS for all RE builds by ~1%.
-- Buffed Ark Grid cores increased 111 DPS by ~2% and 313 DPS by ~1%.
+- Всем билдам Клинка смерти нужен питомец, дающий бонус к «<span class="skill-mention" data-glossary-id="specializationstat">Мастерству</span>».
+- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Систему А.Р.К.</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
+- Всегда жмите следующее умение во время анимации текущего умения.
+- Если сомневаетесь, берите «<span class="skill-mention" data-skill-id="grudge">Титаноборец</span>» и «<span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span>» в качестве гравировок <span class="skill-mention" data-glossary-id="abilitystone">Фетранита</span>.
+- Для тренировок в <span class="skill-mention" data-glossary-id="trixion">Тризионе</span> нужны гравировки «<span class="skill-mention" data-skill-id="spiritabsorption">Стремительность</span>» и «<span class="skill-mention" data-skill-id="maxmp">Источник маны</span>» максимального уровня.
+- «<span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Изнурительные тренировки 1</span>» помогут сгладить просадку урона на низких уровнях самоцветов.
 
 </details>
+
 
 </div>
 </div>
 
-## Build Comparison
+## Сравнение билдов {#build-comparison}
 
 <!-- This table and its two-build overlay picker are entirely driven by
      javascripts/build-data.js (window.DB_BUILD_DATA) - nothing to edit here.
@@ -91,21 +88,21 @@ Atk/Move Speed Feast
 
 <div class="build-compare" data-family="re"></div>
 
-## Engravings
+## Гравировки {#engravings}
 
 <div class="setup-panel" data-accent="lavender" markdown>
 
 <div class="engraving-loadout" markdown>
-<div class="engraving-loadout-group" markdown>
-<span class="engraving-loadout-label">Always Equip</span>
-<span class="engraving-chip" data-skill-id="grudge">Grudge</span>
-<span class="engraving-chip" data-skill-id="adrenaline">Adrenaline</span>
-<span class="engraving-chip" data-skill-id="ambushmaster">Ambush Master</span>
-<span class="engraving-chip engraving-chip-food" data-skill-id="raidcaptain">![](../assets/shared/icon-feast.png){: .skill-icon } Raid Captain</span>
+<div class="engraving-loadout-group engraving-loadout-group-always" markdown>
+<span class="engraving-loadout-label">Всегда экипировать</span>
+<span class="engraving-chip" data-skill-id="grudge"><img class="skill-icon" src="../../assets/shared/icon-grudge.png" alt="">Титаноборец</span>
+<span class="engraving-chip" data-skill-id="adrenaline"><img class="skill-icon" src="../../assets/shared/icon-adrenaline.png" alt="">Адреналин</span>
+<span class="engraving-chip" data-skill-id="ambushmaster"><img class="skill-icon" src="../../assets/shared/icon-ambushmaster.png" alt="">Бесшумный убийца</span>
+<span class="engraving-chip" data-skill-id="raidcaptain"><img class="skill-icon" src="../../assets/shared/icon-raidcaptain.png" alt="">Неутомимый натиск</span>
 </div>
 <div class="engraving-loadout-group" markdown>
-<span class="engraving-loadout-label">Choose 1</span>
-<span class="engraving-loadout-hint">pick one of the two below ↓</span>
+<span class="engraving-loadout-label">Выбери 1</span>
+<span class="engraving-loadout-hint">выбери одного из двух ниже ↓</span>
 </div>
 </div>
 
@@ -113,46 +110,46 @@ Atk/Move Speed Feast
 
 <details class="engraving-card" data-accent="kbw" open markdown>
 <summary>
-<span class="engraving-card-name" data-skill-id="keenbluntweapon">Keen Blunt Weapon</span>
+<span class="engraving-card-name" data-skill-id="keenbluntweapon"><img class="skill-icon" src="../../assets/shared/icon-keenbluntweapon.png" alt="">Моргенштерн</span>
 <span class="engraving-card-badges" markdown>
-<span class="engraving-card-badge engraving-card-badge-top">★ Recommended</span>
-<span class="engraving-card-badge engraving-card-badge-safe">Safe Pick</span>
+<span class="engraving-card-badge engraving-card-badge-top">★ Рекомендуемая</span>
+<span class="engraving-card-badge engraving-card-badge-safe">Безопасный выбор</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
 <div class="engraving-card-body" markdown>
 
-**Pros:**{: .best-for } Stronger than <span class="skill-mention" data-skill-id="curseddoll">Голем</span> by ~1% late game.
+**Плюсы:**{: .best-for } Примерно на 1% сильнее гравировки «<span class="skill-mention" data-skill-id="curseddoll">Голем</span>» в поздней игре.
 
-**Cons:**{: .tradeoff } Scales with <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> <span class="skill-mention" data-glossary-id="relicbook">relic books</span>.
+**Минусы:**{: .tradeoff } Растёт от <span class="skill-mention" data-glossary-id="relicbook">книг реликвий</span> у «<span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>».
 
 </div>
 </details>
 
 <details class="engraving-card" data-accent="cursed" open markdown>
 <summary>
-<span class="engraving-card-name" data-skill-id="curseddoll">Cursed Doll</span>
+<span class="engraving-card-name" data-skill-id="curseddoll"><img class="skill-icon" src="../../assets/shared/icon-curseddoll.png" alt="">Голем</span>
 <span class="engraving-card-badges" markdown>
-<span class="engraving-card-badge engraving-card-badge-safe">Alternative</span>
+<span class="engraving-card-badge engraving-card-badge-safe">Альтернатива</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
 <div class="engraving-card-body" markdown>
 
-**Pros:**{: .best-for } Inexpensive and reliable.
+**Плюсы:**{: .best-for } Дёшево и надёжно.
 
-**Cons:**{: .tradeoff } The healing penalty can be frustrating.
+**Минусы:**{: .tradeoff } Штраф за лечение иногда раздражает.
 
 </div>
 </details>
 
 </div>
 
-<span class="engraving-calc-note">To compare advanced engraving values or get customized recommendations, check out the [Ark Passive Calculator!](../resources.md#ark-passive-calculator)</span>
+<span class="engraving-calc-note">Сравнить продвинутые значения гравировок или получить персональные рекомендации — [Калькулятор А.Р.К.](../resources.md#ark-passive-calculator)</span>
 
 </div>
 
-## Specialization
+## Специализация {#specialization}
 
 <div class="setup-panel" data-accent="lavender" markdown>
 
@@ -164,7 +161,7 @@ Atk/Move Speed Feast
 <span class="stat-label">Breakpoint</span><span class="stat-value">1818+</span><span class="food-req">No downtime on [333 (Ceiling)](333-ceiling.md)</span>
 </div>
 <div class="stat" data-kind="warn" markdown="span">
-<span class="stat-label">Raises CD leap/gem Requirements</span><span class="stat-value">+CD% bracelet</span><span class="food-req"><span class="skill-mention" data-ap-id="releasepotential" data-level="4">RP 4</span> needed for Fatal Wave builds</span>
+<span class="stat-label">Raises CD leap/gem Requirements</span><span class="stat-value">+CD% bracelet</span><span class="food-req"><span class="skill-mention" data-ap-id="releasepotential" data-level="4">Стремительное восстановление 4</span> needed for Fatal Wave builds</span>
 </div>
 </div>
 
@@ -174,12 +171,12 @@ Lower values are fine, but may experience some downtime.
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Trixion CPM Goals<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Trixion CPM Goals<span class="setup-note-arrow"></span></summary>
 
-- Aim for your build's Surge <span class="skill-mention" data-glossary-id="cpm">CPM</span> goal in <span class="skill-mention" data-glossary-id="trixion">Trixion</span> to check for issues:
+- Aim for your build's Surge <span class="skill-mention" data-glossary-id="cpm">CPM</span> goal in <span class="skill-mention" data-glossary-id="trixion">Тризион</span> to check for issues:
     - For 333, try to approach 15 Surge CPM.
     - For 111 and 313, try to approach 16 Surge CPM.
-    - Use the [DPS Meter](https://github.com/snoww/loa-logs) and equip maxed <span class="skill-mention" data-skill-id="spiritabsorption">Spirit Absorption</span>/<span class="skill-mention" data-skill-id="maxmp">Max MP</span>!
+    - Use the [DPS Meter](https://github.com/snoww/loa-logs) and equip maxed <span class="skill-mention" data-skill-id="spiritabsorption">Стремительность</span>/<span class="skill-mention" data-skill-id="maxmp">Источник маны</span>!
 
 </details>
 
@@ -187,7 +184,7 @@ Lower values are fine, but may experience some downtime.
 
 </div>
 
-## Gameplay
+## Геймплей {#gameplay}
 
 ### Identity
 
@@ -204,12 +201,12 @@ Lower values are fine, but may experience some downtime.
 
 The cooldown reduction is the core of the class: the cycle resets so you can start generating your next set of orbs.
 
-### Party Synergies
+### Групповые синергии {#party-synergies}
 
 - Turning Slash: +4% outgoing and +5% directional damage for 12s.
 - <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>: +12.8% Attack/Move Speed for 6s and improves orb generation.
 
-### Playstyle
+### Стиль игры {#playstyle}
 
 Remaining Energy is a continuous cycle:
 
@@ -217,22 +214,22 @@ Generate Orbs → 3 Orbs → Surge → Repeat.
 
 Prioritize consistent uptime and good use of Maelstrom's buffs over <span class="skill-mention" data-glossary-id="backattack">back attacks</span>. Use Surge to reposition.
 
-### Combat Performance
+### Боевые характеристики {#combat-performance}
 
 **Surge Casts Per Minute (CPM)** is a useful measure of how efficiently you are playing and generating orbs.
 
 Only compare CPM between the **same encounter and build**, as boss uptime and mechanics heavily affect it.
 
-## FPS/Latency
+## FPS/Пинг {#fpslatency}
 
 - Higher FPS increases CPM and helps fit skills under Maelstrom buff.
 - High latency or low FPS hinders skill queuing and can cause 2.9 orbs.
 - Graphics settings on Low/OFF and forced 21:9 can increase FPS in some cases.
 - Join lobbies closer to your region or avoid builds with very tight orb generation.
 
-## Remaining Energy Skills
+## Скилы остаточной энергии {#remaining-energy-skills}
 
-*Values recorded at 1830 Specialization with no runes or Maelstrom buff, 3 orbs are 30000 meter.*
+*Значения записаны при 1830 очках «Мастерства», без рун и баффа Плаща клинков; 3 сферы — это 30000 на шкале.*
 
 <!-- Per-row id (name auto-resolves from skill-names.js) - full schema is in
      javascripts/essentials-table.js's
@@ -265,8 +262,8 @@ Only compare CPM between the **same encounter and build**, as boss uptime and me
 </div>
 
 <div class="tag-legend" markdown>
-<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-dmg"></span>Damage</span>
-<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-util"></span>Utility</span>
-<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-immune"></span>Immune</span>
-<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-warn"></span>Warning</span>
+<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-dmg"></span>Урон</span>
+<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-util"></span>Вспомогательный</span>
+<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-immune"></span>Иммунитет</span>
+<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-warn"></span>Предупреждение</span>
 </div>

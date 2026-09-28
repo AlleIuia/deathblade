@@ -123,7 +123,7 @@
     tip.appendChild(buildHeader((known && known.name) || id, known && known.icon));
 
     if (currentLevel != null) {
-      tip.appendChild(el("div", "ap-node-tip-level", "Ark Passive Lv. " + currentLevel));
+      tip.appendChild(el("div", "ap-node-tip-level", "Ур. А.Р.К. " + currentLevel));
     }
 
     var text = entry.text;
@@ -174,7 +174,7 @@
 
     entry.levels.forEach(function (lvl) {
       var row = el("div", "skill-tip-all-row");
-      row.appendChild(el("div", "ap-node-tip-level", "Ark Passive Lv. " + lvl.level));
+      row.appendChild(el("div", "ap-node-tip-level", "Ур. А.Р.К. " + lvl.level));
       row.appendChild(el("p", "skill-tip-note ap-node-tip-text", lvl.text));
       tip.appendChild(row);
     });

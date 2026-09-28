@@ -4,7 +4,7 @@
 // build/essentials pages' JSON blocks (and core-options-data.js) at your
 // own data.
 //
-// Renders the "## Ark Setup" section's 3 Order Cores (Sun/Moon/Star) as a
+// Renders the "## Система А.Р.К." section's 3 Order Cores (Sun/Moon/Star) as a
 // small native widget instead of a static ordercores-*.png screenshot.
 // Deliberately only covers the 3 ORDER cores (the red/orange-trimmed ones
 // in-game), not the 3 Chaos cores - the screenshots showed all 6, but
@@ -101,6 +101,15 @@
   // shared header row" convention as rune-tooltip.js's own buildHeader -
   // .ark-core-tip-title keeps its own class/styling on the text itself,
   // just wrapped in that shared flex row now instead of sitting bare.
+  // Display name for a core, from core-options-data.js's DB_CORE_NAMES.
+  // The `label` itself stays the english lookup key - every build page's
+  // JSON names cores by it and DB_CORE_OPTIONS is keyed by it - so this is
+  // purely a display swap, and a core with no map entry keeps its english
+  // label rather than rendering blank. Same split as DB_RUNE_NAMES.
+  function coreName(label) {
+    return (window.DB_CORE_NAMES && window.DB_CORE_NAMES[label]) || label;
+  }
+
   function buildTooltip(label, core) {
     var data = window.DB_CORE_OPTIONS && window.DB_CORE_OPTIONS[label];
     if (!data || !data.options || !data.options.length) return null;
@@ -130,9 +139,9 @@
     icon.loading = "lazy";
     window.SiteUtils.hideOnError(icon, "display");
     header.appendChild(icon);
-    header.appendChild(el("div", "ark-core-tip-title", label));
+    header.appendChild(el("div", "ark-core-tip-title", coreName(label)));
     tip.appendChild(header);
-    tip.appendChild(el("div", "ark-core-tip-subtitle ark-core-tip-subtitle-" + tier, "Core Options"));
+    tip.appendChild(el("div", "ark-core-tip-subtitle ark-core-tip-subtitle-" + tier, "Опции ядра"));
 
     var list = el("div", "ark-core-tip-list");
     data.options.forEach(function (opt) {
@@ -205,7 +214,7 @@
     // up under each other on a shared left edge.
     var info = el("div", "ark-core-info");
 
-    info.appendChild(el("span", "ark-core-name")).textContent = entry.label || entry.core;
+    info.appendChild(el("span", "ark-core-name")).textContent = coreName(entry.label) || entry.core;
 
     var dots = el("div", "ark-core-dots");
     var points = Math.max(0, Math.min(3, entry.points || 0));

@@ -1,4 +1,4 @@
-# 333 (Blitz) <span class="tiger-emoji" title="rawr">🐯</span>
+# 333 (Охота за головами) <span class="tiger-emoji" title="rawr">🐯</span>
 
 <p class="page-banner page-banner-warning">This build is not viable and no one plays it, so information here WILL be wrong. Do not disrespect the tiger, however.</p>
 
@@ -35,7 +35,7 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Note</span>But why male models? 🐯<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>But why male models? 🐯<span class="setup-note-arrow"></span></summary>
 
 ![333 Blitz meme](../assets/blitz-meme.png){ .setup-note-image .zoomable-image loading=lazy }
 
@@ -44,7 +44,7 @@
 </div>
 </div>
 
-## Skill Codes
+## Код билда {#skill-codes}
 
 <!-- Paste the exported skill-code string (from the in-game loadout share
      feature) into the fenced code block below. Each `=== "Tab Name"` block is
@@ -55,7 +55,7 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="danger" open markdown>
-<summary><span class="setup-note-tag">Warn</span>Before Importing<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Внимание</span>Before Importing<span class="setup-note-arrow"></span></summary>
 
 Make sure you've read [Essentials](essentials.md), then apply both "<span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span>" and "Skill" to be safe. For [Gems](#gems), follow the guide.
 
@@ -70,7 +70,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
     C2BFAC917391343DBC2FDFE774F012CA68D052E6BBDF24E99D94CB2304E39E6307031C2D86DDF93D1770D4AFD97E52786C90EECBF9E6A04C76B7DF6B0289ED3F
     ```
 
-## Ark Setup
+## Система А.Р.К. {#ark-setup}
 
 <!-- ark-passives / ark-cores JSON below use the site-wide node/core id
      vocabulary - each ark-passives node only needs its id + invested level,
@@ -127,14 +127,14 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Ark Passive<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize Evolution nodes.
+- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Note</span><span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span><span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span><span class="setup-note-arrow"></span></summary>
 
 - Damage will be lacking if you settle for the minimum core requirements.
 
@@ -144,7 +144,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Skill Setup
+## Набор навыков {#skill-setup}
 
 <!-- Full skill-setup schema (id/level/tripods/rune/subtitle/picks) is in
      javascripts/skill-setup.js's "EASY EDIT GUIDE" comment. Names, icons, and
@@ -175,15 +175,15 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Runes<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Runes<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Purify">Purify</span> on Spincutter if needed.
-- Use <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Legendary Bleed</span> on Maelstrom if you use mana food instead of wine.
+- Use <span class="skill-mention" data-rune-name="Purify">Солум</span> on Spincutter if needed.
+- Use <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Легендарный Джар</span> on Maelstrom if you use mana food instead of wine.
 
 </details>
 
 <details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Note</span>Options & Tripods<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Options & Tripods<span class="setup-note-arrow"></span></summary>
 
 - You can use the Weak Point Detection <span class="skill-mention" data-glossary-id="tripod">tripod</span> on Blade Dance.
     - Requires Lv 10 CD gem and/or raid downtime for it not to become a bottleneck.
@@ -194,7 +194,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 </details>
 
 <details class="setup-note" data-kind="example" markdown>
-<summary><span class="setup-note-tag">Alt</span>🐆 vs 🐯<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Альтернатива</span>🐆 vs 🐯<span class="setup-note-arrow"></span></summary>
 
 ![222 vs 333](../assets/leopardvstiger.png){ .setup-note-image .zoomable-image loading=lazy }
 
@@ -204,7 +204,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Gems
+## Гемы {#gems}
 
 <!-- Ranked skill-id lists per column (dmg/cd), top = highest priority.
      Full schema, including the expandable "alts" form for a swappable
@@ -231,7 +231,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Rotation
+## Ротация {#rotation}
 
 <!-- Each `.rotation-line` is a compact JSON step list of skill ids in
      order - names/icons resolve automatically, same id vocabulary as Skill
@@ -259,13 +259,13 @@ Apply damage <span class="skill-mention" data-glossary-id="synergy">synergy</spa
 1. The final Surprise Attack can often be skipped with surplus stacks and expected raid downtime.
 2. Consider delaying Maelstrom by 1 to 3 skills when uptime drops to ensure it covers Surge (<span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span>).
 3. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
-      - It's still useful for <span class="skill-mention" data-skill-id="atropine">Atropine</span> openers, or it can be saved to greed with <span class="skill-mention" data-glossary-id="pushimmunity">push immunity</span>/Hyper Awakening.
+      - It's still useful for <span class="skill-mention" data-skill-id="atropine">Ардопин-Х</span> openers, or it can be saved to greed with <span class="skill-mention" data-glossary-id="pushimmunity">push immunity</span>/Hyper Awakening.
 
 <div class="setup-panel" data-accent="lavender" markdown>
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="example" markdown>
-<summary><span class="setup-note-tag">Alt</span>🐯 Mode (Optional)<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Альтернатива</span>🐯 Режим (по желанию)<span class="setup-note-arrow"></span></summary>
 ![tiger mode](../assets/tigermode.png){ .setup-note-image .zoomable-image loading=lazy }
 </details>
 
@@ -275,11 +275,11 @@ Apply damage <span class="skill-mention" data-glossary-id="synergy">synergy</spa
 *From zero orbs:*
 { .lead }
 
-1. Use a <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span> (recommended) or proceed to #2.
+1. Use a <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span> (recommended) or proceed to #2.
       - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> awakening.
 2. Generate one orb, build at least 40 stacks, then Surge to refill all 3 orbs.
 
-## DPS Spread
+## Распределение Урона {#dps-spread}
 
 <!-- data-labels / data-values / data-ids are three parallel comma-separated
      lists, ordered highest % first - update after a fresh Trixion recording

@@ -1,4 +1,4 @@
-# 313 (High Floor) 💜
+# 313 (Шакрамы 2.0) 💜
 
 <div class="build-card-row" markdown>
 <div class="build-card" data-updated="2026-09-19" markdown>
@@ -29,7 +29,7 @@
 </div>
 </div>
 
-## Skill Codes
+## Код билда {#skill-codes}
 
 <!-- Paste the exported skill-code string (from the in-game loadout share
      feature) into the fenced code block below. Each `=== "Tab Name"` block is
@@ -40,7 +40,7 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="danger" open markdown>
-<summary><span class="setup-note-tag">Warn</span>Before Importing<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Внимание</span>Before Importing<span class="setup-note-arrow"></span></summary>
 
 Make sure you've read [Essentials](essentials.md), then apply both "<span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span>" and "Skill" to be safe. For [Gems](#gems), follow the guide.
 
@@ -61,10 +61,10 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
     E3818904D40CEFE43FC30B0715D4EF6850C4E0C2183E48110767499D73BEC3831EBB750B31176844599B47B861C731968F30681780A45447FAD8F209D8D99517
     ```
 
-    - Requires either a Lv 9+ Fatal Wave CD gem or <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Optimized Training 1</span>.
+    - Requires either a Lv 9+ Fatal Wave CD gem or <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Изнурительные тренировки 1</span>.
     - It's preferable to invest a little more and unlock 313 or 333 properly.
 
-## Ark Setup
+## Система А.Р.К. {#ark-setup}
 
 <!-- ark-passives / ark-cores JSON below use the site-wide node/core id
      vocabulary - each ark-passives node only needs its id + invested level,
@@ -120,23 +120,23 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Ark Passive<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize Evolution nodes.
-- <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Release Potential 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Instant Spell 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Awakening Amplifier 1</span> can solve mana issues at a minor DPS loss.
+- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
+- <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Божественное вдохновение 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Пробужденное сознание 1</span> can solve mana issues at a minor DPS loss.
     - Not as comfortable with +CD% <span class="skill-mention" data-glossary-id="bracelet">bracelet</span> line and/or low <span class="skill-mention" data-glossary-id="specializationstat">Specialization</span>.
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Note</span><span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span><span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span><span class="setup-note-arrow"></span></summary>
 
 - Raise Arts Core to 17p for increased QoL and damage when you can.
 
 </details>
 
 <details class="setup-note" data-kind="example" markdown>
-<summary><span class="setup-note-tag">Alt</span>113 (Arts) core-limited<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Альтернатива</span>113 (Arts) core-limited<span class="setup-note-arrow"></span></summary>
 
 <div class="ark-cores" data-family="re" markdown>
 <script type="application/json">
@@ -149,7 +149,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 </div>
 
 - Same as 313 but **without** the Fatal Wave reset.
-- Requires Lv 9+ Fatal Wave CD gem or <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Optimized Training 1</span>.
+- Requires Lv 9+ Fatal Wave CD gem or <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Изнурительные тренировки 1</span>.
     - Avoid +CD% bracelet line for this core-limited variant.
     - See the Gem section for required adjustments relative to the 313 setup.
 
@@ -159,7 +159,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Skill Setup
+## Набор навыков {#skill-setup}
 
 <!-- Full skill-setup schema (id/level/tripods/rune/subtitle/picks) is in
      javascripts/skill-setup.js's "EASY EDIT GUIDE" comment. Names, icons, and
@@ -189,15 +189,15 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Runes<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Runes<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="legendary">Legendary Galewind</span>, <span class="skill-mention" data-rune-name="Purify">Purify</span> or <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="uncommon">Uncommon Wealth</span> on Head Hunt if you have no mana issues.
-- <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Legendary Focus</span> on Maelstrom can solve major mana issues at a minor loss of orb generation.
+- Use <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="legendary">Легендарный Агель</span>, <span class="skill-mention" data-rune-name="Purify">Солум</span> or <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="uncommon">Необычный Эйге</span> on Head Hunt if you have no mana issues.
+- <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span> on Maelstrom can solve major mana issues at a minor loss of orb generation.
 
 </details>
 
 <details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Note</span>Options & Tripods<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Options & Tripods<span class="setup-note-arrow"></span></summary>
 
 - You can use Magick Control <span class="skill-mention" data-glossary-id="tripod">tripod</span> on Head Hunt for lower mana usage.
 - You can use Swift Fingers tripod on Blitz Rush for increased DPS and QoL.
@@ -212,7 +212,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Gems
+## Гемы {#gems}
 
 <!-- Ranked skill-id lists per column (dmg/cd), top = highest priority.
      Full schema, including the expandable "alts" form for a swappable
@@ -245,7 +245,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
 </div>
 
-## Rotation
+## Ротация {#rotation}
 
 <!-- Each `.rotation-line` is a compact JSON step list of skill ids in
      order - names/icons resolve automatically, same id vocabulary as Skill
@@ -295,7 +295,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     Openers stack <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> and apply <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently. If it feels overwhelming, just apply synergy and Surge at full orbs; that's all you need to start the alternating cycles.
 
-    *From 3 orbs (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Stimulant</span>):*
+    *From 3 orbs (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
     { .lead }
 
     <div class="rotation-line">
@@ -310,7 +310,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
     </div>
 
     1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> is interchangeable with Cycle **2**.
-    2. It's efficient to use <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Atropine</span> after Deathly Slash, with Blade Assault available.
+    2. It's efficient to use <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> after Deathly Slash, with Blade Assault available.
 
     *From zero/partial orbs:*
     { .lead }
@@ -326,7 +326,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     <details class="setup-note" data-kind="tip" open>
 
-    <summary><span class="setup-note-tag">Tip</span>Recovery Video<span class="setup-note-arrow"></span></summary>
+    <summary><span class="setup-note-tag">Советы</span>Recovery Video<span class="setup-note-arrow"></span></summary>
 
     Watch this 2-minute [333 recovery video](https://www.youtube.com/watch?v=4478vFVX4VA) and read the segment titles.
 
@@ -346,7 +346,7 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 
     ![313 TL;DR flowchart](../assets/tldr-313.png){ .zoomable-image loading=lazy }
 
-## DPS Spread
+## Распределение Урона {#dps-spread}
 
 <!-- data-labels / data-values / data-ids are three parallel comma-separated
      lists, ordered highest % first - update after a fresh Trixion recording

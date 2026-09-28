@@ -1,4 +1,4 @@
-# Pre-Ark Grid
+# Без ядер
 
 *Options for playing Surge before you have an <span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span> set up.*
 

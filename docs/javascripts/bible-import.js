@@ -165,7 +165,7 @@
     var match = tierMatch(table, value);
     if (match) return match;
     if (value != null && !isNaN(value)) {
-      warnings.push(label + ": observed " + value + "% doesn't match any known tier - defaulted to None, pick it manually if this looks wrong.");
+      warnings.push(label + ": получено " + value + "% - не совпадает ни с одним известным тиром, подставлено None. Если это выглядит неверно, проверьте вручную.");
     }
     return "None";
   }
@@ -891,7 +891,7 @@
     // both get rejected, not just the clearly-wrong-class case.
     var classCheck = checkDeathbladeClass(lines);
     if (classCheck === "not-loaded") {
-      return { error: "Couldn't confirm this is a Deathblade character page - make sure it's fully loaded and try again." };
+      return { error: "Не удалось подтвердить, что это страница персонажа Клинка смерти — убедитесь, что она загрузилась полностью, и повторите." };
     }
     if (classCheck === "wrong-class") {
       return { error: "This doesn't look like a Deathblade character - Bible import only supports Deathblade." };
@@ -1173,11 +1173,11 @@
           var gradeDebug = LAST_CHAOS_GRADE_DEBUG[gradeKey];
           var gradeDetail = "";
           if (gradeDebug && gradeDebug.lastColor) {
-            gradeDetail = " (found color \"" + gradeDebug.lastColor + "\", which isn't a recognized grade)";
+            gradeDetail = " (найден цвет \"" + gradeDebug.lastColor + "\", не распознанный как грейд)";
           } else if (gradeDebug && gradeDebug.markerFound === false) {
-            gradeDetail = " (couldn't even find this slot's icon marker on the page)";
+            gradeDetail = " (маркер слота на странице вообще не найден)";
           }
-          warnings.push(slotLabel + " (" + core.name + ", " + core.points + "P): couldn't read its grade (Relic/Ancient) from the page" + gradeDetail + " - left unset, pick it manually.");
+          warnings.push(slotLabel + " (" + core.name + ", " + core.points + "P): не удалось прочитать грейд (Реликвия/Древний) со страницы" + gradeDetail + " — оставлено пустым, проверьте вручную.");
           return;
         }
         if (target.format === "space17") {
@@ -1232,7 +1232,7 @@
         // running one of the 6 builds, this scan just failed to place
         // them, so leave the master Build toggle wherever it already was
         // and let them pick manually.
-        warnings.push("Order Sun/Moon (\"" + text.orderCores["Order Sun"].name + "\" / \"" + text.orderCores["Order Moon"].name + "\") didn't match a known build - Build wasn't auto-set, pick it manually.");
+        warnings.push("Order Sun/Moon (\"" + text.orderCores["Order Sun"].name + "\" / \"" + text.orderCores["Order Moon"].name + "\" не совпала ни с одной известной сборкой — Build не установлен автоматически, проверьте вручную.");
       }
     } else {
       // No fallback value to write here (unlike Chaos cores/adrenaline/
@@ -1243,7 +1243,7 @@
       // stale value from a previous import) with no signal that it
       // wasn't touched. Warn instead, same as the unmatched-pair case
       // above, so this doesn't look like a confirmed auto-detected build.
-      warnings.push("Couldn't find Order Sun/Moon cores on this page (Order Grid not equipped, or a read failure) - Build wasn't auto-set, verify it matches your actual build manually.");
+      warnings.push("Не найдены ядра Order Sun/Moon на этой странице (сетка Order не надета или не удалось прочитать) — Build не установлен автоматически, сверьте с вашей реальной сборкой.");
     }
 
     // Sanity check: if the raid loadout's own hydration data shows real
@@ -1265,7 +1265,7 @@
       Object.keys(CHAOS_SLOT_TO_KEY).forEach(function (slotLabel) {
         var hydrationCore = hydration.gridSlots[CHAOS_SLOT_TO_KEY[slotLabel]];
         if (hydrationCore && hydrationCore.points > 0 && !text.chaosCores[slotLabel]) {
-          warnings.push(slotLabel + ": the page's own data shows " + hydrationCore.points + "P invested here, but this file couldn't read a core name for it from the page text - left unset, pick it manually.");
+          warnings.push(slotLabel + ": данные страницы показывают " + hydrationCore.points + "P вложено, но имя ядра прочитать не удалось — оставлено пустым, проверьте вручную.");
         }
       });
     }
@@ -1328,7 +1328,7 @@
     // rather than silently assuming success.
     var onRaidLoadout = onRaidLoadoutConfirmed != null ? onRaidLoadoutConfirmed : text.onRaidLoadoutText;
     if (!onRaidLoadout) {
-      warnings.unshift("Couldn't confirm this was scanned from \"Raid Loadout\" (auto-switch may have failed or hadn't finished rendering yet). Weapon Power/Main Stat/karma/grid points are always read correctly either way, but accessories, bracelet, gems, engravings, and Ark Grid core names may reflect the wrong loadout tab - click \"Raid Loadout\" on the character page yourself and re-run if any of those look off.");
+      warnings.unshift("Не удалось подтвердить, что сканирование шло со вкладки \"Raid Loadout\" (автопереключение могло не сработать или не дорисоваться). Сила оружия, основной стат, карма и очки сетки читаются верно в любом случае, но аксессуары, браслет, самоцветы, гравировки и имена ядер сетки могут относиться к другой вкладке — если что-то выглядит неверно, переключитесь на \"Raid Loadout\" на странице персонажа и повторите.");
     }
 
     return { data: data, warnings: warnings, characterName: characterName };
@@ -1362,7 +1362,7 @@
       var RELOAD_KEY = "bibleImportReloadedFor";
       if (sessionStorage.getItem(RELOAD_KEY) !== location.href) {
         sessionStorage.setItem(RELOAD_KEY, location.href);
-        alert("Bible import: refreshing this page first to make sure its data is current - click the bookmarklet again once it reloads.");
+        alert("Импорт из Bible: сначала обновляю страницу, чтобы данные были актуальными — нажмите закладку ещё раз после перезагрузки.");
         location.reload();
         return;
       }
@@ -1429,7 +1429,7 @@
         // found, so seeing it directly beats guessing at page structure.
         console.log("[Bible import] raw visible text lines (" + lines.length + " total):\n" + JSON.stringify(lines, null, 2));
       }
-      if (payload.error) { alert("Bible import: " + payload.error); return; }
+      if (payload.error) { alert("Импорт из Bible: " + payload.error); return; }
       var encoded = btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
       location.href = calculatorUrl + "#bible-import=" + encoded;
     }
@@ -1569,7 +1569,7 @@
             }
             finish(linesAfter, confirmed);
           }
-          catch (e) { alert("Bible import failed: " + e.message); }
+          catch (e) { alert("Импорт из Bible не удался: " + e.message); }
         }, 400);
         return;
       }
@@ -1628,7 +1628,7 @@
       var singleLoadoutIsRaid = lines.indexOf("Current Loadout (Raid)") !== -1 || lines.indexOf("Estimated Raid Loadout") !== -1;
       finish(lines, singleLoadoutIsRaid);
     } catch (e) {
-      alert("Bible import failed: " + e.message);
+      alert("Импорт из Bible не удался: " + e.message);
     }
   }
 

@@ -1,24 +1,24 @@
-# Essentials
+# Основы {#essentials}
 
 <div class="setup-panel" data-accent="pink" markdown>
 <div class="setup-notes" markdown>
 
-<p class="food-required-lead">Atk/Move Speed food and feast are <strong>recommended</strong> to play Surge optimally. Food is sold at Peyto Island.</p>
+<p class="food-required-lead">Еда на атаку/скорость и пир «Урон оружия(1800)/Иваентовая еда» <strong>рекомендованы</strong>, чтобы играть в Твердую волю оптимально. Еда продаётся на острове Пейто.</p>
 
 <div class="food-options" markdown>
 
 <div class="food-option" markdown>
 ![](../assets/shared/icon-vernesewine.png){: .food-option-icon }
 
-Vernese Wine
+Бирнийское вино
 </div>
 
-<span class="food-option-connector">or</span>
+<span class="food-option-connector">или</span>
 
 <div class="food-option" markdown>
 ![](../assets/shared/icon-ealynsblessing.png){: .food-option-icon }
 
-Ealyn's Blessing
+Шато де Розе
 </div>
 
 <span class="food-option-connector food-option-connector-plus">+</span>
@@ -26,49 +26,35 @@ Ealyn's Blessing
 <div class="food-option" markdown>
 ![](../assets/shared/icon-feast.png){: .food-option-icon }
 
-Atk/Move Speed Feast
+Урон оружия(1800)/Иваентовая еда
 </div>
 
 </div>
 
 <details class="setup-note" data-kind="example" open markdown>
-<summary><span class="setup-note-tag">Alt</span>Mana Food + Maelstrom Bleed<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Альтернатива</span>Еда на ману + Джар на «Плащ клинков»<span class="setup-note-arrow"></span></summary>
 
-- Otherwise, use ![](../assets/shared/icon-striploin.png){: .food-option-icon } <span class="food-option-connector">or</span> ![](../assets/shared/icon-steak.png){: .food-option-icon } <span class="food-option-connector">or</span> ![](../assets/shared/icon-azena.png){: .food-option-icon } <span class="food-option-connector food-option-connector-plus">+</span> ![](../assets/shared/icon-feast.png){: .food-option-icon } and equip <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Legendary Bleed</span> rune on <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>. Higher ceiling, lower floor.
+- Иначе используйте ![](../assets/shared/icon-striploin.png){: .food-option-icon } <span class="food-option-connector">или</span> ![](../assets/shared/icon-steak.png){: .food-option-icon } <span class="food-option-connector">или</span> ![](../assets/shared/icon-azena.png){: .food-option-icon } <span class="food-option-connector">или</span> ![](../assets/shared/icon-fish.png){: .food-option-icon } <span class="food-option-connector food-option-connector-plus">+</span> ![](../assets/shared/icon-feast.png){: .food-option-icon } и наденьте руну <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Легендарный Джар</span> на <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>. Выше потолок, ниже пол.
 
 </details>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Tip</span>Quick Tips<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Короткая база о блейде<span class="setup-note-arrow"></span></summary>
 
-- All Deathblade builds run a pet with the <span class="skill-mention" data-glossary-id="specializationstat">Specialization</span> stat bonus.
-- Optimize <span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span> nodes or compare <span class="skill-mention" data-glossary-id="bracelet">bracelets</span>/equipment [here!](../resources.md#ark-passive-calculator)
-- Always press the next skill during your current skill's animation (skill queuing).
-- If unsure, select <span class="skill-mention" data-skill-id="grudge">Титаноборец</span> and <span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span> as your <span class="skill-mention" data-glossary-id="abilitystone">Ability Stone</span> engravings.
-- <span class="skill-mention" data-glossary-id="trixion">Trixion</span> practice requires equipping maxed <span class="skill-mention" data-skill-id="spiritabsorption">Spirit Absorption</span> and <span class="skill-mention" data-skill-id="maxmp">Max MP</span> engravings.
-- <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Optimized Training 1</span> may help smooth things out at lower gem levels.
-
-</details>
-
-<!-- TODO: drop this whole block once the September balance patch ships -->
-<details class="setup-note" data-kind="danger" markdown>
-<summary><span class="setup-note-tag">Warn</span>09/16/26 Balance Patch<span class="setup-note-arrow"></span></summary>
-
-- Death Trance no longer auto-deactivates mid-stack via a side node.
-- Stack cap went from 60 to 80, and extra stacks now roll over.
-- Breaking Moon became a Normal skill and gives 60 stacks on hit.
-- Complete rework of 222 cores and playstyle. It's incredible now.
-- Blitz Rush gained a 27% cast speed <span class="skill-mention" data-glossary-id="tripod">tripod</span> and 20% more attack range.
-- Turning Slash and Surprise Attack's after-effects now also apply <span class="skill-mention" data-glossary-id="synergy">Synergy</span>.
-- Overall damage went up, and Surge is genuinely competitive with RE.
-- Surge's post-cast delay was removed, so animation cancelling is not needed.
+- Всем билдам Клинка смерти нужен питомец, дающий бонус к «<span class="skill-mention" data-glossary-id="specializationstat">Мастерству</span>».
+- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Систему А.Р.К.</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
+- Всегда жмите следующее умение во время анимации текущего умения.
+- Если сомневаетесь, берите «<span class="skill-mention" data-skill-id="grudge">Титаноборец</span>» и «<span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span>» в качестве гравировок <span class="skill-mention" data-glossary-id="abilitystone">Фетранита</span>.
+- Для тренировок в <span class="skill-mention" data-glossary-id="trixion">Тризионе</span> нужны гравировки «<span class="skill-mention" data-skill-id="spiritabsorption">Стремительность</span>» и «<span class="skill-mention" data-skill-id="maxmp">Источник маны</span>» максимального уровня.
+- «<span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Изнурительные тренировки 1</span>» помогут сгладить просадку урона на низких уровнях самоцветов.
 
 </details>
+
 
 </div>
 </div>
 
-## Build Comparison
+## Сравнение билдов {#build-comparison}
 
 <!-- This table and its two-build overlay picker are entirely driven by
      javascripts/build-data.js (window.DB_BUILD_DATA) - nothing to edit here.
@@ -77,20 +63,20 @@ Atk/Move Speed Feast
 
 <div class="build-compare" data-family="surge"></div>
 
-## Engravings
+## Гравировки {#engravings}
 
 <div class="setup-panel" data-accent="lavender" markdown>
 
 <div class="engraving-loadout" markdown>
-<div class="engraving-loadout-group" markdown>
-<span class="engraving-loadout-label">Always Equip</span>
-<span class="engraving-chip" data-skill-id="grudge">Grudge</span>
-<span class="engraving-chip" data-skill-id="adrenaline">Adrenaline</span>
-<span class="engraving-chip" data-skill-id="ambushmaster">Ambush Master</span>
+<div class="engraving-loadout-group engraving-loadout-group-always" markdown>
+<span class="engraving-loadout-label">Всегда экипировать</span>
+<span class="engraving-chip" data-skill-id="grudge"><img class="skill-icon" src="../../assets/shared/icon-grudge.png" alt="">Титаноборец</span>
+<span class="engraving-chip" data-skill-id="adrenaline"><img class="skill-icon" src="../../assets/shared/icon-adrenaline.png" alt="">Адреналин</span>
+<span class="engraving-chip" data-skill-id="ambushmaster"><img class="skill-icon" src="../../assets/shared/icon-ambushmaster.png" alt="">Бесшумный убийца</span>
 </div>
 <div class="engraving-loadout-group" markdown>
-<span class="engraving-loadout-label">Choose 2</span>
-<span class="engraving-loadout-hint">pick the pair below that fits your needs ↓</span>
+<span class="engraving-loadout-label">Выбери пару</span>
+<span class="engraving-loadout-hint">выбери одну из пар ниже ↓</span>
 </div>
 </div>
 
@@ -98,114 +84,112 @@ Atk/Move Speed Feast
 
 <details class="engraving-card" data-accent="captain" open markdown>
 <summary>
-<span class="engraving-card-name" data-skill-id="raidcaptain">Raid Captain</span>
+<span class="engraving-card-name" data-skill-id="raidcaptain"><img class="skill-icon" src="../../assets/shared/icon-raidcaptain.png" alt="">Неутомимый натиск</span>
 <span class="engraving-card-badges" markdown>
-<span class="engraving-card-badge engraving-card-badge-top">★ Recommended</span>
-<span class="engraving-card-badge engraving-card-badge-food">Food Option</span>
+<span class="engraving-card-badge engraving-card-badge-top">★ Рекомендуемая</span>
+<span class="engraving-card-badge engraving-card-badge-food">Вариант еды</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Atk/Move Speed feast</span> + <span class="food-req-item">![](../assets/shared/icon-vernesewine.png){: .skill-icon } Vernese Wine</span>
+<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Урон оружия(1800)/Иваентовая еда + ![](../assets/shared/icon-ealynsblessing.png){: .skill-icon } Шато де Розе</span>
 { .food-req }
 
-**Pros:**{: .best-for } Highest damage bonus.
+**Плюсы:**{: .best-for } Максимальный бонус к урону.
 
-**Cons:**{: .tradeoff } Requires <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> management for damage.
+**Минусы:**{: .tradeoff } Требует грамотного использования <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> ради урона.
 
 </div>
 </details>
-
 <details class="engraving-card" data-accent="kbw" open markdown>
 <summary>
-<span class="engraving-card-name" data-skill-id="keenbluntweapon">Keen Blunt Weapon</span>
+<span class="engraving-card-name" data-skill-id="keenbluntweapon"><img class="skill-icon" src="../../assets/shared/icon-keenbluntweapon.png" alt="">Моргенштерн</span>
 <span class="engraving-card-badges" markdown>
-<span class="engraving-card-badge engraving-card-badge-top">★ Recommended</span>
-<span class="engraving-card-badge engraving-card-badge-safe">Safe Pick</span>
+<span class="engraving-card-badge engraving-card-badge-top">★ Рекомендуемая</span>
+<span class="engraving-card-badge engraving-card-badge-safe">Безопасный выбор</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
 <div class="engraving-card-body" markdown>
 
-Pair with <span class="skill-mention" data-skill-id="curseddoll">Голем</span> if you're just starting out
+Ставь в паре с гравировкой «<span class="skill-mention" data-skill-id="curseddoll">Голем</span>», если только начинаешь
 { .food-req }
 
-**Pros:**{: .best-for } A safe default with few drawbacks.
+**Плюсы:**{: .best-for } Безопасный вариант по умолчанию, почти без минусов.
 
-**Cons:**{: .tradeoff } Additive to 111's <span class="skill-mention" data-skill-id="breakingmoon">Неуловимый пируэт</span> bonus.
+**Минусы:**{: .tradeoff } Складывается с бонусом «<span class="skill-mention" data-skill-id="breakingmoon">Неуловимый пируэт</span>» на 111.
 
 </div>
 </details>
-
 <details class="engraving-card" data-accent="mass" open markdown>
 <summary>
-<span class="engraving-card-name" data-skill-id="massincrease">Mass Increase</span>
+<span class="engraving-card-name" data-skill-id="massincrease"><img class="skill-icon" src="../../assets/shared/icon-massincrease.png" alt="">Карающая длань</span>
 <span class="engraving-card-badges" markdown>
-<span class="engraving-card-badge engraving-card-badge-food">Food Option</span>
+<span class="engraving-card-badge engraving-card-badge-food">Вариант еды</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Atk/Move Speed feast</span> + <span class="food-req-item">![](../assets/shared/icon-ealynsblessing.png){: .skill-icon } Ealyn's Blessing</span>
+<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Урон оружия(1800)/Иваентовая еда + ![](../assets/shared/icon-vernesewine.png){: .skill-icon } Бирнийское вино</span>
 { .food-req }
 
-**Pros:**{: .best-for } Highest damage bonus.
+**Плюсы:**{: .best-for } Максимальный бонус к урону.
 
-**Cons:**{: .tradeoff } Requires <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> management to maintain damage and offset the Attack Speed penalty.
+**Минусы:**{: .tradeoff } Требует грамотного использования <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>, чтобы держать урон и компенсировать штраф скорости атаки.
 
 </div>
 </details>
-
 <details class="engraving-card" data-accent="cursed" open markdown>
 <summary>
-<span class="engraving-card-name" data-skill-id="curseddoll">Cursed Doll</span>
+<span class="engraving-card-name" data-skill-id="curseddoll"><img class="skill-icon" src="../../assets/shared/icon-curseddoll.png" alt="">Голем</span>
 <span class="engraving-card-badges" markdown>
-<span class="engraving-card-badge engraving-card-badge-safe">Alternative</span>
+<span class="engraving-card-badge engraving-card-badge-safe">Альтернатива</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
 <div class="engraving-card-body" markdown>
 
-Not the end of the world if you're forced to use it
+Не катастрофа, если он вынужден
 { .food-req }
 
-**Pros:**{: .best-for } Inexpensive and reliable.
+**Плюсы:**{: .best-for } Дёшево и надёжно.
 
-**Cons:**{: .tradeoff } The healing penalty can be frustrating and its damage bonus is lower than the rest.
+**Минусы:**{: .tradeoff } Штраф за лечение бывает раздражающим, а бонус к урону ниже, чем у остальных.
 
 </div>
 </details>
+
 
 <details class="engraving-card" data-accent="combo" open markdown>
 <summary>
-<span class="engraving-card-name"><span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span> + <span class="skill-mention" data-skill-id="massincrease">Mass Increase</span> 🦁 🐆</span>
+<span class="engraving-card-name"><img class="skill-icon" src="../../assets/shared/icon-raidcaptain.png" alt=""><span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span> + <img class="skill-icon" src="../../assets/shared/icon-massincrease.png" alt=""><span class="skill-mention" data-skill-id="massincrease">Карающая длань</span> 🦁 🐆</span>
 <span class="engraving-card-badges" markdown>
-<span class="engraving-card-badge engraving-card-badge-ceiling">★ Ceiling</span>
-<span class="engraving-card-badge engraving-card-badge-food">Food Option</span>
+<span class="engraving-card-badge engraving-card-badge-ceiling">★ Потолок</span>
+<span class="engraving-card-badge engraving-card-badge-food">Вариант еды</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Atk/Move Speed feast</span> + <span class="food-req-item">![](../assets/shared/icon-vernesewine.png){: .skill-icon } Vernese Wine (Bard/Paladin)</span> or <span class="food-req-item">![](../assets/shared/icon-ealynsblessing.png){: .skill-icon } Ealyn's Blessing (Artist/Valkyrie)</span>
+<span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-feast.png" alt=""> Урон оружия(1800)/Иваентовая еда</span> + <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-vernesewine.png" alt=""> Бирнийское вино (Bard/Paladin)</span> или <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-ealynsblessing.png" alt=""> Шато де Розе (Artist/Valkyrie)</span>
 { .food-req }
 
-**Pros:**{: .best-for } This is ceiling. Efficient damage scaling for 111; 222's short cycles also lessen the burden of its penalties.
+**Плюсы:**{: .best-for } Это самый потолок. Эффективный рост урона на 111; короткие циклы 222 тоже снижают цену его штрафов.
 
-**Cons:**{: .tradeoff } Doubles up on <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> and situational shackles, only recommended if you know what you're doing.
+**Минусы:**{: .tradeoff } Удваивает ставку на <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> и ситуативные «оковы» — рекомендуется только если точно знаешь, что делаешь.
 
 </div>
 </details>
 
 </div>
 
-<span class="engraving-calc-note">To compare advanced engraving/food values or get customized recommendations, check out the [Ark Passive Calculator!](../resources.md#ark-passive-calculator)</span>
+<span class="engraving-calc-note">Сравнить продвинутые значения гравировок и еды или получить персональные рекомендации — [Калькулятор А.Р.К.](../resources.md#ark-passive-calculator)</span>
 
 </div>
 
-## Gameplay
+## Геймплей {#gameplay}
 
 ### Identity
 
@@ -226,13 +210,13 @@ Not the end of the world if you're forced to use it
 
 Aim to enter Death Trance with 3 orbs whenever possible.
 
-### Party Synergies
+### Групповые синергии {#party-synergies}
 
 - Turning Slash: +4% outgoing and +5% directional damage for 12s.
 - Surprise Attack: +4% outgoing and +5% directional damage for 6s.
 - <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>: +12.8% Attack/Move Speed for 6s.
 
-### Playstyle
+### Стиль игры {#playstyle}
 
 Surge is a repeating cycle:
 
@@ -244,13 +228,13 @@ The 80-stack cap and rollover give you flexibility. You don't need to stop or fo
 
 Knowing roughly how many stacks each skill generates is important for adapting your rotation.
 
-### Combat Performance
+### Боевые характеристики {#combat-performance}
 
 **Surge Casts Per Minute (<span class="skill-mention" data-glossary-id="cpm">CPM</span>)** and <span class="skill-mention" data-glossary-id="backattack">back attack</span> rate are useful measures of how efficiently you cycle Surge.
 
 Only compare CPM between the **same encounter and build**, as boss uptime and mechanics heavily affect it.
 
-## Surge Skills
+## Скилы Твёрдой воли {#surge-skills}
 
 <!-- Per-row id (name auto-resolves from skill-names.js) - full schema is in
      javascripts/essentials-table.js's
@@ -286,8 +270,8 @@ Only compare CPM between the **same encounter and build**, as boss uptime and me
 </div>
 
 <div class="tag-legend" markdown>
-<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-dmg"></span>Damage</span>
-<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-util"></span>Utility</span>
-<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-immune"></span>Immune</span>
-<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-warn"></span>Warning</span>
+<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-dmg"></span>Урон</span>
+<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-util"></span>Вспомогательный</span>
+<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-immune"></span>Иммунитет</span>
+<span class="tag-legend-item"><span class="tag-legend-dot tag-legend-warn"></span>Предупреждение</span>
 </div>

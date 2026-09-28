@@ -67,6 +67,20 @@
 //   Swap in real icons later inside buildCard() below; no markdown changes
 //   needed when that art exists.
 //
+//   A rune's "name" shows as its own icon (assets/shared/rune-icons/
+//   <id>.png) in a rarity-colored square, with the rune's name as plain
+//   text to the right of it. Hovering either shows the same rune tooltip
+//   the name used to get from rune-tooltip.js. A rune with no icon file
+//   falls back to the name alone on a plain filled pill, so adding a rune
+//   to a build JSON never leaves a nameless chip behind.
+//
+//   Write the rune's "name" in ENGLISH here, even though the site shows
+//   it in Russian: this is data, not prose, and it doubles as the icon
+//   filename and as rune-tooltip.js's lookup key, neither of which works
+//   with a localized name. buildCard resolves it to the ascii id via
+//   DB_RUNE_IDS and takes the visible label from DB_RUNE_NAMES, so the
+//   card reads "Джар" while this file stays 100% latin.
+//
 //   Skills with neither tripods nor a rune (Identity/Technique/Awakening)
 //   render as normal cards (just without a chips row) inline in the same
 //   masonry grid as every other skill, in whatever order they appear in
@@ -142,17 +156,78 @@
       }
     }
     if (entry.rune) {
-      var runeChip = el("span", "rune-chip rune-" + entry.rune.tier, entry.rune.name);
+      var runeChip = el("span", "rune-chip rune-" + entry.rune.tier);
+      // Canonical id for the build JSON's rune.name, resolved through
+      // rune-data.js's DB_RUNE_IDS so a name in any language lands on the
+      // ascii id the rest of the system is keyed by. It has to be resolved
+      // BEFORE anything else here: the id is simultaneously the icon
+      // filename, the DB_RUNE_EFFECTS key rune-tooltip.js looks up, and
+      // the key into DB_RUNE_NAMES below, and a display name satisfies
+      // none of those (there is no rune-icons/джар.png). That resolution
+      // order is also why every build page's JSON spells the rune in
+      // english ("Bleed", not "Джар") even where the site displays it in
+      // russian - the JSON is data, not prose.
+      var runeId = (window.DB_RUNE_IDS && window.DB_RUNE_IDS[String(entry.rune.name).toLowerCase()]) || String(entry.rune.name).toLowerCase();
+      // What the chip SHOWS: the game's own name for the rune, from
+      // DB_RUNE_NAMES. Falling back to the raw entry.rune.name means a
+      // rune missing from that map still renders a usable label rather
+      // than "undefined" - same fail-quietly rule as everywhere else.
+      var runeName = (window.DB_RUNE_NAMES && window.DB_RUNE_NAMES[runeId]) || entry.rune.name;
       // Stamped for rune-tooltip.js to key its DB_RUNE_EFFECTS lookup off
       // of - same "data-id on the exact rendered element" pattern as
       // gem-priority.js's data-id and ark-passive-tree.js's data-ap-id/
       // data-level, rather than that file re-deriving name/tier back out
-      // of the chip's own text/class. entry.rune.name's capitalization
-      // (e.g. "Wealth") is kept as-is here for display; rune-tooltip.js
-      // lowercases it itself when keying into DB_RUNE_EFFECTS, same as
-      // every other id lookup on this site.
-      runeChip.setAttribute("data-rune-name", entry.rune.name);
+      // of the chip's own text/class. Stamps the resolved ID, not the
+      // name as typed in the JSON, so a lookup here can never miss on a
+      // spelling or a language.
+      runeChip.setAttribute("data-rune-name", runeId);
       runeChip.setAttribute("data-rune-tier", entry.rune.tier);
+      // Name text, sitting to the right of the icon tile as plain text with
+      // no fill or border of its own - the tier color reads off the tile,
+      // the word just names it. Stays in the DOM (not removed) so the
+      // iconless-rune fallback below is just a class flip plus dropping the
+      // tile, with nothing to re-render and no second code path to keep in
+      // sync.
+      var runeLabel = el("span", "rune-chip-label", runeName);
+      // Rune icon, under assets/shared/rune-icons/<id>.png - the same
+      // folder rune-tooltip.js's own buildHeader already loads from, NOT
+      // the icon-<id>.png convention every other icon on this site
+      // follows. A rune name collides with an unrelated icon-<id>.png that
+      // already exists for a different purpose (e.g. "bleed" is also a
+      // DB_SKILL_NAMES id for the Trixion DPS rune-proc row - see
+      // skill-names.js's own comment on that collision), so rune art has
+      // to live in its own namespace. runeId above is what the file is
+      // actually named after.
+      var runeIcon = document.createElement("img");
+      runeIcon.className = "rune-chip-icon";
+      runeIcon.src = window.SiteUtils.iconSrc(SITE_ROOT, "rune-icons/" + runeId + ".png");
+      runeIcon.alt = "";
+      runeIcon.loading = "lazy";
+      // The tile is the rarity-colored square the icon sits inset inside
+      // (see .rune-chip-tile-box in extra.css) - a wrapper of its own
+      // rather than a style on the chip itself, because the chip still has
+      // to be the ONE hover target for the whole "icon + name" pair and
+      // rune-tooltip.js wires it that way.
+      var runeTile = el("span", "rune-chip-tile-box");
+      // Opt into the tiled layout immediately, before the image has even
+      // been requested - the <img> reserves its own box from the CSS
+      // width/height below, so the chip never renders as text-then-swap
+      // and nothing reflows when the art lands.
+      runeChip.classList.add("rune-chip-tile");
+      // Every rune currently in a build JSON has art, so this is the
+      // belt-and-suspenders path rather than the common case: a missing
+      // file drops back to the text pill this chip has always been (class
+      // off, tile removed) rather than leaving an empty colored square
+      // behind. The chip itself stays the hover target either way - the
+      // icon is decorative (alt="") and deliberately not a second tooltip
+      // trigger of its own.
+      runeIcon.addEventListener("error", function () {
+        runeChip.classList.remove("rune-chip-tile");
+        runeTile.remove();
+      });
+      runeTile.appendChild(runeIcon);
+      runeChip.appendChild(runeTile);
+      runeChip.appendChild(runeLabel);
       chips.appendChild(runeChip);
     }
     // Identity/Technique/Awakening cards have neither tripods nor a

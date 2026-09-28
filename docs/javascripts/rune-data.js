@@ -1,147 +1,202 @@
 // FORK GUIDE: DATA, but mostly class-agnostic - the Skill Rune system
 // itself (Galewind/Focus/Rage/Wealth/Bleed/Poison/Vision/Purify/etc.) is
 // shared by every class in the game, same as the account-wide Ark Passive
-// nodes in ap-node-names.js. The only thing to touch when forking is
-// TIERS_USED below (whichever tiers YOUR build pages' rune chips actually
-// reference) - add an entry for any tier this file doesn't cover yet if a
-// build calls for it, same "extend as needed" rule as everywhere else.
+// nodes in ap-node-names.js. The only thing to touch when forking is this
+// file - rune-tooltip.js and skill-setup.js read whatever is defined here
+// and need no code changes.
 //
-// SINGLE SOURCE OF TRUTH for the hover/focus/tap tooltip rune-tooltip.js
-// attaches to each .rune-chip skill-setup.js renders - a lookup miss (an
-// untiered rune, or a rune not listed here at all) just means the chip
-// renders with no tooltip, same fail-quietly rule as every other widget
-// on this site.
+// FOUR MAPS, in the order they get read:
 //
-// Keyed by rune name, lowercased, matching the same "lowercase, no
-// punctuation" id convention as every other lookup here (skill-names.js,
-// ap-node-names.js) and matching assets/shared/rune-icons/<name>.png,
-// the icon file rune-tooltip.js's buildHeader reads by this same
-// lowercased key (see that file - NOT the icon-<id>.png convention
-// everything else uses, since a rune name can collide with an unrelated
-// icon-<id>.png, e.g. "bleed"). Each entry is a flat tier -> effect text map -
-// unlike ap-node-effects.js's `levels` (an open-ended 1-5 investment
-// count), a rune's "level" is just which of the 4 fixed rarities it
-// dropped as, so a flat lookup by that same tier string skill-setup.js
-// already stamps onto the chip (data-rune-tier) is simpler than reusing
-// the array-of-levels shape.
+//   DB_RUNE_EFFECTS    id -> { tier -> effect text }, the tooltip's body
+//   DB_RUNE_NAMES      id -> the name shown on a chip and in a tooltip
+//                       header (may be any language)
+//   DB_RUNE_TIER_NAMES tier -> the name of the rarity itself, i.e. what
+//                       "legendary" is CALLED in the game's own language
+//   DB_RUNE_IDS        any name (ascii id OR display name) -> ascii id
+//                       ...built from the two maps above, not hand-listed
 //
-// Tier keys are the actual Lost Ark item-rarity names - "uncommon" and
-// "rare", NOT the chip's own display colors ("green"/"blue"). An earlier
+// WHY THE IDS STAY ASCII: the id is doing three jobs at once - it's the
+// DB_RUNE_EFFECTS key, it's the `data-rune-name` rune-tooltip.js looks
+// its own lookup up by, AND with the ".png" appended it's the file it
+// requests from assets/shared/rune-icons/. If the id were the Russian
+// name, all three would break at once on a file that doesn't exist
+// (rune-icons/джар.png). So the ids stay latin and the translation lives
+// in DB_RUNE_NAMES only, which is the one map here a reader is meant to
+// look at. Nothing below hard-codes a display name into a lookup.
+//
+// The lowercase-no-punctuation id convention matches every other lookup on
+// this site (skill-names.js, ap-node-names.js), and deliberately does NOT
+// match the icon-<id>.png convention the rest of the site uses for icons:
+// a rune name collides with an unrelated icon-<id>.png that already
+// exists for a different purpose (e.g. "bleed" is also a DB_SKILL_NAMES
+// id for the Trixion DPS rune-proc row - see skill-names.js's own comment
+// on that collision), so rune art lives in its own folder under its own
+// names.
+//
+// Tier keys are the actual item-rarity names in english ("uncommon" and
+// "rare", NOT the chip's display colors "green"/"blue"). An earlier
 // version of this file used the color names as the tier keys themselves,
 // which was a real mistake, not just a display nit: it silently
-// mislabeled the rarity everywhere that string surfaced (the tooltip's
-// own tier line, prose data-rune-tier spans, this file's keys) rather
-// than just picking an unconventional-but-consistent internal id. Fixed
-// throughout - keys here, extra.css's .rune-chip/.rune-tip-tier class
-// suffixes, skill-setup.js's own schema comment, and every markdown
-// page's "rune": {"tier": ...} JSON and data-rune-tier prose span all
-// use uncommon/rare/epic/legendary now, matching what rune-tooltip.js's
-// buildTip displays verbatim (it just capitalizes the raw tier string -
-// no separate display-name map to keep in sync, which is exactly the
-// trap the old green/blue naming fell into). --dbc-green/--dbc-blue in
-// extra.css keep their own (color, not rarity) names - they're also
-// reused for unrelated tripod-chip tier coloring - only the rune-facing
-// class suffixes that pair them to a rarity changed.
+// mislabeled the rarity everywhere that string surfaced rather than just
+// picking an unconventional-but-consistent internal id. The KEYS here and
+// in every markdown page's "rune": {"tier": ...} JSON stay english;
+// extra.css's .rune-chip/.rune-tip-tier class suffixes pair with them;
+// what gets RENDERED comes from DB_RUNE_TIER_NAMES, so the site can show
+// "Легендарный" while every class, id and class name in the code stays
+// english. --dbc-green/--dbc-blue in extra.css keep their own (color, not
+// rarity) names - they're also reused for unrelated tripod-chip tier
+// coloring.
 //
-// Four possible rarities exist (Uncommon/Rare/Epic/Legendary), but not
-// every rune drops in all four: Vision is Epic/Legendary only; Rage,
-// Bleed and Poison are Rare/Epic/Legendary only, no Uncommon version;
-// Purify is Uncommon/Epic/Legendary only, no Rare version - only include
-// the tiers that are real, don't pad missing ones with a guessed number.
+// Four rarities exist (Необычный/Редкий/Эпический/Легендарный), but not
+// every rune drops in all four: Ульд is Epic/Legendary only; Солум is
+// Uncommon/Epic/Legendary, no Rare; Эйтур is Uncommon/Rare/Legendary, no
+// Epic - only include the tiers that are real, don't pad missing ones
+// with a guessed number. A chip asking for a tier that isn't listed just
+// gets no tooltip (attachRune bails on the lookup miss), same
+// fail-quietly rule as every other widget here.
 //
-// SOURCING: text below in "Confirmed" entries is transcribed verbatim
-// from in-game tooltip screenshots (Legendary Poison/Focus/Bleed/Rage/
-// Purify, Epic+Legendary Vision, Uncommon+Epic Purify) - trust these
-// over anything else in this file. Entries marked "Estimated" are
-// reconstructed rather than screenshotted, two different ways:
-//   - Pattern-matched AND cross-checked against Maxroll's Skill Rune
-//     Collection Guide (maxroll.gg/lost-ark/resources/skill-rune-
-//     collection-guide) - Focus's Uncommon/Rare (10%/20%, completing the
-//     10/20/30/40 step already visible from the two Confirmed entries)
-//     and Rage's Rare (8%, completing the 8/12/16 step) both land
-//     exactly on the number Maxroll's own tables give, so these are
-//     about as trustworthy as an Estimated entry gets.
-//   - Pattern-matched WITHOUT a matching Maxroll number (Bleed's Rare/
-//     Epic, and all of Poison's Rare/Epic/Legendary) - Maxroll's own
-//     Skill Rune System Guide states outright that "Poison functions
-//     identical to Bleed and does the same damage", so Poison's ladder
-//     here is mirrored 1:1 off Bleed's rather than independently
-//     sourced. Bleed's own Rare/Epic (4s/5s) come from Maxroll's
-//     Collection Guide too, but that page was last updated Oct 2024 and
-//     its Legendary number for Bleed doesn't match this file's own
-//     screenshot-Confirmed Legendary text (6s, matches; but its listed
-//     Poison duration is a stale 3s with no rarity breakdown at all) -
-//     treat Bleed's Rare/Epic and ALL of Poison's tiers below as the
-//     least trustworthy entries in this file, most likely to need
-//     correcting against a live tooltip.
-// Every Estimated entry should be swapped for the real tooltip text (or
-// deleted if wrong) whenever a screenshot of that exact rune+tier is
-// available, same "reconcile against real reference material" standard
-// ap-node-effects.js holds itself to. None of this is patch-sensitive
-// the way class skills are - runes are a universal system, not itemized
-// in class balance patches - but double-checking against a current
-// in-game tooltip still beats trusting a wiki/guide scrape.
+// SOURCING: effect text and tier values below are transcribed VERBATIM
+// from the Russian community wiki (lostark.ru/wiki/Rune) - the effect
+// sentences below are the wiki's own sentences with X/Y/Z substituted
+// for the per-tier number, and nothing here is reworded or re-translated
+// from the game's english tooltip. One of the wiki's cells is wrong and
+// is corrected below; a second is only a known doubt, and is left as the
+// wiki has it:
+//
+//   - The wiki lists Эйтур (poison) as Необычный 3s and Легендарный 6s
+//     only, with Редкая/Эпическая marked "Нет в игре". In game Эйтур does
+//     also drop Rare, at 4s. Its Эпическая version does not exist at all
+//     and is deliberately absent below. An earlier version of this file
+//     had poison at rare 4s / epic 5s, where epic was pure guesswork -
+//     5s was copied off bleed's ladder on the assumption the two runes
+//     share one, and no such value exists in the game.
+//   - Эйге (wealth) reads below exactly as the wiki writes it, "при
+//     применении умения" and all. Flagging, not changing: the english
+//     tooltip this file used to carry said "On skill HIT", and a resource
+//     gain on skill use is a different rune from one on skill hit, and
+//     this site's own guides put Эйге on hit-skills specifically for orb
+//     generation. If a future check against the game shows the wiki wrong
+//     here too, the fix is to put "При попадании умением по противнику"
+//     back in place of "При применении умения" - and to change all four
+//     tiers together, since they share one sentence.
+//
+// One deliberate departure from the wiki's literal text, on both Джар and
+// Эйтур: the wiki fills one "на X секунд" template for all four tiers, but
+// after 3 and 4 Russian needs the genitive singular - "на 3 секунды",
+// "на 4 секунды" - and only 5+ takes "секунд". The tiers below inflect
+// accordingly. That is grammar, not a data difference; don't "fix" it back
+// to the wiki's uninflected form.
+//
+// Before this pass every entry in this file was either transcribed from
+// an in-game tooltip screenshot (english) or reconstructed from
+// Maxroll's guides, and the file said so at length. That provenance note
+// is gone because the entries it described are: the numbers are now the
+// wiki's, confirmed against the game where the two disagreed.
 (function () {
   window.DB_RUNE_EFFECTS = {
-    // ---- Confirmed (verbatim from screenshots) ----
-    // ---- + Estimated (see SOURCING above for which tier is which) ----
-    poison: {
-      // Rare/Epic: Estimated, mirrored off Bleed's own ladder below (no
-      // independent Poison source at all - see SOURCING) - least
-      // trustworthy entries in the file, verify first if verifying any.
-      rare: 'On skill hit, inflicts "Poison" on your foe for 4s.',
-      epic: 'On skill hit, inflicts "Poison" on your foe for 5s.',
-      legendary: 'On skill hit, inflicts "Poison" on your foe for 6s.',
-    },
+    // ---- Джар ----
     bleed: {
-      // Rare/Epic: Estimated from Maxroll's Collection Guide (4s/5s) -
-      // see SOURCING for why these rank below Focus/Rage's Estimated
-      // tiers in trustworthiness.
-      rare: 'On skill hit, inflicts "Bleeding" on your foe for 4s.',
-      epic: 'On skill hit, inflicts "Bleeding" on your foe for 5s.',
-      legendary: 'On skill hit, inflicts "Bleeding" on your foe for 6s.',
+      legendary: "При попадании умением по противнику накладывает на него эффект кровотечения на 6 секунд.",
+      epic: "При попадании умением по противнику накладывает на него эффект кровотечения на 5 секунд.",
+      rare: "При попадании умением по противнику накладывает на него эффект кровотечения на 4 секунды.",
+      uncommon: "При попадании умением по противнику накладывает на него эффект кровотечения на 3 секунды.",
     },
-    focus: {
-      legendary: "MP Consumption -40%.",
-      epic: "MP Consumption -30%.",
-      // Estimated, but matches Maxroll's Collection Guide numbers exactly.
-      rare: "MP Consumption -20%.",
-      uncommon: "MP Consumption -10%.",
+    // ---- Эйтур ---- (no Эпическая - see SOURCING)
+    poison: {
+      legendary: "При попадании умением по противнику накладывает на него эффект отравления на 6 секунд.",
+      rare: "При попадании умением по противнику накладывает на него эффект отравления на 4 секунды.",
+      uncommon: "При попадании умением по противнику накладывает на него эффект отравления на 3 секунды.",
     },
+    // ---- Раш ----
     rage: {
-      legendary: "Chance of Atk./Move Speed +16% for 6s when skill is used.",
-      epic: "Chance of Atk./Move Speed +12% for 6s when skill is used.",
-      // Estimated, but matches Maxroll's Collection Guide numbers exactly.
-      // No Uncommon tier - Rage only drops Rare/Epic/Legendary.
-      rare: "Chance of Atk./Move Speed +8% for 6s when skill is used.",
+      legendary: "С некоторой вероятностью скорость атаки и передвижения персонажа могут повыситься на 16% на 6 секунд.",
+      epic: "С некоторой вероятностью скорость атаки и передвижения персонажа могут повыситься на 12% на 6 секунд.",
+      rare: "С некоторой вероятностью скорость атаки и передвижения персонажа могут повыситься на 8% на 6 секунд.",
+      uncommon: "С некоторой вероятностью скорость атаки и передвижения персонажа могут повыситься на 4% на 6 секунд.",
     },
-    vision: {
-      // Vision only drops as Epic or Legendary - no Uncommon/Rare version
-      // exists, so there are only ever these two entries to have.
-      legendary: "Skill Casting Speed +10%, on skill hit, Stagger Damage +20%.",
-      epic: "Skill Casting Speed +8%, on skill hit, Stagger Damage +16%.",
+    // ---- Марх ----
+    focus: {
+      legendary: "Умение расходует на 40% меньше маны",
+      epic: "Умение расходует на 30% меньше маны",
+      rare: "Умение расходует на 20% меньше маны",
+      uncommon: "Умение расходует на 10% меньше маны",
     },
-    purify: {
-      // Confirmed (screenshots) at all three - Purify drops as Uncommon,
-      // Epic or Legendary, no Rare version. (An earlier version of this
-      // file had only Legendary and a comment claiming Purify was
-      // single-rarity - that was wrong; fixed here.)
-      legendary: "80% chance to remove a debuff when skill is used.",
-      epic: "70% chance to remove a debuff when skill is used.",
-      uncommon: "50% chance to remove a debuff when skill is used.",
-    },
-
-    wealth: {
-      legendary: "On skill hit, Specialty Meter gain +40%.",
-      epic: "On skill hit, Specialty Meter gain +30%.",
-      rare: "On skill hit, Specialty Meter gain +20%.",
-      uncommon: "On skill hit, Specialty Meter gain +10%.",
-    },
+    // ---- Агель ----
     galewind: {
-      legendary: "Skill Casting Speed +14%.",
-      epic: "Skill Casting Speed +12%.",
-      rare: "Skill Casting Speed +8%.",
-      uncommon: "Skill Casting Speed +5%.",
+      legendary: "Время применения умения сокращается на 14%.",
+      epic: "Время применения умения сокращается на 12%.",
+      rare: "Время применения умения сокращается на 8%.",
+      uncommon: "Время применения умения сокращается на 5%.",
+    },
+    // ---- Солум ---- (no Редкая)
+    purify: {
+      legendary: "При применении умения с вашего персонажа с вероятностью 80% будет снят один негативный эффект.",
+      epic: "При применении умения с вашего персонажа с вероятностью 70% будет снят один негативный эффект.",
+      uncommon: "При применении умения с вашего персонажа с вероятностью 50% будет снят один негативный эффект.",
+    },
+    // ---- Ульд ---- (no Необычная/Редкая)
+    vision: {
+      legendary: "Время применения умения сокращается на 10%, а изнуряющий урон повышается на 20%.",
+      epic: "Время применения умения сокращается на 8%, а изнуряющий урон повышается на 16%.",
+    },
+    // ---- Эйге ----
+    // Wiki wording verbatim, trigger clause included - see SOURCING.
+    wealth: {
+      legendary: "При применении умения персонаж получает на 40% больше ресурса, позволяющего использовать абсолютное умение.",
+      epic: "При применении умения персонаж получает на 30% больше ресурса, позволяющего использовать абсолютное умение.",
+      rare: "При применении умения персонаж получает на 20% больше ресурса, позволяющего использовать абсолютное умение.",
+      uncommon: "При применении умения персонаж получает на 10% больше ресурса, позволяющего использовать абсолютное умение.",
     },
   };
+
+  // Display name per rune id - the only place a non-ascii name appears.
+  // Russian, matching how the game's own RU client names them; the ids
+  // above/below stay english. Read by skill-setup.js for a chip's label
+  // and by rune-tooltip.js's buildHeader for the tooltip's title, so the
+  // chip, the tooltip and any prose mention all say the same thing
+  // without any of them repeating the string.
+  window.DB_RUNE_NAMES = {
+    bleed: "Джар",
+    poison: "Эйтур",
+    rage: "Раш",
+    focus: "Марх",
+    galewind: "Агель",
+    purify: "Солум",
+    vision: "Ульд",
+    wealth: "Эйге",
+  };
+
+  // What each rarity tier is CALLED, as the game writes it. Kept apart
+  // from the tier KEYS (which stay english - see the header comment) so
+  // that adding a language never means renaming a class or a data key.
+  window.DB_RUNE_TIER_NAMES = {
+    legendary: "Легендарный",
+    epic: "Эпический",
+    rare: "Редкий",
+    uncommon: "Необычный",
+  };
+
+  // Name -> canonical id, and the display-name alias into DB_RUNE_EFFECTS,
+  // both derived from the two maps above in one pass. Inverting rather
+  // than hand-listing means a rune's name is typed exactly once (in
+  // DB_RUNE_NAMES) and a new one can't half-work by being added to one
+  // map and forgotten in the other - which is exactly how this file used
+  // to break, with a hand-written `DB_RUNE_IDS["джар"] = "bleed"` line
+  // and a hand-written `DB_RUNE_EFFECTS["джар"]` alias that each covered
+  // half of what a "Джар" chip needed and had to be kept in sync by hand.
+  //
+  // The DB_RUNE_EFFECTS alias is belt-and-suspenders now that
+  // skill-setup.js writes the ascii id into data-rune-name: nothing should
+  // ever look a rune up by its display name. It stays so that a
+  // hand-written `<span data-rune-name="Джар">` in any markdown page
+  // still resolves instead of silently rendering no tooltip.
+  window.DB_RUNE_IDS = {};
+  Object.keys(window.DB_RUNE_EFFECTS).forEach(function (id) {
+    window.DB_RUNE_IDS[id] = id;
+  });
+  Object.keys(window.DB_RUNE_NAMES).forEach(function (id) {
+    var display = String(window.DB_RUNE_NAMES[id]).toLowerCase();
+    window.DB_RUNE_IDS[display] = id;
+    window.DB_RUNE_EFFECTS[display] = window.DB_RUNE_EFFECTS[id];
+  });
 })();
