@@ -2493,29 +2493,44 @@ h3 { color: var(--dbc-teal); }
 .md-typeset .build-compare table th {
   background-color: rgba(var(--dbc-purple-rgb), 0.1);
   font-size: 0.68rem;
+  /* Headers stay on one line. "DPS в Тризионе" was breaking into "DPS в" /
+     "ТРИЗИОНЕ" at its old 13% share, and a header split across two lines
+     reads as two separate labels. Narrow screens already scroll this table
+     horizontally (the max-width: 720px block sets overflow-x + min-width on
+     .build-compare-table-scroll), so nowrap costs nothing there. */
+  white-space: nowrap;
 }
 .md-typeset .build-compare table th:nth-child(1),
 .md-typeset .build-compare table td:nth-child(1) {
-  width: 20%;
+  width: 19%;
 }
 .md-typeset .build-compare table th:nth-child(2),
 .md-typeset .build-compare table td:nth-child(2) {
-  width: 13%;
+  width: 14%;
 }
 .md-typeset .build-compare table th:nth-child(3),
 .md-typeset .build-compare table td:nth-child(3) {
-  width: 13%;
+  width: 16%;
 }
-/* Widened from 15% - "Fast & Punishing" (the longest playstyle value)
-   was wrapping to two lines at the old width. */
+/* Columns are now Билд / Сложность / DPS в Тризионе / Описание - the
+   separate Стиль игры and Кому подходит columns are gone, their content
+   having moved onto the build pages. The old nth-child(5) rule went with
+   them rather than lingering to match nothing. Description takes the room
+   the two dropped columns shared, and is free to wrap: it is a sentence,
+   not a tag. */
 .md-typeset .build-compare table th:nth-child(4),
 .md-typeset .build-compare table td:nth-child(4) {
-  width: 20%;
-  white-space: nowrap;
+  width: 51%;
 }
-.md-typeset .build-compare table th:nth-child(5),
-.md-typeset .build-compare table td:nth-child(5) {
-  width: 34%;
+.md-typeset .build-compare-desc {
+  line-height: 1.45;
+}
+/* The .skill-mention spans in a description are the only ones on the site
+   sitting on normal-weight prose rather than inside a chip or a cell of
+   their own, so they get the standard mention treatment (dotted rule on
+   hover) without any chip framing. */
+.md-typeset .build-compare-desc .skill-mention {
+  font-weight: 600;
 }
 .md-typeset .build-compare-name {
   display: inline-flex;
@@ -2868,7 +2883,7 @@ h3 { color: var(--dbc-teal); }
    </summary>
    <div class="engraving-card-body" markdown>
 
-   ![](icon){: .skill-icon } Бирнийское вино + ![](icon){: .skill-icon } Урон оружия(1800)/Иваентовая еда
+   ![](icon){: .skill-icon } Бирнийское вино + ![](icon){: .skill-icon } Еда из поместья
    { .food-req }
 
    **Best For:**{: .best-for } players who want top ceiling damage.
@@ -2934,7 +2949,25 @@ h3 { color: var(--dbc-teal); }
    rows differs; an earlier attempt gave the core a filled green panel and a
    pill label, which outweighed the chips it was meant to introduce. */
 .md-typeset .engraving-loadout-group-always .engraving-loadout-label {
-  font-size: 0.8rem;
+  font-size: 0.68rem;
+}
+/* The two rows in the loadout are not equals: the first is the fixed core
+   every build here shares, the second is the reader's actual decision. At
+   the shared .engraving-chip size the mandatory row came out visually
+   SMALLER than the choice cards below it - the emphasis was exactly
+   backwards, so "always equip" read as the optional part. Sized up rather
+   than shrinking the choice, so the fixed core carries its weight without
+   competing with the cards for attention.
+   Size only, deliberately: a tinted panel behind this row was tried and
+   read as heavier than the chips it was meant to introduce. */
+.md-typeset .engraving-loadout-group-always .engraving-chip {
+  font-size: 0.85em;
+  padding: 0.32em 0.85em;
+}
+.md-typeset .engraving-loadout-group-always .engraving-chip img.skill-icon {
+  height: 21px;
+  width: 21px;
+  margin-right: 0.42em;
 }
 .md-typeset .engraving-loadout-group > p {
   display: flex;
@@ -2991,7 +3024,7 @@ h3 { color: var(--dbc-teal); }
 }
 /* A fixed engraving can still carry a hard food requirement (e.g. Raid
    Captain on the RE page, where it's always equipped but pointless without
-   Урон оружия(1800)/Иваентовая еда) - it doesn't get its own card to explain that (it's
+   Еда из поместья) - it doesn't get its own card to explain that (it's
    not a choice), so the requirement has to read directly off the chip
    instead. Pink accent (matches .food-required-lead's own "required"
    color) plus the same feast icon used everywhere else on the site for
@@ -3015,6 +3048,31 @@ h3 { color: var(--dbc-teal); }
   height: 14px;
   width: 14px;
 }
+/* Fixed engraving list on the build pages (the set is not a choice there, so
+   no "выбери N" label rides along) - same chip sizing as the "always equip"
+   row on the essentials pages so the two read as the same component. */
+.md-typeset .engraving-loadout-fixed {
+  gap: 0.5em 0.7em;
+  margin-bottom: 0;
+}
+.md-typeset .engraving-loadout-fixed .engraving-chip {
+  font-size: 0.85em;
+  padding: 0.32em 0.85em;
+}
+.md-typeset .engraving-loadout-fixed .engraving-chip img.skill-icon {
+  height: 21px;
+  width: 21px;
+  margin-right: 0.42em;
+}
+/* "Подробнее о гравировках тут" - a link line, not an inline hint, so it drops
+   the italic + vertical-align of .engraving-loadout-hint and takes its own row
+   under the chip strip instead of racing the wrap point after the last chip. */
+.md-typeset .engraving-loadout-hint-line {
+  display: block;
+  margin: 0.7em 0 0;
+  font-style: normal;
+  vertical-align: baseline;
+}
 .md-typeset .engraving-loadout-hint {
   font-size: 0.78em;
   color: var(--dbc-muted-text);
@@ -3031,7 +3089,7 @@ h3 { color: var(--dbc-teal); }
    Usage, inside the same .engraving-loadout-group as the chip:
    <span class="engraving-chip engraving-chip-food">...Raid Captain</span>
    <span class="engraving-loadout-note">![](icon){: .skill-icon } requires
-   Урон оружия(1800)/Иваентовая еда</span> */
+   Еда из поместья</span> */
 .md-typeset .engraving-loadout-note {
   display: inline-flex;
   vertical-align: middle;
@@ -3336,7 +3394,7 @@ h3 { color: var(--dbc-teal); }
 /* Small muted requirement line under a card title, before the descriptive
    sentence below it. Usage: a line of icon(s) + text wrapped in
    `{ .food-req }`, e.g.:
-   ![](icon){: .skill-icon } Бирнийское вино + ![](icon){: .skill-icon } Урон оружия(1800)/Иваентовая еда
+   ![](icon){: .skill-icon } Бирнийское вино + ![](icon){: .skill-icon } Еда из поместья
    { .food-req } */
 .md-typeset .food-req {
   display: flex;
@@ -10380,7 +10438,7 @@ body.page-333-blitz input[type="text"] {
    <div class="setup-panel" data-accent="pink" markdown>
    <div class="setup-notes" markdown>
 
-   <p class="food-required-lead">Mana food and Урон оружия(1800)/Иваентовая еда are
+   <p class="food-required-lead">Mana food and Еда из поместья are
    **required** to play Ark Grid Remaining Energy as intended.</p>
 
    <div class="food-options" markdown>

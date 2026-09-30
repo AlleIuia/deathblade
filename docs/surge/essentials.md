@@ -3,7 +3,7 @@
 <div class="setup-panel" data-accent="pink" markdown>
 <div class="setup-notes" markdown>
 
-<p class="food-required-lead">Еда на атаку/скорость и пир «Урон оружия(1800)/Иваентовая еда» <strong>рекомендованы</strong>, чтобы играть в Твердую волю оптимально. Еда продаётся на острове Пейто.</p>
+<p class="food-required-lead">Еда на атаку/скорость и пир «Еда из поместья» <strong>рекомендованы</strong>, чтобы играть в Твердую волю оптимально. Еда продаётся на острове Пейто.</p>
 
 <div class="food-options" markdown>
 
@@ -26,7 +26,7 @@
 <div class="food-option" markdown>
 ![](../assets/shared/icon-feast.png){: .food-option-icon }
 
-Урон оружия(1800)/Иваентовая еда
+Еда из поместья
 </div>
 
 </div>
@@ -93,7 +93,7 @@
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Урон оружия(1800)/Иваентовая еда + ![](../assets/shared/icon-ealynsblessing.png){: .skill-icon } Шато де Розе</span>
+<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Еда из поместья + ![](../assets/shared/icon-ealynsblessing.png){: .skill-icon } Шато де Розе</span>
 { .food-req }
 
 **Плюсы:**{: .best-for } Максимальный бонус к урону.
@@ -121,7 +121,9 @@
 **Минусы:**{: .tradeoff } Складывается с бонусом «<span class="skill-mention" data-skill-id="breakingmoon">Неуловимый пируэт</span>» на 111.
 
 </div>
+
 </details>
+
 <details class="engraving-card" data-accent="mass" open markdown>
 <summary>
 <span class="engraving-card-name" data-skill-id="massincrease"><img class="skill-icon" src="../../assets/shared/icon-massincrease.png" alt="">Карающая длань</span>
@@ -132,7 +134,7 @@
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Урон оружия(1800)/Иваентовая еда + ![](../assets/shared/icon-vernesewine.png){: .skill-icon } Бирнийское вино</span>
+<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Еда из поместья + ![](../assets/shared/icon-vernesewine.png){: .skill-icon } Бирнийское вино</span>
 { .food-req }
 
 **Плюсы:**{: .best-for } Максимальный бонус к урону.
@@ -151,12 +153,9 @@
 </summary>
 <div class="engraving-card-body" markdown>
 
-Не катастрофа, если он вынужден
-{ .food-req }
+**Плюсы:**{: .best-for } Дешёвый.
 
-**Плюсы:**{: .best-for } Дёшево и надёжно.
-
-**Минусы:**{: .tradeoff } Штраф за лечение бывает раздражающим, а бонус к урону ниже, чем у остальных.
+**Минусы:**{: .tradeoff } Эффективность исцеления уменьшается на 25%.
 
 </div>
 </details>
@@ -173,66 +172,63 @@
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-feast.png" alt=""> Урон оружия(1800)/Иваентовая еда</span> + <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-vernesewine.png" alt=""> Бирнийское вино (Bard/Paladin)</span> или <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-ealynsblessing.png" alt=""> Шато де Розе (Artist/Valkyrie)</span>
+<span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-feast.png" alt=""> Еда из поместья</span> + <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-vernesewine.png" alt=""> Бирнийское вино (Bard/Paladin)</span> или <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-ealynsblessing.png" alt=""> Шато де Розе (Artist/Valkyrie)</span>
 { .food-req }
 
-**Плюсы:**{: .best-for } Это самый потолок. Эффективный рост урона на 111; короткие циклы 222 тоже снижают цену его штрафов.
+**Плюсы:**{: .best-for } Самый лучший выбор для максимального DPS.
 
-**Минусы:**{: .tradeoff } Удваивает ставку на <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> и ситуативные «оковы» — рекомендуется только если точно знаешь, что делаешь.
+**Минусы:**{: .tradeoff } Удваивает ставку на <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span> — рекомендуется только если точно знаешь, что делаешь.
 
 </div>
 </details>
 
 </div>
-
-<span class="engraving-calc-note">Сравнить продвинутые значения гравировок и еды или получить персональные рекомендации — [Калькулятор А.Р.К.](../resources.md#ark-passive-calculator)</span>
-
 </div>
 
 ## Геймплей {#gameplay}
 
-### Identity
+### Сущность
 
-- Orb Generation: Normal skills generate Death Orbs when they hit.
-- Death Trance: Press (Z) with 1+ orbs to enter Death Trance.
-- Stack Generation: Skills generate Surge stacks while in Death Trance.
-- Stack Cap: You can hold up to 80 stacks.
-- Surge: Press (Z) to consume 60 stacks. Extra stacks roll over to the next cycle.
-- Stack Requirement: Surge must be cast with 40+ stacks to refund all 3 Death Orbs.
+- Генерация сфер: обычные умения создают сферы Смерти при попадании.
+- Боевой транс: нажми (Z) с 1+ сферами, чтобы войти в Боевой транс.
+- Генерация стаков: умения дают стаки Концентрации воли, пока ты в Боевом трансе.
+- Предел стаков: можно держать до 80 стаков.
+- Концентрация воли: нажми (Z), чтобы потратить 60 стаков. Лишние стаки переносятся на следующий цикл.
+- Требование к стакам: Концентрация воли применяется с 40+ стаками, чтобы вернуть все 3 сферы Смерти.
 
-### Identity Buffs
+### Баффы Сущности
 
-- 10/15/20% Attack Speed.
-- 10% Move Speed.
-- 8/16/24% Attack Power.
-- 15/25/45% Mana Restoration.
-- 10/30/50% Cooldown Reduction.
+- 10/15/20% скорости атаки.
+- 10% скорости передвижения.
+- 8/16/24% силы атаки.
+- 15/25/45% восстановления маны.
+- 10/30/50% сокращения перезарядки.
 
-Aim to enter Death Trance with 3 orbs whenever possible.
+По возможности входи в Боевой транс с 3 сферами.
 
 ### Групповые синергии {#party-synergies}
 
-- Turning Slash: +4% outgoing and +5% directional damage for 12s.
-- Surprise Attack: +4% outgoing and +5% directional damage for 6s.
-- <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>: +12.8% Attack/Move Speed for 6s.
+- Иссечение: +4% исходящего и +5% направленного урона на 12 сек.
+- Внезапный выпад: +4% исходящего и +5% направленного урона на 6 сек.
+- <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>: +12.8% скорости атаки и передвижения на 6 сек.
 
 ### Стиль игры {#playstyle}
 
-Surge is a repeating cycle:
+Концентрация воли — повторяющийся цикл:
 
-3 Orbs → Death Trance → Build Stacks → Surge → Repeat.
+3 сферы → Боевой транс → набор стаков → Концентрация воли → повтор.
 
-Build toward 60 stacks using your multi-hit skills, then land Surge as a <span class="skill-mention" data-glossary-id="backattack">Back Attack</span>.
+Копи стаки до 60 мультихитовыми умениями, а затем попади Концентрацией воли в спину.
 
-The 80-stack cap and rollover give you flexibility. You don't need to stop or force a skill just to hit exactly 60.
+Предел в 80 стаков и перенос дают гибкость: не нужно останавливаться или вбивать умение, чтобы попасть ровно в 60.
 
-Knowing roughly how many stacks each skill generates is important for adapting your rotation.
+Важно примерно знать, сколько стаков даёт каждое умение, чтобы подстраивать ротацию.
 
 ### Боевые характеристики {#combat-performance}
 
-**Surge Casts Per Minute (<span class="skill-mention" data-glossary-id="cpm">CPM</span>)** and <span class="skill-mention" data-glossary-id="backattack">back attack</span> rate are useful measures of how efficiently you cycle Surge.
+**Концентраций воли в минуту (<span class="skill-mention" data-glossary-id="cpm">CPM</span>)** и доля атак в спину — полезные меры эффективности цикла.
 
-Only compare CPM between the **same encounter and build**, as boss uptime and mechanics heavily affect it.
+Сравнивай CPM только между **одним и тем же боссом и одним билдом**: время уязвимости и механики сильно на него влияют.
 
 ## Скилы Твёрдой воли {#surge-skills}
 

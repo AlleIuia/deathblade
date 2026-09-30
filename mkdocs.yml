@@ -30,7 +30,7 @@ theme:
     - search.highlight
 
 extra_css:
-  - stylesheets/extra.css?v=131
+  - stylesheets/extra.css?v=140
 
 # Load order matters: several widgets read a shared data file
 # (build-data.js/skill-data.js/skill-names.js/ap-node-names.js) or the
@@ -73,10 +73,10 @@ extra_javascript:
   - javascripts/header-links.js?v=1
   - javascripts/lazy-calculators.js?v=17
   - javascripts/extra.js?v=2
-  - javascripts/build-data.js?v=10
+  - javascripts/build-data.js?v=20
   - javascripts/build-stats-badge.js?v=2
-  - javascripts/skill-data.js?v=19
-  - javascripts/skill-names.js?v=13
+  - javascripts/skill-data.js?v=20
+  - javascripts/skill-names.js?v=14
   - javascripts/rune-data.js?v=5
   - javascripts/skill-setup.js?v=11
   - javascripts/essentials-table.js?v=5
@@ -96,7 +96,7 @@ extra_javascript:
   - javascripts/rotation-practice.js?v=8
   - javascripts/dps-chart.js?v=8
   - javascripts/gem-dps-tooltip.js?v=11
-  - javascripts/build-compare.js?v=8
+  - javascripts/build-compare.js?v=11
   - javascripts/last-updated.js?v=3
   - javascripts/image-lightbox.js?v=1
 
@@ -130,15 +130,14 @@ nav:
   - Главная: index.md
   - Остаточная энергия:
       - Основы: remaining-energy/essentials.md
-      - Без ядер: remaining-energy/pre-ark-grid.md
-      - Стандарт (без ядер): remaining-energy/standard.md
-      - 111 (Классика): remaining-energy/111-head-hunt.md
-      - 313 (Шакрамы 2.0): remaining-energy/313-high-floor.md
-      - 333 (Шакрамы) ★: remaining-energy/333-ceiling.md
+      - Стандарт без ядер: remaining-energy/standard.md
+      - 111 Классика: remaining-energy/111-head-hunt.md
+      - 313 Шакрамы 2.0: remaining-energy/313-high-floor.md
+      - 333 Шакрамы ★: remaining-energy/333-ceiling.md
   - Твердая воля:
       - Основы: surge/essentials.md
-      - Без ядер: surge/pre-ark-grid.md
-      - 111 (Классика): surge/111-classic.md
-      - 222 (Ускоренный): surge/222-speedy.md
-      - 333 (Охота за головами): surge/333-blitz.md
+      - Билд без ядер: surge/pre-ark-grid.md
+      - 111 Классика: surge/111-classic.md
+      - 222 Ускоренный: surge/222-speedy.md
+      - 333 Охота за головами: surge/333-blitz.md
   - Дополнительная информация: resources.md

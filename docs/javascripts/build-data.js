@@ -56,7 +56,8 @@
       builds: [
         {
           id: "333-ceiling",
-          name: "333 (Шакрамы)",
+             description: "{turningslash} откатывает умение {fatalwave}.",
+          name: "333 Шакрамы",
           accent: "#e56c7e",
           pentagon: [8, 9, 5, 8.5, 8.5],
           difficulty: 8,
@@ -69,8 +70,9 @@
         },
         {
           id: "313-high-floor",
-          name: "313 (Шакрамы 2.0)",
-          accent: "#a8a2b2",
+             description: "{surge} откатывает умение {fatalwave}.",
+          name: "313 Шакрамы 2.0",
+          accent: "#e6b422",
           pentagon: [7.5, 8, 5, 9, 10],
           difficulty: 7.5,
           trixion: 1.17,
@@ -82,7 +84,8 @@
         },
         {
           id: "111-head-hunt",
-          name: "111 (Классика)",
+             description: "Классический билд без {fatalwave:Воздушных шакрам}, с {deathsentence:Смертным приговором}.",
+          name: "111 Классика",
           accent: "#59c08f",
           pentagon: [9, 8, 5, 7, 10],
           difficulty: 9,
@@ -95,7 +98,8 @@
         },
         {
           id: "standard",
-          name: "Стандарт (без ядер)",
+             description: "Билд без использования ядер, с {spincutter:Разрубающими лезвиями}.",
+          name: "Стандарт без ядер",
           accent: "#8d8b93",
           pentagon: [6, 6, 8.5, 4, 6],
           difficulty: 6,
@@ -120,7 +124,8 @@
       builds: [
         {
           id: "111-classic",
-          name: "111 (Классика)",
+             description: "Классичный геймплей Твёрдой воли.",
+          name: "111 Классика",
           accent: "#e56c7e",
           pentagon: [7.5, 9, 7, 6.5, 7],
           difficulty: 7.5,
@@ -133,7 +138,8 @@
         },
         {
           id: "222-speedy",
-          name: "222 (Ускоренный)",
+             description: "Видоизменённый 111 — ощущается быстрее.",
+          name: "222 Ускоренный",
           accent: "#59c08f",
           pentagon: [7, 9, 9, 8, 8],
           difficulty: 7,
@@ -146,7 +152,8 @@
         },
         {
           id: "333-blitz",
-          name: "333 (Охота за головами)",
+             description: "Билд через {blitzrush:Охоту за головами}.",
+          name: "333 Охота за головами",
           accent: "#a8a2b2",
           pentagon: [8, 8, 8, 9, 6],
           difficulty: 8,

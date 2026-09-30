@@ -1,4 +1,4 @@
-# 313 (Шакрамы 2.0) 💜
+# 313 Шакрамы 2.0 💜
 
 <div class="build-card-row" markdown>
 <div class="build-card" data-updated="2026-09-19" markdown>
@@ -156,6 +156,22 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 </details>
 
 </div>
+
+</div>
+
+## Гравировки {#engravings}
+
+<div class="setup-panel" data-accent="lavender" markdown>
+
+<div class="engraving-loadout engraving-loadout-fixed" markdown>
+<span class="engraving-chip" data-skill-id="grudge"><img class="skill-icon" src="../../assets/shared/icon-grudge.png" alt="">Титаноборец</span>
+<span class="engraving-chip" data-skill-id="adrenaline"><img class="skill-icon" src="../../assets/shared/icon-adrenaline.png" alt="">Адреналин</span>
+<span class="engraving-chip" data-skill-id="ambushmaster"><img class="skill-icon" src="../../assets/shared/icon-ambushmaster.png" alt="">Бесшумный убийца</span>
+<span class="engraving-chip" data-skill-id="raidcaptain"><img class="skill-icon" src="../../assets/shared/icon-raidcaptain.png" alt="">Неутомимый натиск</span>
+<span class="engraving-chip" data-skill-id="keenbluntweapon"><img class="skill-icon" src="../../assets/shared/icon-keenbluntweapon.png" alt="">Моргенштерн</span>
+</div>
+
+<p class="engraving-loadout-hint engraving-loadout-hint-line" markdown>Подробнее о гравировках можно прочитать [здесь!](essentials.md#engravings)</p>
 
 </div>
 

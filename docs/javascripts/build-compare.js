@@ -82,7 +82,7 @@
 
     var thead = document.createElement("thead");
     var headRow = document.createElement("tr");
-    ["Билд", "Сложность", "DPS в Тризионе", "Стиль игры", "Кому подходит"].forEach(function (label) {
+    ["Билд", "Сложность", "DPS в Тризионе", "Описание"].forEach(function (label) {
       var th = document.createElement("th");
       th.textContent = label;
       headRow.appendChild(th);
@@ -165,19 +165,57 @@
       }
       row.appendChild(trixCell);
 
-      var styleCell = document.createElement("td");
-      styleCell.textContent = build.playstyle;
-      row.appendChild(styleCell);
-
-      var bestForCell = document.createElement("td");
-      bestForCell.textContent = build.bestFor;
-      row.appendChild(bestForCell);
+      row.appendChild(buildDescriptionCell(build));
 
       tbody.appendChild(row);
     });
     table.appendChild(tbody);
 
     return table;
+  }
+
+  // A build's one-line description, with any {skill-id} token turned into a
+  // .skill-mention span carrying that id. The skill tooltip's own renderer
+  // wires those spans on sight (SiteUtils.registerRenderer keeps a
+  // MutationObserver running, so nodes created after load are picked up too),
+  // which is what makes a skill name in here hoverable. Names come from
+  // DB_SKILL_NAMES so prose here can't drift from the tooltip, and the whole
+  // cell is built from createTextNode/createElement - same no-innerHTML
+  // convention as the rest of this widget.
+  function buildDescriptionCell(build) {
+    var cell = document.createElement("td");
+    cell.className = "build-compare-desc";
+    // Falls back to the old bestFor blurb for the three Surge builds that
+    // have no `description` yet, so their cell isn't blank in the meantime.
+    var src = build.description || build.bestFor || "";
+    // {id} uses the base name as-is; {id:as shown} overrides the visible text so
+    // the name can carry a Russian case ending ("Воздушных шакрам") where the
+    // sentence needs one. Safe to do inside the span: the tooltip's own title
+    // comes from DB_SKILL_NAMES[id], not from this text - see skill-tooltip.js's
+    // `var name = DB_SKILL_NAMES[id]` - so the header still shows the
+    // nominative while the prose reads grammatically. The token is split on the
+    // LAST colon so a display form may itself contain colons.
+    var re = /\{([a-z0-9]+)(?::([^}]*))?\}/g;
+    var last = 0, m;
+    while ((m = re.exec(src)) !== null) {
+      if (m.index > last) {
+        cell.appendChild(document.createTextNode(src.slice(last, m.index)));
+      }
+      var name = window.DB_SKILL_NAMES && window.DB_SKILL_NAMES[m[1]];
+      if (name) {
+        var span = document.createElement("span");
+        span.className = "skill-mention";
+        span.setAttribute("data-skill-id", m[1]);
+        span.textContent = m[2] != null && m[2] !== "" ? m[2] : name;
+        cell.appendChild(span);
+      } else {
+        // Unknown id: show the token verbatim rather than dropping text.
+        cell.appendChild(document.createTextNode(m[0]));
+      }
+      last = m.index + m[0].length;
+    }
+    if (last < src.length) cell.appendChild(document.createTextNode(src.slice(last)));
+    return cell;
   }
 
   // Overlay pentagon: same grid/spoke/label shape as pentagon-badge.js,

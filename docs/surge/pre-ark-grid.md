@@ -1,19 +1,19 @@
-# Без ядер
+# Билд без ядер
 
-*Options for playing Surge before you have an <span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span> set up.*
+*Варианты игры на Твёрдой воли, пока ещё нет собранной <span class="skill-mention" data-glossary-id="arkgrid">Системы А.Р.К.</span>.*
 
 <div class="grid cards prearc-cards" markdown>
 
--   ☘ **Pre-Ark Grid Surge**
+-   ☘ **Твёрдая воля без ядер**
 
     ---
 
-    Essentially the same as [111 (Classic)](111-classic.md), with minor skill and gem changes.
+    По сути то же самое, что [111 Классика](111-classic.md), с небольшими правками в скилах и самоцветах.
 
-    [Go to 111 (Classic) →](111-classic.md)
+    [Перейти к 111 Классика →](111-classic.md)
 
 </div>
 
 ---
 
-See the [111 (Classic)](111-classic.md) Skill Codes section for the "Pre-Ark Grid" code. If you haven't already, check [Essentials](essentials.md).
+Код для варианта без ядер — в разделе «Код билда» на странице [111 Классика](111-classic.md). Если ещё не смотрел, загляни в [Основы](essentials.md).
