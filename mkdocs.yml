@@ -71,7 +71,7 @@ extra_css:
 extra_javascript:
   - javascripts/site-utils.js?v=10
   - javascripts/header-links.js?v=1
-  - javascripts/lazy-calculators.js?v=17
+  - javascripts/lazy-calculators.js?v=18
   - javascripts/extra.js?v=2
   - javascripts/build-data.js?v=20
   - javascripts/build-stats-badge.js?v=2
@@ -80,18 +80,18 @@ extra_javascript:
   - javascripts/rune-data.js?v=5
   - javascripts/skill-setup.js?v=11
   - javascripts/essentials-table.js?v=5
-  - javascripts/core-options-data.js?v=7
+  - javascripts/core-options-data.js?v=8
   - javascripts/ark-core-badge.js?v=9
   - javascripts/ap-node-names.js?v=10
   - javascripts/ap-node-effects.js?v=8
   - javascripts/ark-passive-tree.js?v=8
   - javascripts/gem-priority.js?v=6
   - javascripts/pentagon-badge.js?v=5
-  - javascripts/rotation-line.js?v=14
+  - javascripts/rotation-line.js?v=15
   - javascripts/skill-tooltip.js?v=15
   - javascripts/ark-passive-tooltip.js?v=5
   - javascripts/rune-tooltip.js?v=7
-  - javascripts/glossary-data.js?v=12
+  - javascripts/glossary-data.js?v=13
   - javascripts/glossary-tooltip.js?v=3
   - javascripts/rotation-practice.js?v=8
   - javascripts/dps-chart.js?v=8
