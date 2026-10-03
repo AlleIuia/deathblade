@@ -39,12 +39,12 @@ window.DB_GLOSSARY = {
     def: "Фетранит даёт Живучесть и усиливает установленные боевые гравировки — насколько именно, зависит от бонуса сделанной огранки.",
   },
   bracelet: {
-    term: "Bracelet",
-    def: "An accessory slot that rolls combat stats alongside special passive effects to boost your character's damage or utility.",
+    term: "Браслет",
+    def: "Слот украшения, который даёт боевые характеристики и особые пассивные эффекты, повышающие твой урон или полезность.",
   },
   relicbook: {
-    term: "Relic Book",
-    def: "A collectible recipe that permanently boosts a specific combat engraving's power account-wide as you collect more.",
+    term: "Книга реликвий",
+    def: "Собираемая рецептура, которая навсегда повышает силу конкретной боевой гравировки на всём аккаунте: чем больше собрал, тем сильнее бонус.",
   },
   specializationstat: {
     term: "Мастерство",
@@ -58,44 +58,44 @@ window.DB_GLOSSARY = {
   // there's no separate "source of truth" file for it the way skill/Ark
   // Grid numbers have.
   backattack: {
-    term: "Back Attack",
-    def: "A positional damage (+5%) and crit (+10%) bonus gained by attacking from behind.",
+    term: "Атака в спину",
+    def: "Бонус за позицию: +5% урона и +10% крита, если атаковать сзади.",
   },
   arkgrid: {
-    term: "Ark Grid",
-    def: "A late-game progression system of Order (Sun/Moon/Star) and Chaos Core slots activated by Astrogems - build names refer to the Order Core choices selected.",
+    term: "Система А.Р.К.",
+    def: "Система поздней прокачки: слоты Порядка (Солнце/Луна/Звезда) и ядер хаоса, открываемые астрогемами. В названиях сборок указано, какое ядро Порядка выбрано.",
   },
   arkpassive: {
-    term: "Ark Passive",
-    def: "A Tier 4 talent tree system (Evolution, Enlightenment, and Leap) that shape your build's behavior.",
+    term: "Пассивки А.Р.К.",
+    def: "Система деревьев талантов 4-го уровня (Эволюция, Просветление и Прыжок), задающих поведение сборки.",
   },
   dpsmeter: {
-    term: "DPS Meter",
-    def: "A third-party tool that parses local combat log data to display real-time damage, DPS, and skill performance statistics.",
+    term: "DPS-метр",
+    def: "Сторонний инструмент, который разбирает локальные логи боя и показывает урон, DPS и статистику скилов в реальном времени.",
   },
   cpm: {
     term: "CPM",
-    def: "Casts Per Minute - how many times you activate your identity skill in a minute, used to gauge rotation speed and uptime.",
+    def: "Применений в минуту — сколько раз в минуту ты активируешь классовое умение. Показывает скорость ротации и активность.",
   },
   tripod: {
-    term: "Tripod",
-    def: "A per-skill customization path (with 3 tiers of options) that alters a skill's behavior, damage, cooldown, or resource generation.",
+    term: "Трипод",
+    def: "Путь кастомизации каждого скила (3 уровня выбора), меняющий его поведение, урон, перезарядку или генерацию ресурсов.",
   },
   rune: {
-    term: "Rune",
-    def: "A skill modifier equipped directly to an individual skill slot to grant utility effects.",
+    term: "Руна",
+    def: "Модификатор, ставящийся прямо в слот скила и дающий полезные эффекты.",
   },
   synergy: {
-    term: "Synergy",
-    def: "A party-wide buff or boss debuff applied by certain skills - identical synergies from the same class don't stack.",
+    term: "Синергия",
+    def: "Общий бафф на группу или дебафф на босса от определённых скилов. Одинаковые синергии одного класса не складываются.",
   },
   counter: {
-    term: "Counter",
-    def: "A frontal skill hit landed while a boss glows blue, interrupting its attack pattern.",
+    term: "Контратака",
+    def: "Попадание скилом в лоб, когда босс светится синим, прерывающее его атаку.",
   },
   pushimmunity: {
-    term: "Push Immunity",
-    def: "Super armor that prevents knockbacks, knockups, and knockdowns - it doesn't protect against grabs or CC debuffs.",
+    term: "Неуязвимость к отбрасыванию",
+    def: "Суперброня, не дающая отбросить, подбросить и положить. Не защищает от захватов и контрольных дебаффов.",
   },
   // BTB/FTF: each is a specific 3-skill combo (not a generic "recast
   // twice" pattern - see the build pages' own prose for how it's used in
@@ -103,10 +103,10 @@ window.DB_GLOSSARY = {
   // rather than one shared "double cast" definition.
   btbcombo: {
     term: "BTB",
-    def: "Short for the combo Blitz Rush → Turning Slash → Blitz Rush.",
+    def: "Сокращение для комбо «Охота за головами → Иссечение → Охота за головами».",
   },
   ftfcombo: {
     term: "FTF",
-    def: "Short for the combo Fatal Wave → Turning Slash → Fatal Wave.",
+    def: "Сокращение для комбо «Воздушные шакрамы → Иссечение → Воздушные шакрамы».",
   },
 };

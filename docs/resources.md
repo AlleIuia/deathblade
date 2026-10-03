@@ -1,8 +1,8 @@
-# Additional Resources
+# Дополнительная информация
 
 ![313 sticker](assets/shared/sticker-313.png)
 
-## Bonus Skill Codes
+## Дополнительные коды билдов
 
 === "Paradise"
 
@@ -12,29 +12,29 @@
         6DA43AC633E2CEC99E42A67CC7C650EF321176822375B4CE0FFFFD98E40F5C56F2FBEE9A1A60DBB0DE1D6F4FA2F83C63D4350F09E0A43F4536D632FEFD5E1B05
         ```
 
-    === "Late Levels"
+    === "Поздние уровни"
 
         ```
         BFE03CBB4F77DF0F01E5140695FA2010C9B1D47B03BBE27D7855E04EE259B1CA012D2AFD8D558CB98EE607B5D6FDB071244ABF56DDE760D513AC66FC26C6FBC8
         ```
 
-=== "Chaos Dungeon"
+=== "Подземелье хаоса"
 
     ```
     5BC069F349F703CA2B9B9B732BB3629E493826BE8BEA2FF11FF1575D1258D07FAA57A9FADBF188946EF1E2DB1CD6779759FF6F7EA4138A86EB19F6505242CC98
     ```
 
-=== "111 (Void Skip)"
+=== "111 (пропуск Искусства меча)"
 
     ```
     FB388C4F19F70DE5311D21E59D93BE5D1B9935691AB3B6F2457D466875600C7A581AE3DFA172017D17440BEC09FB7A05BEE420C68F6788139A428497A91B802E
     ```
 
-    - Alternative to Standard RE, KR guide available in Useful Links below.
+    - Альтернатива «Стандарту без ядер», KR-гайд есть в разделе «Полезные ссылки» ниже.
 
-## Ark Passive Calculator
+## Калькулятор Системы А.Р.К.
 
-*Finds the optimal setup for your Deathblade and party composition. See spreadsheets [1](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) or [2](https://docs.google.com/spreadsheets/d/1_0J7liyM_yw16pyn6TKlF1YGaIt5n_A9hSoLnT3yTUc/edit?usp=sharing) for verification.*
+*Находит оптимальную сборку для твоего Клинка смерти и состава группы. Для сверки смотри таблицы [1](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) или [2](https://docs.google.com/spreadsheets/d/1_0J7liyM_yw16pyn6TKlF1YGaIt5n_A9hSoLnT3yTUc/edit?usp=sharing).*
 
 <div class="ap-calc">
 
@@ -78,12 +78,12 @@
      outside, or Escape closes it (see initBuildDock). -->
 <div class="ap-build-dock">
   <button type="button" class="ap-build-dock-trigger" aria-haspopup="true" aria-expanded="false">
-    <span class="ap-build-dock-trigger-label">Build</span>
+    <span class="ap-build-dock-trigger-label">Билд</span>
     <span class="ap-build-dock-trigger-chevron" aria-hidden="true">&#9662;</span>
   </button>
   <div class="ap-build-toggle-row ap-build-toggle-row--master ap-build-dock-panel">
-    <span class="ap-build-toggle-label">Build</span>
-    <div class="ap-build-toggle ap-build-toggle--master" role="group" aria-label="Build">
+    <span class="ap-build-toggle-label">Билд</span>
+    <div class="ap-build-toggle ap-build-toggle--master" role="group" aria-label="Билд">
       <div class="ap-build-toggle-tier ap-build-toggle-tier--family">
         <button type="button" class="ap-build-chip ap-build-family-chip" data-family="re">RE</button>
         <button type="button" class="ap-build-chip ap-build-family-chip" data-family="surge">Surge</button>
@@ -112,23 +112,23 @@
 
   <!-- Crit Rate -->
   <div class="ap-calc-group ap-calc-group--crit-rate">
-    <div class="ap-calc-group-title">Crit Rate</div>
+    <div class="ap-calc-group-title">Шанс крита</div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-crit-stat" title="Crit Stat as shown in your character profile.">Crit Stat</label>
+      <label class="ap-calc-field-label" for="ap-crit-stat" title="Стат крита as shown in your character profile.">Стат крита</label>
       <span class="ap-value-display" data-for="ap-crit-stat"></span>
       <input type="number" id="ap-crit-stat" class="ap-crit-stat" min="0" max="900" step="1" value="658">
     </div>
     <div class="ap-calc-field-row ap-calc-field-row-pair">
-      <label class="ap-calc-field-label">Rings</label>
+      <label class="ap-calc-field-label">Кольца</label>
       <div class="ap-calc-pair">
-        <select id="ap-ring1-rate" class="ap-ring1-rate" aria-label="Ring 1 Crit Rate">
-          <option value="None">None</option>
+        <select id="ap-ring1-rate" class="ap-ring1-rate" aria-label="Ring 1 Шанс крита">
+          <option value="None">Нет</option>
           <option value="Low">0.40%</option>
           <option value="Mid" selected>0.95%</option>
           <option value="High">1.55%</option>
         </select>
-        <select id="ap-ring2-rate" class="ap-ring2-rate" aria-label="Ring 2 Crit Rate">
-          <option value="None">None</option>
+        <select id="ap-ring2-rate" class="ap-ring2-rate" aria-label="Ring 2 Шанс крита">
+          <option value="None">Нет</option>
           <option value="Low">0.40%</option>
           <option value="Mid" selected>0.95%</option>
           <option value="High">1.55%</option>
@@ -136,16 +136,16 @@
       </div>
     </div>
     <div class="ap-calc-field-row ap-calc-field-row-pair">
-      <label class="ap-calc-field-label">Bracelet</label>
+      <label class="ap-calc-field-label">Браслет</label>
       <div class="ap-calc-pair">
-        <select id="ap-bracelet-rate" class="ap-bracelet-rate" aria-label="Bracelet Crit Rate Line 1">
-          <option value="None">None</option>
+        <select id="ap-bracelet-rate" class="ap-bracelet-rate" aria-label="Браслет Шанс крита Line 1">
+          <option value="None">Нет</option>
           <option value="Low">3.40%</option>
           <option value="Mid" selected>4.20%</option>
           <option value="High">5.00%</option>
         </select>
-        <select id="ap-bracelet-rate-2" class="ap-bracelet-rate-2" aria-label="Bracelet Crit Rate Line 2">
-          <option value="None" selected>None</option>
+        <select id="ap-bracelet-rate-2" class="ap-bracelet-rate-2" aria-label="Браслет Шанс крита Line 2">
+          <option value="None" selected>Нет</option>
           <option value="Low">3.40%</option>
           <option value="Mid">4.20%</option>
           <option value="High">5.00%</option>
@@ -153,11 +153,11 @@
       </div>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-crushing-core">Chaos Core: Crushing</label>
+      <label class="ap-calc-field-label" for="ap-crushing-core">Ядро хаоса: Раздача</label>
       <span class="ap-value-display" data-for="ap-crushing-core"></span>
       <select id="ap-crushing-core" class="ap-crushing-core">
-        <option value="None|0P" selected>None</option>
-        <option value="Any|14P">14 Points</option>
+        <option value="None|0P" selected>Нет</option>
+        <option value="Any|14P">14 очков</option>
         <option value="Relic|17P">Relic 17P</option>
         <option value="Relic|18P">Relic 18P</option>
         <option value="Relic|19P">Relic 19P</option>
@@ -169,37 +169,37 @@
       </select>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-adrenaline">Adrenaline</label>
+      <label class="ap-calc-field-label" for="ap-adrenaline">Адреналин</label>
       <span class="ap-value-display" data-for="ap-adrenaline"></span>
       <select id="ap-adrenaline" class="ap-adrenaline">
-        <option value="Not Used">Not Used</option>
-        <option value="0 Nodes">0 Nodes</option>
-        <option value="1 Nodes">1 Node</option>
-        <option value="2 Nodes">2 Nodes</option>
-        <option value="3 Nodes">3 Nodes</option>
+        <option value="Not Used">Не используется</option>
+        <option value="0 Nodes">0 узлов</option>
+        <option value="1 Nodes">1 узел</option>
+        <option value="2 Nodes">2 узла</option>
+        <option value="3 Nodes">3 узла</option>
         <option value="4 Nodes" selected>4 Nodes</option>
       </select>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-adrenaline-uptime" title="% of the fight spent at a full Adrenaline stacks - scales both the Crit Rate bonus above and the Ability Stone's AP bonus.">Adrenaline Uptime %</label>
+      <label class="ap-calc-field-label" for="ap-adrenaline-uptime" title="% of the fight spent at a full Адреналин stacks - scales both the Шанс крита bonus above and the Фетранит's AP bonus.">Активность Адреналина, %</label>
       <input type="number" id="ap-adrenaline-uptime" class="ap-adrenaline-uptime" min="0" max="100" step="1" value="97">
     </div>
   </div>
 
   <!-- Crit Damage -->
   <div class="ap-calc-group ap-calc-group--crit-dmg">
-    <div class="ap-calc-group-title">Crit Damage</div>
+    <div class="ap-calc-group-title">Сила крита</div>
     <div class="ap-calc-field-row ap-calc-field-row-pair">
-      <label class="ap-calc-field-label">Rings</label>
+      <label class="ap-calc-field-label">Кольца</label>
       <div class="ap-calc-pair">
-        <select id="ap-ring1-dmg" class="ap-ring1-dmg" aria-label="Ring 1 Crit Damage">
-          <option value="None">None</option>
+        <select id="ap-ring1-dmg" class="ap-ring1-dmg" aria-label="Ring 1 Сила крита">
+          <option value="None">Нет</option>
           <option value="Low">1.10%</option>
           <option value="Mid">2.40%</option>
           <option value="High" selected>4.00%</option>
         </select>
-        <select id="ap-ring2-dmg" class="ap-ring2-dmg" aria-label="Ring 2 Crit Damage">
-          <option value="None">None</option>
+        <select id="ap-ring2-dmg" class="ap-ring2-dmg" aria-label="Ring 2 Сила крита">
+          <option value="None">Нет</option>
           <option value="Low">1.10%</option>
           <option value="Mid">2.40%</option>
           <option value="High" selected>4.00%</option>
@@ -207,16 +207,16 @@
       </div>
     </div>
     <div class="ap-calc-field-row ap-calc-field-row-pair">
-      <label class="ap-calc-field-label">Bracelet</label>
+      <label class="ap-calc-field-label">Браслет</label>
       <div class="ap-calc-pair">
-        <select id="ap-bracelet-dmg" class="ap-bracelet-dmg" aria-label="Bracelet Crit Damage Line 1">
-          <option value="None">None</option>
+        <select id="ap-bracelet-dmg" class="ap-bracelet-dmg" aria-label="Браслет Сила крита Line 1">
+          <option value="None">Нет</option>
           <option value="Low" selected>6.80%</option>
           <option value="Mid">8.40%</option>
           <option value="High">10.00%</option>
         </select>
-        <select id="ap-bracelet-dmg-2" class="ap-bracelet-dmg-2" aria-label="Bracelet Crit Damage Line 2">
-          <option value="None" selected>None</option>
+        <select id="ap-bracelet-dmg-2" class="ap-bracelet-dmg-2" aria-label="Браслет Сила крита Line 2">
+          <option value="None" selected>Нет</option>
           <option value="Low">6.80%</option>
           <option value="Mid">8.40%</option>
           <option value="High">10.00%</option>
@@ -224,11 +224,11 @@
       </div>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-swift-core">Chaos Core: Swift</label>
+      <label class="ap-calc-field-label" for="ap-swift-core">Ядро хаоса: Скорость</label>
       <span class="ap-value-display" data-for="ap-swift-core"></span>
       <select id="ap-swift-core" class="ap-swift-core">
-        <option value="None|0P" selected>None</option>
-        <option value="Any|14P">14 Points</option>
+        <option value="None|0P" selected>Нет</option>
+        <option value="Any|14P">14 очков</option>
         <option value="Relic|17P">Relic 17P</option>
         <option value="Relic|18P">Relic 18P</option>
         <option value="Relic|19P">Relic 19P</option>
@@ -240,42 +240,42 @@
       </select>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-kbw">Keen Blunt Weapon</label>
+      <label class="ap-calc-field-label" for="ap-kbw">Моргенштерн</label>
       <span class="ap-value-display" data-for="ap-kbw"></span>
       <select id="ap-kbw" class="ap-kbw">
-        <option value="Not Used">Not Used</option>
-        <option value="0 Nodes">0 Nodes</option>
-        <option value="1 Nodes">1 Node</option>
-        <option value="2 Nodes">2 Nodes</option>
-        <option value="3 Nodes">3 Nodes</option>
+        <option value="Not Used">Не используется</option>
+        <option value="0 Nodes">0 узлов</option>
+        <option value="1 Nodes">1 узел</option>
+        <option value="2 Nodes">2 узла</option>
+        <option value="3 Nodes">3 узла</option>
         <option value="4 Nodes" selected>4 Nodes</option>
       </select>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-kbw-stone">Ability Stone: Keen Blunt Weapon</label>
+      <label class="ap-calc-field-label" for="ap-kbw-stone">Фетранит: Моргенштерн</label>
       <span class="ap-value-display" data-for="ap-kbw-stone"></span>
       <select id="ap-kbw-stone" class="ap-kbw-stone">
         <option value="0 Lv." selected>Lv. 0</option>
-        <option value="1 Lv.">Lv. 1</option>
-        <option value="2 Lv.">Lv. 2</option>
-        <option value="3 Lv.">Lv. 3</option>
-        <option value="4 Lv.">Lv. 4</option>
+        <option value="1 Lv.">Ур. 1</option>
+        <option value="2 Lv.">Ур. 2</option>
+        <option value="3 Lv.">Ур. 3</option>
+        <option value="4 Lv.">Ур. 4</option>
       </select>
     </div>
   </div>
 
   <!-- Crit Hit Damage -->
   <div class="ap-calc-group ap-calc-group--oncrit-dmg">
-    <div class="ap-calc-group-title">Crit Hit Damage</div>
+    <div class="ap-calc-group-title">Урон по криту</div>
     <div class="ap-calc-field-row ap-calc-field-row-pair">
-      <label class="ap-calc-field-label">Bracelet</label>
+      <label class="ap-calc-field-label">Браслет</label>
       <div class="ap-calc-pair ap-calc-pair-checks">
-        <label class="ap-calc-pair-check" title="Checked if your bracelet rolled a + Crit Hit Dmg dual line - each dual line adds +1.5% Crit Hit Dmg multiplicatively.">
+        <label class="ap-calc-pair-check" title="Отметь, если на браслете выпала двойная линия с бонусом к урону по криту — каждая двойная линия добавляет +1.5% урона по криту мультипликативно.">
           <input type="checkbox" id="ap-crit-rate-dual" class="ap-crit-rate-dual" checked>
           <span class="ap-calc-pair-check-label">1</span>
           <span class="ap-value-display">(1.50%)</span>
         </label>
-        <label class="ap-calc-pair-check" title="Checked if your bracelet rolled a + Crit Hit Dmg dual line - each dual line adds +1.5% Crit Hit Dmg multiplicatively.">
+        <label class="ap-calc-pair-check" title="Отметь, если на браслете выпала двойная линия с бонусом к урону по криту — каждая двойная линия добавляет +1.5% урона по криту мультипликативно.">
           <input type="checkbox" id="ap-crit-dmg-dual" class="ap-crit-dmg-dual" checked>
           <span class="ap-calc-pair-check-label">2</span>
           <span class="ap-value-display">(1.50%)</span>
@@ -283,11 +283,11 @@
       </div>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-flashy-atk">Chaos Core: Flashy Attack</label>
+      <label class="ap-calc-field-label" for="ap-flashy-atk">Ядро хаоса: Быстрая атака</label>
       <span class="ap-value-display" data-for="ap-flashy-atk"></span>
       <select id="ap-flashy-atk" class="ap-flashy-atk">
-        <option value="None">None</option>
-        <option value="Epic-Leg 10P">Epic-Leg 10P</option>
+        <option value="None">Нет</option>
+        <option value="Epic-Leg 10P">Эпический–легендарный, 10 очков</option>
         <option value="Relic 17P">Relic 17P</option>
         <option value="Ancient 17P" selected>Ancient 17P</option>
       </select>
@@ -296,32 +296,32 @@
 
   <!-- Additional Damage -->
   <div class="ap-calc-group ap-calc-group--add-dmg">
-    <div class="ap-calc-group-title">Additional Damage</div>
+    <div class="ap-calc-group-title">Дополнительный урон</div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-weapon-quality">Weapon Quality</label>
+      <label class="ap-calc-field-label" for="ap-weapon-quality">Качество оружия</label>
       <span class="ap-value-display" data-for="ap-weapon-quality"></span>
       <input type="number" id="ap-weapon-quality" class="ap-weapon-quality" min="0" max="100" step="1" value="100">
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-necklace">Necklace</label>
+      <label class="ap-calc-field-label" for="ap-necklace">Ожерелье</label>
       <select id="ap-necklace" class="ap-necklace">
-        <option value="None">None</option>
+        <option value="None">Нет</option>
         <option value="Low">0.70%</option>
         <option value="Mid">1.60%</option>
         <option value="High" selected>2.60%</option>
       </select>
     </div>
     <div class="ap-calc-field-row ap-calc-field-row-pair">
-      <label class="ap-calc-field-label">Bracelet</label>
+      <label class="ap-calc-field-label">Браслет</label>
       <div class="ap-calc-pair">
-        <select id="ap-bracelet-addA" class="ap-bracelet-addA" aria-label="Bracelet Additional Damage Line 1">
-          <option value="None" selected>None</option>
+        <select id="ap-bracelet-addA" class="ap-bracelet-addA" aria-label="Браслет Дополнительный урон Line 1">
+          <option value="None" selected>Нет</option>
           <option value="Low">3.00%</option>
           <option value="Mid">3.50%</option>
           <option value="High">4.00%</option>
         </select>
-        <select id="ap-bracelet-addB" class="ap-bracelet-addB" title="vs Demons" aria-label="Bracelet Additional Damage Line 2 (vs Demons/Archdemon)">
-          <option value="None" selected>None</option>
+        <select id="ap-bracelet-addB" class="ap-bracelet-addB" title="vs Demons" aria-label="Браслет Дополнительный урон Line 2 (vs Demons/Archdemon)">
+          <option value="None" selected>Нет</option>
           <option value="Low">2.50%</option>
           <option value="Mid">3.00%</option>
           <option value="High">3.50%</option>
@@ -329,26 +329,26 @@
       </div>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-astrogem-lv">Astrogem Level</label>
+      <label class="ap-calc-field-label" for="ap-astrogem-lv">Уровень астрогема</label>
       <span class="ap-value-display" data-for="ap-astrogem-lv"></span>
       <input type="number" id="ap-astrogem-lv" class="ap-astrogem-lv" min="0" max="120" step="1" value="59">
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-sh-pet">Stronghold Pet</label>
+      <label class="ap-calc-field-label" for="ap-sh-pet">Питомец крепости</label>
       <span class="ap-value-display" data-for="ap-sh-pet"></span>
       <select id="ap-sh-pet" class="ap-sh-pet">
-        <option value="None">None</option>
+        <option value="None">Нет</option>
         <option value="Low">Rare</option>
         <option value="Mid">Epic</option>
         <option value="High" selected>Legendary</option>
       </select>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-stable-atk">Chaos Core: Stable Attack</label>
+      <label class="ap-calc-field-label" for="ap-stable-atk">Ядро хаоса: Стабильная атака</label>
       <span class="ap-value-display" data-for="ap-stable-atk"></span>
       <select id="ap-stable-atk" class="ap-stable-atk">
-        <option value="None|0P" selected>None</option>
-        <option value="Any|14P">14 Points</option>
+        <option value="None|0P" selected>Нет</option>
+        <option value="Any|14P">14 очков</option>
         <option value="Relic|17P">Relic 17P</option>
         <option value="Relic|18P">Relic 18P</option>
         <option value="Relic|19P">Relic 19P</option>
@@ -366,8 +366,8 @@
        bordered group for one dropdown was mostly empty box, so it's a slim
        tagged strip spanning the gear column instead of its own card. -->
   <div class="ap-calc-mini-field ap-calc-mini-field--evo-dmg">
-    <span class="ap-calc-mini-field-tag">Evo Dmg</span>
-    <label class="ap-calc-field-label" for="ap-evo-karma">Karmic Leap Rank</label>
+    <span class="ap-calc-mini-field-tag">Урон эволюции</span>
+    <label class="ap-calc-field-label" for="ap-evo-karma">Ранг Кармического прыжка</label>
     <span class="ap-value-display" data-for="ap-evo-karma"></span>
     <select id="ap-evo-karma" class="ap-evo-karma">
       <option value="1">1</option>
@@ -387,29 +387,29 @@
 <div class="ap-calc-live">
 
   <div class="ap-calc-party-card">
-    <div class="ap-calc-group-title">Party &amp; Positioning</div>
+    <div class="ap-calc-group-title">Группа и позиция</div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-crit-syn1" title="A flat +10% Crit Rate party synergy buff.">Crit Rate Synergy 1</label>
+      <label class="ap-calc-field-label" for="ap-crit-syn1" title="A flat +10% Шанс крита party synergy buff.">Синергия шанса крита 1</label>
       <span class="ap-value-display" data-for="ap-crit-syn1"></span>
       <input type="checkbox" id="ap-crit-syn1" class="ap-crit-syn1">
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-crit-syn2" title="A flat +10% Crit Rate party synergy buff.">Crit Rate Synergy 2</label>
+      <label class="ap-calc-field-label" for="ap-crit-syn2" title="A flat +10% Шанс крита party synergy buff.">Синергия шанса крита 2</label>
       <span class="ap-value-display" data-for="ap-crit-syn2"></span>
       <input type="checkbox" id="ap-crit-syn2" class="ap-crit-syn2">
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-crit-hit-syn-1" title="A flat +8% Crit Hit Damage party synergy buff, multiplicative.">Crit Hit Damage Synergy 1</label>
+      <label class="ap-calc-field-label" for="ap-crit-hit-syn-1" title="A flat +8% Урон по криту party synergy buff, multiplicative.">Синергия урона по криту 1</label>
       <span class="ap-value-display" data-for="ap-crit-hit-syn-1"></span>
       <input type="checkbox" id="ap-crit-hit-syn-1" class="ap-crit-hit-syn-1">
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-crit-hit-syn-2" title="A flat +8% Crit Hit Damage party synergy buff, multiplicative.">Crit Hit Damage Synergy 2</label>
+      <label class="ap-calc-field-label" for="ap-crit-hit-syn-2" title="A flat +8% Урон по криту party synergy buff, multiplicative.">Синергия урона по криту 2</label>
       <span class="ap-value-display" data-for="ap-crit-hit-syn-2"></span>
       <input type="checkbox" id="ap-crit-hit-syn-2" class="ap-crit-hit-syn-2">
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-yearning" title="+14% Evo Dmg while active, used to determine if a Support is present for all relevant bonuses and calculations.">Support: Passionate Dance</label>
+      <label class="ap-calc-field-label" for="ap-yearning" title="+14% урона эволюции, пока активно; нужно, чтобы определить наличие поддержки для всех бонусов и расчётов.">Поддержка: Страстный танец</label>
       <span class="ap-value-display" data-for="ap-yearning"></span>
       <input type="checkbox" id="ap-yearning" class="ap-yearning" checked>
     </div>
@@ -428,26 +428,26 @@
          flat Attack Power % - folding a flat % into that coefficient would
          misrepresent what it's calibrated against. -->
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-support-crit-rate-bracelet" title="Support's Crit Rate bracelet line - Low/Mid/High +1.8/2.1/2.5% Crit Rate for the party.">Support: Crit Rate Bracelet</label>
+      <label class="ap-calc-field-label" for="ap-support-crit-rate-bracelet" title="Support's Шанс крита bracelet line - Низкий/Средний/Высокий +1.8/2.1/2.5% Шанс крита for the party.">Поддержка: браслет на шанс крита</label>
       <select id="ap-support-crit-rate-bracelet" class="ap-support-crit-rate-bracelet">
-        <option value="None" selected>None</option>
+        <option value="None" selected>Нет</option>
         <option value="Low">1.80%</option>
         <option value="Mid">2.10%</option>
         <option value="High">2.50%</option>
       </select>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-support-crit-dmg-bracelet" title="Support's Crit Dmg bracelet line - Low/Mid/High +3.6/4.2/4.8% Crit Dmg for the party.">Support: Crit Dmg Bracelet</label>
+      <label class="ap-calc-field-label" for="ap-support-crit-dmg-bracelet" title="Support's Сила крита bracelet line - Низкий/Средний/Высокий +3.6/4.2/4.8% Сила крита for the party.">Поддержка: браслет на силу крита</label>
       <select id="ap-support-crit-dmg-bracelet" class="ap-support-crit-dmg-bracelet">
-        <option value="None" selected>None</option>
+        <option value="None" selected>Нет</option>
         <option value="Low">3.60%</option>
         <option value="Mid">4.20%</option>
         <option value="High">4.80%</option>
       </select>
     </div>
     <div class="ap-calc-field-row ap-calc-field-row-muted">
-      <label class="ap-calc-field-label" for="ap-flash-orb-uptime" title="+15% Crit Rate, scaled by the Support's Drops of Ether engraving.">Flash Orb Uptime %</label>
-      <span class="ap-brace-warn-icon ap-flash-orb-warn" title="Getting these orbs at all is pure RNG - they'll shift your best setup, but they're not worth planning around unless you like seeing white numbers most of the time.">WARN</span>
+      <label class="ap-calc-field-label" for="ap-flash-orb-uptime" title="+15% Шанс крита, scaled by the Support's Drops of Ether engraving.">Активность Сверхновой, %</label>
+      <span class="ap-brace-warn-icon ap-flash-orb-warn" title="Сами по себе эти сферы — чистый рандом: они сдвинут твою лучшую сборку, но строить план вокруг них не стоит, если только тебе не нравится постоянно видеть белые цифры.">WARN</span>
       <span class="ap-value-display" data-for="ap-flash-orb-uptime"></span>
       <input type="number" id="ap-flash-orb-uptime" class="ap-flash-orb-uptime" min="0" max="100" step="1" value="0">
     </div>
@@ -458,8 +458,8 @@
          Same muted row + WARN pill as Flash Orb Uptime above. The Top
          Combinations header below shows .ap-ot1-indicator while this is on. -->
     <div class="ap-calc-field-row ap-calc-field-row-muted">
-      <label class="ap-calc-field-label" for="ap-ot1" title="Takes 1 of the 3 combined Keen Sense/Limit Break levels, and adds a fixed +5% Evo Dmg. Its Cooldown Reduction isn't modeled.">Optimized Training 1</label>
-      <span class="ap-brace-warn-icon ap-ot1-warn" title="Only check this if you'd run Optimized Training 1 for its cooldown reduction. That reduction isn't calculated here, so this just locks in the split and the +5% Evo Dmg.">WARN</span>
+      <label class="ap-calc-field-label" for="ap-ot1" title="Занимает 1 из 3 объединённых уровней «Отточенных рефлексов»/«Исключительного дара» и добавляет фиксированные +5% урона эволюции. Сокращение перезарядки не учитывается.">Изнурительные тренировки 1</label>
+      <span class="ap-brace-warn-icon ap-ot1-warn" title="Only check this if you'd run Изнурительные тренировки 1 for its cooldown reduction. That reduction isn't calculated here, so this just locks in the split and the +5% Урон эволюции.">WARN</span>
       <!-- Readout + checkbox share a wrapper sized to a number input's
            width so this row's WARN pill lines up with Flash Orb's. -->
       <span class="ap-ot1-controls">
@@ -468,7 +468,7 @@
       </span>
     </div>
     <div class="ap-calc-field-row">
-      <label class="ap-calc-field-label" for="ap-back-attack-rate" title="Enter the 'Back Attack Rate' % from Combat Analyzer's Overview tab. Only applies to the share of your DPS that's a Back Attack.">Back Attack Rate %</label>
+      <label class="ap-calc-field-label" for="ap-back-attack-rate" title="Введи «Долю атак в спину» в % из вкладки «Обзор» Анализатора боя. Учитывается только та доля твоего DPS, которая приходится на атаки в спину.">Доля атак в спину, %</label>
       <input type="number" id="ap-back-attack-rate" class="ap-back-attack-rate" min="0" max="100" step="1" value="85">
     </div>
   </div>
@@ -495,16 +495,16 @@
        the default base with nothing to pin to. -->
   <div class="ap-calc-results">
     <div class="ap-calc-results-title">
-      <span>Top Combinations</span>
-      <span class="ap-ot1-indicator" hidden title="Optimized Training 1 is on: only 2 levels of Keen Sense/Limit Break are available, and +5% Evo Dmg is included in every combo below. The DPS figure is your best setup here vs. your best setup without it. Its cooldown reduction isn't counted.">OT1<span class="ap-ot1-cost"></span></span>
+      <span>Лучшие комбинации</span>
+      <span class="ap-ot1-indicator" hidden title="Изнурительные тренировки 1 is on: only 2 levels of Keen Sense/Limit Break are available, and +5% Урон эволюции is included in every combo below. The DPS figure is your best setup here vs. your best setup without it. Its cooldown reduction isn't counted.">OT1<span class="ap-ot1-cost"></span></span>
     </div>
-    <div class="ap-calc-result-row" data-rank="1" tabindex="0" role="button" aria-label="Preview this combo's stats in the Best Setup card">
+    <div class="ap-calc-result-row" data-rank="1" tabindex="0" role="button" aria-label="Показать статы этой комбинации в карточке «Лучшая сборка»">
       <span class="ap-result-rank">1</span>
       <span class="ap-result-combo">—</span>
       <span class="ap-result-delta">—</span>
       <span class="ap-result-pct">—</span>
     </div>
-    <div class="ap-calc-result-row" data-rank="2" tabindex="0" role="button" aria-label="Preview this combo's stats in the Best Setup card">
+    <div class="ap-calc-result-row" data-rank="2" tabindex="0" role="button" aria-label="Показать статы этой комбинации в карточке «Лучшая сборка»">
       <span class="ap-result-rank">2</span>
       <span class="ap-result-combo">—</span>
       <span class="ap-result-delta">—</span>
@@ -515,14 +515,14 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base for every comparison on this page, instead of the true best. Click again to unpin.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Закрепить эту комбинацию как базу для всех сравнений на странице вместо настоящей лучшей. Нажми ещё раз, чтобы открепить.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
         </svg>
       </button>
     </div>
-    <div class="ap-calc-result-row" data-rank="3" tabindex="0" role="button" aria-label="Preview this combo's stats in the Best Setup card">
+    <div class="ap-calc-result-row" data-rank="3" tabindex="0" role="button" aria-label="Показать статы этой комбинации в карточке «Лучшая сборка»">
       <span class="ap-result-rank">3</span>
       <span class="ap-result-combo">—</span>
       <span class="ap-result-delta">—</span>
@@ -533,14 +533,14 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Bracelet, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
         </svg>
       </button>
     </div>
-    <div class="ap-calc-result-row" data-rank="4" tabindex="0" role="button" aria-label="Preview this combo's stats in the Best Setup card">
+    <div class="ap-calc-result-row" data-rank="4" tabindex="0" role="button" aria-label="Показать статы этой комбинации в карточке «Лучшая сборка»">
       <span class="ap-result-rank">4</span>
       <span class="ap-result-combo">—</span>
       <span class="ap-result-delta">—</span>
@@ -551,14 +551,14 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Bracelet, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
         </svg>
       </button>
     </div>
-    <div class="ap-calc-result-row" data-rank="5" tabindex="0" role="button" aria-label="Preview this combo's stats in the Best Setup card">
+    <div class="ap-calc-result-row" data-rank="5" tabindex="0" role="button" aria-label="Показать статы этой комбинации в карточке «Лучшая сборка»">
       <span class="ap-result-rank">5</span>
       <span class="ap-result-combo">—</span>
       <span class="ap-result-delta">—</span>
@@ -569,7 +569,7 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Bracelet, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
@@ -584,25 +584,25 @@
     <div class="ap-calc-stat-cards">
 
       <div class="ap-stat-card">
-        <div class="ap-stat-card-title">Base Setup</div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critrate" title="The capped, uptime-weighted Crit Rate the DPS math actually uses (accounts for buffs overlapping and hitting the 100% cap).">Eff. Crit Rate</span><span class="ap-summary-base-critrate ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critrate" title="Crit rate if Adrenaline and Back Attack both hit at full value, uncapped - can read over 100%. Flash Orb stays uptime-scaled.">Peak Crit Rate</span><span class="ap-summary-base-critrate-peak ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critdmg">Crit Dmg</span><span class="ap-summary-base-critdmg ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row ap-stat-card-row--breakingmoon-base ap-stat-card-row--hidden"><span class="ap-summary-label ap-summary-label--critdmg" title="Breaking Moon's average per-cast Crit Dmg bonus (applies to 111 Surge only).">T→Z CDmg</span><span class="ap-summary-base-breakingmoon ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--oncrit">Crit Hit Dmg</span><span class="ap-summary-base-oncrit ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--evodmg">Evo Dmg</span><span class="ap-summary-base-evodmg ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--adddmg">Add Dmg</span><span class="ap-summary-base-adddmg ap-summary-value">—</span></div>
+        <div class="ap-stat-card-title">Базовая сборка</div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critrate" title="The capped, uptime-weighted Шанс крита the DPS math actually uses (accounts for buffs overlapping and hitting the 100% cap).">Eff. Шанс крита</span><span class="ap-summary-base-critrate ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critrate" title="Crit rate if Адреналин and Back Attack both hit at full value, uncapped - can read over 100%. Flash Orb stays uptime-scaled.">Peak Шанс крита</span><span class="ap-summary-base-critrate-peak ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critdmg">Сила крита</span><span class="ap-summary-base-critdmg ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row ap-stat-card-row--breakingmoon-base ap-stat-card-row--hidden"><span class="ap-summary-label ap-summary-label--critdmg" title="Средний бонус к силе крита за применение «Неуловимого пируэта» (только для 111 Твёрдой воли).">T→Z CDmg</span><span class="ap-summary-base-breakingmoon ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--oncrit">Урон по криту</span><span class="ap-summary-base-oncrit ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--evodmg">Урон эволюции</span><span class="ap-summary-base-evodmg ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--adddmg">Доп. урон</span><span class="ap-summary-base-adddmg ap-summary-value">—</span></div>
       </div>
 
       <div class="ap-stat-card ap-stat-card-best">
-        <div class="ap-stat-card-title">Best Setup</div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critrate" title="The capped, uptime-weighted Crit Rate the DPS math actually uses (accounts for buffs overlapping and hitting the 100% cap).">Eff. Crit Rate</span><span class="ap-summary-best-crit ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critrate" title="Crit rate if Adrenaline and Back Attack both hit at full value, uncapped - can read over 100%. Flash Orb stays uptime-scaled.">Peak Crit Rate</span><span class="ap-summary-best-crit-peak ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critdmg">Crit Dmg</span><span class="ap-summary-best-critdmg ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row ap-stat-card-row--breakingmoon-best ap-stat-card-row--hidden"><span class="ap-summary-label ap-summary-label--critdmg" title="Breaking Moon's average per-cast Crit Dmg bonus (applies to 111 Surge only).">T→Z CDmg</span><span class="ap-summary-best-breakingmoon ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--oncrit">Crit Hit Dmg</span><span class="ap-summary-best-oncrit ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--evodmg">Evo Dmg</span><span class="ap-summary-best-evodmg ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--adddmg">Add Dmg</span><span class="ap-summary-best-adddmg ap-summary-value">—</span></div>
+        <div class="ap-stat-card-title">Лучшая сборка</div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critrate" title="The capped, uptime-weighted Шанс крита the DPS math actually uses (accounts for buffs overlapping and hitting the 100% cap).">Eff. Шанс крита</span><span class="ap-summary-best-crit ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critrate" title="Crit rate if Адреналин and Back Attack both hit at full value, uncapped - can read over 100%. Flash Orb stays uptime-scaled.">Peak Шанс крита</span><span class="ap-summary-best-crit-peak ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--critdmg">Сила крита</span><span class="ap-summary-best-critdmg ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row ap-stat-card-row--breakingmoon-best ap-stat-card-row--hidden"><span class="ap-summary-label ap-summary-label--critdmg" title="Средний бонус к силе крита за применение «Неуловимого пируэта» (только для 111 Твёрдой воли).">T→Z CDmg</span><span class="ap-summary-best-breakingmoon ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--oncrit">Урон по криту</span><span class="ap-summary-best-oncrit ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--evodmg">Урон эволюции</span><span class="ap-summary-best-evodmg ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label ap-summary-label--adddmg">Доп. урон</span><span class="ap-summary-best-adddmg ap-summary-value">—</span></div>
       </div>
 
     </div>
@@ -623,10 +623,10 @@
        ".ap-calc-footnote" as a class, not a "p.ap-calc-footnote" tag
        selector. -->
   <div class="ap-calc-footnote">
-  <span class="ap-calc-preset-group" role="group" aria-label="Preset slot">Preset <button type="button" class="ap-calc-preset" data-preset="1">1</button><button type="button" class="ap-calc-preset" data-preset="2">2</button><button type="button" class="ap-calc-preset" data-preset="3">3</button></span>
-  <button type="button" class="ap-calc-export">Export</button>
-  <button type="button" class="ap-calc-import">Import</button>
-  <button type="button" class="ap-calc-reset">Reset to defaults</button>
+  <span class="ap-calc-preset-group" role="group" aria-label="Ячейка пресета">Preset <button type="button" class="ap-calc-preset" data-preset="1">1</button><button type="button" class="ap-calc-preset" data-preset="2">2</button><button type="button" class="ap-calc-preset" data-preset="3">3</button></span>
+  <button type="button" class="ap-calc-export">Экспорт</button>
+  <button type="button" class="ap-calc-import">Импорт</button>
+  <button type="button" class="ap-calc-reset">Сбросить на значения по умолчанию</button>
   <!-- Wired up by bible-import.js. Drag the link to a bookmarks bar, then
        click it while on a fully-loaded/refreshed lostark.bible character
        page - it redirects back here with the character's data, which then
@@ -639,27 +639,27 @@
        dragged to a bookmarks bar, so the icon has to live outside it or
        every saved bookmark would be titled "⠿ Bible Import". -->
   <span class="bible-import-control">
-    <a href="#" class="bible-import-bookmarklet" title="Drag to your bookmarks bar, then click it on a loaded lostark.bible character page. Doesn't capture Main Stat % (Stronghold Pet + Skins), set them manually. Only as accurate as your Raid Loadout is.">Bible Import</a>
+    <a href="#" class="bible-import-bookmarklet" title="Drag to your bookmarks bar, then click it on a loaded lostark.bible character page. Doesn't capture Основной стат, % (Питомец крепости + Skins), set them manually. Only as accurate as your Raid Загрузитьout is.">Bible Импорт</a>
     <span class="bible-import-status" aria-live="polite"></span>
     <ul class="bible-import-warnings" hidden></ul>
   </span>
   <span class="ap-calc-popover" data-popover="export" hidden>
-    <span class="ap-calc-popover-title" id="ap-calc-popover-title-export">Export Preset <span class="ap-calc-popover-preset-num"></span></span>
+    <span class="ap-calc-popover-title" id="ap-calc-popover-title-export">Экспорт Preset <span class="ap-calc-popover-preset-num"></span></span>
     <textarea class="ap-calc-popover-textarea" aria-labelledby="ap-calc-popover-title-export" readonly rows="4" spellcheck="false"></textarea>
     <span class="ap-calc-popover-actions">
-      <button type="button" class="ap-calc-popover-copy">Copy to Clipboard</button>
-      <button type="button" class="ap-calc-popover-download">Download .json</button>
-      <button type="button" class="ap-calc-popover-close">Close</button>
+      <button type="button" class="ap-calc-popover-copy">Скопировать в буфер обмена</button>
+      <button type="button" class="ap-calc-popover-download">Скачать .json</button>
+      <button type="button" class="ap-calc-popover-close">Закрыть</button>
     </span>
     <span class="ap-calc-popover-msg" aria-live="polite"></span>
   </span>
   <span class="ap-calc-popover" data-popover="import" hidden>
-    <span class="ap-calc-popover-title" id="ap-calc-popover-title-import">Import into Preset <span class="ap-calc-popover-preset-num"></span></span>
-    <textarea class="ap-calc-popover-textarea" aria-labelledby="ap-calc-popover-title-import" rows="4" spellcheck="false" placeholder="Paste exported JSON here, or choose a file below."></textarea>
-    <input type="file" class="ap-calc-popover-file" aria-label="Choose a JSON file to import" accept="application/json,.json">
+    <span class="ap-calc-popover-title" id="ap-calc-popover-title-import">Импорт into Preset <span class="ap-calc-popover-preset-num"></span></span>
+    <textarea class="ap-calc-popover-textarea" aria-labelledby="ap-calc-popover-title-import" rows="4" spellcheck="false" placeholder="Вставь сюда экспортированный JSON или выбери файл ниже."></textarea>
+    <input type="file" class="ap-calc-popover-file" aria-label="Выбери JSON-файл для импорта" accept="application/json,.json">
     <span class="ap-calc-popover-actions">
-      <button type="button" class="ap-calc-popover-load">Load</button>
-      <button type="button" class="ap-calc-popover-close">Cancel</button>
+      <button type="button" class="ap-calc-popover-load">Загрузить</button>
+      <button type="button" class="ap-calc-popover-close">Отмена</button>
     </span>
     <span class="ap-calc-popover-msg" aria-live="polite"></span>
   </span>
@@ -680,7 +680,7 @@
      wasn't enough to read as a SECTION break rather than just another
      rule between cards, so this pairs the line with a label. -->
 <div class="ap-section-divider">
-  <span class="ap-section-divider-label">Equipment Comparisons</span>
+  <span class="ap-section-divider-label">Сравнения снаряжения</span>
 </div>
 
 <!-- Wraps the 5 top-level <details> below (Character Data, Bracelet/
@@ -708,8 +708,8 @@
      rather than hand-typed. -->
 <details class="ap-gear-inputs">
   <summary>
-    <span class="ap-gear-title">Character Data</span>
-    <span class="ap-gear-optional-badge" title="Only feeds data to the sections below - skip this if you're not using them.">Optional</span>
+    <span class="ap-gear-title">Данные персонажа</span>
+    <span class="ap-gear-optional-badge" title="Только передаёт данные в разделы ниже — пропусти, если ты их не используешь.">Optional</span>
   </summary>
   <div class="ap-brace-compare-inputs">
     <!-- Two cards side by side, same visual language as the Ark Passive
@@ -734,18 +734,18 @@
          that same rule instead of a second breakpoint to keep in sync. -->
     <div class="ap-gear-cards">
       <div class="ap-gear-card ap-gear-card--basics">
-        <p class="ap-gear-card-title">Weapon Power / Main Stat / Misc</p>
+        <p class="ap-gear-card-title">Сила оружия / Основной стат / Misc</p>
         <div class="ap-calc-field-row ap-calc-field-row-pair">
-          <label class="ap-calc-field-label" title="Affects only the flat Weapon Power granted by lines below, not your Weapon Power.">Earrings</label>
+          <label class="ap-calc-field-label" title="Affects only the flat Сила оружия granted by lines below, not your Сила оружия.">Серьги</label>
           <div class="ap-calc-pair">
-            <select id="ap-gear-wp-earring1" class="ap-gear-wp-earring1" aria-label="Earring 1 Weapon Power %">
-              <option value="None">None</option>
+            <select id="ap-gear-wp-earring1" class="ap-gear-wp-earring1" aria-label="Earring 1 Сила оружия %">
+              <option value="None">Нет</option>
               <option value="Low">0.8%</option>
               <option value="Mid" selected>1.8%</option>
               <option value="High">3%</option>
             </select>
-            <select id="ap-gear-wp-earring2" class="ap-gear-wp-earring2" aria-label="Earring 2 Weapon Power %">
-              <option value="None">None</option>
+            <select id="ap-gear-wp-earring2" class="ap-gear-wp-earring2" aria-label="Earring 2 Сила оружия %">
+              <option value="None">Нет</option>
               <option value="Low">0.8%</option>
               <option value="Mid" selected>1.8%</option>
               <option value="High">3%</option>
@@ -753,21 +753,21 @@
           </div>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-wp">Weapon Power</label>
+          <label class="ap-calc-field-label" for="ap-gear-wp">Сила оружия</label>
           <input type="number" id="ap-gear-wp" class="ap-gear-wp ap-gear-input-wide" min="0" max="1000000" step="1" value="259216">
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-wp-karma-lv" title="+0.1% Weapon Power per level. Affects only the flat Weapon Power granted by lines below, not your Weapon Power.">Karmic Enlightenment Level</label>
+          <label class="ap-calc-field-label" for="ap-gear-wp-karma-lv" title="+0.1% Сила оружия per level. Affects only the flat Сила оружия granted by lines below, not your Сила оружия.">Уровень Кармического просветления</label>
           <span class="ap-value-display" data-for="ap-gear-wp-karma-lv"></span>
           <input type="number" id="ap-gear-wp-karma-lv" class="ap-gear-wp-karma-lv ap-gear-input-narrow" min="0" max="30" step="1" value="30">
         </div>
         <div class="ap-calc-field-row ap-gear-ap-select-row">
-          <label class="ap-calc-field-label" for="ap-gear-weapon-core" title="Chaos Core: Weapon's Weapon Power % AND Flat WP, both at once.">Chaos Core: Weapon</label>
+          <label class="ap-calc-field-label" for="ap-gear-weapon-core" title="Ядро хаоса: Оружие's Сила оружия % AND Flat WP, both at once.">Ядро хаоса: Оружие</label>
           <span class="ap-value-display" data-for="ap-gear-weapon-core"></span>
           <select id="ap-gear-weapon-core" class="ap-gear-weapon-core">
-            <option value="None|0P" selected>None</option>
-            <option value="Any|10P">10 Points</option>
-            <option value="Any|14P">14 Points</option>
+            <option value="None|0P" selected>Нет</option>
+            <option value="Any|10P">10 очков</option>
+            <option value="Any|14P">14 очков</option>
             <option value="Relic|17P">Relic 17P</option>
             <option value="Relic|18P">Relic 18P</option>
             <option value="Relic|19P">Relic 19P</option>
@@ -779,19 +779,19 @@
           </select>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-main-stat">Main Stat (STR/DEX/INT)</label>
+          <label class="ap-calc-field-label" for="ap-gear-main-stat">Основной стат (сила/ловкость/интеллект)</label>
           <input type="number" id="ap-gear-main-stat" class="ap-gear-main-stat ap-gear-input-wide" min="0" max="2000000" step="1" value="854918">
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-main-stat-pct" title="Stronghold Pet (+1%) + Equipped Skins: Legendary +2% each and Epic +1% each. Affects only the flat Main Stat granted by lines below, not your Main Stat.">Main Stat %</label>
+          <label class="ap-calc-field-label" for="ap-gear-main-stat-pct" title="Питомец крепости (+1%) + Equipped Skins: Legendary +2% each and Epic +1% each. Affects only the flat Основной стат granted by lines below, not your Основной стат.">Основной стат, %</label>
           <input type="number" id="ap-gear-main-stat-pct" class="ap-gear-main-stat-pct ap-gear-input-narrow" min="0" max="15" step="0.1" value="9">
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-gem-base-ap" title="The SUM of every socketed gem's Base AP% bonus (Lv.7 +0.6% / Lv.8 +0.8% / Lv.9 +1% / Lv.10 +1.2% each). As displayed on your character profile's Gem section.">Gem Base AP %</label>
+          <label class="ap-calc-field-label" for="ap-gear-gem-base-ap" title="СУММА базовых бонусов всех вставленных самоцветов к силе атаки (по +0.6% за Ур.7, +0.8% за Ур.8, +1% за Ур.9, +1.2% за Ур.10). Как показано в разделе «Самоцветы» на странице персонажа.">Базовый бонус самоцветов к силе атаки, %</label>
           <input type="number" id="ap-gear-gem-base-ap" class="ap-gear-gem-base-ap ap-gear-input-narrow" min="0" max="13.2" step="0.1" value="13.2">
         </div>
         <div class="ap-calc-field-row ap-calc-field-row-pair">
-          <label class="ap-calc-field-label" title="Your Ability Stone's own Base AP % bonus - a flat +1.5% if you have a 9/7, 10/6, or better roll (at 5+ engraving levels).">Base Ability Stone %</label>
+          <label class="ap-calc-field-label" title="Собственный базовый бонус Фетранита к силе атаки — фиксированные +1.5% при рандоме 9/7, 10/6 или лучше (на 5+ уровнях гравировки).">Базовый бонус Фетранита, %</label>
           <div class="ap-calc-pair ap-gear-ability-stone-base-ap-pair">
             <span class="ap-value-display" data-for="ap-gear-ability-stone-base-ap"></span>
             <label class="ap-calc-pair-check">
@@ -801,11 +801,11 @@
           </div>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-flat-ap" title="Low +80 / Mid +195 / High +390.">Accessory Flat AP Bonuses</label>
+          <label class="ap-calc-field-label" for="ap-gear-flat-ap" title="Низкий +80 / Средний +195 / Высокий +390.">Постоянные бонусы украшений к силе атаки</label>
           <input type="number" id="ap-gear-flat-ap" class="ap-gear-flat-ap ap-gear-input-narrow" min="0" max="2000" step="1" value="0">
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-support-uptime" title="Assumes an equally-geared support providing their AP buff.">Support AP Buff Uptime %</label>
+          <label class="ap-calc-field-label" for="ap-gear-support-uptime" title="Предполагает поддержку с равноценным снаряжением, дающую свой бафф силы атаки.">Активность баффа силы атаки от поддержки, %</label>
           <input type="number" id="ap-gear-support-uptime" class="ap-gear-support-uptime ap-gear-input-narrow" min="0" max="100" step="1" value="98">
         </div>
       </div>
@@ -826,18 +826,18 @@
            weight inside a card titled "sources". It sits in the card on
            the left instead, alongside Weapon Power/Main Stat/etc. -->
       <div class="ap-gear-card ap-gear-card--ap-sources ap-gear-ap-section">
-        <p class="ap-gear-card-title ap-gear-ap-sources-heading">Attack Power %<span class="ap-value-display ap-gear-ap-total-display" data-for="ap-gear-ap-total"></span></p>
+        <p class="ap-gear-card-title ap-gear-ap-sources-heading">Сила атаки, %<span class="ap-value-display ap-gear-ap-total-display" data-for="ap-gear-ap-total"></span></p>
         <div class="ap-calc-field-row ap-calc-field-row-pair">
-          <label class="ap-calc-field-label" >Earrings</label>
+          <label class="ap-calc-field-label" >Серьги</label>
           <div class="ap-calc-pair">
-            <select id="ap-gear-ap-earring1" class="ap-gear-ap-earring1" aria-label="Earring 1 Attack Power %">
-              <option value="None">None</option>
+            <select id="ap-gear-ap-earring1" class="ap-gear-ap-earring1" aria-label="Серьга 1, сила атаки, %">
+              <option value="None">Нет</option>
               <option value="Low">0.4%</option>
               <option value="Mid">0.95%</option>
               <option value="High" selected>1.55%</option>
             </select>
-            <select id="ap-gear-ap-earring2" class="ap-gear-ap-earring2" aria-label="Earring 2 Attack Power %">
-              <option value="None">None</option>
+            <select id="ap-gear-ap-earring2" class="ap-gear-ap-earring2" aria-label="Серьга 2, сила атаки, %">
+              <option value="None">Нет</option>
               <option value="Low">0.4%</option>
               <option value="Mid">0.95%</option>
               <option value="High" selected>1.55%</option>
@@ -845,22 +845,22 @@
           </div>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-ap-kazeros" title="Only applicable for Kazeros Raids, up to +2% Attack Power at max contribution.">Kazeros Raid Contribution</label>
+          <label class="ap-calc-field-label" for="ap-gear-ap-kazeros" title="Только для рейдов Казероса, до +2% силы атаки при максимальном вкладе.">Вклад в рейд Казероса</label>
           <span class="ap-value-display" data-for="ap-gear-ap-kazeros"></span>
           <input type="checkbox" id="ap-gear-ap-kazeros" class="ap-gear-ap-kazeros">
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-ap-guardian" title="Only applicable for Guardian Raids, +3% Attack Power at max contribution.">Guardian Raid Contribution</label>
+          <label class="ap-calc-field-label" for="ap-gear-ap-guardian" title="Только для рейдов Стража, +3% силы атаки при максимальном вкладе.">Вклад в рейд Стража</label>
           <span class="ap-value-display" data-for="ap-gear-ap-guardian"></span>
           <input type="checkbox" id="ap-gear-ap-guardian" class="ap-gear-ap-guardian">
         </div>
         <div class="ap-calc-field-row ap-gear-ap-select-row">
-          <label class="ap-calc-field-label" for="ap-gear-ap-chaos-star" title="Chaos Core: Attack's Atk. Power % AND Flat AP, both at once.">Chaos Core: Attack</label>
+          <label class="ap-calc-field-label" for="ap-gear-ap-chaos-star" title="Ядро хаоса: Атака's Atk. Power % AND Flat AP, both at once.">Ядро хаоса: Атака</label>
           <span class="ap-value-display" data-for="ap-gear-ap-chaos-star"></span>
           <select id="ap-gear-ap-chaos-star" class="ap-gear-ap-chaos-star">
-            <option value="None|0P">None</option>
-            <option value="Any|10P">10 Points</option>
-            <option value="Any|14P">14 Points</option>
+            <option value="None|0P">Нет</option>
+            <option value="Any|10P">10 очков</option>
+            <option value="Any|14P">14 очков</option>
             <option value="Relic|17P">Relic 17P</option>
             <option value="Relic|18P">Relic 18P</option>
             <option value="Relic|19P">Relic 19P</option>
@@ -872,33 +872,33 @@
           </select>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-ap-astrogem-lv" >Astrogem Atk. Power Level</label>
+          <label class="ap-calc-field-label" for="ap-gear-ap-astrogem-lv" >Уровень астрогема силы атаки</label>
           <span class="ap-value-display" data-for="ap-gear-ap-astrogem-lv"></span>
           <input type="number" id="ap-gear-ap-astrogem-lv" class="ap-gear-ap-astrogem-lv" min="0" max="120" step="1" value="35">
         </div>
         <div class="ap-calc-field-row ap-gear-ap-select-row">
-          <label class="ap-calc-field-label" for="ap-adrenaline-stone" title="A fixed 0.9% per stack, scaled by Adrenaline Uptime %, plus this stone's own bonus, same scaling (Lv.1 +0.48% / Lv.2 +0.60% / Lv.3 +0.83% / Lv.4 +0.95% per stack).">Ability Stone: Adrenaline</label>
+          <label class="ap-calc-field-label" for="ap-adrenaline-stone" title="A fixed 0.9% per stack, scaled by Активность Адреналина, %, plus this stone's own bonus, same scaling (Lv.1 +0.48% / Lv.2 +0.60% / Lv.3 +0.83% / Lv.4 +0.95% per stack).">Фетранит: Адреналин</label>
           <span class="ap-value-display" data-for="ap-adrenaline-stone"></span>
           <select id="ap-adrenaline-stone" class="ap-adrenaline-stone">
             <option value="0 Lv." selected>Lv. 0</option>
-            <option value="1 Lv.">Lv. 1</option>
-            <option value="2 Lv.">Lv. 2</option>
-            <option value="3 Lv.">Lv. 3</option>
-            <option value="4 Lv.">Lv. 4</option>
+            <option value="1 Lv.">Ур. 1</option>
+            <option value="2 Lv.">Ур. 2</option>
+            <option value="3 Lv.">Ур. 3</option>
+            <option value="4 Lv.">Ур. 4</option>
           </select>
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-strength-orb-uptime" title="+10% Attack Power, scaled by the Support's Drops of Ether engraving.">Strength Orb Uptime %</label>
+          <label class="ap-calc-field-label" for="ap-gear-strength-orb-uptime" title="+10% силы атаки, масштабируется гравировкой «Капли эфира» поддержки.">Активность сфер воли, %</label>
           <span class="ap-value-display" data-for="ap-gear-strength-orb-uptime"></span>
           <input type="number" id="ap-gear-strength-orb-uptime" class="ap-gear-strength-orb-uptime ap-gear-input-narrow" min="0" max="100" step="1" value="0">
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-atropine-uptime" title="+30% Attack Power for 10s. Usually 0-15% uptime in latest content.">Atropine Uptime %</label>
+          <label class="ap-calc-field-label" for="ap-gear-atropine-uptime" title="+30% силы атаки на 10 сек. Обычно 0–15% активности в текущем контенте.">Активность Ардопина, %</label>
           <span class="ap-value-display" data-for="ap-gear-atropine-uptime"></span>
           <input type="number" id="ap-gear-atropine-uptime" class="ap-gear-atropine-uptime ap-gear-input-narrow" min="0" max="100" step="1" value="0">
         </div>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-gear-ap-other" title="Anything not covered above - e.g. a temporary in-raid buff. Don't include AP % from Enlightenment nodes.">Other AP % Bonuses</label>
+          <label class="ap-calc-field-label" for="ap-gear-ap-other" title="Всё, что не учтено выше — например, временный бафф в рейде. Не включай бонусы к силе атаки с узлов Просветления.">Прочие бонусы к силе атаки, %</label>
           <input type="number" id="ap-gear-ap-other" class="ap-gear-ap-other ap-gear-input-narrow" min="0" max="50" step="0.01" value="0">
         </div>
       </div>
@@ -916,14 +916,14 @@
          reads as a plain Base -> Attack Power step instead of implying a
          buff that isn't active. -->
     <div class="ap-gear-ap-readout" hidden>
-      <span class="ap-gear-ap-readout-label">Attack Power</span>
-      <span class="ap-gear-ap-readout-base" title="Your Attack Power, as calculated and displayed on your Character Profile.">&mdash;</span>
+      <span class="ap-gear-ap-readout-label">Сила атаки</span>
+      <span class="ap-gear-ap-readout-base" title="Твоя сила атаки, посчитанная и показанная на странице персонажа.">&mdash;</span>
       <span class="ap-gear-ap-readout-adrenaline-stage">
         <span class="ap-gear-ap-readout-arrow">&rarr;</span>
-        <span class="ap-gear-ap-readout-adrenaline" title="Your Attack Power with Adrenaline's AP bonus added.">&mdash;</span>
+        <span class="ap-gear-ap-readout-adrenaline" title="Your Сила атаки with Адреналин's AP bonus added.">&mdash;</span>
       </span>
       <span class="ap-gear-ap-readout-arrow">&rarr;</span>
-      <span class="ap-gear-ap-readout-final" title="Your Attack Power in a raid setting, factoring in an estimated AP buff from a similarly geared Support.">&mdash;</span>
+      <span class="ap-gear-ap-readout-final" title="Твоя сила атаки в рейде с учётом оценки баффа силы атаки от равноценно одетой поддержки.">&mdash;</span>
     </div>
   </div>
 </details>
@@ -945,7 +945,7 @@
      room to breathe horizontally instead of pushing that column's height
      around. -->
 <details class="ap-brace-compare">
-  <summary>Bracelet Comparison</summary>
+  <summary>Браслет Comparison</summary>
   <div class="ap-brace-compare-body">
     <div class="ap-brace-compare-inputs">
       <!-- Build toggle now lives once, docked at the top of .ap-calc (see
@@ -983,14 +983,14 @@
         <option value="surge-333">Surge 333</option>
       </select>
     </div>
-    <p class="ap-brace-compare-intro">Candidate bracelet lines, valued as if each were the only line on your bracelet, against your Best Setup above.</p>
+    <p class="ap-brace-compare-intro">Линии-кандидаты на браслете, оценённые так, будто каждая — единственная линия твоего браслета, по сравнению с «Лучшей сборкой» выше.</p>
     <table class="ap-brace-compare-table">
       <thead>
         <tr>
           <th class="ap-brace-th-label">Line</th>
-          <th class="ap-brace-th-low">Low</th>
-          <th class="ap-brace-th-mid">Mid</th>
-          <th class="ap-brace-th-high">High</th>
+          <th class="ap-brace-th-low">Низкий</th>
+          <th class="ap-brace-th-mid">Средний</th>
+          <th class="ap-brace-th-high">Высокий</th>
         </tr>
       </thead>
       <tbody class="ap-brace-compare-rows"></tbody>
@@ -1012,9 +1012,9 @@
          above are filled out, which is why it reads as a continuation of
          them rather than something you'd reach for on its own. -->
     <details class="ap-bvb">
-      <summary>Bracelet vs. Bracelet</summary>
+      <summary>Браслет vs. Браслет</summary>
       <div class="ap-brace-compare-body">
-        <p class="ap-brace-compare-intro">Compares two full 5-line bracelets against each other and against running none at all.</p>
+        <p class="ap-brace-compare-intro">Сравнивает два браслета с пятью линиями между собой и с вариантом вообще без браслета.</p>
 
         <!-- Basic Effect 2: a bracelet's 2nd fixed line isn't guaranteed
              to be Crit Stat - it can also land as Main Stat (STR/DEX/INT),
@@ -1050,222 +1050,222 @@
              do - keep new accessibility work on this card off id/for. -->
         <div class="ap-bvb-cards">
           <div class="ap-bvb-card ap-bvb-card-a">
-            <p class="ap-gear-card-title ap-bvb-card-title">Bracelet A</p>
+            <p class="ap-gear-card-title ap-bvb-card-title">Браслет A</p>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Spec Stat</label>
-              <span class="ap-brace-warn-icon ap-bvb-spec-warn" title="Recommended to keep Specialization at 83 or higher on RE for CDR." hidden>WARN</span>
-              <span class="ap-brace-info-icon ap-bvb-spec-note" title="This only reflects Spec's damage share on RE - it doesn't capture CDR or orb gen." hidden>i</span>
-              <input type="number" class="ap-bvb-a-spec" min="60" max="120" step="1" value="100" aria-label="Bracelet A Spec Stat">
+              <label class="ap-calc-field-label">Мастерство</label>
+              <span class="ap-brace-warn-icon ap-bvb-spec-warn" title="В Остаточной энергии рекомендуется держать Мастерство на 83 или выше ради сокращения перезарядки." hidden>WARN</span>
+              <span class="ap-brace-info-icon ap-bvb-spec-note" title="Учитывает только долю урона от Мастерства в Остаточной энергии — без сокращения перезарядки и генерации сфер." hidden>i</span>
+              <input type="number" class="ap-bvb-a-spec" min="60" max="120" step="1" value="100" aria-label="Браслет A Мастерство">
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Basic Effect</label>
-              <select class="ap-bvb-a-effect2-type" aria-label="Bracelet A Basic Effect Type">
-                <option value="crit" selected>Crit Stat</option>
-                <option value="main">Main Stat</option>
-                <option value="none">None</option>
+              <label class="ap-calc-field-label">Базовый эффект</label>
+              <select class="ap-bvb-a-effect2-type" aria-label="Браслет A Базовый эффект Type">
+                <option value="crit" selected>Стат крита</option>
+                <option value="main">Основной стат</option>
+                <option value="none">Нет</option>
               </select>
-              <input type="number" class="ap-bvb-a-crit" min="60" max="120" step="1" value="80" aria-label="Bracelet A Basic Effect Crit Stat">
-              <input type="number" class="ap-bvb-a-effect2-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat STR/DEX/INT granted by this bracelet's Basic Effect (10000-16000)." hidden aria-label="Bracelet A Basic Effect Main Stat">
+              <input type="number" class="ap-bvb-a-crit" min="60" max="120" step="1" value="80" aria-label="Браслет A Базовый эффект Стат крита">
+              <input type="number" class="ap-bvb-a-effect2-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat Сила/ловкость/интеллект granted by this bracelet's Базовый эффект (10000-16000)." hidden aria-label="Браслет A Базовый эффект Основной стат">
             </div>
             <div class="ap-bvb-line-row">
-              <select class="ap-bvb-a-line1-type ap-bvb-line-type" aria-label="Bracelet A Line 3 Type">
-                <option value="none">— Line 3: None —</option>
-                <option value="crit_rate_dual" selected>Crit Rate % &amp; Crit Hit Dmg %</option>
-                <option value="crit_rate">Crit Rate %</option>
-                <option value="crit_dmg_dual">Crit Damage % &amp; Crit Hit Dmg %</option>
-                <option value="crit_dmg">Crit Damage %</option>
-                <option value="damage_cd">Outgoing Damage % &amp; Cooldown +2%</option>
-                <option value="outgoing_stagger">Outgoing Dmg % &amp; Dmg to Staggered %</option>
-                <option value="outgoing">Outgoing Damage %</option>
-                <option value="add_a">Additional Damage %</option>
-                <option value="add_b">Additional Damage % &amp; vs Demon/Archdemon</option>
-                <option value="back_attack">Back Attack Damage %</option>
-                <option value="stat_main">STR/DEX/INT</option>
-                <option value="wp_flat">Weapon Power</option>
-                <option value="wp_onhit">On-Hit Weapon Power (stacking)</option>
-                <option value="wp_periodic">Weapon Power + Periodic On-Hit</option>
-                <option value="wp_hpgated">Weapon Power + &gt;50% HP On-Hit</option>
+              <select class="ap-bvb-a-line1-type ap-bvb-line-type" aria-label="Браслет A Line 3 Type">
+                <option value="none">— Line 3: Нет —</option>
+                <option value="crit_rate_dual" selected>Шанс крита, % &amp; Урон по криту %</option>
+                <option value="crit_rate">Шанс крита, %</option>
+                <option value="crit_dmg_dual">Сила крита, % &amp; Урон по криту %</option>
+                <option value="crit_dmg">Сила крита, %</option>
+                <option value="damage_cd">Урон обычных умений, % &amp; Cooldown +2%</option>
+                <option value="outgoing_stagger">Урон обычных умений, % и урон по оглушённым, %</option>
+                <option value="outgoing">Урон обычных умений, %</option>
+                <option value="add_a">Дополнительный урон, %</option>
+                <option value="add_b">Дополнительный урон, % &amp; vs Demon/Archdemon</option>
+                <option value="back_attack">Урон атак в спину, %</option>
+                <option value="stat_main">Сила/ловкость/интеллект</option>
+                <option value="wp_flat">Сила оружия</option>
+                <option value="wp_onhit">Сила оружия от попаданий (скопится)</option>
+                <option value="wp_periodic">Сила оружия + периодическое попадание</option>
+                <option value="wp_hpgated">Сила оружия + &gt;50% HP On-Hit</option>
               </select>
-              <select class="ap-bvb-a-line1-tier ap-bvb-line-tier" aria-label="Bracelet A Line 3 Tier">
-                <option value="Low">Low</option>
-                <option value="Mid" selected>Mid</option>
-                <option value="High">High</option>
+              <select class="ap-bvb-a-line1-tier ap-bvb-line-tier" aria-label="Браслет A Line 3 Tier">
+                <option value="Low">Низкий</option>
+                <option value="Mid" selected>Средний</option>
+                <option value="High">Высокий</option>
               </select>
-              <input type="number" class="ap-bvb-a-line1-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat STR/DEX/INT granted by this line (10000-16000)." hidden aria-label="Bracelet A Line 3 Main Stat">
+              <input type="number" class="ap-bvb-a-line1-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat Сила/ловкость/интеллект granted by this line (10000-16000)." hidden aria-label="Браслет A Line 3 Основной стат">
             </div>
             <div class="ap-bvb-line-row">
-              <select class="ap-bvb-a-line2-type ap-bvb-line-type" aria-label="Bracelet A Line 4 Type">
-                <option value="none">— Line 4: None —</option>
-                <option value="crit_rate_dual">Crit Rate % &amp; Crit Hit Dmg %</option>
-                <option value="crit_rate">Crit Rate %</option>
-                <option value="crit_dmg_dual" selected>Crit Damage % &amp; Crit Hit Dmg %</option>
-                <option value="crit_dmg">Crit Damage %</option>
-                <option value="damage_cd">Outgoing Damage % &amp; Cooldown +2%</option>
-                <option value="outgoing_stagger">Outgoing Dmg % &amp; Dmg to Staggered %</option>
-                <option value="outgoing">Outgoing Damage %</option>
-                <option value="add_a">Additional Damage %</option>
-                <option value="add_b">Additional Damage % &amp; vs Demon/Archdemon</option>
-                <option value="back_attack">Back Attack Damage %</option>
-                <option value="stat_main">STR/DEX/INT</option>
-                <option value="wp_flat">Weapon Power</option>
-                <option value="wp_onhit">On-Hit Weapon Power (stacking)</option>
-                <option value="wp_periodic">Weapon Power + Periodic On-Hit</option>
-                <option value="wp_hpgated">Weapon Power + &gt;50% HP On-Hit</option>
+              <select class="ap-bvb-a-line2-type ap-bvb-line-type" aria-label="Браслет A Line 4 Type">
+                <option value="none">— Line 4: Нет —</option>
+                <option value="crit_rate_dual">Шанс крита, % &amp; Урон по криту %</option>
+                <option value="crit_rate">Шанс крита, %</option>
+                <option value="crit_dmg_dual" selected>Сила крита, % &amp; Урон по криту %</option>
+                <option value="crit_dmg">Сила крита, %</option>
+                <option value="damage_cd">Урон обычных умений, % &amp; Cooldown +2%</option>
+                <option value="outgoing_stagger">Урон обычных умений, % и урон по оглушённым, %</option>
+                <option value="outgoing">Урон обычных умений, %</option>
+                <option value="add_a">Дополнительный урон, %</option>
+                <option value="add_b">Дополнительный урон, % &amp; vs Demon/Archdemon</option>
+                <option value="back_attack">Урон атак в спину, %</option>
+                <option value="stat_main">Сила/ловкость/интеллект</option>
+                <option value="wp_flat">Сила оружия</option>
+                <option value="wp_onhit">Сила оружия от попаданий (скопится)</option>
+                <option value="wp_periodic">Сила оружия + периодическое попадание</option>
+                <option value="wp_hpgated">Сила оружия + &gt;50% HP On-Hit</option>
               </select>
-              <select class="ap-bvb-a-line2-tier ap-bvb-line-tier" aria-label="Bracelet A Line 4 Tier">
-                <option value="Low">Low</option>
-                <option value="Mid" selected>Mid</option>
-                <option value="High">High</option>
+              <select class="ap-bvb-a-line2-tier ap-bvb-line-tier" aria-label="Браслет A Line 4 Tier">
+                <option value="Low">Низкий</option>
+                <option value="Mid" selected>Средний</option>
+                <option value="High">Высокий</option>
               </select>
-              <input type="number" class="ap-bvb-a-line2-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat STR/DEX/INT granted by this line (10000-16000)." hidden aria-label="Bracelet A Line 4 Main Stat">
+              <input type="number" class="ap-bvb-a-line2-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat Сила/ловкость/интеллект granted by this line (10000-16000)." hidden aria-label="Браслет A Line 4 Основной стат">
             </div>
             <div class="ap-bvb-line-row">
-              <select class="ap-bvb-a-line3-type ap-bvb-line-type" aria-label="Bracelet A Line 5 Type">
-                <option value="none">— Line 5: None —</option>
-                <option value="crit_rate_dual">Crit Rate % &amp; Crit Hit Dmg %</option>
-                <option value="crit_rate">Crit Rate %</option>
-                <option value="crit_dmg_dual">Crit Damage % &amp; Crit Hit Dmg %</option>
-                <option value="crit_dmg">Crit Damage %</option>
-                <option value="damage_cd">Outgoing Damage % &amp; Cooldown +2%</option>
-                <option value="outgoing_stagger">Outgoing Dmg % &amp; Dmg to Staggered %</option>
-                <option value="outgoing">Outgoing Damage %</option>
-                <option value="add_a" selected>Additional Damage %</option>
-                <option value="add_b">Additional Damage % &amp; vs Demon/Archdemon</option>
-                <option value="back_attack">Back Attack Damage %</option>
-                <option value="stat_main">STR/DEX/INT</option>
-                <option value="wp_flat">Weapon Power</option>
-                <option value="wp_onhit">On-Hit Weapon Power (stacking)</option>
-                <option value="wp_periodic">Weapon Power + Periodic On-Hit</option>
-                <option value="wp_hpgated">Weapon Power + &gt;50% HP On-Hit</option>
+              <select class="ap-bvb-a-line3-type ap-bvb-line-type" aria-label="Браслет A Line 5 Type">
+                <option value="none">— Line 5: Нет —</option>
+                <option value="crit_rate_dual">Шанс крита, % &amp; Урон по криту %</option>
+                <option value="crit_rate">Шанс крита, %</option>
+                <option value="crit_dmg_dual">Сила крита, % &amp; Урон по криту %</option>
+                <option value="crit_dmg">Сила крита, %</option>
+                <option value="damage_cd">Урон обычных умений, % &amp; Cooldown +2%</option>
+                <option value="outgoing_stagger">Урон обычных умений, % и урон по оглушённым, %</option>
+                <option value="outgoing">Урон обычных умений, %</option>
+                <option value="add_a" selected>Дополнительный урон, %</option>
+                <option value="add_b">Дополнительный урон, % &amp; vs Demon/Archdemon</option>
+                <option value="back_attack">Урон атак в спину, %</option>
+                <option value="stat_main">Сила/ловкость/интеллект</option>
+                <option value="wp_flat">Сила оружия</option>
+                <option value="wp_onhit">Сила оружия от попаданий (скопится)</option>
+                <option value="wp_periodic">Сила оружия + периодическое попадание</option>
+                <option value="wp_hpgated">Сила оружия + &gt;50% HP On-Hit</option>
               </select>
-              <select class="ap-bvb-a-line3-tier ap-bvb-line-tier" aria-label="Bracelet A Line 5 Tier">
-                <option value="Low">Low</option>
-                <option value="Mid" selected>Mid</option>
-                <option value="High">High</option>
+              <select class="ap-bvb-a-line3-tier ap-bvb-line-tier" aria-label="Браслет A Line 5 Tier">
+                <option value="Low">Низкий</option>
+                <option value="Mid" selected>Средний</option>
+                <option value="High">Высокий</option>
               </select>
-              <input type="number" class="ap-bvb-a-line3-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat STR/DEX/INT granted by this line (10000-16000)." hidden aria-label="Bracelet A Line 5 Main Stat">
+              <input type="number" class="ap-bvb-a-line3-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat Сила/ловкость/интеллект granted by this line (10000-16000)." hidden aria-label="Браслет A Line 5 Основной стат">
             </div>
             <div class="ap-bvb-results">
-              <div class="ap-stat-card-row"><span class="ap-summary-label">Best Keystone</span><span class="ap-bvb-keystone ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Bracelet</span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Keystone/Crit Lines</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Spec Stat</span><span class="ap-bvb-spec-val ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Other Lines</span><span class="ap-bvb-other-wrap"><label class="ap-bvb-inline-check ap-bvb-a-demons-wrap" title="Include the vs Demon/Archdemon portion of the Additional Damage &amp; vs Demon/Archdemon line - unchecked values only its Additional Damage portion." hidden><input type="checkbox" class="ap-bvb-a-demons"> vs Demons</label><label class="ap-bvb-inline-check ap-bvb-a-cdest-wrap" title="Estimate the +2% Cooldown line's penalty into its value - unchecked uses its raw stated Outgoing Damage % instead." hidden><input type="checkbox" class="ap-bvb-a-cdest" checked> +CD Estimate</label><span class="ap-bvb-flat ap-summary-value">—</span></span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-bvb-keystone ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Браслет</span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Камни и линии крита</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Мастерство</span><span class="ap-bvb-spec-val ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Остальные линии</span><span class="ap-bvb-other-wrap"><label class="ap-bvb-inline-check ap-bvb-a-demons-wrap" title="Include the vs Demon/Archdemon portion of the Дополнительный урон &amp; vs Demon/Archdemon line - unchecked values only its Дополнительный урон portion." hidden><input type="checkbox" class="ap-bvb-a-demons"> vs Demons</label><label class="ap-bvb-inline-check ap-bvb-a-cdest-wrap" title="Estimate the +2% Cooldown line's penalty into its value - unchecked uses its raw stated Урон обычных умений, % instead." hidden><input type="checkbox" class="ap-bvb-a-cdest" checked> +CD Estimate</label><span class="ap-bvb-flat ap-summary-value">—</span></span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">WP/AP Lines</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
             </div>
           </div>
 
           <div class="ap-bvb-card ap-bvb-card-b">
-            <p class="ap-gear-card-title ap-bvb-card-title">Bracelet B</p>
+            <p class="ap-gear-card-title ap-bvb-card-title">Браслет B</p>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Spec Stat</label>
-              <span class="ap-brace-warn-icon ap-bvb-spec-warn" title="Recommended to keep Specialization at 83 or higher on RE for CDR." hidden>WARN</span>
-              <span class="ap-brace-info-icon ap-bvb-spec-note" title="This only reflects Spec's damage share on RE - it doesn't capture CDR or orb gen." hidden>i</span>
-              <input type="number" class="ap-bvb-b-spec" min="60" max="120" step="1" value="80" aria-label="Bracelet B Spec Stat">
+              <label class="ap-calc-field-label">Мастерство</label>
+              <span class="ap-brace-warn-icon ap-bvb-spec-warn" title="В Остаточной энергии рекомендуется держать Мастерство на 83 или выше ради сокращения перезарядки." hidden>WARN</span>
+              <span class="ap-brace-info-icon ap-bvb-spec-note" title="Учитывает только долю урона от Мастерства в Остаточной энергии — без сокращения перезарядки и генерации сфер." hidden>i</span>
+              <input type="number" class="ap-bvb-b-spec" min="60" max="120" step="1" value="80" aria-label="Браслет B Мастерство">
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Basic Effect</label>
-              <select class="ap-bvb-b-effect2-type" aria-label="Bracelet B Basic Effect Type">
-                <option value="crit" selected>Crit Stat</option>
-                <option value="main">Main Stat</option>
-                <option value="none">None</option>
+              <label class="ap-calc-field-label">Базовый эффект</label>
+              <select class="ap-bvb-b-effect2-type" aria-label="Браслет B Базовый эффект Type">
+                <option value="crit" selected>Стат крита</option>
+                <option value="main">Основной стат</option>
+                <option value="none">Нет</option>
               </select>
-              <input type="number" class="ap-bvb-b-crit" min="60" max="120" step="1" value="100" aria-label="Bracelet B Basic Effect Crit Stat">
-              <input type="number" class="ap-bvb-b-effect2-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat STR/DEX/INT granted by this bracelet's Basic Effect (10000-16000)." hidden aria-label="Bracelet B Basic Effect Main Stat">
+              <input type="number" class="ap-bvb-b-crit" min="60" max="120" step="1" value="100" aria-label="Браслет B Базовый эффект Стат крита">
+              <input type="number" class="ap-bvb-b-effect2-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat Сила/ловкость/интеллект granted by this bracelet's Базовый эффект (10000-16000)." hidden aria-label="Браслет B Базовый эффект Основной стат">
             </div>
             <div class="ap-bvb-line-row">
-              <select class="ap-bvb-b-line1-type ap-bvb-line-type" aria-label="Bracelet B Line 3 Type">
-                <option value="none">— Line 3: None —</option>
-                <option value="crit_rate_dual">Crit Rate % &amp; Crit Hit Dmg %</option>
-                <option value="crit_rate" selected>Crit Rate %</option>
-                <option value="crit_dmg_dual">Crit Damage % &amp; Crit Hit Dmg %</option>
-                <option value="crit_dmg">Crit Damage %</option>
-                <option value="damage_cd">Outgoing Damage % &amp; Cooldown +2%</option>
-                <option value="outgoing_stagger">Outgoing Dmg % &amp; Dmg to Staggered %</option>
-                <option value="outgoing">Outgoing Damage %</option>
-                <option value="add_a">Additional Damage %</option>
-                <option value="add_b">Additional Damage % &amp; vs Demon/Archdemon</option>
-                <option value="back_attack">Back Attack Damage %</option>
-                <option value="stat_main">STR/DEX/INT</option>
-                <option value="wp_flat">Weapon Power</option>
-                <option value="wp_onhit">On-Hit Weapon Power (stacking)</option>
-                <option value="wp_periodic">Weapon Power + Periodic On-Hit</option>
-                <option value="wp_hpgated">Weapon Power + &gt;50% HP On-Hit</option>
+              <select class="ap-bvb-b-line1-type ap-bvb-line-type" aria-label="Браслет B Line 3 Type">
+                <option value="none">— Line 3: Нет —</option>
+                <option value="crit_rate_dual">Шанс крита, % &amp; Урон по криту %</option>
+                <option value="crit_rate" selected>Шанс крита, %</option>
+                <option value="crit_dmg_dual">Сила крита, % &amp; Урон по криту %</option>
+                <option value="crit_dmg">Сила крита, %</option>
+                <option value="damage_cd">Урон обычных умений, % &amp; Cooldown +2%</option>
+                <option value="outgoing_stagger">Урон обычных умений, % и урон по оглушённым, %</option>
+                <option value="outgoing">Урон обычных умений, %</option>
+                <option value="add_a">Дополнительный урон, %</option>
+                <option value="add_b">Дополнительный урон, % &amp; vs Demon/Archdemon</option>
+                <option value="back_attack">Урон атак в спину, %</option>
+                <option value="stat_main">Сила/ловкость/интеллект</option>
+                <option value="wp_flat">Сила оружия</option>
+                <option value="wp_onhit">Сила оружия от попаданий (скопится)</option>
+                <option value="wp_periodic">Сила оружия + периодическое попадание</option>
+                <option value="wp_hpgated">Сила оружия + &gt;50% HP On-Hit</option>
               </select>
-              <select class="ap-bvb-b-line1-tier ap-bvb-line-tier" aria-label="Bracelet B Line 3 Tier">
-                <option value="Low">Low</option>
-                <option value="Mid" selected>Mid</option>
-                <option value="High">High</option>
+              <select class="ap-bvb-b-line1-tier ap-bvb-line-tier" aria-label="Браслет B Line 3 Tier">
+                <option value="Low">Низкий</option>
+                <option value="Mid" selected>Средний</option>
+                <option value="High">Высокий</option>
               </select>
-              <input type="number" class="ap-bvb-b-line1-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat STR/DEX/INT granted by this line (10000-16000)." hidden aria-label="Bracelet B Line 3 Main Stat">
+              <input type="number" class="ap-bvb-b-line1-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat Сила/ловкость/интеллект granted by this line (10000-16000)." hidden aria-label="Браслет B Line 3 Основной стат">
             </div>
             <div class="ap-bvb-line-row">
-              <select class="ap-bvb-b-line2-type ap-bvb-line-type" aria-label="Bracelet B Line 4 Type">
-                <option value="none">— Line 4: None —</option>
-                <option value="crit_rate_dual">Crit Rate % &amp; Crit Hit Dmg %</option>
-                <option value="crit_rate">Crit Rate %</option>
-                <option value="crit_dmg_dual">Crit Damage % &amp; Crit Hit Dmg %</option>
-                <option value="crit_dmg" selected>Crit Damage %</option>
-                <option value="damage_cd">Outgoing Damage % &amp; Cooldown +2%</option>
-                <option value="outgoing_stagger">Outgoing Dmg % &amp; Dmg to Staggered %</option>
-                <option value="outgoing">Outgoing Damage %</option>
-                <option value="add_a">Additional Damage %</option>
-                <option value="add_b">Additional Damage % &amp; vs Demon/Archdemon</option>
-                <option value="back_attack">Back Attack Damage %</option>
-                <option value="stat_main">STR/DEX/INT</option>
-                <option value="wp_flat">Weapon Power</option>
-                <option value="wp_onhit">On-Hit Weapon Power (stacking)</option>
-                <option value="wp_periodic">Weapon Power + Periodic On-Hit</option>
-                <option value="wp_hpgated">Weapon Power + &gt;50% HP On-Hit</option>
+              <select class="ap-bvb-b-line2-type ap-bvb-line-type" aria-label="Браслет B Line 4 Type">
+                <option value="none">— Line 4: Нет —</option>
+                <option value="crit_rate_dual">Шанс крита, % &amp; Урон по криту %</option>
+                <option value="crit_rate">Шанс крита, %</option>
+                <option value="crit_dmg_dual">Сила крита, % &amp; Урон по криту %</option>
+                <option value="crit_dmg" selected>Сила крита, %</option>
+                <option value="damage_cd">Урон обычных умений, % &amp; Cooldown +2%</option>
+                <option value="outgoing_stagger">Урон обычных умений, % и урон по оглушённым, %</option>
+                <option value="outgoing">Урон обычных умений, %</option>
+                <option value="add_a">Дополнительный урон, %</option>
+                <option value="add_b">Дополнительный урон, % &amp; vs Demon/Archdemon</option>
+                <option value="back_attack">Урон атак в спину, %</option>
+                <option value="stat_main">Сила/ловкость/интеллект</option>
+                <option value="wp_flat">Сила оружия</option>
+                <option value="wp_onhit">Сила оружия от попаданий (скопится)</option>
+                <option value="wp_periodic">Сила оружия + периодическое попадание</option>
+                <option value="wp_hpgated">Сила оружия + &gt;50% HP On-Hit</option>
               </select>
-              <select class="ap-bvb-b-line2-tier ap-bvb-line-tier" aria-label="Bracelet B Line 4 Tier">
-                <option value="Low">Low</option>
-                <option value="Mid" selected>Mid</option>
-                <option value="High">High</option>
+              <select class="ap-bvb-b-line2-tier ap-bvb-line-tier" aria-label="Браслет B Line 4 Tier">
+                <option value="Low">Низкий</option>
+                <option value="Mid" selected>Средний</option>
+                <option value="High">Высокий</option>
               </select>
-              <input type="number" class="ap-bvb-b-line2-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat STR/DEX/INT granted by this line (10000-16000)." hidden aria-label="Bracelet B Line 4 Main Stat">
+              <input type="number" class="ap-bvb-b-line2-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat Сила/ловкость/интеллект granted by this line (10000-16000)." hidden aria-label="Браслет B Line 4 Основной стат">
             </div>
             <div class="ap-bvb-line-row">
-              <select class="ap-bvb-b-line3-type ap-bvb-line-type" aria-label="Bracelet B Line 5 Type">
-                <option value="none">— Line 5: None —</option>
-                <option value="crit_rate_dual">Crit Rate % &amp; Crit Hit Dmg %</option>
-                <option value="crit_rate">Crit Rate %</option>
-                <option value="crit_dmg_dual">Crit Damage % &amp; Crit Hit Dmg %</option>
-                <option value="crit_dmg">Crit Damage %</option>
-                <option value="damage_cd" selected>Outgoing Damage % &amp; Cooldown +2%</option>
-                <option value="outgoing_stagger">Outgoing Dmg % &amp; Dmg to Staggered %</option>
-                <option value="outgoing">Outgoing Damage %</option>
-                <option value="add_a">Additional Damage %</option>
-                <option value="add_b">Additional Damage % &amp; vs Demon/Archdemon</option>
-                <option value="back_attack">Back Attack Damage %</option>
-                <option value="stat_main">STR/DEX/INT</option>
-                <option value="wp_flat">Weapon Power</option>
-                <option value="wp_onhit">On-Hit Weapon Power (stacking)</option>
-                <option value="wp_periodic">Weapon Power + Periodic On-Hit</option>
-                <option value="wp_hpgated">Weapon Power + &gt;50% HP On-Hit</option>
+              <select class="ap-bvb-b-line3-type ap-bvb-line-type" aria-label="Браслет B Line 5 Type">
+                <option value="none">— Line 5: Нет —</option>
+                <option value="crit_rate_dual">Шанс крита, % &amp; Урон по криту %</option>
+                <option value="crit_rate">Шанс крита, %</option>
+                <option value="crit_dmg_dual">Сила крита, % &amp; Урон по криту %</option>
+                <option value="crit_dmg">Сила крита, %</option>
+                <option value="damage_cd" selected>Урон обычных умений, % &amp; Cooldown +2%</option>
+                <option value="outgoing_stagger">Урон обычных умений, % и урон по оглушённым, %</option>
+                <option value="outgoing">Урон обычных умений, %</option>
+                <option value="add_a">Дополнительный урон, %</option>
+                <option value="add_b">Дополнительный урон, % &amp; vs Demon/Archdemon</option>
+                <option value="back_attack">Урон атак в спину, %</option>
+                <option value="stat_main">Сила/ловкость/интеллект</option>
+                <option value="wp_flat">Сила оружия</option>
+                <option value="wp_onhit">Сила оружия от попаданий (скопится)</option>
+                <option value="wp_periodic">Сила оружия + периодическое попадание</option>
+                <option value="wp_hpgated">Сила оружия + &gt;50% HP On-Hit</option>
               </select>
-              <select class="ap-bvb-b-line3-tier ap-bvb-line-tier" aria-label="Bracelet B Line 5 Tier">
-                <option value="Low">Low</option>
-                <option value="Mid" selected>Mid</option>
-                <option value="High">High</option>
+              <select class="ap-bvb-b-line3-tier ap-bvb-line-tier" aria-label="Браслет B Line 5 Tier">
+                <option value="Low">Низкий</option>
+                <option value="Mid" selected>Средний</option>
+                <option value="High">Высокий</option>
               </select>
-              <input type="number" class="ap-bvb-b-line3-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat STR/DEX/INT granted by this line (10000-16000)." hidden aria-label="Bracelet B Line 5 Main Stat">
+              <input type="number" class="ap-bvb-b-line3-mainstat ap-bvb-line-mainstat" min="10000" max="16000" step="100" value="14000" title="Flat Сила/ловкость/интеллект granted by this line (10000-16000)." hidden aria-label="Браслет B Line 5 Основной стат">
             </div>
             <div class="ap-bvb-results">
-              <div class="ap-stat-card-row"><span class="ap-summary-label">Best Keystone</span><span class="ap-bvb-keystone ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Bracelet</span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Keystone/Crit Lines</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Spec Stat</span><span class="ap-bvb-spec-val ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Other Lines</span><span class="ap-bvb-other-wrap"><label class="ap-bvb-inline-check ap-bvb-b-demons-wrap" title="Include the vs Demon/Archdemon portion of the Additional Damage &amp; vs Demon/Archdemon line - unchecked values only its Additional Damage portion." hidden><input type="checkbox" class="ap-bvb-b-demons"> vs Demons</label><label class="ap-bvb-inline-check ap-bvb-b-cdest-wrap" title="Estimate the +2% Cooldown line's penalty into its value - unchecked uses its raw stated Outgoing Damage % instead." hidden><input type="checkbox" class="ap-bvb-b-cdest" checked> +CD Estimate</label><span class="ap-bvb-flat ap-summary-value">—</span></span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-bvb-keystone ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Браслет</span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Камни и линии крита</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Мастерство</span><span class="ap-bvb-spec-val ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Остальные линии</span><span class="ap-bvb-other-wrap"><label class="ap-bvb-inline-check ap-bvb-b-demons-wrap" title="Include the vs Demon/Archdemon portion of the Дополнительный урон &amp; vs Demon/Archdemon line - unchecked values only its Дополнительный урон portion." hidden><input type="checkbox" class="ap-bvb-b-demons"> vs Demons</label><label class="ap-bvb-inline-check ap-bvb-b-cdest-wrap" title="Estimate the +2% Cooldown line's penalty into its value - unchecked uses its raw stated Урон обычных умений, % instead." hidden><input type="checkbox" class="ap-bvb-b-cdest" checked> +CD Estimate</label><span class="ap-bvb-flat ap-summary-value">—</span></span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">WP/AP Lines</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
             </div>
           </div>
         </div>
 
         <div class="ap-bvb-summary">
-          <p class="ap-bvb-neither">Running neither: <span class="ap-bvb-no-bracelet-keystone">—</span></p>
+          <p class="ap-bvb-neither">Без обоих: <span class="ap-bvb-no-bracelet-keystone">—</span></p>
           <p class="ap-bvb-diff-wrap"><span class="ap-bvb-diff">—</span></p>
-          <p class="ap-brace-compare-aside-note ap-bvb-keystone-note" hidden>Bracelet A and B land on different best keystones - the comparison above already accounts for that.</p>
+          <p class="ap-brace-compare-aside-note ap-bvb-keystone-note" hidden>Браслет A and B land on different best keystones - the comparison above already accounts for that.</p>
         </div>
       </div>
     </details>
@@ -1305,7 +1305,7 @@
      Stone 1/2 rows below remain id-less on purpose - those really are
      hypotheticals. -->
 <details class="ap-engr-compare">
-  <summary>Engraving Comparison</summary>
+  <summary>Сравнение гравировок</summary>
   <div class="ap-brace-compare-body">
     <!-- Build toggle now lives once, docked at the top of .ap-calc, and
          stays reachable (sticky) while this section is open, so no echo
@@ -1314,7 +1314,7 @@
          here (the active chip's label and color already say RE vs
          Surge, so a separate "Playstyle: RE" line next to it stays
          redundant). -->
-    <p class="ap-brace-compare-intro">Competing engravings, searched for the best 2-slot combination, against your Best Setup above.<span class="ap-brace-info-icon" title="This section's inputs are isolated from the rest of the calculator - nothing here affects your tracked setup above.">i</span></p>
+    <p class="ap-brace-compare-intro">Конкурирующие гравировки: ищется лучшая комбинация для двух слотов по сравнению с «Лучшей сборкой» выше.<span class="ap-brace-info-icon" title="Поля этого раздела изолированы от остального калькулятора — ничто здесь не влияет на твою сборку выше.">i</span></p>
 
     <!-- Engravings (Core + Competing Pool merged into one card) and
          Raid Captain Variables as the two side-by-side cards, same visual
@@ -1343,30 +1343,30 @@
         <div class="ap-calc-field-row">
           <label class="ap-calc-field-label" for="ap-engr-grudge-level"><span class="skill-mention" data-skill-id="grudge">Титаноборец</span></label>
           <select id="ap-engr-grudge-level" class="ap-engr-grudge-level">
-            <option value="0 Nodes">0 Nodes</option>
-            <option value="1 Nodes">1 Node</option>
-            <option value="2 Nodes">2 Nodes</option>
-            <option value="3 Nodes">3 Nodes</option>
+            <option value="0 Nodes">0 узлов</option>
+            <option value="1 Nodes">1 узел</option>
+            <option value="2 Nodes">2 узла</option>
+            <option value="3 Nodes">3 узла</option>
             <option value="4 Nodes" selected>4 Nodes</option>
           </select>
         </div>
         <div class="ap-calc-field-row">
           <label class="ap-calc-field-label" for="ap-engr-ambush-level"><span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span></label>
           <select id="ap-engr-ambush-level" class="ap-engr-ambush-level">
-            <option value="0 Nodes">0 Nodes</option>
-            <option value="1 Nodes">1 Node</option>
-            <option value="2 Nodes">2 Nodes</option>
-            <option value="3 Nodes">3 Nodes</option>
+            <option value="0 Nodes">0 узлов</option>
+            <option value="1 Nodes">1 узел</option>
+            <option value="2 Nodes">2 узла</option>
+            <option value="3 Nodes">3 узла</option>
             <option value="4 Nodes" selected>4 Nodes</option>
           </select>
         </div>
         <div class="ap-calc-field-row">
           <label class="ap-calc-field-label" for="ap-engr-adrenaline-level"><span class="skill-mention" data-skill-id="adrenaline">Адреналин</span></label>
           <select id="ap-engr-adrenaline-level" class="ap-engr-adrenaline-level">
-            <option value="0 Nodes">0 Nodes</option>
-            <option value="1 Nodes">1 Node</option>
-            <option value="2 Nodes">2 Nodes</option>
-            <option value="3 Nodes">3 Nodes</option>
+            <option value="0 Nodes">0 узлов</option>
+            <option value="1 Nodes">1 узел</option>
+            <option value="2 Nodes">2 узла</option>
+            <option value="3 Nodes">3 узла</option>
             <option value="4 Nodes" selected>4 Nodes</option>
           </select>
         </div>
@@ -1374,71 +1374,71 @@
         <div class="ap-calc-field-row">
           <label class="ap-calc-field-label" for="ap-engr-rc-level"><span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span></label>
           <select id="ap-engr-rc-level" class="ap-engr-rc-level">
-            <option value="0 Nodes">0 Nodes</option>
-            <option value="1 Nodes">1 Node</option>
-            <option value="2 Nodes">2 Nodes</option>
-            <option value="3 Nodes">3 Nodes</option>
+            <option value="0 Nodes">0 узлов</option>
+            <option value="1 Nodes">1 узел</option>
+            <option value="2 Nodes">2 узла</option>
+            <option value="3 Nodes">3 узла</option>
             <option value="4 Nodes" selected>4 Nodes</option>
           </select>
         </div>
         <div class="ap-calc-field-row">
           <label class="ap-calc-field-label" for="ap-engr-kbw-level"><span class="skill-mention" data-skill-id="keenbluntweapon">Моргенштерн</span></label>
           <select id="ap-engr-kbw-level" class="ap-engr-kbw-level">
-            <option value="0 Nodes">0 Nodes</option>
-            <option value="1 Nodes">1 Node</option>
-            <option value="2 Nodes">2 Nodes</option>
-            <option value="3 Nodes">3 Nodes</option>
+            <option value="0 Nodes">0 узлов</option>
+            <option value="1 Nodes">1 узел</option>
+            <option value="2 Nodes">2 узла</option>
+            <option value="3 Nodes">3 узла</option>
             <option value="4 Nodes" selected>4 Nodes</option>
           </select>
         </div>
         <div class="ap-calc-field-row">
           <label class="ap-calc-field-label" for="ap-engr-cd-level"><span class="skill-mention" data-skill-id="curseddoll">Голем</span></label>
           <select id="ap-engr-cd-level" class="ap-engr-cd-level">
-            <option value="0 Nodes">0 Nodes</option>
-            <option value="1 Nodes">1 Node</option>
-            <option value="2 Nodes">2 Nodes</option>
-            <option value="3 Nodes">3 Nodes</option>
+            <option value="0 Nodes">0 узлов</option>
+            <option value="1 Nodes">1 узел</option>
+            <option value="2 Nodes">2 узла</option>
+            <option value="3 Nodes">3 узла</option>
             <option value="4 Nodes" selected>4 Nodes</option>
           </select>
         </div>
         <div class="ap-calc-field-row ap-engr-mi-row">
-          <label class="ap-calc-field-label"><span class="skill-mention" data-skill-id="massincrease">Карающая длань</span> <input type="checkbox" class="ap-engr-mi-optin" checked title="Its -10% Attack Speed drawback isn't modeled here - uncheck this if you'd rather leave it out of the best-combo search."></label>
-          <select id="ap-engr-mi-level" class="ap-engr-mi-level" aria-label="Mass Increase Node Level">
-            <option value="0 Nodes">0 Nodes</option>
-            <option value="1 Nodes">1 Node</option>
-            <option value="2 Nodes">2 Nodes</option>
-            <option value="3 Nodes">3 Nodes</option>
+          <label class="ap-calc-field-label"><span class="skill-mention" data-skill-id="massincrease">Карающая длань</span> <input type="checkbox" class="ap-engr-mi-optin" checked title="Её минус −10% скорости атаки здесь не учитывается — сними галочку, если не хочешь, чтобы она мешала поиску лучшей комбинации."></label>
+          <select id="ap-engr-mi-level" class="ap-engr-mi-level" aria-label="Карающая длань Node Level">
+            <option value="0 Nodes">0 узлов</option>
+            <option value="1 Nodes">1 узел</option>
+            <option value="2 Nodes">2 узла</option>
+            <option value="3 Nodes">3 узла</option>
             <option value="4 Nodes" selected>4 Nodes</option>
           </select>
         </div>
       </div>
 
       <div class="ap-gear-card ap-gear-card--engr-variables">
-        <p class="ap-gear-card-title">Raid Captain Variables</p>
+        <p class="ap-gear-card-title">Неутомимый натиск Variables</p>
         <div class="ap-calc-field-row">
-          <label class="ap-calc-field-label" for="ap-engr-maelstrom-uptime" title="% of the fight Maelstrom's buffs are active as you attack the boss - a flat +12.8 Move Speed/Atk. Speed bonus.">Maelstrom Uptime %</label>
+          <label class="ap-calc-field-label" for="ap-engr-maelstrom-uptime" title="Доля боя, в которой баффы Плаща клинков активны, пока ты атакуешь босса — фиксированный бонус +12.8% к скорости передвижения и атаки.">Активность Плаща клинков, %</label>
           <input type="number" id="ap-engr-maelstrom-uptime" class="ap-engr-maelstrom-uptime" min="0" max="100" step="1" value="85">
         </div>
         <div class="ap-calc-field-row ap-engr-manafood-row">
-          <label class="ap-engr-checkbox-label" title="Only accurate if the Main Stat input in Character Data doesn't already include Mana Food's Main Stat bonus."><input type="checkbox" id="ap-engr-manafood" class="ap-engr-manafood" checked> <span class="ap-engr-manafood-label">Mana Food (+Maelstrom Джар)</span></label>
-          <select id="ap-engr-manafood-amount" class="ap-engr-manafood-amount" aria-label="Mana Food Amount">
+          <label class="ap-engr-checkbox-label" title="Only accurate if the Основной стат input in Данные персонажа doesn't already include Mana Food's Основной стат bonus."><input type="checkbox" id="ap-engr-manafood" class="ap-engr-manafood" checked> <span class="ap-engr-manafood-label">Mana Food (+Maelstrom Джар)</span></label>
+          <select id="ap-engr-manafood-amount" class="ap-engr-manafood-amount" aria-label="Количество еды на ману">
             <option value="6000" selected>6000 DEX</option>
             <option value="12000">12000 DEX</option>
           </select>
         </div>
         <div class="ap-calc-field-row ap-engr-support-av-row">
-          <label class="ap-engr-checkbox-label" title="A high-uptime, party-wide Move Speed buff from an Artist or Valkyrie's Identity."><input type="checkbox" id="ap-engr-support-av" class="ap-engr-support-av"> Support: Artist/Valkyrie (+Move Speed)</label>
+          <label class="ap-engr-checkbox-label" title="Групповой бафф скорости передвижения с высокой активностью от классового умения Художницы или Валькирии."><input type="checkbox" id="ap-engr-support-av" class="ap-engr-support-av"> Поддержка: Художница/Валькирия (+скорость передвижения)</label>
         </div>
         <div class="ap-calc-field-row ap-engr-support-paladin-row">
-          <label class="ap-engr-checkbox-label" title="A low-uptime, party-wide Move Speed buff from a Paladin's skills."><input type="checkbox" id="ap-engr-support-paladin" class="ap-engr-support-paladin"> Support: Paladin (+Move Speed)</label>
+          <label class="ap-engr-checkbox-label" title="Групповой бафф скорости передвижения с низкой активностью от умений Паладина."><input type="checkbox" id="ap-engr-support-paladin" class="ap-engr-support-paladin"> Поддержка: Паладин (+скорость передвижения)</label>
         </div>
         <div class="ap-calc-field-row ap-engr-rage-rune-row">
-          <label class="ap-engr-checkbox-label" title="16% chance per skill cast for +16% Move Speed and +16% Atk. Speed for 6s."><input type="checkbox" id="ap-engr-rage-rune" class="ap-engr-rage-rune" checked> Rage Rune on Surprise Attack (Avg.)</label>
+          <label class="ap-engr-checkbox-label" title="16% шанс при применении умения: +16% скорости передвижения и +16% скорости атаки на 6 сек."><input type="checkbox" id="ap-engr-rage-rune" class="ap-engr-rage-rune" checked> Руна ярости на «Внезапном выпад» (среднее)</label>
         </div>
         <div class="ap-calc-field-row ap-engr-wine-row">
-          <label class="ap-engr-checkbox-label"><input type="checkbox" id="ap-engr-wine" class="ap-engr-wine" checked> Vernese Wine (+3% Move Speed)</label>
+          <label class="ap-engr-checkbox-label"><input type="checkbox" id="ap-engr-wine" class="ap-engr-wine" checked> Бирнийское вино (+3% скорости передвижения)</label>
         </div>
-        <p class="ap-brace-compare-footer-note ap-engr-ms-readout">Raid Captain Efficiency: —</p>
+        <p class="ap-brace-compare-footer-note ap-engr-ms-readout">Неутомимый натиск Efficiency: —</p>
         <p class="ap-brace-compare-footer-note ap-engr-manafood-note">—</p>
       </div>
     </div>
@@ -1465,49 +1465,49 @@
          stones plus their selects no longer fit next to the title on one
          line. -->
     <div class="ap-calc-field-row ap-engr-stone-row ap-engr-stone-row--first ap-gear-card ap-gear-card--engr-stone">
-      <p class="ap-acc-panel-title ap-engr-contrib-title">Ability Stone</p>
+      <p class="ap-acc-panel-title ap-engr-contrib-title">Фетранит</p>
       <span class="ap-engr-stone-groups">
         <span class="ap-engr-stone-label-group">
-          <label class="ap-calc-field-label" title="Pick which engraving your Ability Stone's first slot boosts, then that slot's level.">1</label>
+          <label class="ap-calc-field-label" title="Выбери гравировку, которую усиливает первый слот Фетранита, затем уровень этого слота.">1</label>
           <span class="ap-engr-stone-pair">
-            <select class="ap-engr-stone1-target" aria-label="Ability Stone Slot 1 Engraving">
-              <option value="None" selected>None</option>
-              <option value="grudge">Grudge</option>
-              <option value="ambush">Ambush Master</option>
-              <option value="adrenaline">Adrenaline</option>
-              <option value="kbw">Keen Blunt Weapon</option>
-              <option value="rc">Raid Captain</option>
-              <option value="cd">Cursed Doll</option>
-              <option value="mi">Mass Increase</option>
+            <select class="ap-engr-stone1-target" aria-label="Гравировка в слоте 1 Фетранита">
+              <option value="None" selected>Нет</option>
+              <option value="grudge">Титаноборец</option>
+              <option value="ambush">Бесшумный убийца</option>
+              <option value="adrenaline">Адреналин</option>
+              <option value="kbw">Моргенштерн</option>
+              <option value="rc">Неутомимый натиск</option>
+              <option value="cd">Голем</option>
+              <option value="mi">Карающая длань</option>
             </select>
-            <select class="ap-engr-stone1-level" aria-label="Ability Stone Slot 1 Level">
+            <select class="ap-engr-stone1-level" aria-label="Уровень слота 1 Фетранита">
               <option value="0 Lv." selected>Lv. 0</option>
-              <option value="1 Lv.">Lv. 1</option>
-              <option value="2 Lv.">Lv. 2</option>
-              <option value="3 Lv.">Lv. 3</option>
-              <option value="4 Lv.">Lv. 4</option>
+              <option value="1 Lv.">Ур. 1</option>
+              <option value="2 Lv.">Ур. 2</option>
+              <option value="3 Lv.">Ур. 3</option>
+              <option value="4 Lv.">Ур. 4</option>
             </select>
           </span>
         </span>
         <span class="ap-engr-stone-label-group">
-          <label class="ap-calc-field-label" title="Pick which engraving your Ability Stone's second slot boosts, then that slot's level.">2</label>
+          <label class="ap-calc-field-label" title="Выбери гравировку, которую усиливает второй слот Фетранита, затем уровень этого слота.">2</label>
           <span class="ap-engr-stone-pair">
-            <select class="ap-engr-stone2-target" aria-label="Ability Stone Slot 2 Engraving">
-              <option value="None" selected>None</option>
-              <option value="grudge">Grudge</option>
-              <option value="ambush">Ambush Master</option>
-              <option value="adrenaline">Adrenaline</option>
-              <option value="kbw">Keen Blunt Weapon</option>
-              <option value="rc">Raid Captain</option>
-              <option value="cd">Cursed Doll</option>
-              <option value="mi">Mass Increase</option>
+            <select class="ap-engr-stone2-target" aria-label="Гравировка в слоте 2 Фетранита">
+              <option value="None" selected>Нет</option>
+              <option value="grudge">Титаноборец</option>
+              <option value="ambush">Бесшумный убийца</option>
+              <option value="adrenaline">Адреналин</option>
+              <option value="kbw">Моргенштерн</option>
+              <option value="rc">Неутомимый натиск</option>
+              <option value="cd">Голем</option>
+              <option value="mi">Карающая длань</option>
             </select>
-            <select class="ap-engr-stone2-level" aria-label="Ability Stone Slot 2 Level">
+            <select class="ap-engr-stone2-level" aria-label="Уровень слота 2 Фетранита">
               <option value="0 Lv." selected>Lv. 0</option>
-              <option value="1 Lv.">Lv. 1</option>
-              <option value="2 Lv.">Lv. 2</option>
-              <option value="3 Lv.">Lv. 3</option>
-              <option value="4 Lv.">Lv. 4</option>
+              <option value="1 Lv.">Ур. 1</option>
+              <option value="2 Lv.">Ур. 2</option>
+              <option value="3 Lv.">Ур. 3</option>
+              <option value="4 Lv.">Ур. 4</option>
             </select>
           </span>
         </span>
@@ -1519,8 +1519,8 @@
         <thead>
           <tr>
             <th class="ap-brace-th-label">Engraving</th>
-            <th>DPS Contribution</th>
-            <th colspan="4">Ability Stone</th>
+            <th>Вклад в DPS</th>
+            <th colspan="4">Фетранит</th>
           </tr>
           <tr>
             <th class="ap-arkgrid-th-blank" aria-hidden="true"></th>
@@ -1537,21 +1537,21 @@
 
     <div class="ap-bvb-cards ap-engr-best-panel">
       <div class="ap-bvb-card ap-bvb-card--best">
-        <p class="ap-gear-card-title ap-bvb-card-title">Best Combo<span class="ap-brace-info-icon ap-engr-best-combo-food-icon" role="img" aria-label="Ranked for the selected food only. See Overall Best Setup below." title="Ranked for the selected food only. See Overall Best Setup below.">i</span></p>
+        <p class="ap-gear-card-title ap-bvb-card-title">Лучшая комбинация<span class="ap-brace-info-icon ap-engr-best-combo-food-icon" role="img" aria-label="Ранжировано только для выбранной еды. Смотри «Общая лучшая сборка» ниже." title="Ранжировано только для выбранной еды. Смотри «Общая лучшая сборка» ниже.">i</span></p>
         <div class="ap-stat-card-row"><span class="ap-summary-label">Combo</span><span class="ap-engr-best-combo ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label">Best Keystone</span><span class="ap-engr-best-keystone ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-engr-best-keystone ap-summary-value">—</span></div>
         <div class="ap-stat-card-row"><span class="ap-summary-label">vs Runner-Up</span><span class="ap-engr-best-vs-runnerup ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Competing Engraving Bonus</span><span class="ap-engr-best-engr-gain ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Ability Stone Engraving Bonus</span><span class="ap-engr-best-stone-engr-gain ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Ability Stone Base AP</span><span class="ap-engr-best-stone-ap ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус конкурирующей гравировки</span><span class="ap-engr-best-engr-gain ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус гравировки Фетранита</span><span class="ap-engr-best-stone-engr-gain ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Базовый бонус Фетранита к силе атаки</span><span class="ap-engr-best-stone-ap ap-summary-value">—</span></div>
       </div>
       <div class="ap-bvb-card">
         <p class="ap-gear-card-title ap-bvb-card-title">Runner-Up</p>
         <div class="ap-stat-card-row"><span class="ap-summary-label">Combo</span><span class="ap-engr-runnerup-combo ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label">Best Keystone</span><span class="ap-engr-runnerup-keystone ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Competing Engraving Bonus</span><span class="ap-engr-runnerup-engr-gain ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Ability Stone Engraving Bonus</span><span class="ap-engr-runnerup-stone-engr-gain ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Ability Stone Base AP</span><span class="ap-engr-runnerup-stone-ap ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-engr-runnerup-keystone ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус конкурирующей гравировки</span><span class="ap-engr-runnerup-engr-gain ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус гравировки Фетранита</span><span class="ap-engr-runnerup-stone-engr-gain ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Базовый бонус Фетранита к силе атаки</span><span class="ap-engr-runnerup-stone-ap ap-summary-value">—</span></div>
       </div>
     </div>
     <!-- Answers the OTHER question Best Combo above doesn't: not "best
@@ -1577,184 +1577,184 @@
          computeEngravingSetupComparison's own JS comment for the full
          methodology. -->
     <details class="ap-esvs">
-      <summary>Setup A vs. Setup B</summary>
+      <summary>Сборка A против сборки B</summary>
       <div class="ap-brace-compare-body">
-        <p class="ap-brace-compare-intro">Two loadouts, compared against each other. Core Engravings and Raid Captain Variables above apply.<span class="ap-brace-info-icon ap-esvs-food-icon" role="img" aria-label="Uses whichever food is currently selected. If either setup includes Raid Captain, switching food can change the winner here too - see the Overall Best Setup below." title="Uses whichever food is currently selected. If either setup includes Raid Captain, switching food can change the winner here too - see the Overall Best Setup below.">i</span></p>
+        <p class="ap-brace-compare-intro">Two loadouts, compared against each other. Core Engravings and Неутомимый натиск Variables above apply.<span class="ap-brace-info-icon ap-esvs-food-icon" role="img" aria-label="Uses whichever food is currently selected. If either setup includes Неутомимый натиск, switching food can change the winner here too - see the Overall Лучшая сборка below." title="Uses whichever food is currently selected. If either setup includes Неутомимый натиск, switching food can change the winner here too - see the Overall Лучшая сборка below.">i</span></p>
         <div class="ap-esvs-cards">
           <div class="ap-esvs-card ap-esvs-card-a">
             <p class="ap-gear-card-title ap-esvs-card-title">Setup A</p>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Option 1</label>
-              <select class="ap-esvs-a-slot1-type" aria-label="Setup A Option 1 Engraving">
-                <option value="none" selected>None</option>
-                <option value="rc">Raid Captain</option>
-                <option value="kbw">Keen Blunt Weapon</option>
-                <option value="cd">Cursed Doll</option>
-                <option value="mi">Mass Increase</option>
+              <label class="ap-calc-field-label">Опция 1</label>
+              <select class="ap-esvs-a-slot1-type" aria-label="Setup A Опция 1 Engraving">
+                <option value="none" selected>Нет</option>
+                <option value="rc">Неутомимый натиск</option>
+                <option value="kbw">Моргенштерн</option>
+                <option value="cd">Голем</option>
+                <option value="mi">Карающая длань</option>
               </select>
-              <select class="ap-esvs-a-slot1-level" aria-label="Setup A Option 1 Node Level">
-                <option value="0 Nodes">0 Nodes</option>
-                <option value="1 Nodes">1 Node</option>
-                <option value="2 Nodes">2 Nodes</option>
-                <option value="3 Nodes">3 Nodes</option>
+              <select class="ap-esvs-a-slot1-level" aria-label="Setup A Опция 1 узел Level">
+                <option value="0 Nodes">0 узлов</option>
+                <option value="1 Nodes">1 узел</option>
+                <option value="2 Nodes">2 узла</option>
+                <option value="3 Nodes">3 узла</option>
                 <option value="4 Nodes" selected>4 Nodes</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Option 2</label>
-              <select class="ap-esvs-a-slot2-type" aria-label="Setup A Option 2 Engraving">
-                <option value="none" selected>None</option>
-                <option value="rc">Raid Captain</option>
-                <option value="kbw">Keen Blunt Weapon</option>
-                <option value="cd">Cursed Doll</option>
-                <option value="mi">Mass Increase</option>
+              <label class="ap-calc-field-label">Опция 2</label>
+              <select class="ap-esvs-a-slot2-type" aria-label="Setup A Опция 2 Engraving">
+                <option value="none" selected>Нет</option>
+                <option value="rc">Неутомимый натиск</option>
+                <option value="kbw">Моргенштерн</option>
+                <option value="cd">Голем</option>
+                <option value="mi">Карающая длань</option>
               </select>
-              <select class="ap-esvs-a-slot2-level" aria-label="Setup A Option 2 Node Level">
-                <option value="0 Nodes">0 Nodes</option>
-                <option value="1 Nodes">1 Node</option>
-                <option value="2 Nodes">2 Nodes</option>
-                <option value="3 Nodes">3 Nodes</option>
+              <select class="ap-esvs-a-slot2-level" aria-label="Setup A Опция 2 Node Level">
+                <option value="0 Nodes">0 узлов</option>
+                <option value="1 Nodes">1 узел</option>
+                <option value="2 Nodes">2 узла</option>
+                <option value="3 Nodes">3 узла</option>
                 <option value="4 Nodes" selected>4 Nodes</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Stone 1</label>
-              <select class="ap-esvs-a-stone1-target" aria-label="Setup A Ability Stone Slot 1 Engraving">
-                <option value="None" selected>None</option>
-                <option value="grudge">Grudge</option>
-                <option value="ambush">Ambush Master</option>
-                <option value="adrenaline">Adrenaline</option>
-                <option value="kbw">Keen Blunt Weapon</option>
-                <option value="rc">Raid Captain</option>
-                <option value="cd">Cursed Doll</option>
-                <option value="mi">Mass Increase</option>
+              <label class="ap-calc-field-label">Камень 1</label>
+              <select class="ap-esvs-a-stone1-target" aria-label="Сборка A, гравировка в слоте 1 Фетранита">
+                <option value="None" selected>Нет</option>
+                <option value="grudge">Титаноборец</option>
+                <option value="ambush">Бесшумный убийца</option>
+                <option value="adrenaline">Адреналин</option>
+                <option value="kbw">Моргенштерн</option>
+                <option value="rc">Неутомимый натиск</option>
+                <option value="cd">Голем</option>
+                <option value="mi">Карающая длань</option>
               </select>
-              <select class="ap-esvs-a-stone1-level" aria-label="Setup A Ability Stone Slot 1 Level">
+              <select class="ap-esvs-a-stone1-level" aria-label="Сборка A, уровень слота 1 Фетранита">
                 <option value="0 Lv." selected>Lv. 0</option>
-                <option value="1 Lv.">Lv. 1</option>
-                <option value="2 Lv.">Lv. 2</option>
-                <option value="3 Lv.">Lv. 3</option>
-                <option value="4 Lv.">Lv. 4</option>
+                <option value="1 Lv.">Ур. 1</option>
+                <option value="2 Lv.">Ур. 2</option>
+                <option value="3 Lv.">Ур. 3</option>
+                <option value="4 Lv.">Ур. 4</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Stone 2</label>
-              <select class="ap-esvs-a-stone2-target" aria-label="Setup A Ability Stone Slot 2 Engraving">
-                <option value="None" selected>None</option>
-                <option value="grudge">Grudge</option>
-                <option value="ambush">Ambush Master</option>
-                <option value="adrenaline">Adrenaline</option>
-                <option value="kbw">Keen Blunt Weapon</option>
-                <option value="rc">Raid Captain</option>
-                <option value="cd">Cursed Doll</option>
-                <option value="mi">Mass Increase</option>
+              <label class="ap-calc-field-label">Камень 2</label>
+              <select class="ap-esvs-a-stone2-target" aria-label="Сборка A, гравировка в слоте 2 Фетранита">
+                <option value="None" selected>Нет</option>
+                <option value="grudge">Титаноборец</option>
+                <option value="ambush">Бесшумный убийца</option>
+                <option value="adrenaline">Адреналин</option>
+                <option value="kbw">Моргенштерн</option>
+                <option value="rc">Неутомимый натиск</option>
+                <option value="cd">Голем</option>
+                <option value="mi">Карающая длань</option>
               </select>
-              <select class="ap-esvs-a-stone2-level" aria-label="Setup A Ability Stone Slot 2 Level">
+              <select class="ap-esvs-a-stone2-level" aria-label="Сборка A, уровень слота 2 Фетранита">
                 <option value="0 Lv." selected>Lv. 0</option>
-                <option value="1 Lv.">Lv. 1</option>
-                <option value="2 Lv.">Lv. 2</option>
-                <option value="3 Lv.">Lv. 3</option>
-                <option value="4 Lv.">Lv. 4</option>
+                <option value="1 Lv.">Ур. 1</option>
+                <option value="2 Lv.">Ур. 2</option>
+                <option value="3 Lv.">Ур. 3</option>
+                <option value="4 Lv.">Ур. 4</option>
               </select>
             </div>
             <div class="ap-esvs-results">
-              <div class="ap-stat-card-row"><span class="ap-summary-label">Best Keystone</span><span class="ap-esvs-a-keystone ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-esvs-a-keystone ap-summary-value">—</span></div>
               <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Setup</span><span class="ap-esvs-a-vs-none ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Competing Engraving Bonus</span><span class="ap-esvs-a-engr-gain ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Ability Stone Engraving Bonus</span><span class="ap-esvs-a-stone-engr-gain ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Ability Stone Base AP</span><span class="ap-esvs-a-stone-ap ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус конкурирующей гравировки</span><span class="ap-esvs-a-engr-gain ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус гравировки Фетранита</span><span class="ap-esvs-a-stone-engr-gain ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Базовый бонус Фетранита к силе атаки</span><span class="ap-esvs-a-stone-ap ap-summary-value">—</span></div>
             </div>
           </div>
 
           <div class="ap-esvs-card ap-esvs-card-b">
             <p class="ap-gear-card-title ap-esvs-card-title">Setup B</p>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Option 1</label>
-              <select class="ap-esvs-b-slot1-type" aria-label="Setup B Option 1 Engraving">
-                <option value="none" selected>None</option>
-                <option value="rc">Raid Captain</option>
-                <option value="kbw">Keen Blunt Weapon</option>
-                <option value="cd">Cursed Doll</option>
-                <option value="mi">Mass Increase</option>
+              <label class="ap-calc-field-label">Опция 1</label>
+              <select class="ap-esvs-b-slot1-type" aria-label="Setup B Опция 1 Engraving">
+                <option value="none" selected>Нет</option>
+                <option value="rc">Неутомимый натиск</option>
+                <option value="kbw">Моргенштерн</option>
+                <option value="cd">Голем</option>
+                <option value="mi">Карающая длань</option>
               </select>
-              <select class="ap-esvs-b-slot1-level" aria-label="Setup B Option 1 Node Level">
-                <option value="0 Nodes">0 Nodes</option>
-                <option value="1 Nodes">1 Node</option>
-                <option value="2 Nodes">2 Nodes</option>
-                <option value="3 Nodes">3 Nodes</option>
+              <select class="ap-esvs-b-slot1-level" aria-label="Setup B Опция 1 узел Level">
+                <option value="0 Nodes">0 узлов</option>
+                <option value="1 Nodes">1 узел</option>
+                <option value="2 Nodes">2 узла</option>
+                <option value="3 Nodes">3 узла</option>
                 <option value="4 Nodes" selected>4 Nodes</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Option 2</label>
-              <select class="ap-esvs-b-slot2-type" aria-label="Setup B Option 2 Engraving">
-                <option value="none" selected>None</option>
-                <option value="rc">Raid Captain</option>
-                <option value="kbw">Keen Blunt Weapon</option>
-                <option value="cd">Cursed Doll</option>
-                <option value="mi">Mass Increase</option>
+              <label class="ap-calc-field-label">Опция 2</label>
+              <select class="ap-esvs-b-slot2-type" aria-label="Setup B Опция 2 Engraving">
+                <option value="none" selected>Нет</option>
+                <option value="rc">Неутомимый натиск</option>
+                <option value="kbw">Моргенштерн</option>
+                <option value="cd">Голем</option>
+                <option value="mi">Карающая длань</option>
               </select>
-              <select class="ap-esvs-b-slot2-level" aria-label="Setup B Option 2 Node Level">
-                <option value="0 Nodes">0 Nodes</option>
-                <option value="1 Nodes">1 Node</option>
-                <option value="2 Nodes">2 Nodes</option>
-                <option value="3 Nodes">3 Nodes</option>
+              <select class="ap-esvs-b-slot2-level" aria-label="Setup B Опция 2 Node Level">
+                <option value="0 Nodes">0 узлов</option>
+                <option value="1 Nodes">1 узел</option>
+                <option value="2 Nodes">2 узла</option>
+                <option value="3 Nodes">3 узла</option>
                 <option value="4 Nodes" selected>4 Nodes</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Stone 1</label>
-              <select class="ap-esvs-b-stone1-target" aria-label="Setup B Ability Stone Slot 1 Engraving">
-                <option value="None" selected>None</option>
-                <option value="grudge">Grudge</option>
-                <option value="ambush">Ambush Master</option>
-                <option value="adrenaline">Adrenaline</option>
-                <option value="kbw">Keen Blunt Weapon</option>
-                <option value="rc">Raid Captain</option>
-                <option value="cd">Cursed Doll</option>
-                <option value="mi">Mass Increase</option>
+              <label class="ap-calc-field-label">Камень 1</label>
+              <select class="ap-esvs-b-stone1-target" aria-label="Сборка B, гравировка в слоте 1 Фетранита">
+                <option value="None" selected>Нет</option>
+                <option value="grudge">Титаноборец</option>
+                <option value="ambush">Бесшумный убийца</option>
+                <option value="adrenaline">Адреналин</option>
+                <option value="kbw">Моргенштерн</option>
+                <option value="rc">Неутомимый натиск</option>
+                <option value="cd">Голем</option>
+                <option value="mi">Карающая длань</option>
               </select>
-              <select class="ap-esvs-b-stone1-level" aria-label="Setup B Ability Stone Slot 1 Level">
+              <select class="ap-esvs-b-stone1-level" aria-label="Сборка B, уровень слота 1 Фетранита">
                 <option value="0 Lv." selected>Lv. 0</option>
-                <option value="1 Lv.">Lv. 1</option>
-                <option value="2 Lv.">Lv. 2</option>
-                <option value="3 Lv.">Lv. 3</option>
-                <option value="4 Lv.">Lv. 4</option>
+                <option value="1 Lv.">Ур. 1</option>
+                <option value="2 Lv.">Ур. 2</option>
+                <option value="3 Lv.">Ур. 3</option>
+                <option value="4 Lv.">Ур. 4</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label">Stone 2</label>
-              <select class="ap-esvs-b-stone2-target" aria-label="Setup B Ability Stone Slot 2 Engraving">
-                <option value="None" selected>None</option>
-                <option value="grudge">Grudge</option>
-                <option value="ambush">Ambush Master</option>
-                <option value="adrenaline">Adrenaline</option>
-                <option value="kbw">Keen Blunt Weapon</option>
-                <option value="rc">Raid Captain</option>
-                <option value="cd">Cursed Doll</option>
-                <option value="mi">Mass Increase</option>
+              <label class="ap-calc-field-label">Камень 2</label>
+              <select class="ap-esvs-b-stone2-target" aria-label="Сборка B, гравировка в слоте 2 Фетранита">
+                <option value="None" selected>Нет</option>
+                <option value="grudge">Титаноборец</option>
+                <option value="ambush">Бесшумный убийца</option>
+                <option value="adrenaline">Адреналин</option>
+                <option value="kbw">Моргенштерн</option>
+                <option value="rc">Неутомимый натиск</option>
+                <option value="cd">Голем</option>
+                <option value="mi">Карающая длань</option>
               </select>
-              <select class="ap-esvs-b-stone2-level" aria-label="Setup B Ability Stone Slot 2 Level">
+              <select class="ap-esvs-b-stone2-level" aria-label="Сборка B, уровень слота 2 Фетранита">
                 <option value="0 Lv." selected>Lv. 0</option>
-                <option value="1 Lv.">Lv. 1</option>
-                <option value="2 Lv.">Lv. 2</option>
-                <option value="3 Lv.">Lv. 3</option>
-                <option value="4 Lv.">Lv. 4</option>
+                <option value="1 Lv.">Ур. 1</option>
+                <option value="2 Lv.">Ур. 2</option>
+                <option value="3 Lv.">Ур. 3</option>
+                <option value="4 Lv.">Ур. 4</option>
               </select>
             </div>
             <div class="ap-esvs-results">
-              <div class="ap-stat-card-row"><span class="ap-summary-label">Best Keystone</span><span class="ap-esvs-b-keystone ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-esvs-b-keystone ap-summary-value">—</span></div>
               <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Setup</span><span class="ap-esvs-b-vs-none ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Competing Engraving Bonus</span><span class="ap-esvs-b-engr-gain ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Ability Stone Engraving Bonus</span><span class="ap-esvs-b-stone-engr-gain ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Ability Stone Base AP</span><span class="ap-esvs-b-stone-ap ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус конкурирующей гравировки</span><span class="ap-esvs-b-engr-gain ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус гравировки Фетранита</span><span class="ap-esvs-b-stone-engr-gain ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Базовый бонус Фетранита к силе атаки</span><span class="ap-esvs-b-stone-ap ap-summary-value">—</span></div>
             </div>
           </div>
         </div>
         <div class="ap-esvs-summary">
-          <p class="ap-esvs-neither">Running neither: <span class="ap-esvs-no-setup-keystone">—</span></p>
+          <p class="ap-esvs-neither">Без обоих: <span class="ap-esvs-no-setup-keystone">—</span></p>
           <p class="ap-esvs-diff-wrap"><span class="ap-esvs-diff">—</span></p>
-          <p class="ap-brace-compare-aside-note ap-esvs-keystone-note" hidden>Setup A and B land on different best keystones - the comparison above already accounts for that.</p>
+          <p class="ap-brace-compare-aside-note ap-esvs-keystone-note" hidden>Сборки A и B попадают на разные лучшие камни — сравнение выше это уже учитывает.</p>
           <!-- See computeOverallBestEngravingSetupAB's own JS comment -
                aVsB above locks both sides to whichever food is currently
                selected; this instead lets each named setup pick its own
@@ -1790,24 +1790,24 @@
      universal line can land on any of 5 pieces, so a full combo set
      would be enormous without being any more useful to look at). -->
 <details class="ap-acc-compare">
-  <summary>Accessory Comparison</summary>
+  <summary>Сравнение украшений</summary>
   <div class="ap-brace-compare-body">
     <!-- Build toggle now lives once, docked at the top of .ap-calc and
          sticky while this section is open - see Bracelet Comparison's
          own comment for why the echo copy that used to sit here was
          removed. -->
-    <p class="ap-brace-compare-intro">Candidate accessory lines, valued as if each were the only line on that slot, against your Best Setup above.</p>
+    <p class="ap-brace-compare-intro">Линии-кандидаты для украшения, оценённые так, будто каждая — единственная линия этого слота, по сравнению с «Лучшей сборкой» выше.</p>
 
     <div class="ap-acc-panel ap-acc-necklace-panel">
-      <p class="ap-acc-panel-title">Necklace</p>
+      <p class="ap-acc-panel-title">Ожерелье</p>
       <div class="ap-acc-table-scroll">
       <table class="ap-brace-compare-table ap-acc-combo-table">
         <thead>
           <tr>
             <th class="ap-brace-th-label">Line</th>
-            <th class="ap-brace-th-low">Low</th>
-            <th class="ap-brace-th-mid">Mid</th>
-            <th class="ap-brace-th-high">High</th>
+            <th class="ap-brace-th-low">Низкий</th>
+            <th class="ap-brace-th-mid">Средний</th>
+            <th class="ap-brace-th-high">Высокий</th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">L</span><span class="ap-brace-label-low">L</span></th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">M</span><span class="ap-brace-label-low">L</span></th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">M</span><span class="ap-brace-label-low">M</span></th>
@@ -1822,15 +1822,15 @@
     </div>
 
     <div class="ap-acc-panel ap-acc-earrings-panel">
-      <p class="ap-acc-panel-title">Earrings</p>
+      <p class="ap-acc-panel-title">Серьги</p>
       <div class="ap-acc-table-scroll">
       <table class="ap-brace-compare-table ap-acc-combo-table">
         <thead>
           <tr>
             <th class="ap-brace-th-label">Line</th>
-            <th class="ap-brace-th-low">Low</th>
-            <th class="ap-brace-th-mid">Mid</th>
-            <th class="ap-brace-th-high">High</th>
+            <th class="ap-brace-th-low">Низкий</th>
+            <th class="ap-brace-th-mid">Средний</th>
+            <th class="ap-brace-th-high">Высокий</th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">L</span><span class="ap-brace-label-low">L</span></th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">M</span><span class="ap-brace-label-low">L</span></th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">M</span><span class="ap-brace-label-low">M</span></th>
@@ -1845,15 +1845,15 @@
     </div>
 
     <div class="ap-acc-panel ap-acc-rings-panel">
-      <p class="ap-acc-panel-title">Rings</p>
+      <p class="ap-acc-panel-title">Кольца</p>
       <div class="ap-acc-table-scroll">
       <table class="ap-brace-compare-table ap-acc-combo-table">
         <thead>
           <tr>
             <th class="ap-brace-th-label">Line</th>
-            <th class="ap-brace-th-low">Low</th>
-            <th class="ap-brace-th-mid">Mid</th>
-            <th class="ap-brace-th-high">High</th>
+            <th class="ap-brace-th-low">Низкий</th>
+            <th class="ap-brace-th-mid">Средний</th>
+            <th class="ap-brace-th-high">Высокий</th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">L</span><span class="ap-brace-label-low">L</span></th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">M</span><span class="ap-brace-label-low">L</span></th>
             <th class="ap-acc-th-combo"><span class="ap-brace-label-low">M</span><span class="ap-brace-label-low">M</span></th>
@@ -1868,14 +1868,14 @@
     </div>
 
     <div class="ap-acc-panel ap-acc-universal-panel">
-      <p class="ap-acc-panel-title">Flat Bonuses</p>
+      <p class="ap-acc-panel-title">Постоянные бонусы</p>
       <table class="ap-brace-compare-table">
         <thead>
           <tr>
             <th class="ap-brace-th-label">Line</th>
-            <th class="ap-brace-th-low">Low</th>
-            <th class="ap-brace-th-mid">Mid</th>
-            <th class="ap-brace-th-high">High</th>
+            <th class="ap-brace-th-low">Низкий</th>
+            <th class="ap-brace-th-mid">Средний</th>
+            <th class="ap-brace-th-high">Высокий</th>
           </tr>
         </thead>
         <tbody class="ap-acc-universal-rows"></tbody>
@@ -1925,37 +1925,37 @@
          row at all, unlike Ring/Necklace whose Line 1/2 already gets its
          own Grid/Flat row and would just show +0.00% here). -->
     <details class="ap-avb">
-      <summary>Accessory vs. Accessory</summary>
+      <summary>Украшение против украшения</summary>
       <div class="ap-brace-compare-body">
-        <p class="ap-brace-compare-intro">Compares your currently equipped accessory against a candidate replacement, and both against neither.</p>
+        <p class="ap-brace-compare-intro">Сравнивает твоё текущее украшение с кандидатом на замену, а оба — с вариантом без украшения.</p>
 
         <div class="ap-gear-card ap-gear-card--avb-options">
           <div class="ap-calc-field-row">
-            <label class="ap-calc-field-label" for="ap-avb-slot">Comparing</label>
+            <label class="ap-calc-field-label" for="ap-avb-slot">Сравнение</label>
             <select id="ap-avb-slot" class="ap-avb-slot">
-              <option value="necklace" selected>Necklace</option>
+              <option value="necklace" selected>Ожерелье</option>
               <option value="earring">Earring</option>
               <option value="ring">Ring</option>
             </select>
           </div>
           <div class="ap-calc-field-row ap-avb-other-row">
             <label class="ap-calc-field-label">Other <span class="ap-avb-other-slot-label">Ring</span>'s Lines</label>
-            <span class="ap-brace-info-icon" title="Rings and Earrings come in pairs. Enter your OTHER ring/earring's real values here.">i</span>
+            <span class="ap-brace-info-icon" title="Кольца and Серьги come in pairs. Enter your OTHER ring/earring's real values here.">i</span>
           </div>
           <div class="ap-avb-other-fields">
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label ap-avb-other-line1-label" for="ap-avb-other-line1-tier">Crit Rate</label>
+              <label class="ap-calc-field-label ap-avb-other-line1-label" for="ap-avb-other-line1-tier">Шанс крита</label>
               <select id="ap-avb-other-line1-tier" class="ap-avb-other-line1-tier">
-                <option value="None">None</option>
+                <option value="None">Нет</option>
                 <option value="Low">0.40%</option>
                 <option value="Mid" selected>0.95%</option>
                 <option value="High">1.55%</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label ap-avb-other-line2-label" for="ap-avb-other-line2-tier">Crit Damage</label>
+              <label class="ap-calc-field-label ap-avb-other-line2-label" for="ap-avb-other-line2-tier">Сила крита</label>
               <select id="ap-avb-other-line2-tier" class="ap-avb-other-line2-tier">
-                <option value="None">None</option>
+                <option value="None">Нет</option>
                 <option value="Low">1.10%</option>
                 <option value="Mid">2.40%</option>
                 <option value="High" selected>4.00%</option>
@@ -1966,91 +1966,91 @@
 
         <div class="ap-esvs-cards">
           <div class="ap-esvs-card ap-esvs-card-a ap-avb-card-a">
-            <p class="ap-gear-card-title ap-esvs-card-title">Accessory A<span class="ap-avb-equipped-badge"> (Currently Equipped)</span></p>
+            <p class="ap-gear-card-title ap-esvs-card-title">Accessory A<span class="ap-avb-equipped-badge"> (установлено сейчас)</span></p>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label" for="ap-avb-a-mainstat">Main Stat</label>
+              <label class="ap-calc-field-label" for="ap-avb-a-mainstat">Основной стат</label>
               <input type="number" id="ap-avb-a-mainstat" class="ap-avb-a-mainstat" min="15178" max="17857" step="1" value="15178">
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label ap-avb-a-line1-label" for="ap-avb-a-line1-tier">Additional Damage</label>
+              <label class="ap-calc-field-label ap-avb-a-line1-label" for="ap-avb-a-line1-tier">Дополнительный урон</label>
               <select id="ap-avb-a-line1-tier" class="ap-avb-a-line1-tier">
-                <option value="None">None</option>
+                <option value="None">Нет</option>
                 <option value="Low">0.70%</option>
                 <option value="Mid" selected>1.60%</option>
                 <option value="High">2.60%</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label ap-avb-a-line2-label" for="ap-avb-a-line2-tier">Outgoing Damage</label>
+              <label class="ap-calc-field-label ap-avb-a-line2-label" for="ap-avb-a-line2-tier">Урон обычных умений</label>
               <select id="ap-avb-a-line2-tier" class="ap-avb-a-line2-tier">
-                <option value="None">None</option>
+                <option value="None">Нет</option>
                 <option value="Low">0.55%</option>
                 <option value="Mid" selected>1.20%</option>
                 <option value="High">2.00%</option>
               </select>
             </div>
             <div class="ap-bvb-line-row">
-              <select class="ap-avb-a-line3-type ap-bvb-line-type" aria-label="Accessory A Line 3 Type">
-                <option value="none" selected>— Line 3: None —</option>
-                <option value="ap_flat">Attack Power</option>
-                <option value="wp_flat">Weapon Power</option>
+              <select class="ap-avb-a-line3-type ap-bvb-line-type" aria-label="Тип линии 3 украшения A">
+                <option value="none" selected>— Line 3: Нет —</option>
+                <option value="ap_flat">Сила атаки</option>
+                <option value="wp_flat">Сила оружия</option>
               </select>
-              <select class="ap-avb-a-line3-tier ap-bvb-line-tier" hidden disabled aria-label="Accessory A Line 3 Tier">
+              <select class="ap-avb-a-line3-tier ap-bvb-line-tier" hidden disabled aria-label="Уровень линии 3 украшения A">
                 <option value="Low">80 AP</option>
                 <option value="Mid" selected>195 AP</option>
                 <option value="High">390 AP</option>
               </select>
             </div>
             <div class="ap-esvs-results">
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No <span class="ap-avb-slot-label-vsnone">Necklace</span></span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-avb-grid-row"><span class="ap-summary-label ap-avb-grid-label">Additional Dmg</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-avb-flat-row"><span class="ap-summary-label">Outgoing Dmg</span><span class="ap-bvb-flat ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No <span class="ap-avb-slot-label-vsnone">Ожерелье</span></span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-avb-grid-row"><span class="ap-summary-label ap-avb-grid-label">Доп. урон</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-avb-flat-row"><span class="ap-summary-label">Урон умений</span><span class="ap-bvb-flat ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-avb-lineratio-row"><span class="ap-summary-label">AP% / WP% Lines</span><span class="ap-bvb-lineratio ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-avb-wp-row"><span class="ap-summary-label">Main Stat / Line 3</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-avb-wp-row"><span class="ap-summary-label">Основной стат / Line 3</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
             </div>
           </div>
           <div class="ap-esvs-card ap-esvs-card-b ap-avb-card-b">
             <p class="ap-gear-card-title ap-esvs-card-title">Accessory B<span class="ap-avb-equipped-badge"> (Candidate)</span></p>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label" for="ap-avb-b-mainstat">Main Stat</label>
+              <label class="ap-calc-field-label" for="ap-avb-b-mainstat">Основной стат</label>
               <input type="number" id="ap-avb-b-mainstat" class="ap-avb-b-mainstat" min="15178" max="17857" step="1" value="17857">
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label ap-avb-b-line1-label" for="ap-avb-b-line1-tier">Additional Damage</label>
+              <label class="ap-calc-field-label ap-avb-b-line1-label" for="ap-avb-b-line1-tier">Дополнительный урон</label>
               <select id="ap-avb-b-line1-tier" class="ap-avb-b-line1-tier">
-                <option value="None">None</option>
+                <option value="None">Нет</option>
                 <option value="Low">0.70%</option>
                 <option value="Mid">1.60%</option>
                 <option value="High" selected>2.60%</option>
               </select>
             </div>
             <div class="ap-calc-field-row">
-              <label class="ap-calc-field-label ap-avb-b-line2-label" for="ap-avb-b-line2-tier">Outgoing Damage</label>
+              <label class="ap-calc-field-label ap-avb-b-line2-label" for="ap-avb-b-line2-tier">Урон обычных умений</label>
               <select id="ap-avb-b-line2-tier" class="ap-avb-b-line2-tier">
-                <option value="None">None</option>
+                <option value="None">Нет</option>
                 <option value="Low">0.55%</option>
                 <option value="Mid">1.20%</option>
                 <option value="High" selected>2.00%</option>
               </select>
             </div>
             <div class="ap-bvb-line-row">
-              <select class="ap-avb-b-line3-type ap-bvb-line-type" aria-label="Accessory B Line 3 Type">
-                <option value="none" selected>— Line 3: None —</option>
-                <option value="ap_flat">Attack Power</option>
-                <option value="wp_flat">Weapon Power</option>
+              <select class="ap-avb-b-line3-type ap-bvb-line-type" aria-label="Тип линии 3 украшения B">
+                <option value="none" selected>— Line 3: Нет —</option>
+                <option value="ap_flat">Сила атаки</option>
+                <option value="wp_flat">Сила оружия</option>
               </select>
-              <select class="ap-avb-b-line3-tier ap-bvb-line-tier" hidden disabled aria-label="Accessory B Line 3 Tier">
+              <select class="ap-avb-b-line3-tier ap-bvb-line-tier" hidden disabled aria-label="Уровень линии 3 украшения B">
                 <option value="Low">80 AP</option>
                 <option value="Mid" selected>195 AP</option>
                 <option value="High">390 AP</option>
               </select>
             </div>
             <div class="ap-esvs-results">
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No <span class="ap-avb-slot-label-vsnone">Necklace</span></span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-avb-grid-row"><span class="ap-summary-label ap-avb-grid-label">Additional Dmg</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-avb-flat-row"><span class="ap-summary-label">Outgoing Dmg</span><span class="ap-bvb-flat ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No <span class="ap-avb-slot-label-vsnone">Ожерелье</span></span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-avb-grid-row"><span class="ap-summary-label ap-avb-grid-label">Доп. урон</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-avb-flat-row"><span class="ap-summary-label">Урон умений</span><span class="ap-bvb-flat ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-avb-lineratio-row"><span class="ap-summary-label">AP% / WP% Lines</span><span class="ap-bvb-lineratio ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-avb-wp-row"><span class="ap-summary-label">Main Stat / Line 3</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-avb-wp-row"><span class="ap-summary-label">Основной стат / Line 3</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
             </div>
           </div>
         </div>
@@ -2113,15 +2113,15 @@
      row label, not a points tier, and has nothing to line up with in
      row 1. -->
 <details class="ap-arkgrid-compare">
-  <summary>Chaos Core Comparison</summary>
+  <summary>Сравнение ядер хаоса</summary>
   <div class="ap-brace-compare-body">
-    <p class="ap-brace-compare-intro">Candidate Chaos Cores, valued as if each were the only equipped one, against your Best Setup above.</p>
+    <p class="ap-brace-compare-intro">Ядра хаоса-кандидаты, оценённые так, будто каждое — единственное установленное, по сравнению с «Лучшей сборкой» выше.</p>
     <div class="ap-acc-table-scroll">
       <table class="ap-brace-compare-table ap-acc-combo-table ap-arkgrid-table">
         <thead>
           <tr>
             <th class="ap-arkgrid-th-blank" aria-hidden="true"></th>
-            <th>14 Points</th>
+            <th>14 очков</th>
             <th class="ap-arkgrid-th-group" colspan="2">17 Points</th>
             <th class="ap-arkgrid-th-group" colspan="2">20 Points</th>
           </tr>
@@ -2144,24 +2144,24 @@
 
 </div> <!-- end ap-calc -->
 
-## CPM Calculator
+## Калькулятор CPM
 
-*Compares Trixion damage to raid damage across builds. Watch [this](https://www.youtube.com/watch?v=dlUS8vUaNLA) to learn about Trixion multipliers.*
+*Сравнивает урон в Тризионе с уроном в рейде по всем билдам. Про множители Тризиона — [это видео](https://www.youtube.com/watch?v=dlUS8vUaNLA).*
 
-<p class="page-banner page-banner-warning">This tool's data is imported from KR and is meant to provide an estimate, not a truly accurate result.</p>
+<p class="page-banner page-banner-warning">Данные этого инструмента импортированы из KR и дают оценку, а не точный результат.</p>
 
 <div class="cpm-calc">
 
 <div class="cpm-calc-header">
 
-<p class="cpm-calc-hint">Enter your in-game Combat Analyzer's <strong>Back Attack Percentage</strong> below.</p>
+<p class="cpm-calc-hint">Введи из Анализатора боя в игре значение <strong>Доля атак в спину</strong> below.</p>
 
 <div class="cpm-rate-calc">
 <div class="cpm-rate-calc-inputs">
-<span class="ap-brace-info-icon cpm-rate-calc-info-icon" role="img" aria-label="Time elapsed: &quot;2m 3s&quot;, &quot;123s&quot; (bare number = seconds), or mm:ss / hh:mm:ss. Max 120m" title="Time elapsed: &quot;2m 3s&quot;, &quot;123s&quot; (bare number = seconds), or mm:ss / hh:mm:ss. Max 120m">i</span>
-<input type="text" class="cpm-rate-calc-time" placeholder="2m 3s" inputmode="text" autocomplete="off" maxlength="10" aria-label="Time elapsed, e.g. 2m 3s or 123 seconds, max 120m 60s">
+<span class="ap-brace-info-icon cpm-rate-calc-info-icon" role="img" aria-label="Прошедшее время: «2m 3s», «123s» (просто число = секунды) или mm:ss / чч:мм:сс. Максимум 120 мин" title="Прошедшее время: «2m 3s», «123s» (просто число = секунды) или mm:ss / чч:мм:сс. Максимум 120 мин">i</span>
+<input type="text" class="cpm-rate-calc-time" placeholder="2m 3s" inputmode="text" autocomplete="off" maxlength="10" aria-label="Прошедшее время, напр. 2m 3s или 123 секунды, максимум 120 мин">
 <span class="cpm-rate-calc-x">&times;</span>
-<input type="number" class="cpm-rate-calc-count" placeholder="31" min="0" max="999" step="1" aria-label="Number of casts, max 999">
+<input type="number" class="cpm-rate-calc-count" placeholder="31" min="0" max="999" step="1" aria-label="Число применений, максимум 999">
 </div>
 <span class="cpm-rate-calc-result"><span class="cpm-rate-calc-result-value cpm-rate-calc-output-empty">—</span><span class="cpm-rate-calc-result-unit">CPM</span></span>
 </div>
@@ -2176,29 +2176,29 @@
 <div class="cpm-calc-body">
 <div class="cpm-calc-inputs">
 <label class="cpm-calc-field">
-<span class="cpm-calc-field-label">Raid CPM</span>
-<input type="number" class="cpm-calc-raidcpm" step="0.01" min="0" max="20" placeholder="e.g. 9.5">
+<span class="cpm-calc-field-label">CPM в рейде</span>
+<input type="number" class="cpm-calc-raidcpm" step="0.01" min="0" max="20" placeholder="напр. 9.5">
 </label>
 <label class="cpm-calc-field">
-<span class="cpm-calc-field-label cpm-calc-ba-label">Back Attack %</span>
+<span class="cpm-calc-field-label cpm-calc-ba-label">Атаки в спину, %</span>
 <span class="cpm-calc-ba-wrap">
-<input type="number" class="cpm-calc-ba-input" step="0.01" min="0" max="100" placeholder="e.g. 80">
+<input type="number" class="cpm-calc-ba-input" step="0.01" min="0" max="100" placeholder="напр. 80">
 <span class="cpm-calc-ba-rate"></span>
 </span>
 </label>
 <label class="cpm-calc-field cpm-calc-field-muted">
-<span class="cpm-calc-field-label">Base Multiplier</span>
+<span class="cpm-calc-field-label">Базовый множитель</span>
 <input type="number" class="cpm-calc-basemult-input" step="0.01" min="0.5" max="2">
 </label>
 </div>
 <div class="cpm-calc-results">
 <div class="cpm-calc-output">
 <div class="cpm-calc-output-item">
-<span class="cpm-calc-output-label">Adjusted Multiplier</span>
+<span class="cpm-calc-output-label">Скорректированный множитель</span>
 <span class="cpm-calc-adj-value">—</span>
 </div>
 <div class="cpm-calc-output-item">
-<span class="cpm-calc-output-label">Final Multiplier</span>
+<span class="cpm-calc-output-label">Итоговый множитель</span>
 <span class="cpm-calc-result-value">—</span>
 </div>
 </div>
@@ -2217,29 +2217,29 @@
 <div class="cpm-calc-body">
 <div class="cpm-calc-inputs">
 <label class="cpm-calc-field">
-<span class="cpm-calc-field-label">Raid CPM</span>
-<input type="number" class="cpm-calc-raidcpm" step="0.01" min="0" max="20" placeholder="e.g. 6.5">
+<span class="cpm-calc-field-label">CPM в рейде</span>
+<input type="number" class="cpm-calc-raidcpm" step="0.01" min="0" max="20" placeholder="напр. 6.5">
 </label>
 <label class="cpm-calc-field">
-<span class="cpm-calc-field-label cpm-calc-ba-label">Back Attack %</span>
+<span class="cpm-calc-field-label cpm-calc-ba-label">Атаки в спину, %</span>
 <span class="cpm-calc-ba-wrap">
-<input type="number" class="cpm-calc-ba-input" step="0.01" min="0" max="100" placeholder="e.g. 92">
+<input type="number" class="cpm-calc-ba-input" step="0.01" min="0" max="100" placeholder="напр. 92">
 <span class="cpm-calc-ba-rate"></span>
 </span>
 </label>
 <label class="cpm-calc-field cpm-calc-field-muted">
-<span class="cpm-calc-field-label">Base Multiplier</span>
+<span class="cpm-calc-field-label">Базовый множитель</span>
 <input type="number" class="cpm-calc-basemult-input" step="0.01" min="0.5" max="2">
 </label>
 </div>
 <div class="cpm-calc-results">
 <div class="cpm-calc-output">
 <div class="cpm-calc-output-item">
-<span class="cpm-calc-output-label">Adjusted Multiplier</span>
+<span class="cpm-calc-output-label">Скорректированный множитель</span>
 <span class="cpm-calc-adj-value">—</span>
 </div>
 <div class="cpm-calc-output-item">
-<span class="cpm-calc-output-label">Final Multiplier</span>
+<span class="cpm-calc-output-label">Итоговый множитель</span>
 <span class="cpm-calc-result-value">—</span>
 </div>
 </div>
@@ -2258,29 +2258,29 @@
 <div class="cpm-calc-body">
 <div class="cpm-calc-inputs">
 <label class="cpm-calc-field">
-<span class="cpm-calc-field-label">Raid CPM</span>
-<input type="number" class="cpm-calc-raidcpm" step="0.01" min="0" max="20" placeholder="e.g. 6">
+<span class="cpm-calc-field-label">CPM в рейде</span>
+<input type="number" class="cpm-calc-raidcpm" step="0.01" min="0" max="20" placeholder="напр. 6">
 </label>
 <label class="cpm-calc-field">
-<span class="cpm-calc-field-label cpm-calc-ba-label">Back Attack %</span>
+<span class="cpm-calc-field-label cpm-calc-ba-label">Атаки в спину, %</span>
 <span class="cpm-calc-ba-wrap">
-<input type="number" class="cpm-calc-ba-input" step="0.01" min="0" max="100" placeholder="e.g. 84">
+<input type="number" class="cpm-calc-ba-input" step="0.01" min="0" max="100" placeholder="напр. 84">
 <span class="cpm-calc-ba-rate"></span>
 </span>
 </label>
 <label class="cpm-calc-field cpm-calc-field-muted">
-<span class="cpm-calc-field-label">Base Multiplier</span>
+<span class="cpm-calc-field-label">Базовый множитель</span>
 <input type="number" class="cpm-calc-basemult-input" step="0.01" min="0.5" max="2">
 </label>
 </div>
 <div class="cpm-calc-results">
 <div class="cpm-calc-output">
 <div class="cpm-calc-output-item">
-<span class="cpm-calc-output-label">Adjusted Multiplier</span>
+<span class="cpm-calc-output-label">Скорректированный множитель</span>
 <span class="cpm-calc-adj-value">—</span>
 </div>
 <div class="cpm-calc-output-item">
-<span class="cpm-calc-output-label">Final Multiplier</span>
+<span class="cpm-calc-output-label">Итоговый множитель</span>
 <span class="cpm-calc-result-value">—</span>
 </div>
 </div>
@@ -2293,41 +2293,41 @@
 
 </div>
 
-## Bid Calculator
+## Калькулятор ставок
 
-*Finds the optimal auction bid amount based on personal intent.*
+*Находит оптимальную ставку на аукционе по твоему намерению.*
 
 <div class="bid-calc">
 
 <div class="bid-calc-controls">
 <div class="bid-calc-field-row">
-<label class="bid-calc-field-label" for="bid-market-price">Market Price</label>
-<input type="text" inputmode="numeric" autocomplete="off" id="bid-market-price" class="bid-market-price" placeholder="e.g. 9,000">
+<label class="bid-calc-field-label" for="bid-market-price">Рыночная цена</label>
+<input type="text" inputmode="numeric" autocomplete="off" id="bid-market-price" class="bid-market-price" placeholder="напр. 9 000">
 </div>
-<div class="bid-calc-toggle" role="group" aria-label="Raid size">
-<span class="bid-calc-field-label">Raid Size</span>
+<div class="bid-calc-toggle" role="group" aria-label="Размер рейда">
+<span class="bid-calc-field-label">Размер рейда</span>
 <button type="button" class="ap-build-chip bid-calc-chip" data-value="4" aria-pressed="false">4</button>
 <button type="button" class="ap-build-chip bid-calc-chip ap-build-chip-active" data-value="8" aria-pressed="true">8</button>
 <button type="button" class="ap-build-chip bid-calc-chip" data-value="16" aria-pressed="false">16</button>
-<button type="button" class="ap-build-chip bid-calc-chip" data-value="custom" aria-pressed="false">Custom</button>
+<button type="button" class="ap-build-chip bid-calc-chip" data-value="custom" aria-pressed="false">Свой вариант</button>
 </div>
 <div class="bid-calc-field-row bid-calc-custom-raid-size-row" hidden>
-<label class="bid-calc-field-label" for="bid-custom-raid-size">Custom Raid Size</label>
-<input type="number" inputmode="numeric" id="bid-custom-raid-size" class="bid-custom-raid-size" min="2" step="1" placeholder="e.g. 6">
+<label class="bid-calc-field-label" for="bid-custom-raid-size">Свой вариант Размер рейда</label>
+<input type="number" inputmode="numeric" id="bid-custom-raid-size" class="bid-custom-raid-size" min="2" step="1" placeholder="напр. 6">
 </div>
 </div>
 
-<div class="bid-calc-intent" role="group" aria-label="Bidding intent">
+<div class="bid-calc-intent" role="group" aria-label="Намерение по ставке">
 <span class="bid-calc-field-label">Intent</span>
-<button type="button" class="ap-build-chip bid-calc-chip ap-build-chip-active" data-value="equal" aria-pressed="true" title="Splits the gold evenly - you and everyone else net the same amount.">Equal Profit</button>
-<button type="button" class="ap-build-chip bid-calc-chip" data-value="punish" aria-pressed="false" title="Solid profit if you win - and outbidding you costs the rival more.">Profit &amp; Punish Next Bidder</button>
-<button type="button" class="ap-build-chip bid-calc-chip" data-value="max" aria-pressed="false" title="Highest possible profit - if you get outbid, it just falls back to an even split.">Max Profit</button>
+<button type="button" class="ap-build-chip bid-calc-chip ap-build-chip-active" data-value="equal" aria-pressed="true" title="Делит золото поровну — ты и все остальные получаете одинаково.">Поровну</button>
+<button type="button" class="ap-build-chip bid-calc-chip" data-value="punish" aria-pressed="false" title="Надёжная прибыль, если выиграешь — и перебить тебя сопернику обойдётся дороже.">Прибыль и наказание следующему</button>
+<button type="button" class="ap-build-chip bid-calc-chip" data-value="max" aria-pressed="false" title="Высокийest possible profit - if you get outbid, it just falls back to an even split.">Максимальная прибыль</button>
 </div>
 
 <div class="bid-calc-result">
-<span class="bid-calc-result-label">Amount to Bid</span>
+<span class="bid-calc-result-label">Сумма ставки</span>
 <span class="bid-calc-result-value">—</span>
-<button type="button" class="bid-calc-copy-btn" aria-label="Copy amount to bid" data-tooltip="Copy amount" disabled>
+<button type="button" class="bid-calc-copy-btn" aria-label="Скопировать сумму для ставки" data-tooltip="Copy amount" disabled>
 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
 </button>
 </div>
@@ -2338,7 +2338,7 @@
 <th class="bid-calc-th-label"></th>
 <th>Bid</th>
 <th>Profit</th>
-<th>Party Profit</th>
+<th>Прибыль группы</th>
 </tr>
 </thead>
 <tbody>
@@ -2349,7 +2349,7 @@
 <td class="bid-calc-you-party">—</td>
 </tr>
 <tr class="bid-calc-row-next">
-<td class="bid-calc-row-label">Next Bidder</td>
+<td class="bid-calc-row-label">Следующий участник</td>
 <td class="bid-calc-next-bid">—</td>
 <td class="bid-calc-next-profit">—</td>
 <td class="bid-calc-next-party">—</td>
@@ -2357,22 +2357,22 @@
 </tbody>
 </table>
 
-<p class="bid-calc-footnote">Party Profit is each other member's cut if that row wins. Next Bidder needs a +10% raise to outbid you.</p>
+<p class="bid-calc-footnote">Прибыль группы — это доля каждого участника, если выиграет эта строка. Следующему участнику нужно накинуть +10%, чтобы перебить тебя.</p>
 
 </div>
 
-## Useful Links
+## Полезные ссылки
 
-| Link | What it's for |
+| Ссылка | Для чего |
 |---|---|
-| [Arsonistic's Calculator](https://docs.google.com/spreadsheets/d/1_0J7liyM_yw16pyn6TKlF1YGaIt5n_A9hSoLnT3yTUc/edit?usp=sharing) | *Tune KS/LB, bracelet, answers ALL gearing questions* |
-| [KR Calculator (Translated)](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) | *Simpler, only for Ark Passive settings* |
-| [Astrogem Optimizer](https://airplaner.github.io/lostark-arkgrid-gem-locator-v2/) | *Screencapture auto-minmax for Ark Grid* |
-| [Lost Ark Bible](https://lostark.bible/) | *Logs and raid statistics* |
-| [LOA Logs](https://github.com/snoww/loa-logs) | *<span class="skill-mention" data-glossary-id="dpsmeter">DPS meter</span> download* |
-| [Lost Ark Nexus](https://lostark-nexus-archive.pages.dev/guides/deathblade/) | *For pre-Ark Grid Standard RE build* |
-| [Fatal Wave Dump](https://docs.google.com/document/d/1vs1YC_7adaYwtfN9cHO3x2KuMPq6GcKRlGo5vnsN4Lk/edit) | *For 333 Standard (spincutter) NA build* |
-| [Maxroll](https://maxroll.gg/lost-ark) | *Resources for beginners* |
-| [Inven RE Guide](https://www.inven.co.kr/board/lostark/5497/140080) | *Korean guide for 333, 111 HH and Void Skip* |
-| [Inven 313 Guide](https://www.inven.co.kr/board/lostark/5497/171285) | *Korean guide for 313 RE* |
-| [Inven 222 Guide](https://www.inven.co.kr/board/lostark/5497/175796) | *Korean guide for 222 Surge* |
+| [Arsonistic's Calculator](https://docs.google.com/spreadsheets/d/1_0J7liyM_yw16pyn6TKlF1YGaIt5n_A9hSoLnT3yTUc/edit?usp=sharing) | *Настройка «Отточенных рефлексов»/«Исключительного дара» и браслета — отвечает на ВСЕ вопросы по снаряжению* |
+| [KR Calculator (Translated)](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) | *Simpler, only for Пассивки А.Р.К. settings* |
+| [Astrogem Optimizer](https://airplaner.github.io/lostark-arkgrid-gem-locator-v2/) | *Автоминимакс по скриншотам для Системы А.Р.К.*тема А.Р.К.* |
+| [Lost Ark Bible](https://lostark.bible/) | *Логи и статистика рейдов* |
+| [LOA Logs](https://github.com/snoww/loa-logs) | *<span class="skill-mention" data-glossary-id="dpsmeter">DPS-метр</span> download* |
+| [Lost Ark Nexus](https://lostark-nexus-archive.pages.dev/guides/deathblade/) | *Для «Стандарта без ядер» и других сборок RE до Системы А.Р.К.*ld* |
+| [Fatal Wave Dump](https://docs.google.com/document/d/1vs1YC_7adaYwtfN9cHO3x2KuMPq6GcKRlGo5vnsN4Lk/edit) | *Для 333 «Стандарт без ядер» (с Разрубающими лезвиями) на NA* |
+| [Maxroll](https://maxroll.gg/lost-ark) | *Ресурсы для новичков* |
+| [Inven RE Guide](https://www.inven.co.kr/board/lostark/5497/140080) | *Корейский гайд по 333, 111 «Охота за головами» и «Искусство меча»* |
+| [Inven 313 Guide](https://www.inven.co.kr/board/lostark/5497/171285) | *Корейский гайд по 313 в Остаточной энергии* |
+| [Inven 222 Guide](https://www.inven.co.kr/board/lostark/5497/175796) | *Корейский гайд по 222 в Твёрдой воле* |

@@ -1,10 +1,10 @@
-# Гайд на клинка смерти | by Henstly
+# Гайд по Клинку смерти | от Henstly
 
-![Deathblade path flowchart](assets/shared/flowchart-deathblade-paths.svg)
+![Схема пути Клинка смерти](assets/shared/flowchart-deathblade-paths.svg)
 
 <div class="grid cards" markdown>
 
--   🌸 **Остаточчная энергия**
+-   🌸 **Остаточная энергия**
 
     ---
 
@@ -12,7 +12,7 @@
 
     [Начать →](remaining-energy/essentials.md)
 
--   ⚡ **Твердая воля**
+-   ⚡ **Твёрдая воля**
 
     ---
 

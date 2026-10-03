@@ -58,7 +58,7 @@
     "222-speedy": 10.084,
   };
 
-  const FAMILY_LABELS = { re: "Remaining Energy", surge: "Surge" };
+  const FAMILY_LABELS = { re: "Остаточная энергия", surge: "Твёрдая воля" };
 
   // Flattens window.DB_BUILD_DATA's re/surge families into one id -> build
   // lookup, same "search both families" shape BRACE_SPEC_BUILDS-adjacent
@@ -558,7 +558,7 @@
     // from build here instead; the markup ships with an empty span.
     const metaEl = row.querySelector(".cpm-calc-row-meta");
     if (build && metaEl) {
-      metaEl.textContent = "Trixion CPM " + build.trixionCPM + " \u00b7 " + build.familyLabel;
+      metaEl.textContent = "CPM в Тризионе " + build.trixionCPM + " \u00b7 " + build.familyLabel;
     }
 
     row.querySelectorAll("input").forEach((input) => {

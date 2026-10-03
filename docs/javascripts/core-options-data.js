@@ -63,24 +63,23 @@
     {
       core: "Swift Resolution",
       bp: "10P",
-      was: "Deathly Slash cooldown -2.0s.",
+      was: "Перезарядка «Убийственной стали» −2.0 сек.",
       now: "Урон умения «Убийственная сталь» повышается на 1.5%.",
       note:
-        "The screenshot for this core shows a Damage effect where the english said a " +
-        "cooldown reduction, and no number in common. Everything else on the core (14P/17P/" +
-        "18-20P) matches the screenshot exactly, so the core's identity is not in doubt - " +
-        "only this one line. It may be a different core that happens to share the rest, or " +
-        "the english may simply have been wrong. Unresolved on purpose.",
+          "На скриншоте этого ядра указан эффект на урон, тогда как в английском тексте " +
+           "говорилось о сокращении перезарядки, и общих чисел нет. Всё остальное на ядре " +
+           "(14P/17P/18-20P) совпадает со скриншотом точно, поэтому в самом ядре сомнений " +
+           "нет — расходится только эта строка. Возможно, это другое ядро, совпадающее " +
+           "по остальному, либо английский текст просто ошибался. Оставлено неразрешённым намеренно.",
     },
     {
       core: "Death Sword Energy",
       bp: "10P",
-      was: "gain Paralysis Immunity",
+      was: "даёт невосприимчивость к параличу",
       now: "невосприимчив к ошеломлению",
       note:
-        "Paralysis (паралич) and stun (оглушение) are different debuffs in Lost Ark. The " +
-        "screenshot says stun. Numbers unaffected; the english is kept here as the record " +
-        "of what it used to claim.",
+          "Паралич и оглушение — разные дебаффы в Lost Ark. На скриншоте указано оглушение. " +
+           "На числа не влияет; английский текст сохранён как запись о том, что было указано раньше.",
     },
     {
       core: "Art Master",
@@ -88,11 +87,11 @@
       was: "+16.0%",
       now: "+16.0% (Relic) / +20.0% (Ancient)",
       note:
-        "Two screenshot variants of this core share one in-game name and differ only in " +
-        "grade: Relic reads +16.0% at 17P, Ancient reads +20.0%, and their max charge is 15 " +
-        "vs 17. This file's map is keyed by name, so it can only hold one - Relic is stored, " +
-        "matching this file's pre-existing Relic-only rule. A per-grade split needs a " +
-        "different key and is not done here.",
+          "Два скриншота этого ядра делят одно игровое название и различаются только классом: " +
+           "Реликвия даёт +16.0% на 17P, Древнее — +20.0%, а максимальный заряд 15 против 17. " +
+           "Карта в этом файле ключуется по названию, поэтому может хранить только одно " +
+           "значение — сохранена Реликвия, по уже действующему здесь правилу «только Реликвия». " +
+           "Разделение по классам требует другого ключа и здесь не сделано.",
     },
   ];
 

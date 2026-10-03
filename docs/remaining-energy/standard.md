@@ -11,20 +11,14 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="standard" data-family="re"></div>
 
-**Best For:**{: .best-for } Brand-new Remaining Energy players with no <span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span> yet.
-
-**Tradeoff:**{: .tradeoff } Legacy build with some downtime and little to no recovery.
-
-- Last bastion of the classic Remaining Energy gameplay, now powercrept.
-- <span class="skill-mention" data-glossary-id="counter">Counter</span> is used in rotation often, you must hold it when necessary.
-- Simple to learn and execute, with better mobility than modern builds.
+**Best For:**{: .best-for } Новичкам в Остаточной энергии, у которых ещё нет  <span class="skill-mention" data-glossary-id="arkgrid">Система А.Р.К.</span>  пока нет. **Компромисс:**{: .tradeoff } Старый билд с небольшими простоями и почти без восстановления. - Последний бастион классической Остаточной энергии, уже сильно устаревший. - <span class="skill-mention" data-glossary-id="counter">Контратака</span>  регулярно используется в ротации, её нужно держать, когда это необходимо. - Прост в освоении и исполнении, mobility лучше, чем у современных билдов.
 
 </div>
 <div class="pentagon-badge" data-build="standard" data-family="re" markdown>
-<div class="pentagon-badge-title">Build Profile</div>
+<div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Video Guide](https://www.youtube.com/watch?v=pZDYek5l1og&t=467s){ .video-chip } [Gameplay](https://www.youtube.com/watch?v=xmxCjwImyrg){ .video-chip }
+[Видео-гайд](https://www.youtube.com/watch?v=pZDYek5l1og&t=467s){ .video-chip } [Геймплей](https://www.youtube.com/watch?v=xmxCjwImyrg){ .video-chip }
 </div>
 </div>
 </div>
@@ -33,16 +27,16 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Заметка</span>About This Build<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Об этом билде<span class="setup-note-arrow"></span></summary>
 
-Since this is a beginner legacy build, this guide strays slightly from the norm to offer a smoother experience without deep min-maxing. For instance, you won't need mana food or stimulants to enjoy the gameplay.
+Так как это билд для новичков из старой школы, гайд немного отходит от общих правил, чтобы дать более плавный старт без глубокого минимаксима. Например, чтобы получать удовольствие от игры, тебе не понадобятся ни еда на ману, ни стимуляторы.
 
 </details>
 
 </div>
 </div>
 
-*New to Deathblade entirely? [Surge](../surge/essentials.md) is generally more beginner-friendly and outperforms RE Standard.*
+*Совсем новичок в Клинке смерти? [Твёрдая воля](../surge/essentials.md) в целом дружелюбнее для начинающих и превосходит «Стандарт без ядер».*
 
 ## Код билда {#skill-codes}
 
@@ -55,9 +49,9 @@ Since this is a beginner legacy build, this guide strays slightly from the norm 
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="danger" open markdown>
-<summary><span class="setup-note-tag">Внимание</span>Before Importing<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Make sure you've read [Essentials](essentials.md), then apply both "<span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span>" and "Skill" to be safe. For [Gems](#gems), follow the guide.
+Прочитай [Основы](essentials.md), затем в актуализации выбери и «<span class="skill-mention" data-glossary-id="arkpassive">Пассивки А.Р.К.</span>», и «Навык», чтобы не ошибиться. По [Гемам](#gems) следуй гайду.
 
 </details>
 
@@ -86,31 +80,94 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="ark-passives" data-family="re" markdown>
 <script type="application/json">
 [
-    { "id": "evolution", "nodes": [
-      { "id": "crit", "level": 10 },
-      { "id": "specialization", "level": 30 },
-      { "id": "keensense", "level": 2 },
-      { "id": "limitbreakevo", "level": 1 },
-      { "id": "strike", "level": 2 },
-      { "id": "master", "level": 1 },
-      { "id": "pulverize", "level": 1 },
-      { "id": "standingstriker", "level": 2 }
-    ] },
-    { "id": "enlightenment", "nodes": [
-      { "id": "swiftstrike", "level": 1 },
-      { "id": "remainingenergy", "level": 3 },
-      { "id": "firmwill", "level": 3 },
-      { "id": "extremebodymovement", "level": 3 },
-      { "id": "orbcirculation", "level": 2 }
-    ] },
-    { "id": "leap", "nodes": [
-      { "id": "transcendentpower", "level": 3 },
-      { "id": "awakeningamplifier", "level": 1 },
-      { "id": "unleashedpower", "level": 5 },
-      { "id": "instantspell", "level": 3 },
-      { "id": "danceofnightmares", "level": 3 }
-    ] }
-  ]
+  {
+    "id": "evolution",
+    "nodes": [
+      {
+        "id": "crit",
+        "level": 10
+      },
+      {
+        "id": "specialization",
+        "level": 30
+      },
+      {
+        "id": "keensense",
+        "level": 2
+      },
+      {
+        "id": "limitbreakevo",
+        "level": 1
+      },
+      {
+        "id": "strike",
+        "level": 2
+      },
+      {
+        "id": "master",
+        "level": 1
+      },
+      {
+        "id": "pulverize",
+        "level": 1
+      },
+      {
+        "id": "standingstriker",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "enlightenment",
+    "nodes": [
+      {
+        "id": "swiftstrike",
+        "level": 1
+      },
+      {
+        "id": "remainingenergy",
+        "level": 3
+      },
+      {
+        "id": "firmwill",
+        "level": 3
+      },
+      {
+        "id": "extremebodymovement",
+        "level": 3
+      },
+      {
+        "id": "orbcirculation",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "leap",
+    "nodes": [
+      {
+        "id": "transcendentpower",
+        "level": 3
+      },
+      {
+        "id": "awakeningamplifier",
+        "level": 1
+      },
+      {
+        "id": "unleashedpower",
+        "level": 5
+      },
+      {
+        "id": "instantspell",
+        "level": 3
+      },
+      {
+        "id": "danceofnightmares",
+        "level": 3
+      }
+    ]
+  }
+]
 </script>
 </div>
 
@@ -119,25 +176,37 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
+- Use the [Калькулятор Системы А.Р.К.](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span>Ark Grid<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Система А.Р.К.<span class="setup-note-arrow"></span></summary>
 
 <div class="ark-cores" data-family="re" markdown>
 <script type="application/json">
 [
-  { "core": "sun", "label": "Art Master", "points": 0 },
-  { "core": "moon", "label": "Arts Core", "points": 0 },
-  { "core": "star", "label": "Basics", "points": 0 }
+  {
+    "core": "sun",
+    "label": "Art Master",
+    "points": 0
+  },
+  {
+    "core": "moon",
+    "label": "Arts Core",
+    "points": 0
+  },
+  {
+    "core": "star",
+    "label": "Basics",
+    "points": 0
+  }
 ]
 </script>
 </div>
 
-- Standard is playable without Ark Grid by design, but you can use the 111 core setup if you already have it.
-- Save your Ark Grid cores for when you're ready to transition to a modern Deathblade build.
+- Standard is playable without Система А.Р.К. by design, but you can use the 111 core setup if you already have it.
+- Save your Система А.Р.К. cores for when you're ready to transition to a modern Deathblade build.
 
 </details>
 
@@ -173,17 +242,120 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="skill-setup" data-family="re" markdown>
 <script type="application/json">
 [
-  {"id": "spincutter", "level": 4, "tripods": [3], "rune": {"tier": "legendary", "name": "Galewind"}},
-  {"id": "soulabsorber", "level": 14, "tripods": [3, 1, 2], "rune": {"tier": "legendary", "name": "Galewind"}},
-  {"id": "deathsentence", "level": 14, "tripods": [2, 2, 1], "rune": {"tier": "legendary", "name": "Focus"}},
-  {"id": "twinshadows", "level": 14, "tripods": [2, 1, 2], "rune": {"tier": "epic", "name": "Wealth"}},
-  {"id": "earthcleaver", "level": 14, "tripods": [3, 3, 1], "rune": {"tier": "legendary", "name": "Vision"}},
-  {"id": "turningslash", "level": 13, "tripods": [1, 3, 1], "rune": {"tier": "epic", "name": "Focus"}},
-  {"id": "maelstrom", "level": 10, "tripods": [2, 1, 2], "rune": {"tier": "legendary", "name": "Focus"}},
-  {"id": "voidstrike", "level": 14, "tripods": [3, 1, 2], "rune": {"tier": "legendary", "name": "Wealth"}},
-  {"id": "surge", "subtitle": "Identity"},
-  {"id": "deathlyslash", "subtitle": "Technique"},
-  {"id": "bladeassault", "subtitle": "Awakening"}
+  {
+    "id": "spincutter",
+    "level": 4,
+    "tripods": [
+      3
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "soulabsorber",
+    "level": 14,
+    "tripods": [
+      3,
+      1,
+      2
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "deathsentence",
+    "level": 14,
+    "tripods": [
+      2,
+      2,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Focus"
+    }
+  },
+  {
+    "id": "twinshadows",
+    "level": 14,
+    "tripods": [
+      2,
+      1,
+      2
+    ],
+    "rune": {
+      "tier": "epic",
+      "name": "Wealth"
+    }
+  },
+  {
+    "id": "earthcleaver",
+    "level": 14,
+    "tripods": [
+      3,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Vision"
+    }
+  },
+  {
+    "id": "turningslash",
+    "level": 13,
+    "tripods": [
+      1,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "epic",
+      "name": "Focus"
+    }
+  },
+  {
+    "id": "maelstrom",
+    "level": 10,
+    "tripods": [
+      2,
+      1,
+      2
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Focus"
+    }
+  },
+  {
+    "id": "voidstrike",
+    "level": 14,
+    "tripods": [
+      3,
+      1,
+      2
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Wealth"
+    }
+  },
+  {
+    "id": "surge",
+    "subtitle": "Классовое умение"
+  },
+  {
+    "id": "deathlyslash",
+    "subtitle": "Техника"
+  },
+  {
+    "id": "bladeassault",
+    "subtitle": "Пробуждение"
+  }
 ]
 </script>
 </div>
@@ -191,9 +363,9 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Советы</span>Runes<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Руны<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> on Soul Absorber for extra orb generation until you're more familiar with the class.
+- Use <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> на «Длань Авесты» ради дополнительной генерации сфер, пока не освоишься с классом.
 
 </details>
 
@@ -213,13 +385,27 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="gem-priority" markdown>
 <script type="application/json">
 [
-  { "col": "dmg", "items": [
-    "surge", "soulabsorber", "deathsentence", "voidstrike",
-    "earthcleaver", "twinshadows", "turningslash"
-  ] },
-  { "col": "cd", "items": [
-    "soulabsorber", "deathsentence", "maelstrom", "voidstrike"
-  ] }
+  {
+    "col": "dmg",
+    "items": [
+      "surge",
+      "soulabsorber",
+      "deathsentence",
+      "voidstrike",
+      "earthcleaver",
+      "twinshadows",
+      "turningslash"
+    ]
+  },
+  {
+    "col": "cd",
+    "items": [
+      "soulabsorber",
+      "deathsentence",
+      "maelstrom",
+      "voidstrike"
+    ]
+  }
 ]
 </script>
 </div>
@@ -234,41 +420,52 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
-Cast Spincutter to approach the boss, use the opener and continue to loop the main cycle afterwards.
-
-The opener stacks <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> and applies <span class="skill-mention" data-glossary-id="synergy">synergies</span> efficiently as you build up to the encounter's first Surge.
-
-*Opener from zero orbs:*
-{ .lead }
+Примени Разрубающие лезвия, чтобы подойти к боссу, используй открытие и дальше крути основной цикл. Открытие копит <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и применяется <span class="skill-mention" data-glossary-id="synergy">synergies</span> стаки эффективно, пока ты копишь их до первой Концентрации воли в бою. *Открытие с нуля сфер:* { .lead }
 
 <div class="rotation-line" markdown>
 <script type="application/json">
-["maelstrom", "twinshadows", "turningslash", "soulabsorber", "voidstrike", "deathlyslash", "surge"]
+[
+  "maelstrom",
+  "twinshadows",
+  "turningslash",
+  "soulabsorber",
+  "voidstrike",
+  "deathlyslash",
+  "surge"
+]
 </script>
 </div>
 
-*Main repeating cycle:*
-{ .lead }
+*Основной повторяющийся цикл:* { .lead }
 
 <div class="rotation-line" markdown>
 <script type="application/json">
-["twinshadows", "deathsentence", "maelstrom",
- { "id": "deathlyslash", "situational": "every other rotation" },
- "turningslash", "earthcleaver", "soulabsorber", "voidstrike", "surge"]
+[
+  "twinshadows",
+  "deathsentence",
+  "maelstrom",
+  {
+    "id": "deathlyslash",
+    "situational": "через ротацию"
+  },
+  "turningslash",
+  "earthcleaver",
+  "soulabsorber",
+  "voidstrike",
+  "surge"
+]
 </script>
 </div>
 
-1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> is only available every other rotation. Just keep going if it's on cooldown.
-2. Use Spincutter during downtime to reposition, or hold it to dodge upcoming attacks.
-3. Use <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> for damage, or hold it for Hyper Awakening or a clutch recovery.
-4. The rotation is bottlenecked entirely by Soul Absorber's cooldown. It is what it is.
-    - You can skip Earth Cleaver if Soul Absorber's off cooldown already.
+1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> доступна только через ротацию. Если она на перезарядке — просто продолжай. 2. Применяй Разрубающие лезвия в простое для смены позиции или держи, чтобы уклониться от атак. 3. Используй <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> for damage, or hold it for Hyper Пробуждение or a clutch восстановление.
+4. Ротация целиком упирается в перезарядку «Длани Авесты». Что есть, то есть.
+    - «Двуручный хват» можно пропустить, если «Длань Авесты» уже не на перезарядке.
 
 *Recovery:*
 { .lead }
 
-1. Use spare Twin Shadows or Maelstrom stacks to recover if it'll help you reach 3 orbs.
-    - If not, just AFK or Surge with 2 orbs and AFK. Welcome to Standard Remaining Energy.
+1. Используй свободные стаки Двойной плети или Плаща клинков для восстановления, если это поможет добрать 3 сферы.
+    - Если нет, просто жми в AFK или Концентрацию воли с 2 сферами и жди. Добро пожаловать в «Стандарт без ядер».
 
 ## Распределение Урона {#dps-spread}
 
@@ -277,7 +474,7 @@ The opener stacks <span class="skill-mention" data-skill-id="adrenaline">Адр�
      or a balance pass. Full schema is in javascripts/dps-chart.js's
      "EASY EDIT GUIDE" comment. -->
 
-<p class="dps-showcase-caption">Full Lv 10 gems</p>
+<p class="dps-showcase-caption">Самоцветы полного Ур. 10</p>
 
 <div class="dps-showcase" markdown>
 <div class="dps-showcase-frame" markdown>

@@ -1,6 +1,6 @@
 # 333 Охота за головами <span class="tiger-emoji" title="rawr">🐯</span>
 
-<p class="page-banner page-banner-warning">This build is not viable and no one plays it, so information here WILL be wrong. Do not disrespect the tiger, however.</p>
+<p class="page-banner page-banner-warning">Этот билд нерабочий и его никто не играет, так что информация здесь ТОЧНО будет неверной. Но тигра уважать всё же надо.</p>
 
 <div class="build-card-row" markdown>
 <div class="build-card" data-updated="2026-09-16" markdown>
@@ -13,20 +13,16 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="333-blitz" data-family="surge"></div>
 
-**Best For:**{: .best-for } Please do not play this.
-
-**Tradeoff:**{: .tradeoff } The juice is not worth the squeeze.
-
-- Uses Blitz Rush as two fast casts (<span class="skill-mention" data-glossary-id="btbcombo">BTB</span> combo) via a skill reset.
-- High gem efficiency: Surge and Blitz Rush are most of your DPS.
-- Must balance Surge, Blitz Rush, and Deathly Slash <span class="skill-mention" data-glossary-id="backattack">back attack</span> rate with Surge <span class="skill-mention" data-glossary-id="cpm">CPM</span>.
+**Best For:**{: .best-for } Пожалуйста, не играй так. **Компромисс:**{: .tradeoff } Удовольствия не стоит усилий. - Использует «Охоту за головами» как два быстрых применения (<span class="skill-mention" data-glossary-id="btbcombo">BTB</span> комбо) через сброс скила.
+- Высокий gem efficiency: Surge and Blitz Rush are most of your DPS.
+- Нужно балансировать Концентрацию воли, Охоту за головами и Убийственную сталь <span class="skill-mention" data-glossary-id="backattack">атака в спину</span> с Концентрацией воли <span class="skill-mention" data-glossary-id="cpm">CPM</span>.
 
 </div>
 <div class="pentagon-badge" data-build="333-blitz" data-family="surge" markdown>
-<div class="pentagon-badge-title">Build Profile</div>
+<div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Video Guide](https://www.youtube.com/watch?v=pzFa5zOuNik){ .video-chip } [Gameplay](../assets/tiger.mp4){ .video-chip }
+[Видео-гайд](https://www.youtube.com/watch?v=pzFa5zOuNik){ .video-chip } [Геймплей](../assets/tiger.mp4){ .video-chip }
 </div>
 </div>
 </div>
@@ -35,9 +31,9 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span>But why male models? 🐯<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>А почему модели-мужчины? 🐯<span class="setup-note-arrow"></span></summary>
 
-![333 Blitz meme](../assets/blitz-meme.png){ .setup-note-image .zoomable-image loading=lazy }
+![Мем про 333 Блиц](../assets/blitz-meme.png){ .setup-note-image .zoomable-image loading=lazy }
 
 </details>
 
@@ -55,9 +51,9 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="danger" open markdown>
-<summary><span class="setup-note-tag">Внимание</span>Before Importing<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Make sure you've read [Essentials](essentials.md), then apply both "<span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span>" and "Skill" to be safe. For [Gems](#gems), follow the guide.
+Прочитай [Основы](essentials.md), затем в актуализации выбери и «<span class="skill-mention" data-glossary-id="arkpassive">Пассивки А.Р.К.</span>», и «Навык», чтобы не ошибиться. По [Гемам](#gems) следуй гайду.
 
 </details>
 
@@ -86,40 +82,115 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="ark-passives" data-family="surge" markdown>
 <script type="application/json">
 [
-    { "id": "evolution", "nodes": [
-      { "id": "crit", "level": 10 },
-      { "id": "specialization", "level": 30 },
-      { "id": "keensense", "level": 2 },
-      { "id": "limitbreakevo", "level": 1 },
-      { "id": "strike", "level": 2 },
-      { "id": "master", "level": 1 },
-      { "id": "pulverize", "level": 1 },
-      { "id": "standingstriker", "level": 2 }
-    ] },
-    { "id": "enlightenment", "nodes": [
-      { "id": "surgeenhancement", "level": 1 },
-      { "id": "orbcompression", "level": 3 },
-      { "id": "orbcontrol", "level": 2 },
-      { "id": "limitbreakenl", "level": 3 },
-      { "id": "chaoticpower", "level": 3 }
-    ] },
-    { "id": "leap", "nodes": [
-      { "id": "awakeningamplifier", "level": 1 },
-      { "id": "unleashedpower", "level": 5 },
-      { "id": "releasepotential", "level": 3 },
-      { "id": "instantspell", "level": 3 },
-      { "id": "danceofscreams", "level": 3 }
-    ] }
-  ]
+  {
+    "id": "evolution",
+    "nodes": [
+      {
+        "id": "crit",
+        "level": 10
+      },
+      {
+        "id": "specialization",
+        "level": 30
+      },
+      {
+        "id": "keensense",
+        "level": 2
+      },
+      {
+        "id": "limitbreakevo",
+        "level": 1
+      },
+      {
+        "id": "strike",
+        "level": 2
+      },
+      {
+        "id": "master",
+        "level": 1
+      },
+      {
+        "id": "pulverize",
+        "level": 1
+      },
+      {
+        "id": "standingstriker",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "enlightenment",
+    "nodes": [
+      {
+        "id": "surgeenhancement",
+        "level": 1
+      },
+      {
+        "id": "orbcompression",
+        "level": 3
+      },
+      {
+        "id": "orbcontrol",
+        "level": 2
+      },
+      {
+        "id": "limitbreakenl",
+        "level": 3
+      },
+      {
+        "id": "chaoticpower",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": "leap",
+    "nodes": [
+      {
+        "id": "awakeningamplifier",
+        "level": 1
+      },
+      {
+        "id": "unleashedpower",
+        "level": 5
+      },
+      {
+        "id": "releasepotential",
+        "level": 3
+      },
+      {
+        "id": "instantspell",
+        "level": 3
+      },
+      {
+        "id": "danceofscreams",
+        "level": 3
+      }
+    ]
+  }
+]
 </script>
 </div>
 
 <div class="ark-cores" data-family="surge" markdown>
 <script type="application/json">
 [
-  { "core": "sun", "label": "Deathblade Rush", "points": 2 },
-  { "core": "moon", "label": "Death Blitz", "points": 3 },
-  { "core": "star", "label": "Frostfire Blade", "points": 0 }
+  {
+    "core": "sun",
+    "label": "Deathblade Rush",
+    "points": 2
+  },
+  {
+    "core": "moon",
+    "label": "Death Blitz",
+    "points": 3
+  },
+  {
+    "core": "star",
+    "label": "Frostfire Blade",
+    "points": 0
+  }
 ]
 </script>
 </div>
@@ -129,14 +200,14 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
+- Use the [Калькулятор Системы А.Р.К.](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span><span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Система А.Р.К.</span><span class="setup-note-arrow"></span></summary>
 
-- Damage will be lacking if you settle for the minimum core requirements.
+- Урон будет низким, если остановиться на минимальных требованиях по ядрам.
 
 </details>
 
@@ -172,18 +243,126 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="skill-setup" data-family="surge" markdown>
 <script type="application/json">
 [
-  {"id": "surpriseattack", "level": 10, "tripods": [1, 1, 1], "rune": {"tier": "legendary", "name": "Poison"}},
-  {"id": "windcut", "level": 10, "tripods": [3, 3, 1], "rune": {"tier": "legendary", "name": "Galewind"}},
-  {"id": "spincutter", "level": 10, "tripods": [3, 3, 1], "rune": {"tier": "epic", "name": "Galewind"}},
-  {"id": "bladedance", "level": 14, "tripods": [1, 1, 2], "rune": {"tier": "epic", "name": "Galewind"}},
-  {"id": "earthcleaver", "level": 14, "tripods": [3, 3, 1], "rune": {"tier": "legendary", "name": "Vision"}},
-  {"id": "turningslash", "level": 14, "tripods": [1, 3, 1], "rune": {"tier": "legendary", "name": "Rage"}},
-  {"id": "maelstrom", "level": 10, "tripods": [3, 1, 2], "rune": {"tier": "legendary", "name": "Focus"}},
-  {"id": "blitzrush", "level": 14, "tripods": [2, 1, 1], "rune": {"tier": "legendary", "name": "Galewind"}},
-  {"id": "deathtrance", "subtitle": "Identity"},
-  {"id": "deathlyslash", "subtitle": "Technique"},
-  {"id": "bladeassault", "subtitle": "Awakening"},
-  {"id": "surge", "subtitle": "Identity"}
+  {
+    "id": "surpriseattack",
+    "level": 10,
+    "tripods": [
+      1,
+      1,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Poison"
+    }
+  },
+  {
+    "id": "windcut",
+    "level": 10,
+    "tripods": [
+      3,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "spincutter",
+    "level": 10,
+    "tripods": [
+      3,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "epic",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "bladedance",
+    "level": 14,
+    "tripods": [
+      1,
+      1,
+      2
+    ],
+    "rune": {
+      "tier": "epic",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "earthcleaver",
+    "level": 14,
+    "tripods": [
+      3,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Vision"
+    }
+  },
+  {
+    "id": "turningslash",
+    "level": 14,
+    "tripods": [
+      1,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Rage"
+    }
+  },
+  {
+    "id": "maelstrom",
+    "level": 10,
+    "tripods": [
+      3,
+      1,
+      2
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Focus"
+    }
+  },
+  {
+    "id": "blitzrush",
+    "level": 14,
+    "tripods": [
+      2,
+      1,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "deathtrance",
+    "subtitle": "Классовое умение"
+  },
+  {
+    "id": "deathlyslash",
+    "subtitle": "Техника"
+  },
+  {
+    "id": "bladeassault",
+    "subtitle": "Пробуждение"
+  },
+  {
+    "id": "surge",
+    "subtitle": "Классовое умение"
+  }
 ]
 </script>
 </div>
@@ -191,28 +370,23 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Советы</span>Runes<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Руны<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Purify">Солум</span> on Spincutter if needed.
-- Use <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Легендарный Джар</span> on Maelstrom if you use mana food instead of wine.
+- Use <span class="skill-mention" data-rune-name="Purify">Солум</span>  на Разрубающих лезвиях, если нужно. - Use <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Легендарный Джар</span> на «Плащ клинков», если вместо вина используешь еду на ману.
 
 </details>
 
 <details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Заметка</span>Options & Tripods<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Опции и триподы<span class="setup-note-arrow"></span></summary>
 
-- You can use the Weak Point Detection <span class="skill-mention" data-glossary-id="tripod">tripod</span> on Blade Dance.
-    - Requires Lv 10 CD gem and/or raid downtime for it not to become a bottleneck.
-    - You must swap Wind Cut CD gem to Blade Dance CD, it's a marginal DPS increase.
-- Earth Explosion tripod on Earth Cleaver is up to personal preference.
-    - Increased cast speed, but greatly lowers its mobility and damage.
+- Можно использовать «Обнаружение слабых мест» <span class="skill-mention" data-glossary-id="tripod">tripod</span>  на «Блиц». - Требует самоцвет Ур. 10 на перезарядку и/или простой в рейде, чтобы не стать узким местом. - Нужно заменить самоцвет перезарядки «Неумолимого притяжения» на самоцвет перезарядки «Блица», прирост DPS минимальный. - Трипод «Взрыв земли» на «Двуручном хвате» — на твоё усмотрение. - Больше скорости применения, но сильно меньше мобильности и урона.
 
 </details>
 
 <details class="setup-note" data-kind="example" markdown>
 <summary><span class="setup-note-tag">Альтернатива</span>🐆 vs 🐯<span class="setup-note-arrow"></span></summary>
 
-![222 vs 333](../assets/leopardvstiger.png){ .setup-note-image .zoomable-image loading=lazy }
+![222 против 333](../assets/leopardvstiger.png){ .setup-note-image .zoomable-image loading=lazy }
 
 </details>
 
@@ -232,15 +406,39 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="gem-priority" markdown>
 <script type="application/json">
 [
-  { "col": "dmg", "items": [
-    "surge", "blitzrush", "earthcleaver", "bladedance", "turningslash", { "id": "windcut", "alts": [
-      { "id": "spincutter", "note": "Use Spincutter CD gem instead if you prefer, Wind Cut has a very low damage share." },
-      { "id": "bladedance", "note": "Use Blade Dance CD gem instead if you set its tripod to Weak Point Detection." }
-    ] }
-  ] },
-  { "col": "cd", "items": [
-    "blitzrush", "earthcleaver", "windcut", "maelstrom", "surpriseattack"
-  ] }
+  {
+    "col": "dmg",
+    "items": [
+      "surge",
+      "blitzrush",
+      "earthcleaver",
+      "bladedance",
+      "turningslash",
+      {
+        "id": "windcut",
+        "alts": [
+          {
+            "id": "spincutter",
+            "note": "Если предпочитаешь, возьми самоцвет перезарядки «Разрубающих лезвий»: у «Неумолимого притяжения» очень малая доля урона."
+          },
+          {
+            "id": "bladedance",
+            "note": "Возьми самоцвет перезарядки «Блица», если выбрал его триподом «Обнаружение слабых мест»."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "col": "cd",
+    "items": [
+      "blitzrush",
+      "earthcleaver",
+      "windcut",
+      "maelstrom",
+      "surpriseattack"
+    ]
+  }
 ]
 </script>
 </div>
@@ -255,45 +453,54 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
-There's an optimal skill order, but you have flexibility when facing downtime or weaving in mobility skills.
+Порядок применения скилов оптимален, но у тебя есть свобода при простое или вплетении скилов мобильности.
 
-Spincutter is your main mobility skill and backup stack builder. Use it to guarantee back attacks on your major skills.
+Spincutter is your main mobility skill and backup stack builder. Use it to guarantee атака в спинуs on your major skills.
 
-Apply damage <span class="skill-mention" data-glossary-id="synergy">synergy</span> if needed, then repeat the rotation cycle as best you can.
-
-*From 3 orbs:*
-{ .lead }
+Apply damage <span class="skill-mention" data-glossary-id="synergy">synergy</span> если нужно, затем повторяй цикл ротации как получится. *С 3 сфер:* { .lead }
 
 <div class="rotation-line" markdown>
 <script type="application/json">
-["windcut", "deathtrance", "maelstrom", "surpriseattack", "windcut", "earthcleaver", "bladedance", "deathlyslash", "blitzrush", "turningslash", "blitzrush",
-{ "id": "surpriseattack", "situational": "stack recovery" },
-"surge"]
+[
+  "windcut",
+  "deathtrance",
+  "maelstrom",
+  "surpriseattack",
+  "windcut",
+  "earthcleaver",
+  "bladedance",
+  "deathlyslash",
+  "blitzrush",
+  "turningslash",
+  "blitzrush",
+  {
+    "id": "surpriseattack",
+    "situational": "восстановление стаков"
+  },
+  "surge"
+]
 </script>
 </div>
 
-1. The final Surprise Attack can often be skipped with surplus stacks and expected raid downtime.
-2. Consider delaying Maelstrom by 1 to 3 skills when uptime drops to ensure it covers Surge (<span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span>).
-3. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
-      - It's still useful for <span class="skill-mention" data-skill-id="atropine">Ардопин-Х</span> openers, or it can be saved to greed with <span class="skill-mention" data-glossary-id="pushimmunity">push immunity</span>/Hyper Awakening.
+1. Финальный «Внезапный выпад» часто можно пропустить, если есть лишние стаки и ожидаемый простой в рейде. 2. Иногда стоит отложить Плащ клинков на 1–3 скила, когда активность падает, чтобы он покрыл Концентрацию воли (<span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span>).
+3. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> масштабируется заметно хуже на Твёрдой воле, чем в Остаточной энергии, и слишком долго применяется. - Он всё ещё полезен для <span class="skill-mention" data-skill-id="atropine">Ардопин-Х</span> на открытии, либо её можно оставить под жадный добив с <span class="skill-mention" data-glossary-id="pushimmunity">неуязвимость к отбрасыванию</span>/Hyper Пробуждение.
 
 <div class="setup-panel" data-accent="lavender" markdown>
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="example" markdown>
 <summary><span class="setup-note-tag">Альтернатива</span>🐯 Режим (по желанию)<span class="setup-note-arrow"></span></summary>
-![tiger mode](../assets/tigermode.png){ .setup-note-image .zoomable-image loading=lazy }
+![Режим тигра](../assets/tigermode.png){ .setup-note-image .zoomable-image loading=lazy }
 </details>
 
 </div>
 </div>
 
-*From zero orbs:*
+*С нуля сфер:*
 { .lead }
 
-1. Use a <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span> (recommended) or proceed to #2.
-      - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> awakening.
-2. Generate one orb, build at least 40 stacks, then Surge to refill all 3 orbs.
+1. Возьми  <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span> (рекомендуется) или переходи к #2. - Стая: используй трипод Плаща клинков «Контроль сфер» и <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> awakening.
+2. Сгенерируй одну сферу, набери минимум 40 стаков, затем Концентрация воли вернёт все 3 сферы.
 
 ## Распределение Урона {#dps-spread}
 
@@ -302,7 +509,7 @@ Apply damage <span class="skill-mention" data-glossary-id="synergy">synergy</spa
      or a balance pass. Full schema is in javascripts/dps-chart.js's
      "EASY EDIT GUIDE" comment. -->
 
-<p class="dps-showcase-caption">Ancient cores, full Lv 10 gems</p>
+<p class="dps-showcase-caption">Древние ядра, самоцветы полного Ур. 10</p>
 
 <div class="dps-showcase" markdown>
 <div class="dps-showcase-frame" markdown>

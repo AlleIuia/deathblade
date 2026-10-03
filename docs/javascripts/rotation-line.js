@@ -264,7 +264,7 @@
   function buildArrow(swap) {
     var span = el("span", swap ? "arrow arrow-swap" : "arrow");
     span.textContent = " \u2192 ";
-    if (swap) span.title = "Order interchangeable";
+    if (swap) span.title = "Порядок взаимозаменяем";
     return span;
   }
 
@@ -314,7 +314,7 @@
       var wraps = !!next && next.offsetTop > kid.offsetTop + TOLERANCE;
       kid.classList.toggle("arrow-wrap", wraps);
       if (wraps) {
-        kid.title = "Continues below";
+        kid.title = "Продолжение ниже";
         // Idempotent: only add the icon if it isn't already there (this
         // runs on every resize, not just once).
         if (!kid.querySelector(".arrow-wrap-icon")) {
@@ -323,7 +323,7 @@
           kid.appendChild(icon);
         }
       } else {
-        if (kid.title === "Continues below") kid.removeAttribute("title");
+        if (kid.title === "Продолжение ниже") kid.removeAttribute("title");
         var existingIcon = kid.querySelector(".arrow-wrap-icon");
         if (existingIcon) existingIcon.remove();
       }

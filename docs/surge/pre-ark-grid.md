@@ -1,14 +1,12 @@
 # Билд без ядер
 
-*Варианты игры на Твёрдой воли, пока ещё нет собранной <span class="skill-mention" data-glossary-id="arkgrid">Системы А.Р.К.</span>.*
-
 <div class="grid cards prearc-cards" markdown>
 
 -   ☘ **Твёрдая воля без ядер**
 
     ---
 
-    По сути то же самое, что [111 Классика](111-classic.md), с небольшими правками в скилах и самоцветах.
+    Билд без ядер очень похож на [111 Классика](111-classic.md) — схема игры та же. Отличаются только скилы и самоцветы.
 
     [Перейти к 111 Классика →](111-classic.md)
 
@@ -16,4 +14,18 @@
 
 ---
 
-Код для варианта без ядер — в разделе «Код билда» на странице [111 Классика](111-classic.md). Если ещё не смотрел, загляни в [Основы](essentials.md).
+## Код билда {#skill-codes}
+
+<!-- Paste the exported skill-code string (from the in-game loadout share
+     feature) into the fenced code block below. Each `=== "Tab Name"` block is
+     a separate tab holding its own code + optional note below it - copy that
+     pattern to add another import option (e.g. an easier variant). -->
+
+=== "Без ядер"
+
+    ```
+    6E22435EC38A3B36B27F6EE93801A0ADC45A582A1D8C1F6C3B8D7052A57696552DA526A2AAE1EB722ED1F929BE107E3749DAB4E7C0737BCC237D520B3D040A34
+    ```
+
+    - Заменяет урон Неумолимого притяжения на перезарядку Двуручного хвата — так билд компенсирует отсутствие собранной Системы А.Р.К.
+    - Если ты новичок, меняй «Неутомимый натиск» на «Голем», пока не освоишься с классом.

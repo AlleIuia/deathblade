@@ -11,22 +11,16 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="222-speedy" data-family="surge"></div>
 
-**Best For:**{: .best-for } Players who want something easy to pick up but difficult to master.
-
-**Tradeoff:**{: .tradeoff } Increased <span class="skill-mention" data-glossary-id="backattack">back attack</span> stress and uptime requirements.
-
-- Simple uptime-focused gameplay with no gimmicks.
-- Runs Spincutter and Earth Cleaver for mobility and utility.
-- Lots of <span class="skill-mention" data-glossary-id="pushimmunity">push immunity</span>, excess stacks and skill expression.
-- Very high gem efficiency: Surge and Deathly Slash are nearly all of your DPS.
-- Must constantly balance Surge and Deathly Slash back attack rate with Surge <span class="skill-mention" data-glossary-id="cpm">CPM</span>.
+**Best For:**{: .best-for } Игрокам, которым нужно что-то простое в освоении, но сложное в мастерстве. **Компромисс:**{: .tradeoff } Повышенные <span class="skill-mention" data-glossary-id="backattack">атака в спину</span> требования к напряжению и активности. - Простая игра, заточенная на активность, без трюков. - Использует Разрубающие лезвия и Двуручный хват ради мобильности и полезности. - Много <span class="skill-mention" data-glossary-id="pushimmunity">неуязвимость к отбрасыванию</span>, лишние стаки и свободу в скилах.
+- Очень высокая эффективность самоцветов: Концентрация воли и Убийственная сталь — почти весь твой DPS.
+- Must constantly balance Surge and Deathly Slash атака в спину с Концентрацией воли <span class="skill-mention" data-glossary-id="cpm">CPM</span>.
 
 </div>
 <div class="pentagon-badge" data-build="222-speedy" data-family="surge" markdown>
-<div class="pentagon-badge-title">Build Profile</div>
+<div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Video Guide](https://www.youtube.com/watch?v=V1UQhE37Yjs){ .video-chip } [Gameplay](https://www.youtube.com/watch?v=JQISLdCtXjQ){ .video-chip }
+[Видео-гайд](https://www.youtube.com/watch?v=V1UQhE37Yjs){ .video-chip } [Геймплей](https://www.youtube.com/watch?v=JQISLdCtXjQ){ .video-chip }
 </div>
 </div>
 </div>
@@ -42,9 +36,9 @@
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="danger" open markdown>
-<summary><span class="setup-note-tag">Внимание</span>Before Importing<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Make sure you've read [Essentials](essentials.md), then apply both "<span class="skill-mention" data-glossary-id="arkpassive">Ark Passive</span>" and "Skill" to be safe. For [Gems](#gems), follow the guide.
+Прочитай [Основы](essentials.md), затем в актуализации выбери и «<span class="skill-mention" data-glossary-id="arkpassive">Пассивки А.Р.К.</span>», и «Навык», чтобы не ошибиться. По [Гемам](#gems) следуй гайду.
 
 </details>
 
@@ -73,40 +67,115 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="ark-passives" data-family="surge" markdown>
 <script type="application/json">
 [
-    { "id": "evolution", "nodes": [
-      { "id": "crit", "level": 10 },
-      { "id": "specialization", "level": 30 },
-      { "id": "keensense", "level": 2 },
-      { "id": "limitbreakevo", "level": 1 },
-      { "id": "strike", "level": 2 },
-      { "id": "master", "level": 1 },
-      { "id": "pulverize", "level": 1 },
-      { "id": "standingstriker", "level": 2 }
-    ] },
-    { "id": "enlightenment", "nodes": [
-      { "id": "surgeenhancement", "level": 1 },
-      { "id": "orbcompression", "level": 3 },
-      { "id": "orbcontrol", "level": 2 },
-      { "id": "limitbreakenl", "level": 3 },
-      { "id": "chaoticpower", "level": 3 }
-    ] },
-    { "id": "leap", "nodes": [
-      { "id": "awakeningamplifier", "level": 1 },
-      { "id": "unleashedpower", "level": 5 },
-      { "id": "releasepotential", "level": 3 },
-      { "id": "instantspell", "level": 3 },
-      { "id": "danceofscreams", "level": 3 }
-    ] }
-  ]
+  {
+    "id": "evolution",
+    "nodes": [
+      {
+        "id": "crit",
+        "level": 10
+      },
+      {
+        "id": "specialization",
+        "level": 30
+      },
+      {
+        "id": "keensense",
+        "level": 2
+      },
+      {
+        "id": "limitbreakevo",
+        "level": 1
+      },
+      {
+        "id": "strike",
+        "level": 2
+      },
+      {
+        "id": "master",
+        "level": 1
+      },
+      {
+        "id": "pulverize",
+        "level": 1
+      },
+      {
+        "id": "standingstriker",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "id": "enlightenment",
+    "nodes": [
+      {
+        "id": "surgeenhancement",
+        "level": 1
+      },
+      {
+        "id": "orbcompression",
+        "level": 3
+      },
+      {
+        "id": "orbcontrol",
+        "level": 2
+      },
+      {
+        "id": "limitbreakenl",
+        "level": 3
+      },
+      {
+        "id": "chaoticpower",
+        "level": 3
+      }
+    ]
+  },
+  {
+    "id": "leap",
+    "nodes": [
+      {
+        "id": "awakeningamplifier",
+        "level": 1
+      },
+      {
+        "id": "unleashedpower",
+        "level": 5
+      },
+      {
+        "id": "releasepotential",
+        "level": 3
+      },
+      {
+        "id": "instantspell",
+        "level": 3
+      },
+      {
+        "id": "danceofscreams",
+        "level": 3
+      }
+    ]
+  }
+]
 </script>
 </div>
 
 <div class="ark-cores" data-family="surge" markdown>
 <script type="application/json">
 [
-  { "core": "sun", "label": "Slaughter Spectacle", "points": 0 },
-  { "core": "moon", "label": "Twin Swords Dance", "points": 0 },
-  { "core": "star", "label": "Swift Resolution", "points": 1 }
+  {
+    "core": "sun",
+    "label": "Slaughter Spectacle",
+    "points": 0
+  },
+  {
+    "core": "moon",
+    "label": "Twin Swords Dance",
+    "points": 0
+  },
+  {
+    "core": "star",
+    "label": "Swift Resolution",
+    "points": 1
+  }
 ]
 </script>
 </div>
@@ -116,16 +185,15 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Ark Passive Calculator](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
-- <span class="skill-mention" data-ap-id="chaosinfusion" data-level="1">Фатальный удар 1</span> + <span class="skill-mention" data-ap-id="orbcontrol" data-level="1">Координация сфер 1</span> can be used if your Surge DPS share is consistently over 50%.
-- This build is capable of using <span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span> + <span class="skill-mention" data-skill-id="massincrease">Карающая длань</span> with the least drawbacks.
+- Use the [Калькулятор Системы А.Р.К.](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
+- <span class="skill-mention" data-ap-id="chaosinfusion" data-level="1">Фатальный удар 1</span> + <span class="skill-mention" data-ap-id="orbcontrol" data-level="1">Координация сфер 1</span> можно использовать, если доля Концентрации воли в DPS стабильно выше 50%. - Этот билд умеет применять <span class="skill-mention" data-skill-id="raidcaptain">Неутомимый натиск</span> + <span class="skill-mention" data-skill-id="massincrease">Карающая длань</span> с наименьшими побочными эффектами.
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Ark Grid</span><span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Система А.Р.К.</span><span class="setup-note-arrow"></span></summary>
 
-- Damage and QoL will be seriously lacking if you settle for the minimum core requirements.
+- Урон и удобство будут сильно хуже, если остановиться на минимальных требованиях по ядрам.
 
 </details>
 
@@ -161,18 +229,126 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="skill-setup" data-family="surge" markdown>
 <script type="application/json">
 [
-  {"id": "surpriseattack", "level": 13, "tripods": [1, 1, 1], "rune": {"tier": "legendary", "name": "Rage"}},
-  {"id": "windcut", "level": 14, "tripods": [3, 3, 1], "rune": {"tier": "legendary", "name": "Galewind"}},
-  {"id": "upperslash", "level": 11, "tripods": [2, 3, 2], "rune": {"tier": "legendary", "name": "Galewind"}},
-  {"id": "bladedance", "level": 14, "tripods": [1, 1, 2], "rune": {"tier": "legendary", "name": "Galewind"}},
-  {"id": "spincutter", "level": 10, "tripods": [3, 3, 1], "rune": {"tier": "epic", "name": "Galewind"}},
-  {"id": "earthcleaver", "level": 10, "tripods": [3, 3, 2], "rune": {"tier": "legendary", "name": "Vision"}},
-  {"id": "turningslash", "level": 14, "tripods": [1, 3, 1], "rune": {"tier": "legendary", "name": "Poison"}},
-  {"id": "maelstrom", "level": 10, "tripods": [3, 1, 2], "rune": {"tier": "legendary", "name": "Bleed"}},
-  {"id": "deathtrance", "subtitle": "Identity"},
-  {"id": "deathlyslash", "subtitle": "Technique"},
-  {"id": "bladeassault", "subtitle": "Awakening"},
-  {"id": "surge", "subtitle": "Identity"}
+  {
+    "id": "surpriseattack",
+    "level": 13,
+    "tripods": [
+      1,
+      1,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Rage"
+    }
+  },
+  {
+    "id": "windcut",
+    "level": 14,
+    "tripods": [
+      3,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "upperslash",
+    "level": 11,
+    "tripods": [
+      2,
+      3,
+      2
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "bladedance",
+    "level": 14,
+    "tripods": [
+      1,
+      1,
+      2
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "spincutter",
+    "level": 10,
+    "tripods": [
+      3,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "epic",
+      "name": "Galewind"
+    }
+  },
+  {
+    "id": "earthcleaver",
+    "level": 10,
+    "tripods": [
+      3,
+      3,
+      2
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Vision"
+    }
+  },
+  {
+    "id": "turningslash",
+    "level": 14,
+    "tripods": [
+      1,
+      3,
+      1
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Poison"
+    }
+  },
+  {
+    "id": "maelstrom",
+    "level": 10,
+    "tripods": [
+      3,
+      1,
+      2
+    ],
+    "rune": {
+      "tier": "legendary",
+      "name": "Bleed"
+    }
+  },
+  {
+    "id": "deathtrance",
+    "subtitle": "Классовое умение"
+  },
+  {
+    "id": "deathlyslash",
+    "subtitle": "Техника"
+  },
+  {
+    "id": "bladeassault",
+    "subtitle": "Пробуждение"
+  },
+  {
+    "id": "surge",
+    "subtitle": "Классовое умение"
+  }
 ]
 </script>
 </div>
@@ -180,69 +356,37 @@ Make sure you've read [Essentials](essentials.md), then apply both "<span class=
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Советы</span>Runes<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Руны<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Purify">Солум</span> on Head Hunt if you switch to the alternate setup.
-- Use <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span> on Maelstrom if you experience mana issues.
-- Use <span class="skill-mention" data-rune-name="Vision" data-rune-tier="legendary">Легендарный Ульд</span> on Surprise Attack if you find it more useful than <span class="skill-mention" data-rune-name="Rage" data-rune-tier="legendary">Легендарный Раш</span>.
-    - Increases chance of getting an extra stack on Surprise Attack precast.
-    - On the alternate setup, give Head Hunt the next best <span class="skill-mention" data-rune-name="Galewind">Агель</span> or <span class="skill-mention" data-rune-name="Vision">Ульд</span> rune that's available.
-
-   *Note: Blade Dance shows <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="legendary">Легендарный Агель</span> in-game, but it does not actually gain anything over <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="epic">Эпический Агель</span> (or even over <span class="skill-mention" data-rune-name="Vision" data-rune-tier="legendary">Легендарный Ульд</span>) due to the way the game [rounds down](https://www.inven.co.kr/board/lostark/5497/175825) cast time reductions to 0.05s intervals - keep it at Epic so the rune slot stays free for another skill.*
+- Use <span class="skill-mention" data-rune-name="Purify">Солум</span>  на Охоте за головами, если перейдёшь на альтернативную сборку. - Используй <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span>  на Плаще клинков, если есть проблемы с маной. - Используй <span class="skill-mention" data-rune-name="Vision" data-rune-tier="legendary">Легендарный Ульд</span> на «Внезапный выпад», если тебе он полезнее, чем <span class="skill-mention" data-rune-name="Rage" data-rune-tier="legendary">Легендарный Раш</span>. - Повышает шанс получить лишний стак на прекасте «Внезапного выпада». - В альтернативной сборке дай Охоте за головами следующую лучшую <span class="skill-mention" data-rune-name="Galewind">Агель</span> or <span class="skill-mention" data-rune-name="Vision">Ульд</span> руну из доступных. *Примечание: «Блиц» отображается <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="legendary">Легендарный Агель</span> в игре, но на практике не даёт ничего сверх <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="epic">Эпический Агель</span> (и даже сверх <span class="skill-mention" data-rune-name="Vision" data-rune-tier="legendary">Легендарный Ульд</span>) из-за того, что игра [округляет вниз](https://www.inven.co.kr/board/lostark/5497/175825) сокращения времени применения к шагам по 0.05 сек. — держи руну на «Эпическом», чтобы слот остался свободным под другой скил.*
 
 </details>
 
 <details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Заметка</span>Options & Tripods<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Опции и триподы<span class="setup-note-arrow"></span></summary>
 
-- On the alternate setup, bring Head Hunt down to Lv 1 for lower mana use.
-    - Raising it past Lv 4 is not ideal as you lose a stack and increase mana use for little reason.
-- You can use Wide Attack <span class="skill-mention" data-glossary-id="tripod">tripod</span> on Surprise Attack for noticeably increased quality of life.
-    - With Wide Attack, you **must** cast Turning Slash early on openers to apply synergy.
-    - This is more viable than ever as Turning Slash's lingering hits now extend its uptime.
-- Earth Cleaver (3-3-2) is the default pick here for its mobility and utility.
-    - It's a slower, more vulnerable skill cast that consumes significantly more mana, which is why Maelstrom and Upper Slash sit at Lv 10 in this build.
-    - Head Hunt is the cheaper alternative if you can spare the mana - see the Alt note below.
+- В альтернативной сборке опусти Охоту за головами до Ур. 1 ради меньшего расхода маны. - Поднимать выше Ур. 4 неидеально: теряешь стак и увеличиваешь расход маны почти без причины. - Можно использовать «Широкий удар» <span class="skill-mention" data-glossary-id="tripod">tripod</span> на «Внезапном выпад» ради заметно лучшего удобства. - С «Широким ударом» ты **обязан** применять Иссечение рано на открытии, чтобы наложить синергию. - Сейчас это куда жизнеспособнее, потому что добивающие удары Иссечения продлевают его действие. - «Двуручный хват» (3-3-2) — выбор по умолчанию здесь ради мобильности и полезности. - Это более медленный и уязвимый скил с заметно большим расходом маны, поэтому Плащ клинков и Восходящий вихрь стоят в этом билде на Ур. 10. - «Охота за головами» — дешёвая альтернатива, если маны хватает, см. заметку «Альтернатива» ниже.
 
 </details>
 
 <details class="setup-note" data-kind="example" open markdown>
-<summary><span class="setup-note-tag">Альтернатива</span>Dark Axel vs Spincutter<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Альтернатива</span>Аксель или Разрубающие лезвия<span class="setup-note-arrow"></span></summary>
 
 <div class="skill-compare-row" markdown>
 <div class="skill-compare-col" markdown>
 <span class="skill-compare-title"><span class="skill-inline" data-skill-id="spincutter"><span class="skill-inline-name">Разрубающие лезвия</span></span> (3-3-1) · По умолчанию</span>
 
-The default repositioner, and the safer of the two: it needs no practice and works in every cycle, at the cost of some raw ceiling compared to Dark Axel.
-
-**In the rotation:**
-
-- Repositioning with it loses <span class="skill-mention" data-glossary-id="cpm">CPM</span> compared to Dark Axel when cast 2 or more times (tapped). A single cast is slightly faster than Dark Axel.
-- Repositioning with it while skipping Upper Slash costs you the free <span class="skill-mention" data-glossary-id="pushimmunity">push immune</span> window, one of the build's core benefits. You still have skills left to cast, so you're out of luck if the boss turns.
-- Moves you around the boss, so you aim outward toward its back, risking a miss from Deathly Slash's forward movement.
-
-**Best For:**{: .best-for } Players who prefer simplicity: a single cycle is easier to loop if you don't wish to learn the advanced skip cycles or their recovery options.
+Скил для смены позиции по умолчанию и более безопасный из двух: не требует практики и работает в каждом цикле, ценой некоторого потолка по сравнению с «Акселем». **В ротации:** - Смена позиции им теряет <span class="skill-mention" data-glossary-id="cpm">CPM</span> по сравнению с «Акселем», если применить 2 и более раз (быстрыми нажатиями). Одно применение чуть быстрее «Акселя». - Смена позиции им с пропуском Восходящего вихря лишает тебя бесплатного <span class="skill-mention" data-glossary-id="pushimmunity">неуязвимость к отбрасыванию</span> окна неуязвимости, одного из основных плюсов билда. У тебя ещё остаются скилы для применения, так что при развороте босса не повезёт. - Перемещает тебя вокруг босса, поэтому целиться нужно наружу к его спине, рискуя промахнуться из-за движения вперёд у Убийственной стали. **Best For:**{: .best-for } Игрокам, которые ценят простоту: один цикл крутить легче, если не хочется осваивать продвинутые циклы с пропусками и их варианты восстановления.
 
 </div>
 <div class="skill-compare-col" markdown>
 <span class="skill-compare-title"><span class="skill-inline" data-skill-id="darkaxel"><span class="skill-inline-name">Аксель</span></span> · Альтернатива</span>
 
-The ceiling option. It recreates RE's Surge using two skills: Dark Axel carries you over the boss, then Deathly Slash precisely slams you into its back - run it if you can learn the skip cycles.
-
-**In the rotation:**
-
-- Usually better <span class="skill-mention" data-glossary-id="cpm">CPM</span> when repositioning; faster than 2 or more casts of (tapped) Spincutter.
-- Always cast right before Deathly Slash and Surge, leaving very little to chance.
-- Push immunity panic button that saves your spacebar and lets you greed twice as much.
-    - Using it that way limits your mobility for the cycle, but increases uptime on the boss.
-
-**Best For:**{: .best-for } Players who want the highest ceiling and can execute the skip cycles.
-
-**Tradeoff:**{: .tradeoff } Takes practice, and pays off most once you're used to the advanced skip cycles.
+Вариант потолка. Воспроизводит Концентрацию воли из Остаточной энергии двумя скилами: «Аксель» переносит тебя через босса, а Убийственная сталь точно вбивает его в спину — бери, если освоишь циклы с пропусками. **В ротации:** - Обычно лучше <span class="skill-mention" data-glossary-id="cpm">CPM</span> при смене позиции; быстрее, чем 2 и более применений Разрубающих лезвий (быстрыми нажатиями). - Применяй прямо перед Убийственной сталью и Концентрацией воли, оставляя почти нет шансов на ошибку. - Аварийная кнопка неуязвимости к отбрасыванию: сберегает пробел и позволяет жадничать вдвое больше. - Такое использование ограничивает твою мобильность в цикле, но повышает время активности на боссе. **Best For:**{: .best-for } Игрокам, которые хотят максимальный потолок и способны исполнять циклы с пропусками. **Компромисс:**{: .tradeoff } Требует практики и окупается лучше всего, когда ты привык к продвинутым циклам с пропусками.
 
 </div>
 <div class="skill-compare-foot" markdown>
-**Best of both:** Swap freely by content, or :ratJAM: run Lv 4 <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> instead of <span class="skill-inline" data-skill-id="earthcleaver"><span class="skill-inline-name">Двуручный хват</span></span> when <span class="skill-mention" data-glossary-id="counter">Counter</span> isn't needed.
+**Лучшее из обоих:** свободно меняй в зависимости от контента или, как с `:ratJAM:`, бери <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> instead of <span class="skill-inline" data-skill-id="earthcleaver"><span class="skill-inline-name">Двуручный хват</span></span> when <span class="skill-mention" data-glossary-id="counter">Контратака</span> не нужен.
 </div>
 </div>
 
@@ -264,24 +408,39 @@ The ceiling option. It recreates RE's Surge using two skills: Dark Axel carries 
 <div class="gem-priority" markdown>
 <script type="application/json">
 [
-  { "col": "dmg", "items": [
-    "surge",
-    "bladedance",
-    "turningslash",
-    "windcut"
-  ] },
-  { "col": "cd", "items": [
-    "upperslash",
-    "surpriseattack",
-    "maelstrom",
-    "bladedance",
-    "windcut",
-    "turningslash",
-      { "id": "spincutter", "alts": [
-        { "id": "surpriseattack", "note": "Use Surprise Attack DMG instead if you prefer, or even another class's Lv 10 gem." },
-        { "id": "darkaxel", "note": "Use if you decide to go with Dark Axel." }
-    ] }
-  ] }
+  {
+    "col": "dmg",
+    "items": [
+      "surge",
+      "bladedance",
+      "turningslash",
+      "windcut"
+    ]
+  },
+  {
+    "col": "cd",
+    "items": [
+      "upperslash",
+      "surpriseattack",
+      "maelstrom",
+      "bladedance",
+      "windcut",
+      "turningslash",
+      {
+        "id": "spincutter",
+        "alts": [
+          {
+            "id": "surpriseattack",
+            "note": "Если предпочитаешь, возьми самоцвет урона «Внезапного выпада» или даже самоцвет Ур. 10 другого класса."
+          },
+          {
+            "id": "darkaxel",
+            "note": "Используй, если решишь перейти на «Аксель»."
+          }
+        ]
+      }
+    ]
+  }
 ]
 </script>
 </div>
@@ -289,13 +448,9 @@ The ceiling option. It recreates RE's Surge using two skills: Dark Axel carries 
 <div class="setup-notes" markdown>
 
 <details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Заметка</span>Gem Requirements<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Требования к самоцветам<span class="setup-note-arrow"></span></summary>
 
-- To reach its ceiling, this build requires higher investment in cooldown gems than the others.
-    - <span class="skill-mention" data-skill-id="massincrease">Карающая длань</span> and/or <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Изнурительные тренировки 1</span> help smooth things out at low investment levels.
-    - +CD% <span class="skill-mention" data-glossary-id="bracelet">bracelet</span> increases gem level requirements by 1, low <span class="skill-mention" data-glossary-id="specializationstat">Specialization</span> is not recommended.
-    - Once Blade Dance and Maelstrom CD are at Lv 9, Wind Cut CD priority increases significantly.
-    - The gem priority list above assumes you will be using a rotation with the advanced skip cycles.
+- Чтобы выйти на потолок, этому билду нужно больше вложений в самоцветы перезарядки, чем остальным. - <span class="skill-mention" data-skill-id="massincrease">Карающая длань</span> and/or <span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Изнурительные тренировки 1</span> помогает сгладить игру при низких вложениях. - +CD% <span class="skill-mention" data-glossary-id="bracelet">bracelet</span> повышает требования к уровню самоцветов на 1, низкий <span class="skill-mention" data-glossary-id="specializationstat">Specialization</span> не рекомендуется. - Как только перезарядка «Блица» и Плаща клинков достигнет Ур. 9, приоритет перезарядки «Неумолимого притяжения» заметно растёт. - Список приоритетов самоцветов выше предполагает, что ты используешь ротацию с продвинутыми циклами с пропусками.
 
 </details>
 
@@ -311,28 +466,39 @@ The ceiling option. It recreates RE's Surge using two skills: Dark Axel carries 
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
-There's an optimal skill order, but you have flexibility when facing downtime or weaving in mobility skills.
+Порядок применения скилов оптимален, но у тебя есть свобода при простое или вплетении скилов мобильности.
 
-'Destiny: Enhanced Sharpness' can be stacked up to 5 times by using (Normal) skills to empower Deathly Slash.
+«Судьба: Усиленная острота» складывается до 5 раз обычными скилами, усиливая Убийственную сталь.
 
-   Use Spincutter (or Dark Axel, if you run the alternate setup) to guarantee back attacks on Deathly Slash and Surge if needed.
+   Use Spincutter (or Dark Axel, if you run the alternate setup) to guarantee атака в спинуs on Deathly Slash and Surge if needed.
 
-Use the Opener cycle and either loop it forever (easy) or continue on to the advanced skip cycles (ceiling DPS).
+Используй цикл открытия и либо крути его бесконечно (просто), либо переходи к продвинутым циклам с пропусками (потолочный DPS).
 
 *From 3 orbs:*
 { .lead }
 
 <div class="cycle-card" markdown>
-<div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Opener/Overstack Cycle - 68 Stacks</span></div>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл открытия и перебора — 68 стаков</span></div>
 <div class="rotation-line" markdown>
 <script type="application/json">
-["windcut", "deathtrance", "surpriseattack", "maelstrom", "windcut", "upperslash", "turningslash", "bladedance", "deathlyslash", "surpriseattack", "surge"]
+[
+  "windcut",
+  "deathtrance",
+  "surpriseattack",
+  "maelstrom",
+  "windcut",
+  "upperslash",
+  "turningslash",
+  "bladedance",
+  "deathlyslash",
+  "surpriseattack",
+  "surge"
+]
 </script>
 </div>
 </div>
 
-1. This opener chains into the cycles below, but it's fine by itself if you prefer simplicity and don't mind downtime.
-2. Surprise Attack always goes before Maelstrom on cycles with a Surprise Attack finisher so its CDs line up.
+1. Это открытие переходит в циклы ниже, но само по себе тоже годится, если ценишь простоту и не против простоев. 2. «Внезапный выпад» всегда идёт перед Плащом клинков в циклах с добивкой «Внезапным выпадом», чтобы перезарядки совпали.
 
 <div class="setup-panel" data-accent="lavender" markdown>
 <div class="setup-notes" markdown>
@@ -340,64 +506,67 @@ Use the Opener cycle and either loop it forever (easy) or continue on to the adv
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Режим леопарда (рекомендуется)<span class="setup-note-arrow"></span></summary>
 
-After the opener, alternate between these two cycles as needed for ceiling DPS:
+После открытия чередуй эти два цикла по мере необходимости для потолочного DPS:
 
 <div class="cycle-card" markdown>
-<div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Surprise Skip Cycle - 61 Stacks</span></div>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл с пропуском «Внезапного выпада» — 61 стак</span></div>
 <div class="rotation-line" markdown>
 <script type="application/json">
-["windcut", "deathtrance", "maelstrom", "surpriseattack", "windcut", "upperslash", "turningslash", "bladedance", "deathlyslash", "surge"]
+[
+  "windcut",
+  "deathtrance",
+  "maelstrom",
+  "surpriseattack",
+  "windcut",
+  "upperslash",
+  "turningslash",
+  "bladedance",
+  "deathlyslash",
+  "surge"
+]
 </script>
 </div>
 </div>
 
 <div class="cycle-card" markdown>
-<div class="cycle-card-header"><span class="cycle-num cycle-num-3">3</span><span class="cycle-title">Wind Cut Skip Cycle - 60 Stacks</span></div>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-3">3</span><span class="cycle-title">Цикл с пропуском «Неумолимого притяжения» — 60 стаков</span></div>
 <div class="rotation-line" markdown>
 <script type="application/json">
-["deathtrance", "surpriseattack","maelstrom", "windcut", "upperslash", "turningslash", "bladedance", "deathlyslash", "surpriseattack", "surge"]
+[
+  "deathtrance",
+  "surpriseattack",
+  "maelstrom",
+  "windcut",
+  "upperslash",
+  "turningslash",
+  "bladedance",
+  "deathlyslash",
+  "surpriseattack",
+  "surge"
+]
 </script>
 </div>
 </div>
 
-1. Cycle **2** offers safety by leaving Surprise Attack as a recovery option; Cycle **3** offers higher CPM.
-2. Rotating **2>3>2>3** is ideal, but based on boss patterns, variations like **2>3>3>2** or **2>2>3>3** are valid.
-      - Cycle **3** is preferred during risky boss patterns because Wind Cut lacks Paralysis Immunity.
-      - Recover with Wind Cut or Surprise Attack, and decide your next cycle based on the available one.
-3. You can skip a Surprise Attack finisher whenever you're at 49+ stacks before Deathly Slash.
-      - Same for 40+ stacks before Blade Dance, 30+ stacks before Upper Slash, and so on.
-      - If you have 8+ stacks before you activate Death Trance, you can skip both WC precast and SA finisher.
-      - At 15+ stacks before Death Trance, you can skip both the WC precast and SA finisher for two cycles in a row.
-4. It seems more complicated than it really is, watch [this video](https://www.youtube.com/watch?v=V1UQhE37Yjs) to see how a full rotation plays out.
-
-It helps to think of everything within <span class="skill-inline" data-skill-id="deathtrance"><span class="skill-inline-name">Боевой транс</span></span> and <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> as 53 stacks, and the Wind Cut Precast or Surprise Attack finisher as flexible options that give you the 7+ stacks needed to complete a 60+ stack Surge.
+1. Цикл **2** даёт запас прочности, оставляя «Внезапный выпад» как вариант восстановления; Цикл **3** даёт более высокий CPM. 2. Идеально чередование **2>3>2>3**, но по паттернам босса допустимы и **2>3>3>2**, **2>2>3>3**. - Цикл **3** предпочтителен в опасных паттернах босса, потому что у «Неумолимого притяжения» нет неуязвимости к оглушению. - Восстанавливайся «Неумолимым притяжением» или «Внезапным выпадом» и выбирай следующий цикл по тому, что доступно. 3. Добивку «Внезапным выпадом» можно пропустить, если перед Убийственной сталью у тебя 49+ стаков. - Аналогично 40+ стаков перед «Блицем», 30+ перед Восходящим вихрём и так далее. - Если перед активацией Боевого транса у тебя 8+ стаков, можно пропустить и прекаст «Неумолимого притяжения», и добивку «Внезапным выпадом». - При 15+ стаках перед Боевым трансом можно пропускать оба две цикла подряд. 4. Кажется сложнее, чем есть: посмотри [это видео](https://www.youtube.com/watch?v=V1UQhE37Yjs), как проходит полная ротация. Полезно думать обо всём в рамках <span class="skill-inline" data-skill-id="deathtrance"><span class="skill-inline-name">Боевой транс</span></span> and <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> как добивку на 53 стака, а «Неумолимое притяжение» в прекасте или «Внезапный выпад» — как гибкие варианты: они дают нужные 7+ стаков, чтобы закрыть Концентрацию воли на 60+ стаках.
 </details>
 
 </div>
 </div>
 
-1. Depending on attack speed/latency, your Wind Cut precast may grant 7 stacks instead of 8.
-2. With lower Attack Speed (<span class="skill-mention" data-skill-id="massincrease">Карающая длань</span>), Deathly Slash may grant 12 stacks instead of 11.
-3. It's better to cast a ~59 stack Surge if the alternative is waiting more than 1.5 seconds.
-4. Delaying Deathly Slash + Surge by more than 1.75 seconds to ensure a back attack is a DPS loss.
-5. Delaying *only* Surge by more than 1 second to ensure a back attack is also a DPS loss.
-6. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> scales much worse on Surge than on Remaining Energy and takes too long to cast.
-      - It's still useful for openers, or it can be saved to greed with <span class="skill-mention" data-glossary-id="pushimmunity">push immunity</span>/Hyper Awakening.
+1. В зависимости от скорости атаки и пинга прекаст «Неумолимого притяжения» может дать 7 стаков вместо 8. 2. При меньшей скорости атаки (<span class="skill-mention" data-skill-id="massincrease">Карающая длань</span>), Убийственная сталь может дать 12 стаков вместо 11.
+3. Лучше применить Концентрацию воли на ~59 стаках, чем ждать больше 1.5 секунды.
+4. Откладывать Убийственную сталь + Концентрацию воли больше чем на 1.75 секунды ради попадания в спину — потеря DPS.
+5. Откладывать *только* Концентрацию воли больше чем на секунду ради попадания в спину — тоже потеря DPS.
+6. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> масштабируется заметно хуже на Твёрдой воле, чем в Остаточной энергии, и слишком долго применяется. - Он всё ещё полезен для на открытии, либо её можно оставить под жадный добив с <span class="skill-mention" data-glossary-id="pushimmunity">неуязвимость к отбрасыванию</span>/Hyper Пробуждение.
 
-*Note: The timing to enter Death Trance in cycles without a precast is right as Surge hits. It's unforgiving but it can be improved with a macro that fires the Identity key 2-3x very quickly without any downsides, increasing CPM/QoL.*
+*Примечание: в циклах без прекаста момент входа в Боевой транс — ровно в момент попадания Концентрации воли. Это не прощает ошибок, но ситуацию можно улучшить макросом, который очень быстро нажимает клавишу классового умения 2–3 раза без каких-либо минусов, повышая CPM и удобство.*
 
-*From zero orbs:*
+*С нуля сфер:*
 { .lead }
 
-1. Use a <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span> (recommended) or proceed to #2.
-      - Rat Pack: Use Maelstrom's Orb Control tripod and <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> awakening.
-2. Generate one orb, build at least 40 stacks, then Surge to refill all 3 orbs.
-
-*Atropine usage:*
-{ .lead }
-
-1. Use <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> right before Deathly Slash, and fit two Deathly Slash + Surge pairs in a 10 second window.
-2. Execute your fastest cycles while adapting to your stack count and boss patterns.
+1. Возьми  <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span> (рекомендуется) или переходи к #2. - Стая: используй трипод Плаща клинков «Контроль сфер» и <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> пробуждение. 2. Сгенерируй одну сферу, набери минимум 40 стаков, затем Концентрация воли вернёт все 3 сферы. *Применение Ардопина:* { .lead } 1. Используй <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> прямо перед Убийственной сталью и впиши две пары «Убийственная сталь + Концентрация воли» в 10-секундное окно.
+2. Исполняй свои самые быстрые циклы, подстраиваясь под число стаков и паттерны босса.
 
 ## Распределение Урона {#dps-spread}
 
@@ -406,7 +575,7 @@ It helps to think of everything within <span class="skill-inline" data-skill-id=
      or a balance pass. Full schema is in javascripts/dps-chart.js's
      "EASY EDIT GUIDE" comment. -->
 
-<p class="dps-showcase-caption">Ancient cores, full Lv 10 gems</p>
+<p class="dps-showcase-caption">Древние ядра, самоцветы полного Ур. 10</p>
 
 <div class="dps-showcase" markdown>
 <div class="dps-showcase-frame" markdown>

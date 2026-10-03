@@ -782,11 +782,11 @@
   // to the row - now that every build is directly selectable, that split
   // is gone and every build's share lives here on equal footing.
   const BRACE_SPEC_BUILDS = {
-    "re-111": { label: "RE 111/313", isSurge: false, share: 0.20, awakeningShare: RE_AWAKENING_SHARE },
-    "re-333": { label: "RE 333", isSurge: false, share: 0.17, awakeningShare: RE_AWAKENING_SHARE },
-    "surge-111": { label: "Surge 111", isSurge: true, share: 0.75, awakeningShare: SURGE_AWAKENING_SHARE },
-    "surge-222": { label: "Surge 222", isSurge: true, share: 0.50, awakeningShare: SURGE_AWAKENING_SHARE },
-    "surge-333": { label: "Surge 333", isSurge: true, share: 0.45, awakeningShare: SURGE_AWAKENING_SHARE },
+    "re-111": { label: "ОС 111/313", isSurge: false, share: 0.20, awakeningShare: RE_AWAKENING_SHARE },
+    "re-333": { label: "ОС 333", isSurge: false, share: 0.17, awakeningShare: RE_AWAKENING_SHARE },
+    "surge-111": { label: "ТВ 111", isSurge: true, share: 0.75, awakeningShare: SURGE_AWAKENING_SHARE },
+    "surge-222": { label: "ТВ 222", isSurge: true, share: 0.50, awakeningShare: SURGE_AWAKENING_SHARE },
+    "surge-333": { label: "ТВ 333", isSurge: true, share: 0.45, awakeningShare: SURGE_AWAKENING_SHARE },
   };
   // "re-313" is retired as its own entry: every formula that reads
   // BRACE_SPEC_BUILDS was traced and RE 111/RE 313 turned out to be
@@ -944,7 +944,7 @@
     });
     // Mobile's collapsed trigger pill has no chip row of its own to read
     // at a glance, so it carries the resolved build as its own label
-    // (e.g. "RE 111/313") - built straight from the currently-active
+    // (e.g. "ОС 111/313") - built straight from the currently-active
     // variant chip's own text rather than a second hardcoded label map,
     // so it can't drift out of sync with what the chips actually say.
     const triggerLabel = root.querySelector(".ap-build-dock-trigger-label");
@@ -979,9 +979,9 @@
   const CRIT_DMG_BASE = 2.0;
 
   const EVOLUTION_SPLITS = [
-    { key: "lb3ks0", limitBreak: 3, keenSense: 0, label: "LB3" },
-    { key: "lb2ks1", limitBreak: 2, keenSense: 1, label: "LB2/KS1" },
-    { key: "lb1ks2", limitBreak: 1, keenSense: 2, label: "LB1/KS2" },
+    { key: "lb3ks0", limitBreak: 3, keenSense: 0, label: "ИД3" },
+    { key: "lb2ks1", limitBreak: 2, keenSense: 1, label: "ИД2/ОР1" },
+    { key: "lb1ks2", limitBreak: 1, keenSense: 2, label: "ИД1/ОР2" },
   ];
   // Optimized Training Lv 1 (the .ap-ot1 checkbox) takes one of the same 3
   // keystone levels Limit Break/Keen Sense share, so with it on only 2 are
@@ -991,9 +991,9 @@
   // made in one mode can never be mistaken for a combo in the other (see
   // update()'s pin check).
   const EVOLUTION_SPLITS_OT1 = [
-    { key: "ot1-lb2ks0", limitBreak: 2, keenSense: 0, label: "OT1/LB2" },
-    { key: "ot1-lb1ks1", limitBreak: 1, keenSense: 1, label: "OT1/LB1/KS1" },
-    { key: "ot1-lb0ks2", limitBreak: 0, keenSense: 2, label: "OT1/KS2" },
+    { key: "ot1-lb2ks0", limitBreak: 2, keenSense: 0, label: "ИТ1/ИД2" },
+    { key: "ot1-lb1ks1", limitBreak: 1, keenSense: 1, label: "ИТ1/ИД1/ОР1" },
+    { key: "ot1-lb0ks2", limitBreak: 0, keenSense: 2, label: "ИТ1/ОР2" },
   ];
   const OPTIMIZED_TRAINING_EVO_DMG = 0.05;
   // The one place that decides which split set is in play - every loop
@@ -3670,7 +3670,7 @@
     // at 10p and 17p (nothing changes at 14p or 18-20p), so the 14p
     // columns reuse the 10p figure and 20p reuses 17p's.
     rows.push({
-      label: "Chaos Core: Flashy - Crit Hit Dmg & Dmg%",
+      label: "Ядро хаоса: Быстрая атака — урон по криту и урон, %",
       ...points6((grade, pts) => {
         const chitKey = pts === "14P" ? "Epic-Leg 10P" : grade + " 17P";
         const chit = critLikeGain((c) => { c.flashyAtk = chitKey; });
@@ -3685,21 +3685,21 @@
     // tracks), run through stableAddGain's re-optimized with/without
     // search - see that function's own comment above.
     rows.push({
-      label: "Chaos Core: Stable - Additional Dmg",
+      label: "Ядро хаоса: Стабильная атака — доп. урон",
       ...points6((grade, pts) => stableAddGain(STABLE_ATK_TABLE[grade + "|" + pts])),
     });
 
     // Chaos Core: Swift - Crit Dmg only (Attack Speed excluded). Own
     // tracked field (zeroed in arkNB above), same treatment as Flashy.
     rows.push({
-      label: "Chaos Core: Swift - Crit Dmg",
+      label: "Ядро хаоса: Скорость — сила крита",
       ...points6((grade, pts) => critLikeGain((c) => { c.swiftCore = grade + "|" + pts; })),
     });
 
     // Chaos Core: Crushing - Crit Rate only (Weapon Power Cooldown
     // reduction excluded). Own tracked field (zeroed in arkNB above).
     rows.push({
-      label: "Chaos Core: Crushing - Crit Rate",
+      label: "Ядро хаоса: Раздача — шанс крита",
       ...points6((grade, pts) => critLikeGain((c) => { c.crushingCore = grade + "|" + pts; })),
     });
 
@@ -3708,7 +3708,7 @@
     // comment for why that half is a fixed grade-only estimate rather
     // than Points-scaled).
     rows.push({
-      label: "Chaos Core: Smoldering - Boss Dmg & Burn",
+      label: "Ядро хаоса: Тление — урон по боссу и горение",
       ...points6((grade, pts) => {
         const bossDmg = ARK_SMOLDERING_BOSSDMG_TABLE[grade + "|" + pts];
         const burn = ARK_SMOLDERING_BURN_TABLE[grade];
@@ -3719,7 +3719,7 @@
     // Chaos Core: Absorbing - Dmg only (Healing excluded). Untracked
     // elsewhere, so a flat addition same as Smoldering's Boss Dmg half.
     rows.push({
-      label: "Chaos Core: Absorbing - Dmg",
+      label: "Ядро хаоса: Поглощение — урон",
       ...points6((grade, pts) => ARK_ABSORBING_DMG_TABLE[grade + "|" + pts]),
     });
 
@@ -3745,7 +3745,7 @@
         // gearApTotal takes both directly as parameters, no folding
         // trick needed (unlike Weapon below).
         rows.push({
-          label: "Chaos Core: Attack - Flat AP & AP%",
+          label: "Ядро хаоса: Атака — постоянная сила атаки и её %",
           ...points6((grade, pts) => {
             const t = GEAR_AP_CHAOS_STAR_TABLE[grade + "|" + pts] || { pct: 0, flat: 0 };
             return (
@@ -3766,7 +3766,7 @@
         // get the same treatment a real equipped Weapon Core's payout
         // would).
         rows.push({
-          label: "Chaos Core: Weapon - Flat WP & WP%",
+          label: "Ядро хаоса: Оружие — постоянная сила оружия и её %",
           ...points6((grade, pts) => {
             const t = ARK_WEAPON_CORE_TABLE[grade + "|" + pts] || { pct: 0, flat: 0 };
             const newWp = wp * (1 + t.pct / 100 / wpPercentMult) + t.flat * wpPercentMult;
@@ -4021,7 +4021,7 @@
   // and for 222, matching manaFoodBleedApplies exactly so the label never
   // implies a Dmg term the calculation doesn't actually add.
   function manaFoodLabel(engrInputs, inputs) {
-    return manaFoodBleedApplies(engrInputs, inputs) ? "Mana Food + Bleed" : "Mana Food";
+    return manaFoodBleedApplies(engrInputs, inputs) ? "Mana Food + Bleed" : "Еда на ману";
   }
 
   // Mana Food's own isolated contribution-table row. On Surge builds
@@ -4075,7 +4075,7 @@
   // Display name for an engraving row, read from the site-wide
   // DB_SKILL_NAMES (skill-names.js) rather than spelled out here. Those
   // entries were already translated to the game's own Russian names
-  // ("Keen Blunt Weapon" -> "Моргенштерн", "Cursed Doll" -> "Голем"), so
+  // ("Моргенштерн" -> "Моргенштерн", "Голем" -> "Голем"), so
   // the calculator used to be the one place on the site still showing the
   // English label - the same engraving named two different ways depending
   // on which page you were on.
@@ -4541,10 +4541,10 @@
 
   function engravingComboLabel(flags) {
     const parts = [];
-    if (flags.includeRC) parts.push("Raid Captain");
-    if (flags.includeKbw) parts.push("Keen Blunt Weapon");
-    if (flags.includeCD) parts.push("Cursed Doll");
-    if (flags.includeMI) parts.push("Mass Increase");
+    if (flags.includeRC) parts.push("Неутомимый натиск");
+    if (flags.includeKbw) parts.push("Моргенштерн");
+    if (flags.includeCD) parts.push("Голем");
+    if (flags.includeMI) parts.push("Карающая длань");
     return parts.join(" + ") || "(none)";
   }
 
@@ -4880,11 +4880,11 @@
     const runnerUp = candidates[1] || null;
 
     const rows = [
-      { id: "grudge", label: "Grudge", gain: grudgeGain(engrInputs, inputs) },
-      { id: "ambushmaster", label: "Ambush Master", gain: ambushMasterGain(engrInputs, inputs) },
+      { id: "grudge", label: "Титаноборец", gain: grudgeGain(engrInputs, inputs) },
+      { id: "ambushmaster", label: "Бесшумный убийца", gain: ambushMasterGain(engrInputs, inputs) },
       {
         id: "adrenaline",
-        label: "Adrenaline",
+        label: "Адреналин",
         gain: adrenalineContributionGain(isolatedInputs, engrInputs),
         // Same inline "i" icon (native `title`, see renderComparisonRows'
         // own identical .ap-brace-info-icon use above) rather than a
@@ -4899,10 +4899,10 @@
         // instead of drifting into two slightly different wordings.
         note: "Пересчитывает лучшую сборку с этим узлом и без него, поэтому победитель может смениться. Следует настройке «Время активности Адреналина, %» из раздела А.Р.К. выше.",
       },
-      { id: "raidcaptain", label: "Raid Captain", gain: raidCaptainGain(engrInputs, inputs) },
+      { id: "raidcaptain", label: "Неутомимый натиск", gain: raidCaptainGain(engrInputs, inputs) },
       {
         id: "keenbluntweapon",
-        label: "Keen Blunt Weapon",
+        label: "Моргенштерн",
         gain: kbwContributionGain(isolatedInputs),
         // Same methodology note as Adrenaline's above, worded for KBW
         // specifically (no uptime/AP half to mention here) - see that
@@ -4910,7 +4910,7 @@
         // sentence verbatim rather than each inventing their own phrasing.
         note: "Пересчитывает лучшую сборку с этим узлом и без него, поэтому победитель может смениться.",
       },
-      { id: "curseddoll", label: "Cursed Doll", gain: cursedDollGain(engrInputs, inputs) },
+      { id: "curseddoll", label: "Голем", gain: cursedDollGain(engrInputs, inputs) },
       // Mass Increase stays Surge-only in this reference table too, same
       // reasoning as the pool/candidateFlagSets exclusion above (RE never
       // runs it, and its -10% Attack Speed drawback isn't modeled) -
@@ -4918,7 +4918,7 @@
       // table has no per-row spec toggle like the checkbox/wine rows
       // above do.
       engrInputs.spec !== "re"
-        ? { id: "massincrease", label: "Mass Increase", gain: massIncreaseGain(engrInputs, inputs) }
+        ? { id: "massincrease", label: "Карающая длань", gain: massIncreaseGain(engrInputs, inputs) }
         : null,
       {
         label: "Базовая сила атаки (камень)",
@@ -4932,7 +4932,7 @@
         note: "Применяется, только когда Камень 1 + Камень 2 в сумме дают 5 ур. или выше.",
       },
       {
-        label: "Mana Food",
+        label: "Еда на ману",
         gain: manaFoodContributionGain(engrInputs, inputs),
         // Icon (and therefore the note itself) is Surge-only - RE's Mana
         // Food is Main-Stat-only with no Bleed rune interaction and is
@@ -5458,7 +5458,7 @@
     const titleEl = cardEl && cardEl.querySelector(".ap-stat-card-title");
     if (titleEl) {
       if (pinnedCell) {
-        const rankLabels = { 1: "Best", 2: "2-я лучшая", 3: "3-я лучшая", 4: "4-я лучшая", 5: "5-я лучшая" };
+        const rankLabels = { 1: "Лучшая", 2: "2-я лучшая", 3: "3-я лучшая", 4: "4-я лучшая", 5: "5-я лучшая" };
         const rankLabel = rankLabels[pinnedTrueRank] || (pinnedTrueRank ? ordinal(pinnedTrueRank) + " Best" : null);
         titleEl.textContent = rankLabel ? "Закреплённая сборка (" + rankLabel + ")" : "Закреплённая сборка";
       } else {
@@ -5938,7 +5938,7 @@
       // engravingName() above - so this line says "Эффективность
       // «Неутомимого натиска»: ..." and can't drift from the row label
       // elsewhere on the page if the name is ever re-translated.
-      const rcName = (window.DB_SKILL_NAMES && window.DB_SKILL_NAMES.raidcaptain) || "Raid Captain";
+      const rcName = (window.DB_SKILL_NAMES && window.DB_SKILL_NAMES.raidcaptain) || "Неутомимый натиск";
       msEl.textContent = "Эффективность «" + rcName + "»: " + rcEfficiency.toFixed(2) + "% ";
       msEl.title = "Доля от бонуса урона, который даёт «" + rcName + "», которую вы получаете: 0% — скорость передвижения никогда не выше базовой, 100% — всё время боя на максимуме (140% скорости передвижения).";
       appendFeastIcon(msEl);
@@ -5951,7 +5951,7 @@
       } else {
         foodNoteEl.style.display = "";
         const pct = result.wineVsManaFood * 100;
-        const manaFoodWord = manaFoodHasBleed ? "Mana Food + Bleed" : "Mana Food";
+        const manaFoodWord = manaFoodHasBleed ? "Mana Food + Bleed" : "Еда на ману";
         const winner = pct >= 0 ? manaFoodWord : "Vernese Wine";
         const loser = pct >= 0 ? "Vernese Wine" : manaFoodWord;
         // Worded as a complete-setup comparison (not "Raid Captain gained

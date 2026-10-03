@@ -1836,7 +1836,7 @@
       bookmarklet.addEventListener("click", function (e) {
         e.preventDefault();
         if (statusEl) {
-          statusEl.textContent = "Drag this to your bookmarks bar, then click it on a Bible character page.";
+          statusEl.textContent = "Перетащи это на панель закладок, затем нажми на странице персонажа в Bible.";
           statusEl.classList.remove("bible-import-status-error");
         }
       });
