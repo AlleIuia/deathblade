@@ -3,7 +3,7 @@
 <div class="setup-panel" data-accent="pink" markdown>
 <div class="setup-notes" markdown>
 
-   <p class="food-required-lead">Еда на ману и скорость атаки «Еда из поместья» <strong>обязательны</strong>, чтобы играть в «Остаточной энергии» как задумано.</p>
+   <p class="food-required-lead">Еда на ману и скорость атаки «Ивентовая еда» <strong>обязательны</strong>, чтобы играть в «Остаточной энергии» как задумано.</p>
 
 <div class="food-options" markdown>
 
@@ -43,7 +43,7 @@
 <div class="food-option" markdown>
 ![](../assets/shared/icon-feast.png){: .food-option-icon }
 
-Еда из поместья
+Ивентовая еда
 </div>
 
 </div>
@@ -66,11 +66,11 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Короткая база о блейде<span class="setup-note-arrow"></span></summary>
 
-- Всем билдам Клинка смерти нужен питомец, дающий бонус к «<span class="skill-mention" data-glossary-id="specializationstat">Мастерству</span>».
-- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Систему А.Р.К.</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
-- Порог для 333 — **1818** <span class="skill-mention" data-glossary-id="specializationstat">Мастерства</span>, но старайся выжать **1830+**.
+- Всем билдам Клинка смерти нужен питомец, дающий бонус к «<span class="skill-mention" data-glossary-id="specializationstat">Мастерству</span>» (160).
+- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Дерево талантов</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
+- Порог для 333 — **1818** <span class="skill-mention" data-glossary-id="specializationstat">Мастерства</span> (для оптимального набора шариков), но старайся выжать **1830+**.
 - Всегда жмите следующее умение во время анимации текущего умения.
-- Если сомневаетесь, берите «<span class="skill-mention" data-skill-id="grudge">Титаноборец</span>» и «<span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span>» в качестве гравировок <span class="skill-mention" data-glossary-id="abilitystone">Фетранита</span>.
+- Если сомневаетесь, берите «<span class="skill-mention" data-skill-id="grudge">Титаноборец</span>» и «<span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span>»/«<span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>» в качестве гравировок <span class="skill-mention" data-glossary-id="abilitystone">Фетранита</span>.
 - Для тренировок в <span class="skill-mention" data-glossary-id="trixion">Тризионе</span> нужны гравировки «<span class="skill-mention" data-skill-id="spiritabsorption">Стремительность</span>» и «<span class="skill-mention" data-skill-id="maxmp">Источник маны</span>» максимального уровня.
 - «<span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Изнурительные тренировки 1</span>» помогут сгладить просадку урона на низких уровнях самоцветов.
 
@@ -115,6 +115,7 @@
 <span class="engraving-card-badges" markdown>
 <span class="engraving-card-badge engraving-card-badge-top">★ Рекомендуемая</span>
 <span class="engraving-card-badge engraving-card-badge-safe">Безопасный выбор</span>
+<span class="engraving-card-badge engraving-card-badge-cond">Ставь если выше 85% шанса крита</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
@@ -170,11 +171,13 @@
 
 ### Стиль игры {#playstyle}
 
-**Основная суть:** Набор 3 сфер → Концентрация воли → повтор.
+В Остаточной энергии твоя основная задача — набирать сферы и нажимать Концентрацию воли (Z), чтобы сбросить перезарядку умений и восстановить ману.
+
+Как это будет выглядеть:
+
+Набор 3 сфер → Концентрация воли → повтор.
 
 ## Скилы остаточной энергии {#remaining-energy-skills}
-
-*Значения записаны при 1830 очках «Мастерства», без рун и баффа Плаща клинков; 3 сферы — это 30000 на шкале.*
 
 <!-- Per-row id (name auto-resolves from skill-names.js) - full schema is in
      javascripts/essentials-table.js's
@@ -187,21 +190,51 @@
 <div class="skills-table" data-family="re" markdown>
 <script type="application/json">
 [
-  { "id": "maelstrom" },
-  { "id": "voidstrike" },
-  { "id": "twinshadows" },
-  { "id": "deathlyslash" },
-  { "id": "turningslash" },
-  { "id": "fatalwave" },
-  { "id": "surge" },
-  { "id": "soulabsorber" },
-  { "id": "blitzrush" },
-  { "id": "headhunt" },
-  { "id": "bladeassault" },
-  { "id": "flashblink" },
-  { "id": "earthcleaver" },
-  { "id": "spincutter" },
-  { "id": "deathsentence" }
+  {
+    "id": "maelstrom"
+  },
+  {
+    "id": "voidstrike"
+  },
+  {
+    "id": "twinshadows"
+  },
+  {
+    "id": "deathlyslash"
+  },
+  {
+    "id": "turningslash"
+  },
+  {
+    "id": "fatalwave"
+  },
+  {
+    "id": "surge"
+  },
+  {
+    "id": "soulabsorber"
+  },
+  {
+    "id": "blitzrush"
+  },
+  {
+    "id": "headhunt"
+  },
+  {
+    "id": "bladeassault"
+  },
+  {
+    "id": "flashblink"
+  },
+  {
+    "id": "earthcleaver"
+  },
+  {
+    "id": "spincutter"
+  },
+  {
+    "id": "deathsentence"
+  }
 ]
 </script>
 </div>

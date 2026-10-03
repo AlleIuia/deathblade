@@ -3356,6 +3356,14 @@ h3 { color: var(--dbc-teal); }
   background-color: rgba(var(--dbc-green-rgb), 0.14);
   border-color: rgba(var(--dbc-green-rgb), 0.4);
 }
+/* Conditional pick ("Ставь если выше 85% шанса крита") - a softer violet than
+   the ★ Рекомендуемая gold so a card can carry "use this" and "use this only
+   when ..." side by side without both reading as the same verdict. */
+.md-typeset .engraving-card-badge-cond {
+  color: var(--dbc-violet);
+  background-color: rgba(var(--dbc-violet-rgb), 0.14);
+  border-color: rgba(var(--dbc-violet-rgb), 0.4);
+}
 
 /* Cards no longer collapse (see the summary rule above), so the arrow
    that used to signal "click to expand" is gone rather than left

@@ -11,16 +11,21 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="333-ceiling" data-family="re"></div>
 
-**Best For:**{: .best-for } Игрокам, которые хотят билд с максимальным уроном в Остаточной энергии. **Компромисс:**{: .tradeoff } Чуть меньше генерации сфер и менее прощающая ротация. - Использует «Воздушные шакрамы» как два быстрых применения (<span class="skill-mention" data-glossary-id="ftfcombo">FTF</span> комбо) через сброс скила. - Охота за головами всегда свободна для контратак, восстановления, очищения или <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> upkeep.
-- Высокий gem efficiency: Fatal Wave and Deathly Slash are most of your DPS.
-- Чувствителен к высокому пингу или низкому FPS, но это можно компенсировать несколькими изменениями.
+**Лучше всего:**{: .best-для } Тем, кто хочет максимальный урон в Остаточной энергии.
+
+**Компромисс:**{: .tradeoff } Чуть меньше генерации сфер и менее прощающая ротация.
+
+- Использует «Воздушные шакрамы» как два быстрых каста (<span class="skill-mention" data-glossary-id="ftfcombo">FTF</span> комбо) через сброс скилла.
+- «Хитроумный финт» всегда свободен для контр-скиллов, восстановления, очищения или <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> поддержания.
+- Высокая эффективность самоцветов: «Воздушные шакрамы» и «Убийственная сталь» — основа твоего урона.
+- Чувствителен к высокому пингу или низкому FPS, но это компенсируется несколькими правками.
 
 </div>
 <div class="pentagon-badge" data-build="333-ceiling" data-family="re" markdown>
 <div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Видео-гайд](https://youtu.be/Wwm7apTwg84?si=dmO_fvNxoXuoQuf5){ .video-chip } [Геймплей](https://www.youtube.com/watch?v=MP--TuRX3xI){ .video-chip }
+[Video Guide](https://youtu.be/Wwm7apTwg84?si=dmO_fvNxoXuoQuf5){ .video-chip } [Gameplay](https://www.youtube.com/watch?v=MP--TuRX3xI){ .video-chip }
 </div>
 </div>
 </div>
@@ -38,26 +43,27 @@
 <details class="setup-note" data-kind="danger" open markdown>
 <summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Прочитай [Основы](essentials.md), затем в актуализации выбери и «<span class="skill-mention" data-glossary-id="arkpassive">Пассивки А.Р.К.</span>», и «Навык», чтобы не ошибиться. По [Гемам](#gems) следуй гайду.
+Убедись, что прочитал [Основы](essentials.md), затем примени и <span class="skill-mention" data-glossary-id="arkpassive">Пассивные таланты</span>" и "Навык", чтобы не ошибиться. По самоцветам ([Gems](#gems)) следуй гайду.
 
 </details>
 
 </div>
 </div>
 
-=== "333 Ceiling ★"
+=== "333 Шакрамы ★"
 
-        ```
-        900CC6DEE164317B007DB080728058559F253356D493D9068FC9464270019E2DA0657696B30F009427D2603F2E13AB070E8A77607E775659BE0F35EF964A9929
-        ```
+    ```
+    900CC6DEE164317B007DB080728058559F253356D493D9068FC9464270019E2DA0657696B30F009427D2603F2E13AB070E8A77607E775659BE0F35EF964A9929
+    ```
 
 === "Циркуляция энергии 5 (проще)"
 
-        ```
-        76A1B31F95DC1F7B50FB830D485E547AE6140D5427029F9729DD63D83C3AAE2A3EEF991E2263BA7AC3B9D67056DB26958AC8DB67D4D0E20EB22F0A70C1E86A35
-        ```
+    ```
+    76A1B31F95DC1F7B50FB830D485E547AE6140D5427029F9729DD63D83C3AAE2A3EEF991E2263BA7AC3B9D67056DB26958AC8DB67D4D0E20EB22F0A70C1E86A35
+    ```
 
-        - Uses <span class="skill-mention" data-ap-id="orbcirculation" data-level="5">Циркуляция энергии 5</span>, что делает билд проще ценой ~3% DPS. - Кроме того, использует <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="legendary">Легендарный Эйге</span> on Soul Absorber, which would not be possible otherwise.
+    - Использует <span class="skill-mention" data-ap-id="orbcirculation" data-level="5">Циркуляция энергии 5</span>, что делает билд прощающим ценой примерно 3% урона.
+    - Дополнительно использует <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="legendary">Легендарный Эйге</span> на «Длани Авесты», что иначе было бы невозможно.
 
 ## Система А.Р.К. {#ark-setup}
 
@@ -75,111 +81,39 @@
 <div class="ark-passives" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "id": "evolution",
-    "nodes": [
-      {
-        "id": "crit",
-        "level": 10
-      },
-      {
-        "id": "specialization",
-        "level": 30
-      },
-      {
-        "id": "keensense",
-        "level": 2
-      },
-      {
-        "id": "limitbreakevo",
-        "level": 1
-      },
-      {
-        "id": "strike",
-        "level": 2
-      },
-      {
-        "id": "master",
-        "level": 1
-      },
-      {
-        "id": "pulverize",
-        "level": 1
-      },
-      {
-        "id": "standingstriker",
-        "level": 2
-      }
-    ]
-  },
-  {
-    "id": "enlightenment",
-    "nodes": [
-      {
-        "id": "swiftstrike",
-        "level": 1
-      },
-      {
-        "id": "remainingenergy",
-        "level": 3
-      },
-      {
-        "id": "firmwill",
-        "level": 3
-      },
-      {
-        "id": "extremebodymovement",
-        "level": 3
-      },
-      {
-        "id": "orbcirculation",
-        "level": 2
-      }
-    ]
-  },
-  {
-    "id": "leap",
-    "nodes": [
-      {
-        "id": "unleashedpower",
-        "level": 5
-      },
-      {
-        "id": "releasepotential",
-        "level": 4
-      },
-      {
-        "id": "instantspell",
-        "level": 2
-      },
-      {
-        "id": "danceofnightmares",
-        "level": 3
-      }
-    ]
-  }
-]
+    { "id": "evolution", "nodes": [
+      { "id": "crit", "level": 10 },
+      { "id": "specialization", "level": 30 },
+      { "id": "keensense", "level": 2 },
+      { "id": "limitbreakevo", "level": 1 },
+      { "id": "strike", "level": 2 },
+      { "id": "master", "level": 1 },
+      { "id": "pulverize", "level": 1 },
+      { "id": "standingstriker", "level": 2 }
+    ] },
+    { "id": "enlightenment", "nodes": [
+      { "id": "swiftstrike", "level": 1 },
+      { "id": "remainingenergy", "level": 3 },
+      { "id": "firmwill", "level": 3 },
+      { "id": "extremebodymovement", "level": 3 },
+      { "id": "orbcirculation", "level": 2 }
+    ] },
+    { "id": "leap", "nodes": [
+      { "id": "unleashedpower", "level": 5 },
+      { "id": "releasepotential", "level": 4 },
+      { "id": "instantspell", "level": 2 },
+      { "id": "danceofnightmares", "level": 3 }
+    ] }
+  ]
 </script>
 </div>
 
 <div class="ark-cores" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "core": "sun",
-    "label": "Levin Slash",
-    "points": 3
-  },
-  {
-    "core": "moon",
-    "label": "Deathblade Wave",
-    "points": 3
-  },
-  {
-    "core": "star",
-    "label": "Death Sword Energy",
-    "points": 2
-  }
+  { "core": "sun", "label": "Levin Slash", "points": 3 },
+  { "core": "moon", "label": "Deathblade Wave", "points": 3 },
+  { "core": "star", "label": "Death Sword Energy", "points": 2 }
 ]
 </script>
 </div>
@@ -189,34 +123,28 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Калькулятор Системы А.Р.К.](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
-- <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Божественное вдохновение 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Пробужденное сознание 1</span> решает проблемы с маной ценой совсем небольшой потери DPS. - Менее комфортен с +CD% <span class="skill-mention" data-glossary-id="bracelet">bracelet</span> линию, и/или низкий <span class="skill-mention" data-glossary-id="specializationstat">Specialization</span>.
+- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
+- <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Божественное вдохновение 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Пробужденное сознание 1</span> может решить проблемы с маной ценой совсем небольшой потери урона.
+    - Менее комфортен с +КД% <span class="skill-mention" data-glossary-id="bracelet">браслет</span> линия и/или низкий <span class="skill-mention" data-glossary-id="specializationstat">Специализация</span>.
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Система А.Р.К.</span><span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Дерево талантов</span><span class="setup-note-arrow"></span></summary>
 
-- Добирай «Энергию клинка смерти» до 17 очков, когда сможешь: «Воздушные шакрамы» — твой скил с самым высоким уроном.
+- Добирай «Энергию меча смерти» до 17p, когда получается: «Воздушные шакрамы» — твой скилл с наибольшим уроном.
 
 </details>
 
 <details class="setup-note" data-kind="example" markdown>
 <summary><span class="setup-note-tag">Альтернатива</span><span class="skill-mention" data-ap-id="orbcirculation" data-level="5">Циркуляция энергии 5</span><span class="setup-note-arrow"></span></summary>
 
-- Делает билд проще ценой ~3% DPS: повышает пассивную генерацию сфер.
+- Делает билд прощающим ценой примерно 3% урона за счёт роста пассивной генерации сфер.
 
 <div class="skill-setup" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "id": "soulabsorber",
-    "level": 14,
-    "rune": {
-      "tier": "legendary",
-      "name": "Wealth"
-    }
-  }
+  {"id": "soulabsorber", "level": 14, "rune": {"tier": "legendary", "name": "Wealth"}}
 ]
 </script>
 </div>
@@ -224,35 +152,14 @@
 <div class="ark-passives ark-passives-compact" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "id": "enlightenment",
-    "nodes": [
-      {
-        "id": "swiftstrike",
-        "level": 1
-      },
-      {
-        "id": "remainingenergy",
-        "level": 3
-      },
-      {
-        "id": "firmwill",
-        "level": 3
-      },
-      {
-        "id": "swordcraftenhancement",
-        "level": 1
-      },
-      {
-        "id": "extremebodymovement",
-        "level": 2
-      },
-      {
-        "id": "orbcirculation",
-        "level": 5
-      }
-    ]
-  }
+  { "id": "enlightenment", "nodes": [
+    { "id": "swiftstrike", "level": 1 },
+    { "id": "remainingenergy", "level": 3 },
+    { "id": "firmwill", "level": 3 },
+    { "id": "swordcraftenhancement", "level": 1 },
+    { "id": "extremebodymovement", "level": 2 },
+    { "id": "orbcirculation", "level": 5 }
+  ] }
 ]
 </script>
 </div>
@@ -260,9 +167,12 @@
 </details>
 
 <details class="setup-note" data-kind="example" markdown>
-<summary><span class="setup-note-tag">Альтернатива</span>NA/EU 333 Standard<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Альтернатива</span>NA/EU 333 Стандарт<span class="setup-note-arrow"></span></summary>
 
-- Альтернатива, старающаяся сохранить похожий стиль игры со «Стандартом без ядер», с Разрубающими лезвиями и избытком шкалы. - Это улучшение «Стандарта без ядер», но стиль игры несовместим с современной Остаточной энергией и уступает по DPS. - Рекомендуется, если ты плохо играешь на любом другом билде или предпочитаешь привычную игру из старой школы. - Её гайд и вся связанная информация ведутся [здесь](https://docs.google.com/document/d/1vs1YC_7adaYwtfN9cHO3x2KuMPq6GcKRlGo5vnsN4Lk/edit); на этом сайте он не размещён и не поддерживается.
+- Альтернатива, старающаяся сохранить похожий стиль игры на «Стандарт» ОС, с «Разрубающими лезвиями» и лишней маной.
+    - Это улучшение относительно «Стандарта» ОС, но стиль игры несовместим с современной ОС и уступает по урону.
+    - Рекомендуется, если другие билды не получаются или ты предпочитаешь привычную игру по старым билдам.
+    - Его гайд и вся связанная информация ведутся [здесь](https://docs.google.com/document/d/1vs1YC_7adaYwtfN9cHO3x2KuMPq6GcKRlGo5vnsN4Lk/edit); здесь он не размещён и не поддерживается.
 
 </details>
 
@@ -298,121 +208,17 @@
 <div class="skill-setup" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "id": "soulabsorber",
-    "level": 14,
-    "tripods": [
-      3,
-      1,
-      2
-    ],
-    "rune": {
-      "tier": "epic",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "twinshadows",
-    "level": 14,
-    "tripods": [
-      2,
-      1,
-      2
-    ],
-    "rune": {
-      "tier": "epic",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "headhunt",
-    "level": 7,
-    "tripods": [
-      2,
-      2
-    ],
-    "rune": {
-      "tier": "uncommon",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "turningslash",
-    "level": 14,
-    "tripods": [
-      1,
-      3,
-      1
-    ],
-    "rune": {
-      "tier": "rare",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "maelstrom",
-    "level": 10,
-    "tripods": [
-      2,
-      1,
-      2
-    ],
-    "rune": {
-      "tier": "rare",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "fatalwave",
-    "level": 14,
-    "tripods": [
-      2,
-      3,
-      2
-    ],
-    "rune": {
-      "tier": "legendary",
-      "name": "Galewind"
-    }
-  },
-  {
-    "id": "blitzrush",
-    "level": 12,
-    "tripods": [
-      1,
-      1,
-      1
-    ],
-    "rune": {
-      "tier": "rare",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "voidstrike",
-    "level": 13,
-    "tripods": [
-      3,
-      1,
-      2
-    ],
-    "rune": {
-      "tier": "legendary",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "surge",
-    "subtitle": "Классовое умение"
-  },
-  {
-    "id": "deathlyslash",
-    "subtitle": "Техника"
-  },
-  {
-    "id": "bladeassault",
-    "subtitle": "Пробуждение"
-  }
+  {"id": "soulabsorber", "level": 14, "tripods": [3, 1, 2], "rune": {"tier": "epic", "name": "Wealth"}},
+  {"id": "twinshadows", "level": 14, "tripods": [2, 1, 2], "rune": {"tier": "epic", "name": "Wealth"}},
+  {"id": "headhunt", "level": 7, "tripods": [2, 2], "rune": {"tier": "uncommon", "name": "Wealth"}},
+  {"id": "turningslash", "level": 14, "tripods": [1, 3, 1], "rune": {"tier": "rare", "name": "Wealth"}},
+  {"id": "maelstrom", "level": 10, "tripods": [2, 1, 2], "rune": {"tier": "rare", "name": "Wealth"}},
+  {"id": "fatalwave", "level": 14, "tripods": [2, 3, 2], "rune": {"tier": "legendary", "name": "Galewind"}},
+  {"id": "blitzrush", "level": 12, "tripods": [1, 1, 1], "rune": {"tier": "rare", "name": "Wealth"}},
+  {"id": "voidstrike", "level": 13, "tripods": [3, 1, 2], "rune": {"tier": "legendary", "name": "Wealth"}},
+  {"id": "surge", "subtitle": "Identity"},
+  {"id": "deathlyslash", "subtitle": "Technique"},
+  {"id": "bladeassault", "subtitle": "Awakening"}
 ]
 </script>
 </div>
@@ -422,65 +228,35 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Руны<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="legendary">Легендарный Агель</span>, <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span> or <span class="skill-mention" data-rune-name="Purify">Солум</span>  на «Охоте за головами», если тебе так больше нравится.
+- Используй <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="legendary">Легендарный Агель</span>, <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span> или <span class="skill-mention" data-rune-name="Purify">Солум</span> на «Хитроумном финте», если предпочитаешь.
 
 </details>
 
 <details class="setup-note" data-kind="note" open markdown>
 <summary><span class="setup-note-tag">Заметка</span>Опции и триподы<span class="setup-note-arrow"></span></summary>
 
-- Трипод «Контроль сфер» на «Воздушных шакрамах» **нерабочий**, брать его не стоит. - Можно использовать «Быструю подготовку» <span class="skill-mention" data-glossary-id="tripod">tripod</span>  на Охоте за головами, если с маной проблем нет. - Можно опустить Охоту за головами до Ур. 1 ради меньшего расхода маны и дополнительной мобильности. - Однако Ур. 7 практичнее: восстановление становится намного проще и быстрее.
+- Трипод «Контроль сфер» на «Воздушных шакрамах» **нерабочий**, брать его не стоит.
+- Можно использовать «Быстрая подготовка» <span class="skill-mention" data-glossary-id="tripod">трипод</span> на «Хитроумном финте», если проблем с маной нет.
+- Можно опустить «Хитроумный финт» до Ур. 1 ради меньшего расхода маны и дополнительной мобильности.
+    - Однако Ур. 7 практичнее и делает восстановление намного проще и быстрее.
 
 </details>
 
 <details class="setup-note" data-kind="example" markdown>
-<summary><span class="setup-note-tag">Альтернатива</span>Смертельное богатство<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Альтернатива</span>Опасное богатство<span class="setup-note-arrow"></span></summary>
 
-- <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> руна на «Воздушных шакрамах» делает билд проще ценой ~4% DPS. - Цикл пойдёт менее гладко, но снижение напряжения может подойти кому-то. - Если честно, не играй так; 333 с <span class="skill-mention" data-ap-id="orbcirculation" data-level="5">Циркуляция энергии 5</span>, 313 или вообще любой билд Твёрдой воли будут работать лучше.
+- <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> руна на «Воздушных шакрамах» может сделать билд прощающим ценой примерно 4% урона.
+- Цикл пойдёт не так гладко, но снижение стресса и спешки может кому-то подойти.
+- Если честно, не играй так; 333 с <span class="skill-mention" data-ap-id="orbcirculation" data-level="5">Циркуляция энергии 5</span>, 313 или вообще любой билд на «Твёрдой воли» покажет себя лучше.
 
 <div class="skill-setup" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "id": "fatalwave",
-    "level": 14,
-    "rune": {
-      "tier": "epic",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "voidstrike",
-    "level": 11,
-    "rune": {
-      "tier": "epic",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "soulabsorber",
-    "level": 14,
-    "rune": {
-      "tier": "legendary",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "twinshadows",
-    "level": 14,
-    "rune": {
-      "tier": "rare",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "maelstrom",
-    "level": 10,
-    "rune": {
-      "tier": "uncommon",
-      "name": "Wealth"
-    }
-  }
+  {"id": "fatalwave", "level": 14, "rune": {"tier": "epic", "name": "Wealth"}},
+  {"id": "voidstrike", "level": 11, "rune": {"tier": "epic", "name": "Wealth"}},
+  {"id": "soulabsorber", "level": 14, "rune": {"tier": "legendary", "name": "Wealth"}},
+  {"id": "twinshadows", "level": 14, "rune": {"tier": "rare", "name": "Wealth"}},
+  {"id": "maelstrom", "level": 10, "rune": {"tier": "uncommon", "name": "Wealth"}}
 ]
 </script>
 </div>
@@ -488,31 +264,13 @@
 <div class="ark-passives ark-passives-compact" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "id": "leap",
-    "nodes": [
-      {
-        "id": "awakeningamplifier",
-        "level": 1
-      },
-      {
-        "id": "unleashedpower",
-        "level": 5
-      },
-      {
-        "id": "releasepotential",
-        "level": 3
-      },
-      {
-        "id": "instantspell",
-        "level": 3
-      },
-      {
-        "id": "danceofnightmares",
-        "level": 3
-      }
-    ]
-  }
+  { "id": "leap", "nodes": [
+    { "id": "awakeningamplifier", "level": 1 },
+    { "id": "unleashedpower", "level": 5 },
+    { "id": "releasepotential", "level": 3 },
+    { "id": "instantspell", "level": 3 },
+    { "id": "danceofnightmares", "level": 3 }
+  ] }
 ]
 </script>
 </div>
@@ -535,27 +293,13 @@
 <div class="gem-priority" markdown>
 <script type="application/json">
 [
-  {
-    "col": "dmg",
-    "items": [
-      "fatalwave",
-      "surge",
-      "twinshadows",
-      "soulabsorber",
-      "turningslash",
-      "voidstrike",
-      "blitzrush"
-    ]
-  },
-  {
-    "col": "cd",
-    "items": [
-      "maelstrom",
-      "blitzrush",
-      "turningslash",
-      "fatalwave"
-    ]
-  }
+  { "col": "dmg", "items": [
+    "fatalwave", "surge", "twinshadows", "soulabsorber",
+    "turningslash", "voidstrike", "blitzrush"
+  ] },
+  { "col": "cd", "items": [
+    "maelstrom", "blitzrush", "turningslash", "fatalwave"
+  ] }
 ]
 </script>
 </div>
@@ -565,7 +309,7 @@
 <details class="setup-note" data-kind="note" markdown>
 <summary><span class="setup-note-tag">Заметка</span>Общие самоцветы<span class="setup-note-arrow"></span></summary>
 
-- Эту сборку самоцветов можно использовать совместно с [313 Шакрамы 2.0](313-high-floor.md) и альтернативами 113 (Искусства), если нужно.
+- При желании эту схему самоцветов можно разделить с альтами [313 (Высокий шакрам)](313-high-floor.md) и 113 (Искусства).
 
 </details>
 
@@ -581,27 +325,18 @@
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
-=== "Cycles"
+=== "Циклы"
 
-    Используй **Открытие**, затем чередуй эти два цикла по мере надобности:
+    Используй **Открытие**, затем чередуй эти два цикла по необходимости:
 
     <div class="cycle-card">
 
-    <div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл: Искусство меча + Убийственная сталь</span></div>
+    <div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Искусства меча» + «Убийственной стали»</span></div>
 
     <div class="rotation-line">
 
     <script type="application/json">
-    [
-      "maelstrom",
-      "voidstrike",
-      "twinshadows",
-      "deathlyslash",
-      "fatalwave",
-      "turningslash",
-      "fatalwave",
-      "surge"
-    ]
+    ["maelstrom", "voidstrike", "twinshadows", "deathlyslash", "fatalwave", "turningslash", "fatalwave", "surge"]
     </script>
 
     </div>
@@ -610,64 +345,52 @@
 
     <div class="cycle-card">
 
-    <div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл: Длань Авесты + Охота за головами</span></div>
+    <div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл «Длани Авесты» + «Охоты за головами»</span></div>
 
     <div class="rotation-line">
 
     <script type="application/json">
-    [
-      "soulabsorber",
-      "blitzrush",
-      "twinshadows",
-      {
-        "id": "maelstrom",
-        "situational": "восстановление"
-      },
-      "fatalwave",
-      "turningslash",
-      "fatalwave",
-      "surge"
-    ]
+    ["soulabsorber", "blitzrush", "twinshadows",
+     { "id": "maelstrom", "situational": "recovery" },
+     "fatalwave", "turningslash", "fatalwave", "surge"]
     </script>
 
     </div>
 
     </div>
 
-        Старайся вписать до двух Двойных плетей из Цикла **2** под Плащ клинков из Цикла **1**, чтобы добрать 3 сферы без повторного применения и без ухода на восстановление. Если ты успел только до Длани Авесты, обычно хватит одного дополнительного применения Охоты за головами. Плащ клинков в Цикле **2** применяется, только если иначе не добираешь 3 сферы — решай сам. Если применил, он держится минимум до Искусства меча в Цикле **1**; повторное применение по истечении синхронизирует перезарядки. Если он не был нужен или не продержался, ничего не меняется. === "Openers" Открытия копят <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и применять <span class="skill-mention" data-glossary-id="synergy">synergies</span>  стаки эффективно. Если кажется сложным, просто применяй синергию и Концентрацию воли на полных сферах — этого достаточно, чтобы начать чередование циклов. *С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
-        { .lead }
+    Старайся уместить «Двойную плеть» из цикла **2** под «Плащ клинков» из цикла **1**, чтобы набрать 3 сферы без повторного применения или восстановления. Если дошёл только до «Длани Авесты», обычно хватает одного дополнительного применения «Хитроумного финта».
+
+    «Плащ клинков» в цикле **2** применяется, только если иначе не хватит 3 сфер. Решай сам. Если применил, он действует минимум до «Искусства меча» в цикле **1**; повторное применение на истечении перезарядки синхронизирует их. If it wasn't needed или it didn't last, nothing changes.
+
+=== "Открытия"
+
+    Открытие <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и примени <span class="skill-mention" data-glossary-id="synergy">синергии</span> эффективно. Если покажется сложным, просто применяй синергию и «Концентрацию воли» на полных сферах — этого достаточно, чтобы начать чередовать циклы.
+
+    *С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
+    { .lead }
 
     <div class="rotation-line">
 
     <script type="application/json">
-    [
-      {
-        "id": "headhunt",
-        "swapNext": true
-      },
-      "twinshadows",
-      "maelstrom",
-      "turningslash",
-      "deathlyslash",
-      "fatalwave",
-      "surge",
-      {
-        "cycleRef": 2,
-        "title": "Цикл: Длань Авесты + Охота за головами"
-      },
-      {
-        "cycleRef": 1,
-        "title": "Цикл: Искусство меча + Убийственная сталь"
-      },
-      {
-        "suffix": "etc."
-      }
-    ]
+    [{ "id": "headhunt", "swapNext": true }, "twinshadows", "maelstrom", "turningslash", "deathlyslash", "fatalwave", "surge",
+     { "cycleRef": 2, "title": "Soul Absorber + Blitz Rush Cycle" },
+     { "cycleRef": 1, "title": "Void Strike + Deathly Slash Cycle" },
+     { "suffix": "etc." }]
     </script>
 
     </div>
 
-        1. If available, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> + <span class="skill-inline"><span class="skill-inline-name">FTF</span></span> взаимозаменяема с Циклом **2**. 2. Выгодно применять <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> после Убийственной стали, когда доступны Призрачные клинки. *С нуля/части сфер:* { .lead } 1. Цикл **1**, если доступна Убийственная сталь, иначе начинай с Плаща клинков + Цикл **2**. 2. Комбо «Воздушные шакрамы → Иссечение» применяй раньше, чтобы синергия группы дольше держалась. === "Recovery"
+    1. Если доступен, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> + <span class="skill-inline"><span class="skill-inline-name">FTF</span></span> взаимозаменяем с циклом **2**.
+    2. Эффективно применять <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> после «Убийственной стали», когда доступны «Призрачные клинки».
+
+    *С нуля/части сфер:*
+    { .lead }
+
+    1. Цикл **1**, если доступна «Убийственная сталь», иначе начни с «Плаща клинков» + цикл **2**.
+    2. Комбо FTF применяй раньше ради лучшего аптайма групповой синергии.
+
+=== "Восстановление"
 
     <div class="setup-panel" data-accent="lavender">
 
@@ -677,7 +400,7 @@
 
     <summary><span class="setup-note-tag">Советы</span>Видео по восстановлению<span class="setup-note-arrow"></span></summary>
 
-        Посмотри это 2-минутное [видео по восстановлению для 333](https://www.youtube.com/watch?v=4478vFVX4VA) и ориентируйся на названия отрезков.
+    Посмотри это 2-минутное [видео по восстановлению в 333](https://www.youtube.com/watch?v=4478vFVX4VA) и прочитай названия глав.
 
     </details>
 
@@ -685,13 +408,15 @@
 
     </div>
 
-        1. Use <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> когда сфер чуть не хватает, просто применяй, если сомневаешься. 2. Используй свободные стаки Двойной плети/Плаща клинков и/или Охоту за головами, если пропустил важные скилы. 3. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> instead of <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Двойная плеть</span></span> for a cycle to recover stacks if they run out.
-        4. Раньше применяй Плащ клинков + комбо «Воздушные шакрамы → Иссечение», если ждёшь основные скилы генерации сфер.
-        5. Держи Убийственную сталь до следующего Цикла **1**, если она рассинхронизирована. Потеря DPS, зато проще.
+    1. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> когда сфер немного не хватает, просто применяй, если сомневаешься.
+    2. Используй свободные стаки «Двойной плети»/«Плаща клинков» и/или «Охоту за головами», если пропустил важные скиллы.
+    3. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> вместо <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Двойная плеть</span></span> в цикле для восстановления стаков, если они закончатся.
+    4. Используй «Плащ клинков» в комбо с FTF раньше, если ждёшь основные скиллы генерации сфер.
+    5. При несовпадении фаз придержи «Убийственную сталь» до следующего цикла **1**. Потеря урона, но проще.
 
-=== "TL;DR:"
+=== "Коротко:"
 
-        ![Схема 333 — коротко](../assets/tldr-333.png){ .zoomable-image loading=lazy }
+    ![333 TL;DR flowchart](../assets/tldr-333.png){ .zoomable-image loading=lazy }
 
 ## Распределение Урона {#dps-spread}
 
@@ -700,7 +425,7 @@
      or a balance pass. Full schema is in javascripts/dps-chart.js's
      "EASY EDIT GUIDE" comment. -->
 
-<p class="dps-showcase-caption">Древние ядра, самоцветы полного Ур. 10</p>
+<p class="dps-showcase-caption">Древние ядра, самоцветы полностью Ур. 10</p>
 
 <div class="dps-showcase" markdown>
 <div class="dps-showcase-frame" markdown>

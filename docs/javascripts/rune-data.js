@@ -188,7 +188,7 @@
   // The DB_RUNE_EFFECTS alias is belt-and-suspenders now that
   // skill-setup.js writes the ascii id into data-rune-name: nothing should
   // ever look a rune up by its display name. It stays so that a
-  // hand-written `<span data-rune-name="Джар">` in any markdown page
+  // hand-written `<span data-rune-name="Bleed">` in any markdown page
   // still resolves instead of silently rendering no tooltip.
   window.DB_RUNE_IDS = {};
   Object.keys(window.DB_RUNE_EFFECTS).forEach(function (id) {

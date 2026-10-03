@@ -3,7 +3,7 @@
 <div class="setup-panel" data-accent="pink" markdown>
 <div class="setup-notes" markdown>
 
-<p class="food-required-lead">Еда на атаку/скорость и пир «Еда из поместья» <strong>рекомендованы</strong>, чтобы играть в Твердую волю оптимально. Еда продаётся на острове Пейто.</p>
+<p class="food-required-lead">Еда на атаку/скорость <strong>рекомендованы</strong>, чтобы играть в Твердой воли как задумано.</p>
 
 <div class="food-options" markdown>
 
@@ -26,25 +26,19 @@
 <div class="food-option" markdown>
 ![](../assets/shared/icon-feast.png){: .food-option-icon }
 
-Еда из поместья
+Ивентовая еда
 </div>
 
 </div>
-
-<details class="setup-note" data-kind="example" open markdown>
-<summary><span class="setup-note-tag">Альтернатива</span>Еда на ману + Джар на «Плащ клинков»<span class="setup-note-arrow"></span></summary>
-
-- Иначе используйте ![](../assets/shared/icon-striploin.png){: .food-option-icon } <span class="food-option-connector">или</span> ![](../assets/shared/icon-steak.png){: .food-option-icon } <span class="food-option-connector">или</span> ![](../assets/shared/icon-azena.png){: .food-option-icon } <span class="food-option-connector">или</span> ![](../assets/shared/icon-fish.png){: .food-option-icon } <span class="food-option-connector food-option-connector-plus">+</span> ![](../assets/shared/icon-feast.png){: .food-option-icon } и наденьте руну <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Легендарный Джар</span> на <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>. Выше потолок, ниже пол.
-
-</details>
 
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Короткая база о блейде<span class="setup-note-arrow"></span></summary>
 
-- Всем билдам Клинка смерти нужен питомец, дающий бонус к «<span class="skill-mention" data-glossary-id="specializationstat">Мастерству</span>».
-- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Систему А.Р.К.</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
+- Всем билдам Клинка смерти нужен питомец, дающий бонус к «<span class="skill-mention" data-glossary-id="specializationstat">Мастерству</span>» (160).
+- Порог для 333 — **1818** <span class="skill-mention" data-glossary-id="specializationstat">Мастерства</span> (для оптимального набора шариков), но старайся выжать **1830+**.
+- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Дерево талантов</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
 - Всегда жмите следующее умение во время анимации текущего умения.
-- Если сомневаетесь, берите «<span class="skill-mention" data-skill-id="grudge">Титаноборец</span>» и «<span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span>» в качестве гравировок <span class="skill-mention" data-glossary-id="abilitystone">Фетранита</span>.
+- Если сомневаетесь, берите «<span class="skill-mention" data-skill-id="grudge">Титаноборец</span>» и «<span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span>»/«<span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>» в качестве гравировок <span class="skill-mention" data-glossary-id="abilitystone">Фетранита</span>.
 - Для тренировок в <span class="skill-mention" data-glossary-id="trixion">Тризионе</span> нужны гравировки «<span class="skill-mention" data-skill-id="spiritabsorption">Стремительность</span>» и «<span class="skill-mention" data-skill-id="maxmp">Источник маны</span>» максимального уровня.
 - «<span class="skill-mention" data-ap-id="optimizedtraining" data-level="1">Изнурительные тренировки 1</span>» помогут сгладить просадку урона на низких уровнях самоцветов.
 
@@ -93,7 +87,7 @@
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Еда из поместья + ![](../assets/shared/icon-ealynsblessing.png){: .skill-icon } Шато де Розе</span>
+<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Ивентовая еда + ![](../assets/shared/icon-ealynsblessing.png){: .skill-icon } Шато де Розе</span>
 { .food-req }
 
 **Плюсы:**{: .best-for } Максимальный бонус к урону.
@@ -108,6 +102,7 @@
 <span class="engraving-card-badges" markdown>
 <span class="engraving-card-badge engraving-card-badge-top">★ Рекомендуемая</span>
 <span class="engraving-card-badge engraving-card-badge-safe">Безопасный выбор</span>
+<span class="engraving-card-badge engraving-card-badge-cond">Ставь если выше 85% шанса крита</span>
 </span>
 <span class="engraving-card-arrow"></span>
 </summary>
@@ -134,7 +129,7 @@
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Еда из поместья + ![](../assets/shared/icon-vernesewine.png){: .skill-icon } Бирнийское вино</span>
+<span class="food-req-item">![](../assets/shared/icon-feast.png){: .skill-icon } Ивентовая еда + ![](../assets/shared/icon-vernesewine.png){: .skill-icon } Бирнийское вино</span>
 { .food-req }
 
 **Плюсы:**{: .best-for } Максимальный бонус к урону.
@@ -172,7 +167,7 @@
 </summary>
 <div class="engraving-card-body" markdown>
 
-<span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-feast.png" alt=""> Еда из поместья</span> + <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-vernesewine.png" alt=""> Бирнийское вино (Bard/Paladin)</span> или <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-ealynsblessing.png" alt=""> Шато де Розе (Artist/Valkyrie)</span>
+<span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-feast.png" alt=""> Ивентовая еда</span> + <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-vernesewine.png" alt=""> Бирнийское вино (Бард/Паладин)</span> или <span class="food-req-item"><img class="skill-icon" src="../../assets/shared/icon-ealynsblessing.png" alt=""> Шато де Розе (Кисть/Валькирия)</span>
 { .food-req }
 
 **Плюсы:**{: .best-for } Самый лучший выбор для максимального DPS.
@@ -211,7 +206,13 @@
 
 ### Стиль игры {#playstyle}
 
-**Основная суть:** 3 сферы → <span class="skill-mention" data-skill-id="deathtrance">Боевой транс</span> → набор стаков → <span class="skill-mention" data-skill-id="surge">Концентрация воли</span> → повтор.
+В Твёрдой воли твоя основная задача — набирать стаки умениями, после чего скидывать стаки через Концентрацию воли.
+
+Как это будет выглядеть:
+
+3 сферы → <span class="skill-mention" data-skill-id="deathtrance">Боевой транс</span> → набор стаков → <span class="skill-mention" data-skill-id="surge">Концентрация воли</span> → повтор.
+
+Во всех сборках Концентрация воли (Z) будет топ-1 скиллом по урону.
 
 ## Скилы Твёрдой воли {#surge-skills}
 
@@ -226,24 +227,57 @@
 <div class="skills-table" data-family="surge" markdown>
 <script type="application/json">
 [
-  { "id": "windcut" },
-  { "id": "deathtrance" },
-  { "id": "maelstrom" },
-  { "id": "surpriseattack" },
-  { "id": "breakingmoon" },
-  { "id": "surge" },
-  { "id": "bladedance" },
-  { "id": "blitzrush" },
-  { "id": "headhunt" },
-  { "id": "earthcleaver" },
-  { "id": "spincutter" },
-  { "id": "turningslash" },
-  { "id": "bladeassault" },
-  { "id": "flashblink" },
-  { "id": "deathlyslash" },
-  { "id": "darkaxel" },
-  { "id": "upperslash" },
-  { "id": "fallstar" }
+  {
+    "id": "windcut"
+  },
+  {
+    "id": "deathtrance"
+  },
+  {
+    "id": "maelstrom"
+  },
+  {
+    "id": "surpriseattack"
+  },
+  {
+    "id": "breakingmoon"
+  },
+  {
+    "id": "surge"
+  },
+  {
+    "id": "bladedance"
+  },
+  {
+    "id": "blitzrush"
+  },
+  {
+    "id": "headhunt"
+  },
+  {
+    "id": "earthcleaver"
+  },
+  {
+    "id": "spincutter"
+  },
+  {
+    "id": "turningslash"
+  },
+  {
+    "id": "bladeassault"
+  },
+  {
+    "id": "flashblink"
+  },
+  {
+    "id": "deathlyslash"
+  },
+  {
+    "id": "darkaxel"
+  },
+  {
+    "id": "upperslash"
+  }
 ]
 </script>
 </div>

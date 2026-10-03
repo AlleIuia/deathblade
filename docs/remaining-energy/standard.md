@@ -11,14 +11,20 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="standard" data-family="re"></div>
 
-**Best For:**{: .best-for } Новичкам в Остаточной энергии, у которых ещё нет  <span class="skill-mention" data-glossary-id="arkgrid">Система А.Р.К.</span>  пока нет. **Компромисс:**{: .tradeoff } Старый билд с небольшими простоями и почти без восстановления. - Последний бастион классической Остаточной энергии, уже сильно устаревший. - <span class="skill-mention" data-glossary-id="counter">Контратака</span>  регулярно используется в ротации, её нужно держать, когда это необходимо. - Прост в освоении и исполнении, mobility лучше, чем у современных билдов.
+**Лучше всего:**{: .best-для } Новичкам в Остаточной энергии без <span class="skill-mention" data-glossary-id="arkgrid">Дерево талантов</span> пока.
+
+**Компромисс:**{: .tradeoff } Старый билд с простоем в ротации и почти без восстановления.
+
+- Последний бастион классической Остаточной энергии, уже вытесненный более сильными вариантами.
+- <span class="skill-mention" data-glossary-id="counter">Контр</span> часто занят в ротации, его приходится придерживать, когда это нужно.
+- Прост в освоении и исполнении, а мобильность лучше, чем у современных билдов.
 
 </div>
 <div class="pentagon-badge" data-build="standard" data-family="re" markdown>
 <div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Видео-гайд](https://www.youtube.com/watch?v=pZDYek5l1og&t=467s){ .video-chip } [Геймплей](https://www.youtube.com/watch?v=xmxCjwImyrg){ .video-chip }
+[Video Guide](https://www.youtube.com/watch?v=pZDYek5l1og&t=467s){ .video-chip } [Gameplay](https://www.youtube.com/watch?v=xmxCjwImyrg){ .video-chip }
 </div>
 </div>
 </div>
@@ -29,14 +35,14 @@
 <details class="setup-note" data-kind="note" open markdown>
 <summary><span class="setup-note-tag">Заметка</span>Об этом билде<span class="setup-note-arrow"></span></summary>
 
-Так как это билд для новичков из старой школы, гайд немного отходит от общих правил, чтобы дать более плавный старт без глубокого минимаксима. Например, чтобы получать удовольствие от игры, тебе не понадобятся ни еда на ману, ни стимуляторы.
+Так как это билд для новичков на старом билд-стиле, гайд слегка отходит от нормы ради более понятного опыта без глубокого минмакса. Например, тебе не понадобится еда на ману или стимуляторы, чтобы получать удовольствие от игры.
 
 </details>
 
 </div>
 </div>
 
-*Совсем новичок в Клинке смерти? [Твёрдая воля](../surge/essentials.md) в целом дружелюбнее для начинающих и превосходит «Стандарт без ядер».*
+*Вообще новичок в Клинке Смерти? [Концентрация воли](../surge/essentials.md) в целом понятнее для начинающих и бьёт сильнее, чем «Стандарт» ОС.*
 
 ## Код билда {#skill-codes}
 
@@ -51,14 +57,14 @@
 <details class="setup-note" data-kind="danger" open markdown>
 <summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Прочитай [Основы](essentials.md), затем в актуализации выбери и «<span class="skill-mention" data-glossary-id="arkpassive">Пассивки А.Р.К.</span>», и «Навык», чтобы не ошибиться. По [Гемам](#gems) следуй гайду.
+Убедись, что прочитал [Основы](essentials.md), затем примени и <span class="skill-mention" data-glossary-id="arkpassive">Пассивные таланты</span>" и "Навык", чтобы не ошибиться. По самоцветам ([Gems](#gems)) следуй гайду.
 
 </details>
 
 </div>
 </div>
 
-=== "Standard"
+=== "Стандарт"
 
     ```
     5F7D5490D9E2C0E26CF09BBA7300EE3738585110117637ED10C8C1ED04B5AF1E35B6428D7172B4FB399678D0F83CE64D3232A844396609F8F5466877D357B98D
@@ -80,94 +86,31 @@
 <div class="ark-passives" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "id": "evolution",
-    "nodes": [
-      {
-        "id": "crit",
-        "level": 10
-      },
-      {
-        "id": "specialization",
-        "level": 30
-      },
-      {
-        "id": "keensense",
-        "level": 2
-      },
-      {
-        "id": "limitbreakevo",
-        "level": 1
-      },
-      {
-        "id": "strike",
-        "level": 2
-      },
-      {
-        "id": "master",
-        "level": 1
-      },
-      {
-        "id": "pulverize",
-        "level": 1
-      },
-      {
-        "id": "standingstriker",
-        "level": 2
-      }
-    ]
-  },
-  {
-    "id": "enlightenment",
-    "nodes": [
-      {
-        "id": "swiftstrike",
-        "level": 1
-      },
-      {
-        "id": "remainingenergy",
-        "level": 3
-      },
-      {
-        "id": "firmwill",
-        "level": 3
-      },
-      {
-        "id": "extremebodymovement",
-        "level": 3
-      },
-      {
-        "id": "orbcirculation",
-        "level": 2
-      }
-    ]
-  },
-  {
-    "id": "leap",
-    "nodes": [
-      {
-        "id": "transcendentpower",
-        "level": 3
-      },
-      {
-        "id": "awakeningamplifier",
-        "level": 1
-      },
-      {
-        "id": "unleashedpower",
-        "level": 5
-      },
-      {
-        "id": "instantspell",
-        "level": 3
-      },
-      {
-        "id": "danceofnightmares",
-        "level": 3
-      }
-    ]
-  }
-]
+    { "id": "evolution", "nodes": [
+      { "id": "crit", "level": 10 },
+      { "id": "specialization", "level": 30 },
+      { "id": "keensense", "level": 2 },
+      { "id": "limitbreakevo", "level": 1 },
+      { "id": "strike", "level": 2 },
+      { "id": "master", "level": 1 },
+      { "id": "pulverize", "level": 1 },
+      { "id": "standingstriker", "level": 2 }
+    ] },
+    { "id": "enlightenment", "nodes": [
+      { "id": "swiftstrike", "level": 1 },
+      { "id": "remainingenergy", "level": 3 },
+      { "id": "firmwill", "level": 3 },
+      { "id": "extremebodymovement", "level": 3 },
+      { "id": "orbcirculation", "level": 2 }
+    ] },
+    { "id": "leap", "nodes": [
+      { "id": "transcendentpower", "level": 3 },
+      { "id": "awakeningamplifier", "level": 1 },
+      { "id": "unleashedpower", "level": 5 },
+      { "id": "instantspell", "level": 3 },
+      { "id": "danceofnightmares", "level": 3 }
+    ] }
+  ]
 </script>
 </div>
 
@@ -176,37 +119,25 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Use the [Калькулятор Системы А.Р.К.](../resources.md#ark-passive-calculator) to optimize «Экспансия» nodes.
+- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span>Система А.Р.К.<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Дерево талантов<span class="setup-note-arrow"></span></summary>
 
 <div class="ark-cores" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "core": "sun",
-    "label": "Art Master",
-    "points": 0
-  },
-  {
-    "core": "moon",
-    "label": "Arts Core",
-    "points": 0
-  },
-  {
-    "core": "star",
-    "label": "Basics",
-    "points": 0
-  }
+  { "core": "sun", "label": "Art Master", "points": 0 },
+  { "core": "moon", "label": "Arts Core", "points": 0 },
+  { "core": "star", "label": "Basics", "points": 0 }
 ]
 </script>
 </div>
 
-- Standard is playable without Система А.Р.К. by design, but you can use the 111 core setup if you already have it.
-- Save your Система А.Р.К. cores for when you're ready to transition to a modern Deathblade build.
+- «Стандарт» по задумке играется без «Дерева талантов», но можно взять ядра от 111, если они уже есть.
+- Прибереги ядра «Дерева талантов» на момент перехода к современному билду Клинка Смерти.
 
 </details>
 
@@ -242,120 +173,17 @@
 <div class="skill-setup" data-family="re" markdown>
 <script type="application/json">
 [
-  {
-    "id": "spincutter",
-    "level": 4,
-    "tripods": [
-      3
-    ],
-    "rune": {
-      "tier": "legendary",
-      "name": "Galewind"
-    }
-  },
-  {
-    "id": "soulabsorber",
-    "level": 14,
-    "tripods": [
-      3,
-      1,
-      2
-    ],
-    "rune": {
-      "tier": "legendary",
-      "name": "Galewind"
-    }
-  },
-  {
-    "id": "deathsentence",
-    "level": 14,
-    "tripods": [
-      2,
-      2,
-      1
-    ],
-    "rune": {
-      "tier": "legendary",
-      "name": "Focus"
-    }
-  },
-  {
-    "id": "twinshadows",
-    "level": 14,
-    "tripods": [
-      2,
-      1,
-      2
-    ],
-    "rune": {
-      "tier": "epic",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "earthcleaver",
-    "level": 14,
-    "tripods": [
-      3,
-      3,
-      1
-    ],
-    "rune": {
-      "tier": "legendary",
-      "name": "Vision"
-    }
-  },
-  {
-    "id": "turningslash",
-    "level": 13,
-    "tripods": [
-      1,
-      3,
-      1
-    ],
-    "rune": {
-      "tier": "epic",
-      "name": "Focus"
-    }
-  },
-  {
-    "id": "maelstrom",
-    "level": 10,
-    "tripods": [
-      2,
-      1,
-      2
-    ],
-    "rune": {
-      "tier": "legendary",
-      "name": "Focus"
-    }
-  },
-  {
-    "id": "voidstrike",
-    "level": 14,
-    "tripods": [
-      3,
-      1,
-      2
-    ],
-    "rune": {
-      "tier": "legendary",
-      "name": "Wealth"
-    }
-  },
-  {
-    "id": "surge",
-    "subtitle": "Классовое умение"
-  },
-  {
-    "id": "deathlyslash",
-    "subtitle": "Техника"
-  },
-  {
-    "id": "bladeassault",
-    "subtitle": "Пробуждение"
-  }
+  {"id": "spincutter", "level": 4, "tripods": [3], "rune": {"tier": "legendary", "name": "Galewind"}},
+  {"id": "soulabsorber", "level": 14, "tripods": [3, 1, 2], "rune": {"tier": "legendary", "name": "Galewind"}},
+  {"id": "deathsentence", "level": 14, "tripods": [2, 2, 1], "rune": {"tier": "legendary", "name": "Focus"}},
+  {"id": "twinshadows", "level": 14, "tripods": [2, 1, 2], "rune": {"tier": "epic", "name": "Wealth"}},
+  {"id": "earthcleaver", "level": 14, "tripods": [3, 3, 1], "rune": {"tier": "legendary", "name": "Vision"}},
+  {"id": "turningslash", "level": 13, "tripods": [1, 3, 1], "rune": {"tier": "epic", "name": "Focus"}},
+  {"id": "maelstrom", "level": 10, "tripods": [2, 1, 2], "rune": {"tier": "legendary", "name": "Focus"}},
+  {"id": "voidstrike", "level": 14, "tripods": [3, 1, 2], "rune": {"tier": "legendary", "name": "Wealth"}},
+  {"id": "surge", "subtitle": "Identity"},
+  {"id": "deathlyslash", "subtitle": "Technique"},
+  {"id": "bladeassault", "subtitle": "Awakening"}
 ]
 </script>
 </div>
@@ -365,7 +193,7 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Руны<span class="setup-note-arrow"></span></summary>
 
-- Use <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> на «Длань Авесты» ради дополнительной генерации сфер, пока не освоишься с классом.
+- Используй <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> на «Длани Авесты» ради дополнительной генерации сфер, пока не освоишься с классом.
 
 </details>
 
@@ -385,27 +213,13 @@
 <div class="gem-priority" markdown>
 <script type="application/json">
 [
-  {
-    "col": "dmg",
-    "items": [
-      "surge",
-      "soulabsorber",
-      "deathsentence",
-      "voidstrike",
-      "earthcleaver",
-      "twinshadows",
-      "turningslash"
-    ]
-  },
-  {
-    "col": "cd",
-    "items": [
-      "soulabsorber",
-      "deathsentence",
-      "maelstrom",
-      "voidstrike"
-    ]
-  }
+  { "col": "dmg", "items": [
+    "surge", "soulabsorber", "deathsentence", "voidstrike",
+    "earthcleaver", "twinshadows", "turningslash"
+  ] },
+  { "col": "cd", "items": [
+    "soulabsorber", "deathsentence", "maelstrom", "voidstrike"
+  ] }
 ]
 </script>
 </div>
@@ -420,52 +234,41 @@
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
-Примени Разрубающие лезвия, чтобы подойти к боссу, используй открытие и дальше крути основной цикл. Открытие копит <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и применяется <span class="skill-mention" data-glossary-id="synergy">synergies</span> стаки эффективно, пока ты копишь их до первой Концентрации воли в бою. *Открытие с нуля сфер:* { .lead }
+Подойди к боссу «Разрубающими лезвиями», примени открытие и дальше повторяй основной цикл.
+
+Открытие <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и применяет <span class="skill-mention" data-glossary-id="synergy">синергии</span> эффективно по мере накопления к первой «Концентрации воли» в бою.
+
+*Открытие с нуля сфер:*
+{ .lead }
 
 <div class="rotation-line" markdown>
 <script type="application/json">
-[
-  "maelstrom",
-  "twinshadows",
-  "turningslash",
-  "soulabsorber",
-  "voidstrike",
-  "deathlyslash",
-  "surge"
-]
+["maelstrom", "twinshadows", "turningslash", "soulabsorber", "voidstrike", "deathlyslash", "surge"]
 </script>
 </div>
 
-*Основной повторяющийся цикл:* { .lead }
+*Основной повторяющийся цикл:*
+{ .lead }
 
 <div class="rotation-line" markdown>
 <script type="application/json">
-[
-  "twinshadows",
-  "deathsentence",
-  "maelstrom",
-  {
-    "id": "deathlyslash",
-    "situational": "через ротацию"
-  },
-  "turningslash",
-  "earthcleaver",
-  "soulabsorber",
-  "voidstrike",
-  "surge"
-]
+["twinshadows", "deathsentence", "maelstrom",
+ { "id": "deathlyslash", "situational": "every other rotation" },
+ "turningslash", "earthcleaver", "soulabsorber", "voidstrike", "surge"]
 </script>
 </div>
 
-1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> доступна только через ротацию. Если она на перезарядке — просто продолжай. 2. Применяй Разрубающие лезвия в простое для смены позиции или держи, чтобы уклониться от атак. 3. Используй <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> for damage, or hold it for Hyper Пробуждение or a clutch восстановление.
+1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> доступен только через ротацию. Просто продолжай, если он на перезарядке.
+2. Применяй «Разрубающие лезвия» в простое для смены позиции или держи, чтобы уклониться от атак.
+3. Используй <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> ради урона или придержи для гиперпробуждения либо спасительного восстановления.
 4. Ротация целиком упирается в перезарядку «Длани Авесты». Что есть, то есть.
     - «Двуручный хват» можно пропустить, если «Длань Авесты» уже не на перезарядке.
 
-*Recovery:*
+*Восстановление:*
 { .lead }
 
-1. Используй свободные стаки Двойной плети или Плаща клинков для восстановления, если это поможет добрать 3 сферы.
-    - Если нет, просто жми в AFK или Концентрацию воли с 2 сферами и жди. Добро пожаловать в «Стандарт без ядер».
+1. Используй свободные стаки «Двойной плети» или «Плаща клинков» для восстановления, если это поможет набрать 3 сферы.
+    - Если нет, просто жди в простое или применяй «Концентрацию воли» с 2 сферами и жди. Добро пожаловать в «Стандарт» Остаточной энергии.
 
 ## Распределение Урона {#dps-spread}
 
@@ -474,7 +277,7 @@
      or a balance pass. Full schema is in javascripts/dps-chart.js's
      "EASY EDIT GUIDE" comment. -->
 
-<p class="dps-showcase-caption">Самоцветы полного Ур. 10</p>
+<p class="dps-showcase-caption">Самоцветы полностью Ур. 10</p>
 
 <div class="dps-showcase" markdown>
 <div class="dps-showcase-frame" markdown>

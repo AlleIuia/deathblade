@@ -27,8 +27,8 @@
 // rendered with the site's existing .tag/.tag-dmg/.tag-util/etc classes -
 // same four categories as the tag-legend on essentials.md.
 //
-// lines: OPTIONAL array of small value strings (a meter/stack number, a
-// cast-rate note, etc) - e.g. ["6314 meter"] or ["7 stacks"]. Stack counts
+// lines: OPTIONAL array of small value strings (a stack number, a
+// cast-rate note, etc) - e.g. ["7 stacks"] or ["за применение"]. Stack counts
 // are written bare/ranged ("7 stacks", "2-3 stacks"), never "up to N" or
 // "N to M" - the pill they render into (see skill-setup.js/skill-tooltip.js)
 // is already labeled "stacks", so a leading "up to" or a spelled-out "to"
@@ -37,93 +37,78 @@
 // Trance). Same values essentials-table.js used to have authored a
 // second time per-page in each essentials.md skills-table JSON block -
 // that per-row "lines" field now just pulls from here instead, so
-// there's one fewer place to remember to update. RE's values assume the
-// caveat stated once above that family's table (1830 Specialization, no
-// runes/Maelstrom buff) - not restated per skill here or in the tooltip.
+// there's one fewer place to remember to update.
 (function () {
   window.DB_SKILL_DATA = {
     re: {
       maelstrom: {
         tags: [["util", "Синергия"], ["util", "Бафф"], ["warn", "Без иммунитета"]],
         note: "Увеличивает генерацию сфер и скорость атаки/передвижения на 6 сек.",
-        lines: ["шкала 4201", "бафф на себя"],
+        lines: ["бафф на себя"],
       },
       voidstrike: {
         tags: [["util", "Генерация сфер"]],
         note: "Основной генератор сфер, применяйте под эффектом Плаща клинков на небольшом расстоянии от босса.",
-        lines: ["шкала 6314"],
       },
       twinshadows: {
         tags: [["util", "Генерация сфер"], ["util", "Восстановление"], ["util", "Мобильность"]],
         note: "Имеет два заряда, удобен для перемещения.",
-        lines: ["шкала 2227"],
       },
       deathlyslash: {
         tags: [["dmg", "Урон"], ["util", "Генерация сфер"], ["util", "Мобильность"]],
         note: "Хороший урон, доступна каждый второй цикл.",
-        lines: ["шкала 2880"],
       },
       turningslash: {
         tags: [["util", "Синергия"], ["util", "Генерация сфер"], ["util", "Активирует предназначение"], ["immune", "Антистагер"]],
         note: "При попадании накладывает синергию +4% к наносимому урону и +5% к направленному. Активирует Предназначение для 333.",
-        lines: ["шкала 2228"],
       },
       fatalwave: {
         tags: [["dmg", "Урон"], ["util", "Генерация сфер"]],
         note: "Быстрое применение, большой радиус.",
-        lines: ["шкала 2217", "3879 для 313"],
       },
       surge: {
         tags: [["dmg", "Урон"], ["util", "Мобильность"], ["util", "Активирует предназначение"], ["immune", "Антистагер"]],
         note: "Поглащает сферы и восстанавливает ману, а также сокращает время восстановления умений. Активирует Предназначение для 111/313.",
-        lines: ["180/s OC2", "450/s OC5"],
       },
       soulabsorber: {
         tags: [["util", "Генерация сфер"]],
         note: "Основной генератор сфер, применяйте под эффектом Плаща клинков. Второе попадание можно навести для мобильности.",
-        lines: ["шкала 7418"],
       },
       blitzrush: {
         tags: [["util", "Генерация сфер"], ["util", "Восстановление"]],
-        note: "Гибкая атака дальнего боя.",
-        lines: ["шкала 3156"],
+        note: "Удобная атака дальнего боя.",
       },
       headhunt: {
         tags: [["util", "Контратака"], ["util", "Восстановление"], ["warn", "Без иммунитета"]],
         note: "Очень удобная контрутака, которую можно использовать для восстановления ротации.",
-        lines: ["шкала 2200"],
       },
       bladeassault: {
         tags: [["util", "Ультимейт"], ["dmg", "Урон"], ["util", "Генерация сфер"], ["immune", "Антистагер"]],
         note: "Урон и генерация сфер. Долгий статус неуязвивости к опрокидыванию.",
-        lines: ["шкала 20467"],
       },
       flashblink: {
         tags: [["util", "Ультимейт"], ["util", "Генерация сфер"], ["immune", "Антистагер"]],
         note: "Быстро генерирует сферы в начале боя — для игроков, которым лень тратить «Эйфорию».",
-        lines: ["шкала 20472"],
       },
       earthcleaver: {
         tags: [["util", "Контратака"], ["util", "Мобильность"], ["warn", "Без иммунитета"]],
         note: "Мобильный, но медленный.",
-        lines: ["шкала 2208"],
       },
       spincutter: {
         tags: [["util", "Мобильность"]],
         note: "На 10 ур. можно применить до трёх раз подряд (1 заряд).",
-        lines: ["шкала 592", "за применение"],
+        lines: ["за применение"],
       },
       deathsentence: {
         tags: [["dmg", "Урон"], ["util", "Мобильность"]],
         note: "Универсальное дополнение к классическим сборкам.",
-        lines: ["шкала 1760"],
       },
     },
     surge: {
       windcut: {
         tags: [["util", "Стаки"], ["warn", "Без иммунитета"]],
         note: "Комфортное умение для накопления стаков, часто применяется заранее перед Боевым трансом.",
-        lines: ["7-9 стаков"],
+        lines: ["9 стаков"],
       },
       deathtrance: {
         tags: [["util", "Бафф"], ["util", "Активирует предназначение"], ["immune", "Антистагер"]],
@@ -156,7 +141,7 @@
       blitzrush: {
         tags: [["dmg", "Урон"]],
         note: "Основное умение в билде 333. Также используется в 111.",
-        lines: ["7 стаков", "1 для 333"],
+        lines: ["7 стаков"],
       },
       headhunt: {
         tags: [["util", "Контратака"], ["warn", "Без иммунитета"]],
@@ -166,7 +151,7 @@
       earthcleaver: {
         tags: [["util", "Контратака"], ["util", "Мобильность"], ["warn", "Без иммунитета"]],
         note: "В 111 имеет 2 заряда. Относительно медленный.",
-        lines: ["2-3 стака"],
+        lines: ["3 стака"],
       },
       spincutter: {
         tags: [["util", "Мобильность"], ["util", "Стаки"]],
@@ -186,27 +171,22 @@
       flashblink: {
         tags: [["util", "Ультимейт"], ["util", "Генерация сфер"], ["immune", "Антистагер"]],
         note: "Быстро генерирует сферы в начале боя — для игроков, которым лень тратить «Эйфорию».",
-        lines: ["шкала 20472", "3 стака"],
+        lines: ["3 стака"],
       },
       deathlyslash: {
         tags: [["dmg", "Урон"], ["util", "Стаки"], ["util", "Мобильность"]],
         note: "Имеет небольшой прыжок, неплохой урон, используется в билде 222.",
-        lines: ["11-12 стаков"],
+        lines: ["12 стаков"],
       },
       darkaxel: {
         tags: [["util", "Мобильность"], ["immune", "Антистагер"]],
         note: "Длинный и удобный прыжок, проходящий и сквозь босса.",
-        lines: ["2-3 стака"],
+        lines: ["3 стака"],
       },
       upperslash: {
         tags: [["immune", "Антистагер"]],
         note: "Используется в 111, достаточно комфортное.",
         lines: ["5 стаков"],
-      },
-      fallstar: {
-        tags: [["immune", "Антистагер"]],
-        note: "Однажды это наверняка станет метой...",
-        lines: ["8 стаков"],
       },
     },
   };

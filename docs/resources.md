@@ -6,7 +6,7 @@
 
 === "Paradise"
 
-    === "Early Levels"
+    === "Ранние уровни"
 
         ```
         6DA43AC633E2CEC99E42A67CC7C650EF321176822375B4CE0FFFFD98E40F5C56F2FBEE9A1A60DBB0DE1D6F4FA2F83C63D4350F09E0A43F4536D632FEFD5E1B05
@@ -32,7 +32,7 @@
 
     - Альтернатива «Стандарту без ядер», KR-гайд есть в разделе «Полезные ссылки» ниже.
 
-## Калькулятор Системы А.Р.К.
+## Калькулятор Дерева талантов
 
 *Находит оптимальную сборку для твоего Клинка смерти и состава группы. Для сверки смотри таблицы [1](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) или [2](https://docs.google.com/spreadsheets/d/1_0J7liyM_yw16pyn6TKlF1YGaIt5n_A9hSoLnT3yTUc/edit?usp=sharing).*
 
@@ -320,7 +320,7 @@
           <option value="Mid">3.50%</option>
           <option value="High">4.00%</option>
         </select>
-        <select id="ap-bracelet-addB" class="ap-bracelet-addB" title="vs Demons" aria-label="Браслет Дополнительный урон Line 2 (vs Demons/Archdemon)">
+        <select id="ap-bracelet-addB" class="ap-bracelet-addB" title="против демонов" aria-label="Браслет Дополнительный урон Line 2 (против демонов/Archdemon)">
           <option value="None" selected>Нет</option>
           <option value="Low">2.50%</option>
           <option value="Mid">3.00%</option>
@@ -533,7 +533,7 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, вместо the true best. Click again to unpin.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
@@ -551,7 +551,7 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, вместо the true best. Click again to unpin.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
@@ -569,7 +569,7 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, instead of the true best. Click again to unpin.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Pin this combo as the base every comparison on this page (Браслет, Accessory, ArkGrid, Engraving) is computed against, вместо the true best. Click again to unpin.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
@@ -1012,7 +1012,7 @@
          above are filled out, which is why it reads as a continuation of
          them rather than something you'd reach for on its own. -->
     <details class="ap-bvb">
-      <summary>Браслет vs. Браслет</summary>
+      <summary>Браслет A против Браслета B</summary>
       <div class="ap-brace-compare-body">
         <p class="ap-brace-compare-intro">Сравнивает два браслета с пятью линиями между собой и с вариантом вообще без браслета.</p>
 
@@ -1147,11 +1147,11 @@
             </div>
             <div class="ap-bvb-results">
               <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-bvb-keystone ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Браслет</span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">против «нет» Браслет</span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Камни и линии крита</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Мастерство</span><span class="ap-bvb-spec-val ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Остальные линии</span><span class="ap-bvb-other-wrap"><label class="ap-bvb-inline-check ap-bvb-a-demons-wrap" title="Include the vs Demon/Archdemon portion of the Дополнительный урон &amp; vs Demon/Archdemon line - unchecked values only its Дополнительный урон portion." hidden><input type="checkbox" class="ap-bvb-a-demons"> vs Demons</label><label class="ap-bvb-inline-check ap-bvb-a-cdest-wrap" title="Estimate the +2% Cooldown line's penalty into its value - unchecked uses its raw stated Урон обычных умений, % instead." hidden><input type="checkbox" class="ap-bvb-a-cdest" checked> +CD Estimate</label><span class="ap-bvb-flat ap-summary-value">—</span></span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">WP/AP Lines</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Остальные линии</span><span class="ap-bvb-other-wrap"><label class="ap-bvb-inline-check ap-bvb-a-demons-wrap" title="Include the vs Demon/Archdemon portion of the Дополнительный урон &amp; vs Demon/Archdemon line - unchecked values only its Дополнительный урон portion." hidden><input type="checkbox" class="ap-bvb-a-demons"> против демонов</label><label class="ap-bvb-inline-check ap-bvb-a-cdest-wrap" title="Estimate the +2% Cooldown line's penalty into its value - unchecked uses its raw stated Урон обычных умений, % instead." hidden><input type="checkbox" class="ap-bvb-a-cdest" checked> Оценка +CD</label><span class="ap-bvb-flat ap-summary-value">—</span></span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Линии силы оружия/атаки</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
             </div>
           </div>
 
@@ -1253,11 +1253,11 @@
             </div>
             <div class="ap-bvb-results">
               <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-bvb-keystone ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Браслет</span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">против «нет» Браслет</span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Камни и линии крита</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Мастерство</span><span class="ap-bvb-spec-val ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Остальные линии</span><span class="ap-bvb-other-wrap"><label class="ap-bvb-inline-check ap-bvb-b-demons-wrap" title="Include the vs Demon/Archdemon portion of the Дополнительный урон &amp; vs Demon/Archdemon line - unchecked values only its Дополнительный урон portion." hidden><input type="checkbox" class="ap-bvb-b-demons"> vs Demons</label><label class="ap-bvb-inline-check ap-bvb-b-cdest-wrap" title="Estimate the +2% Cooldown line's penalty into its value - unchecked uses its raw stated Урон обычных умений, % instead." hidden><input type="checkbox" class="ap-bvb-b-cdest" checked> +CD Estimate</label><span class="ap-bvb-flat ap-summary-value">—</span></span></div>
-              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">WP/AP Lines</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Остальные линии</span><span class="ap-bvb-other-wrap"><label class="ap-bvb-inline-check ap-bvb-b-demons-wrap" title="Include the vs Demon/Archdemon portion of the Дополнительный урон &amp; vs Demon/Archdemon line - unchecked values only its Дополнительный урон portion." hidden><input type="checkbox" class="ap-bvb-b-demons"> против демонов</label><label class="ap-bvb-inline-check ap-bvb-b-cdest-wrap" title="Estimate the +2% Cooldown line's penalty into its value - unchecked uses its raw stated Урон обычных умений, % instead." hidden><input type="checkbox" class="ap-bvb-b-cdest" checked> Оценка +CD</label><span class="ap-bvb-flat ap-summary-value">—</span></span></div>
+              <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Линии силы оружия/атаки</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
             </div>
           </div>
         </div>
@@ -1265,7 +1265,7 @@
         <div class="ap-bvb-summary">
           <p class="ap-bvb-neither">Без обоих: <span class="ap-bvb-no-bracelet-keystone">—</span></p>
           <p class="ap-bvb-diff-wrap"><span class="ap-bvb-diff">—</span></p>
-          <p class="ap-brace-compare-aside-note ap-bvb-keystone-note" hidden>Браслет A and B land on different best keystones - the comparison above already accounts for that.</p>
+          <p class="ap-brace-compare-aside-note ap-bvb-keystone-note" hidden>Браслеты A и B попадают на разные лучшие кейстоуны — сравнение выше уже это учитывает.</p>
         </div>
       </div>
     </details>
@@ -1293,7 +1293,7 @@
      nothing here would be saved/exported/reset-tracked - purely a
      sandbox for trying things out, per the reader's own request.
      EXCEPTION: the Raid Captain Variables card's fields (Maelstrom Uptime,
-     Mana Food, Support: Artist/Valkyrie, Support: Paladin, Rage Rune,
+     Еда на ману, саппорт: Artist/Valkyrie, Support: Paladin, Rage Rune,
      Vernese Wine) deliberately DO have ids now - unlike the rest of this
      sandbox, these represent the actual fight conditions the reader is
      playing under, not a hypothetical they're trying out, so losing them
@@ -1540,13 +1540,13 @@
         <p class="ap-gear-card-title ap-bvb-card-title">Лучшая комбинация<span class="ap-brace-info-icon ap-engr-best-combo-food-icon" role="img" aria-label="Ранжировано только для выбранной еды. Смотри «Общая лучшая сборка» ниже." title="Ранжировано только для выбранной еды. Смотри «Общая лучшая сборка» ниже.">i</span></p>
         <div class="ap-stat-card-row"><span class="ap-summary-label">Combo</span><span class="ap-engr-best-combo ap-summary-value">—</span></div>
         <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-engr-best-keystone ap-summary-value">—</span></div>
-        <div class="ap-stat-card-row"><span class="ap-summary-label">vs Runner-Up</span><span class="ap-engr-best-vs-runnerup ap-summary-value">—</span></div>
+        <div class="ap-stat-card-row"><span class="ap-summary-label">против второго места</span><span class="ap-engr-best-vs-runnerup ap-summary-value">—</span></div>
         <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус конкурирующей гравировки</span><span class="ap-engr-best-engr-gain ap-summary-value">—</span></div>
         <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус гравировки Фетранита</span><span class="ap-engr-best-stone-engr-gain ap-summary-value">—</span></div>
         <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Базовый бонус Фетранита к силе атаки</span><span class="ap-engr-best-stone-ap ap-summary-value">—</span></div>
       </div>
       <div class="ap-bvb-card">
-        <p class="ap-gear-card-title ap-bvb-card-title">Runner-Up</p>
+        <p class="ap-gear-card-title ap-bvb-card-title">Второе место</p>
         <div class="ap-stat-card-row"><span class="ap-summary-label">Combo</span><span class="ap-engr-runnerup-combo ap-summary-value">—</span></div>
         <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-engr-runnerup-keystone ap-summary-value">—</span></div>
         <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус конкурирующей гравировки</span><span class="ap-engr-runnerup-engr-gain ap-summary-value">—</span></div>
@@ -1579,7 +1579,7 @@
     <details class="ap-esvs">
       <summary>Сборка A против сборки B</summary>
       <div class="ap-brace-compare-body">
-        <p class="ap-brace-compare-intro">Two loadouts, compared against each other. Core Engravings and Неутомимый натиск Variables above apply.<span class="ap-brace-info-icon ap-esvs-food-icon" role="img" aria-label="Uses whichever food is currently selected. If either setup includes Неутомимый натиск, switching food can change the winner here too - see the Overall Лучшая сборка below." title="Uses whichever food is currently selected. If either setup includes Неутомимый натиск, switching food can change the winner here too - see the Overall Лучшая сборка below.">i</span></p>
+        <p class="ap-brace-compare-intro">Два варианта сравниваются между собой. Учтены ядерные гравировки и параметры «Неутомимого натиска» выше.<span class="ap-brace-info-icon ap-esvs-food-icon" role="img" aria-label="Uses whichever food is currently selected. If either setup includes Неутомимый натиск, switching food can change the winner here too - see the Overall Лучшая сборка below." title="Uses whichever food is currently selected. If either setup includes Неутомимый натиск, switching food can change the winner here too - see the Overall Лучшая сборка below.">i</span></p>
         <div class="ap-esvs-cards">
           <div class="ap-esvs-card ap-esvs-card-a">
             <p class="ap-gear-card-title ap-esvs-card-title">Setup A</p>
@@ -1659,7 +1659,7 @@
             </div>
             <div class="ap-esvs-results">
               <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-esvs-a-keystone ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Setup</span><span class="ap-esvs-a-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">против отсутствия сборки</span><span class="ap-esvs-a-vs-none ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус конкурирующей гравировки</span><span class="ap-esvs-a-engr-gain ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус гравировки Фетранита</span><span class="ap-esvs-a-stone-engr-gain ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Базовый бонус Фетранита к силе атаки</span><span class="ap-esvs-a-stone-ap ap-summary-value">—</span></div>
@@ -1744,7 +1744,7 @@
             </div>
             <div class="ap-esvs-results">
               <div class="ap-stat-card-row"><span class="ap-summary-label">Лучший камень</span><span class="ap-esvs-b-keystone ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No Setup</span><span class="ap-esvs-b-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">против отсутствия сборки</span><span class="ap-esvs-b-vs-none ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус конкурирующей гравировки</span><span class="ap-esvs-b-engr-gain ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Бонус гравировки Фетранита</span><span class="ap-esvs-b-stone-engr-gain ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-bvb-breakdown-row"><span class="ap-summary-label">Базовый бонус Фетранита к силе атаки</span><span class="ap-esvs-b-stone-ap ap-summary-value">—</span></div>
@@ -2002,10 +2002,10 @@
               </select>
             </div>
             <div class="ap-esvs-results">
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No <span class="ap-avb-slot-label-vsnone">Ожерелье</span></span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">против «нет» <span class="ap-avb-slot-label-vsnone">Ожерелье</span></span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-avb-grid-row"><span class="ap-summary-label ap-avb-grid-label">Доп. урон</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-avb-flat-row"><span class="ap-summary-label">Урон умений</span><span class="ap-bvb-flat ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-avb-lineratio-row"><span class="ap-summary-label">AP% / WP% Lines</span><span class="ap-bvb-lineratio ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-avb-lineratio-row"><span class="ap-summary-label">Линии силы атаки/оружия, %</span><span class="ap-bvb-lineratio ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-avb-wp-row"><span class="ap-summary-label">Основной стат / Line 3</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
             </div>
           </div>
@@ -2046,10 +2046,10 @@
               </select>
             </div>
             <div class="ap-esvs-results">
-              <div class="ap-stat-card-row"><span class="ap-summary-label">vs No <span class="ap-avb-slot-label-vsnone">Ожерелье</span></span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row"><span class="ap-summary-label">против «нет» <span class="ap-avb-slot-label-vsnone">Ожерелье</span></span><span class="ap-bvb-vs-none ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-avb-grid-row"><span class="ap-summary-label ap-avb-grid-label">Доп. урон</span><span class="ap-bvb-grid ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-avb-flat-row"><span class="ap-summary-label">Урон умений</span><span class="ap-bvb-flat ap-summary-value">—</span></div>
-              <div class="ap-stat-card-row ap-avb-lineratio-row"><span class="ap-summary-label">AP% / WP% Lines</span><span class="ap-bvb-lineratio ap-summary-value">—</span></div>
+              <div class="ap-stat-card-row ap-avb-lineratio-row"><span class="ap-summary-label">Линии силы атаки/оружия, %</span><span class="ap-bvb-lineratio ap-summary-value">—</span></div>
               <div class="ap-stat-card-row ap-avb-wp-row"><span class="ap-summary-label">Основной стат / Line 3</span><span class="ap-bvb-wp ap-summary-value">—</span></div>
             </div>
           </div>
@@ -2366,11 +2366,11 @@
 | Ссылка | Для чего |
 |---|---|
 | [Arsonistic's Calculator](https://docs.google.com/spreadsheets/d/1_0J7liyM_yw16pyn6TKlF1YGaIt5n_A9hSoLnT3yTUc/edit?usp=sharing) | *Настройка «Отточенных рефлексов»/«Исключительного дара» и браслета — отвечает на ВСЕ вопросы по снаряжению* |
-| [KR Calculator (Translated)](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) | *Simpler, only for Пассивки А.Р.К. settings* |
-| [Astrogem Optimizer](https://airplaner.github.io/lostark-arkgrid-gem-locator-v2/) | *Автоминимакс по скриншотам для Системы А.Р.К.*тема А.Р.К.* |
+| [KR Calculator (Translated)](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) | *Проще: только для настроек Дерева талантов* |
+| [Astrogem Optimizer](https://airplaner.github.io/lostark-arkgrid-gem-locator-v2/) | *Автоминимакс по скриншотам для Дерева талантов, тема А.Р.К.* |
 | [Lost Ark Bible](https://lostark.bible/) | *Логи и статистика рейдов* |
 | [LOA Logs](https://github.com/snoww/loa-logs) | *<span class="skill-mention" data-glossary-id="dpsmeter">DPS-метр</span> download* |
-| [Lost Ark Nexus](https://lostark-nexus-archive.pages.dev/guides/deathblade/) | *Для «Стандарта без ядер» и других сборок RE до Системы А.Р.К.*ld* |
+| [Lost Ark Nexus](https://lostark-nexus-archive.pages.dev/guides/deathblade/) | *Для «Стандарта без ядер» и других сборок RE до Дерева талантов* |
 | [Fatal Wave Dump](https://docs.google.com/document/d/1vs1YC_7adaYwtfN9cHO3x2KuMPq6GcKRlGo5vnsN4Lk/edit) | *Для 333 «Стандарт без ядер» (с Разрубающими лезвиями) на NA* |
 | [Maxroll](https://maxroll.gg/lost-ark) | *Ресурсы для новичков* |
 | [Inven RE Guide](https://www.inven.co.kr/board/lostark/5497/140080) | *Корейский гайд по 333, 111 «Охота за головами» и «Искусство меча»* |
