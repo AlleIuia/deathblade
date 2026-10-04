@@ -24,7 +24,7 @@
     5BC069F349F703CA2B9B9B732BB3629E493826BE8BEA2FF11FF1575D1258D07FAA57A9FADBF188946EF1E2DB1CD6779759FF6F7EA4138A86EB19F6505242CC98
     ```
 
-## Калькулятор Дерева талантов
+## Калькулятор Созвездий А.Р.К.
 
 *Находит оптимальную сборку для твоего Клинка смерти и состава группы. Можешь сверить результаты этого калькулятора и уже популярные таблицы [1](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) или [2](https://docs.google.com/spreadsheets/d/1_0J7liyM_yw16pyn6TKlF1YGaIt5n_A9hSoLnT3yTUc/edit?usp=sharing).*
 
@@ -504,7 +504,7 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Закрепить эту комбинацию как базу для всех сравнений на странице (браслет, аксессуар, Дерево талантов, гравировки) вместо настоящей лучшей. Нажми ещё раз, чтобы открепить.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Закрепить эту комбинацию как базу для всех сравнений на странице (браслет, аксессуар, Созвездия А.Р.К., гравировки) вместо настоящей лучшей. Нажми ещё раз, чтобы открепить.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
@@ -522,7 +522,7 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Закрепить эту комбинацию как базу для всех сравнений на странице (браслет, аксессуар, Дерево талантов, гравировки) вместо настоящей лучшей. Нажми ещё раз, чтобы открепить.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Закрепить эту комбинацию как базу для всех сравнений на странице (браслет, аксессуар, Созвездия А.Р.К., гравировки) вместо настоящей лучшей. Нажми ещё раз, чтобы открепить.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
@@ -540,7 +540,7 @@
            round caps/joins). Replaces an earlier hand-rolled circle+line
            SVG that read as an ambiguous squiggle at this size instead of
            a recognizable pin - see the CSS comment on .ap-result-pin svg. -->
-      <button type="button" class="ap-result-pin" aria-pressed="false" title="Закрепить эту комбинацию как базу для всех сравнений на странице (браслет, аксессуар, Дерево талантов, гравировки) вместо настоящей лучшей. Нажми ещё раз, чтобы открепить.">
+      <button type="button" class="ap-result-pin" aria-pressed="false" title="Закрепить эту комбинацию как базу для всех сравнений на странице (браслет, аксессуар, Созвездия А.Р.К., гравировки) вместо настоящей лучшей. Нажми ещё раз, чтобы открепить.">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
           <path d="M12 17v5"></path>
           <path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"></path>
@@ -2186,7 +2186,7 @@
 | Ссылка | Для чего |
 |---|---|
 | [Lost Ark Bible](https://lostark.bible/) | *Логи и статистика рейдов* |
-| [Lost Ark Nexus](https://lostark-nexus-archive.pages.dev/guides/deathblade/) | *Для «Стандарта без ядер» и других сборок RE до Дерева талантов* |
+| [Lost Ark Nexus](https://lostark-nexus-archive.pages.dev/guides/deathblade/) | *Для «Стандарта без ядер» и других сборок RE до Созвездий А.Р.К.* |
 | [Fatal Wave Dump](https://docs.google.com/document/d/1vs1YC_7adaYwtfN9cHO3x2KuMPq6GcKRlGo5vnsN4Lk/edit) | *Для 333 «Стандарт без ядер» (с Разрубающими лезвиями) на NA* |
 | [Статистика используемых ядер KR](https://loawa.com/stat/arkgrid) | *Распределение ядер у игроков KR* |
 | [Статистика используемых ядер EU](https://lostark.bible/stats/class?classId=berserker&classEngraving=First&minIlvl=1700&maxIlvl=1810) | *Распределение ядер у игроков EU* |

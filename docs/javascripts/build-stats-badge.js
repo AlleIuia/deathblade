@@ -50,7 +50,6 @@
       difficulty: build.difficulty,
       trixion: build.trixion,
       trixionConfirmed: build.trixionConfirmed !== false,
-      playstyle: build.playstyle,
     };
   }
 
@@ -90,12 +89,10 @@
       var fillClass = data.trixionConfirmed ? "stat-bar-fill-teal" : "stat-bar-fill-unconfirmed";
       el.appendChild(buildStatEl(
         "DPS в Тризионе",
-        data.trixion.toFixed(2) + " Multiplier",
+        data.trixion.toFixed(2) + " множитель",
         barTrack(fillClass, "stat-bar-track-teal", trixPct)
       ));
     }
-
-    el.appendChild(buildStatEl("Стиль игры", data.playstyle, null));
   }
 
   window.SiteUtils.registerRenderer(".build-stats[data-build]", renderStats);

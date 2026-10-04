@@ -1,7 +1,7 @@
 # 111 Классика 🦁
 
 <div class="build-card-row" markdown>
-<div class="build-card" data-updated="2026-09-24" markdown>
+<div class="build-card" markdown>
 
 <!-- Difficulty/Trixion/Playstyle stats above, AND the pentagon badge below,
      both read from javascripts/build-data.js (window.DB_BUILD_DATA) - there is
@@ -18,7 +18,7 @@
 - Мощные окна для прорывного урона с комбо «Неуловимого пируэта».
 - Не нужно придерживать <span class="skill-mention" data-glossary-id="counter">Контр</span>, он заряжается до двух стаков.
 - Очень высокая эффективность самоцветов: «Концентрация воли» — практически весь твой урон.
-- Доступно с нуля <span class="skill-mention" data-glossary-id="arkgrid">Дерево талантов</span> ядра с небольшими правками.
+- Доступно с нуля <span class="skill-mention" data-glossary-id="arkgrid">Созвездия А.Р.К.</span> ядра с небольшими правками.
 - Нужно постоянно балансировать «Концентрацию воли» <span class="skill-mention" data-glossary-id="backattack">попадание в спину</span> темп с «Концентрацией воли» <span class="skill-mention" data-glossary-id="cpm">CPM</span>.
 
 </div>
@@ -26,7 +26,7 @@
 <div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Video Guide](https://www.youtube.com/watch?v=pzFa5zOuNik){ .video-chip } [Gameplay](https://www.youtube.com/watch?v=j-2dGp7PGws){ .video-chip }
+[Видео-гайд](https://www.youtube.com/watch?v=pzFa5zOuNik){ .video-chip } [Геймплей](https://www.youtube.com/watch?v=j-2dGp7PGws){ .video-chip }
 </div>
 </div>
 </div>
@@ -44,7 +44,7 @@
 <details class="setup-note" data-kind="danger" open markdown>
 <summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Убедись, что прочитал [Основы](essentials.md), затем примени и <span class="skill-mention" data-glossary-id="arkpassive">Пассивные таланты</span>" и "Навык", чтобы не ошибиться. По самоцветам ([Gems](#gems)) следуй гайду.
+Убедись, что прочитал [Основы](essentials.md) перед импортом! Самоцветы сравни с гайдом ([Самоцветы](#gems)).
 
 </details>
 
@@ -124,9 +124,9 @@
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span>Дерево талантов<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Созвездия А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Ядра «Дерева талантов» можно качать на свой выбор, но «Ядро Концентрации воли» на 17p даёт второй стак «Двуручного хвата». Это освобождает слот самоцвета и позволит применять «Двуручный хват», не придерживая его под механик рейда.
+- Ядра «Созвездий А.Р.К.» можно качать на свой выбор, но «Ядро Концентрации воли» на 17p даёт второй стак «Двуручного хвата». Это освобождает слот самоцвета и позволит применять «Двуручный хват», не придерживая его под механик рейда.
 
 </details>
 
@@ -206,7 +206,7 @@
 
 </div>
 
-## Гемы {#gems}
+## Самоцветы {#gems}
 
 <!-- Ranked skill-id lists per column (dmg/cd), top = highest priority.
      Full schema, including the expandable "alts" form for a swappable

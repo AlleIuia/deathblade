@@ -1,9 +1,9 @@
 # Стандарт без ядер 🌱
 
-<div class="build-card-row" markdown>
-<div class="build-card" data-updated="2026-09-15" markdown>
+<div class="build-card-row build-card-row--wide" markdown>
+<div class="build-card" markdown>
 
-<!-- Difficulty/Trixion/Playstyle stats above, AND the pentagon badge below,
+<!-- Difficulty/Trixion stats above, AND the pentagon badge below,
      both read from javascripts/build-data.js (window.DB_BUILD_DATA) - there is
      nothing to hand-edit in either div itself. Find this build by its
      data-build id there and edit pentagon/difficulty/trixion/bestFor/etc.;
@@ -11,45 +11,25 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="standard" data-family="re"></div>
 
-**Лучше всего:**{: .best-для } Новичкам в Остаточной энергии без <span class="skill-mention" data-glossary-id="arkgrid">Дерево талантов</span> пока.
-
-**Компромисс:**{: .tradeoff } Старый билд с простоем в ротации и почти без восстановления.
-
-- Последний бастион классической Остаточной энергии, уже вытесненный более сильными вариантами.
-- <span class="skill-mention" data-glossary-id="counter">Контр</span> часто занят в ротации, его приходится придерживать, когда это нужно.
-- Прост в освоении и исполнении, а мобильность лучше, чем у современных билдов.
+<p class="build-card-lede">Билд подходит новичкам и твину блейду без ядер.</p>
 
 </div>
 <div class="pentagon-badge" data-build="standard" data-family="re" markdown>
 <div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Video Guide](https://www.youtube.com/watch?v=pZDYek5l1og&t=467s){ .video-chip } [Gameplay](https://www.youtube.com/watch?v=xmxCjwImyrg){ .video-chip }
+[Видео-гайд](https://www.youtube.com/watch?v=pZDYek5l1og&t=467s){ .video-chip } [Геймплей](https://www.youtube.com/watch?v=xmxCjwImyrg){ .video-chip }
 </div>
 </div>
 </div>
 
-<div class="setup-panel" data-accent="lavender" markdown>
-<div class="setup-notes" markdown>
+<aside class="build-sidenote" data-kind="note" markdown>
+<p><span class="setup-note-tag">Заметка</span>Об этом билде</p>
+<p>Не вижу смысла расписывать данный билд подробно, так как он является проходным (используется короткий промежуток времени). В данном билде не нужна еда или же эйфория.</p>
+</aside>
 
-<details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Заметка</span>Об этом билде<span class="setup-note-arrow"></span></summary>
-
-Так как это билд для новичков на старом билд-стиле, гайд слегка отходит от нормы ради более понятного опыта без глубокого минмакса. Например, тебе не понадобится еда на ману или стимуляторы, чтобы получать удовольствие от игры.
-
-</details>
-
-</div>
-</div>
-
-*Вообще новичок в Клинке Смерти? [Концентрация воли](../surge/essentials.md) в целом понятнее для начинающих и бьёт сильнее, чем «Стандарт» ОС.*
 
 ## Код билда {#skill-codes}
-
-<!-- Paste the exported skill-code string (from the in-game loadout share
-     feature) into the fenced code block below. Each `=== "Tab Name"` block is
-     a separate tab holding its own code + optional italic note above it -
-     copy that pattern to add another import option (e.g. an easier variant). -->
 
 <div class="setup-panel" data-accent="lavender" markdown>
 <div class="setup-notes" markdown>
@@ -57,12 +37,17 @@
 <details class="setup-note" data-kind="danger" open markdown>
 <summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Убедись, что прочитал [Основы](essentials.md), затем примени и <span class="skill-mention" data-glossary-id="arkpassive">Пассивные таланты</span>" и "Навык", чтобы не ошибиться. По самоцветам ([Gems](#gems)) следуй гайду.
+Убедись, что прочитал [Основы](essentials.md) перед импортом! Самоцветы сравни с гайдом ([Самоцветы](#gems)).
 
 </details>
 
 </div>
 </div>
+
+<!-- Paste the exported skill-code string (from the in-game loadout share
+     feature) into the fenced code block below. Each `=== "Tab Name"` block is
+     a separate tab holding its own code + optional italic note above it -
+     copy that pattern to add another import option (e.g. an easier variant). -->
 
 === "Стандарт"
 
@@ -116,15 +101,8 @@
 
 <div class="setup-notes" markdown>
 
-<details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
-
-- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
-
-</details>
-
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span>Дерево талантов<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span>Созвездия А.Р.К.<span class="setup-note-arrow"></span></summary>
 
 <div class="ark-cores" data-family="re" markdown>
 <script type="application/json">
@@ -135,9 +113,6 @@
 ]
 </script>
 </div>
-
-- «Стандарт» по задумке играется без «Дерева талантов», но можно взять ядра от 111, если они уже есть.
-- Прибереги ядра «Дерева талантов» на момент перехода к современному билду Клинка Смерти.
 
 </details>
 
@@ -188,20 +163,9 @@
 </script>
 </div>
 
-<div class="setup-notes" markdown>
-
-<details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Советы</span>Руны<span class="setup-note-arrow"></span></summary>
-
-- Используй <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> на «Длани Авесты» ради дополнительной генерации сфер, пока не освоишься с классом.
-
-</details>
-
 </div>
 
-</div>
-
-## Гемы {#gems}
+## Самоцветы {#gems}
 
 <!-- Ranked skill-id lists per column (dmg/cd), top = highest priority.
      Full schema, including the expandable "alts" form for a swappable
@@ -234,9 +198,9 @@
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
-Подойди к боссу «Разрубающими лезвиями», примени открытие и дальше повторяй основной цикл.
+Подойди к боссу «Разрубающими лезвиями», сделай открытие с нуля сфер и дальше повторяй основной цикл.
 
-Открытие <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и применяет <span class="skill-mention" data-glossary-id="synergy">синергии</span> эффективно по мере накопления к первой «Концентрации воли» в бою.
+Открытие нужно, чтобы накачать <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>, навесить <span class="skill-mention" data-glossary-id="synergy">синергии</span> и накачать шары.
 
 *Открытие с нуля сфер:*
 { .lead }
@@ -258,17 +222,10 @@
 </script>
 </div>
 
-1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> доступен только через ротацию. Просто продолжай, если он на перезарядке.
-2. Применяй «Разрубающие лезвия» в простое для смены позиции или держи, чтобы уклониться от атак.
-3. Используй <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> ради урона или придержи для гиперпробуждения либо спасительного восстановления.
-4. Ротация целиком упирается в перезарядку «Длани Авесты». Что есть, то есть.
-    - «Двуручный хват» можно пропустить, если «Длань Авесты» уже не на перезарядке.
-
-*Восстановление:*
 { .lead }
 
-1. Используй свободные стаки «Двойной плети» или «Плаща клинков» для восстановления, если это поможет набрать 3 сферы.
-    - Если нет, просто жди в простое или применяй «Концентрацию воли» с 2 сферами и жди. Добро пожаловать в «Стандарт» Остаточной энергии.
+1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> (T) доступна каждый второй цикл. Если T на перезарядке, нажимай без этого умения.
+2. <span class="skill-mention" data-skill-id="spincutter">Разрубающие лезвия</span> используй для мобильности.
 
 ## Распределение Урона {#dps-spread}
 

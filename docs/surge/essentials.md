@@ -36,7 +36,7 @@
 
 - Всем билдам Клинка смерти нужен питомец, дающий бонус к «<span class="skill-mention" data-glossary-id="specializationstat">Мастерству</span>» (160).
 - Порог для 333 — **1818** <span class="skill-mention" data-glossary-id="specializationstat">Мастерства</span> (для оптимального набора шариков), но старайся выжать **1830+**.
-- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Дерево талантов</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
+- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Созвездия А.Р.К.</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
 - Всегда жмите следующее умение во время анимации текущего умения.
 - Если сомневаетесь, берите «<span class="skill-mention" data-skill-id="grudge">Титаноборец</span>» и «<span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span>»/«<span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>» в качестве гравировок <span class="skill-mention" data-glossary-id="abilitystone">Фетранита</span>.
 - Для тренировок в <span class="skill-mention" data-glossary-id="trixion">Тризионе</span> нужны гравировки «<span class="skill-mention" data-skill-id="spiritabsorption">Стремительность</span>» и «<span class="skill-mention" data-skill-id="maxmp">Источник маны</span>» максимального уровня.
@@ -203,16 +203,6 @@
 - <span class="skill-mention" data-skill-id="turningslash">Иссечение</span>: +4% исходящего. Атаки со спины и в голову наносят ещё +5%.
 - <span class="skill-mention" data-skill-id="surpriseattack">Внезапный выпад</span>: +4% исходящего. Атаки со спины и в голову наносят ещё +5%.
 - <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>: +12.8% скорости атаки и передвижения на 6 сек.
-
-### Стиль игры {#playstyle}
-
-В Твёрдой воли твоя основная задача — набирать стаки умениями, после чего скидывать стаки через Концентрацию воли.
-
-Как это будет выглядеть:
-
-3 сферы → <span class="skill-mention" data-skill-id="deathtrance">Боевой транс</span> → набор стаков → <span class="skill-mention" data-skill-id="surge">Концентрация воли</span> → повтор.
-
-Во всех сборках Концентрация воли (Z) будет топ-1 скиллом по урону.
 
 ## Скилы Твёрдой воли {#surge-skills}
 

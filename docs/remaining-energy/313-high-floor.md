@@ -1,7 +1,7 @@
 # 313 Шакрамы 2.0 💜
 
 <div class="build-card-row" markdown>
-<div class="build-card" data-updated="2026-09-19" markdown>
+<div class="build-card" markdown>
 
 <!-- Difficulty/Trixion/Playstyle stats above, AND the pentagon badge below,
      both read from javascripts/build-data.js (window.DB_BUILD_DATA) - there is
@@ -24,7 +24,7 @@
 <div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Video Guide](https://www.youtube.com/watch?v=6ez2lS4AI6Q){ .video-chip }
+[Видео-гайд](https://www.youtube.com/watch?v=6ez2lS4AI6Q){ .video-chip }
 </div>
 </div>
 </div>
@@ -42,7 +42,7 @@
 <details class="setup-note" data-kind="danger" open markdown>
 <summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Убедись, что прочитал [Основы](essentials.md), затем примени и <span class="skill-mention" data-glossary-id="arkpassive">Пассивные таланты</span>" и "Навык", чтобы не ошибиться. По самоцветам ([Gems](#gems)) следуй гайду.
+Убедись, что прочитал [Основы](essentials.md) перед импортом! Самоцветы сравни с гайдом ([Самоцветы](#gems)).
 
 </details>
 
@@ -129,7 +129,7 @@
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Дерево талантов</span><span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Созвездия А.Р.К.</span><span class="setup-note-arrow"></span></summary>
 
 - Поднимай «Ядро Искусства» до 17p ради удобства и урона, когда это возможно.
 
@@ -228,7 +228,7 @@
 
 </div>
 
-## Гемы {#gems}
+## Самоцветы {#gems}
 
 <!-- Ranked skill-id lists per column (dmg/cd), top = highest priority.
      Full schema, including the expandable "alts" form for a swappable

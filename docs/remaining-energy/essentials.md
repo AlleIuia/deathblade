@@ -67,7 +67,7 @@
 <summary><span class="setup-note-tag">Советы</span>Короткая база о блейде<span class="setup-note-arrow"></span></summary>
 
 - Всем билдам Клинка смерти нужен питомец, дающий бонус к «<span class="skill-mention" data-glossary-id="specializationstat">Мастерству</span>» (160).
-- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Дерево талантов</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
+- Оптимизируйте свою <span class="skill-mention" data-glossary-id="arkpassive">Созвездия А.Р.К.</span> и подберите <span class="skill-mention" data-glossary-id="bracelet">браслеты</span>/снаряжение — [здесь!](../resources.md#ark-passive-calculator)
 - Порог для 333 — **1818** <span class="skill-mention" data-glossary-id="specializationstat">Мастерства</span> (для оптимального набора шариков), но старайся выжать **1830+**.
 - Всегда жмите следующее умение во время анимации текущего умения.
 - Если сомневаетесь, берите «<span class="skill-mention" data-skill-id="grudge">Титаноборец</span>» и «<span class="skill-mention" data-skill-id="ambushmaster">Бесшумный убийца</span>»/«<span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>» в качестве гравировок <span class="skill-mention" data-glossary-id="abilitystone">Фетранита</span>.
@@ -168,14 +168,6 @@
 
 - <span class="skill-mention" data-skill-id="turningslash">Иссечение</span>: +4% исходящего. Атаки со спины и в голову наносят ещё +5%.
 - <span class="skill-mention" data-skill-id="maelstrom">Плащ клинков</span>: +12.8% скорости атаки и передвижения на 6 сек.
-
-### Стиль игры {#playstyle}
-
-В Остаточной энергии твоя основная задача — набирать сферы и нажимать Концентрацию воли (Z), чтобы сбросить перезарядку умений и восстановить ману.
-
-Как это будет выглядеть:
-
-Набор 3 сфер → Концентрация воли → повтор.
 
 ## Скилы остаточной энергии {#remaining-energy-skills}
 

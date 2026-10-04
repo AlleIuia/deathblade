@@ -2249,6 +2249,88 @@ h3 { color: var(--dbc-teal); }
 .md-typeset .build-card ul {
   margin: 0.4em 0 0.7em;
 }
+
+/* ---- Разреженная карточка билда: профиль по центру ----
+   У «Стандарта без ядер» нет ни «Лучше всего», ни «Компромисс», ни
+   буллетов, поэтому карточка почти пустая, а пентагон остаётся узкой
+   колонкой 168px у правого края - получается пустое поле. Модификатор
+   --wide кладёт карточку на всю ширину, а профиль превращает в
+   компактное окошко по центру под ней: заголовок в левом верхнем углу,
+   пентагон по центру, ссылки под ним. Остальные билды модификатор не
+   носят и остаются в прежней двухколоночной раскладке. */
+.md-typeset .build-card-row--wide {
+  flex-direction: column;
+  align-items: stretch;
+}
+.md-typeset .build-card-row--wide .build-card {
+  width: 100%;
+}
+.md-typeset .build-card-row--wide .pentagon-badge {
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0.8em 0 0;
+  padding: 0.6em 0.9em 0.6em;
+}
+/* Заголовок - в левый верхний угол окошка, а не по центру: он подписывает
+   блок, а не является его содержимым. */
+.md-typeset .build-card-row--wide .pentagon-badge-title {
+  align-self: flex-start;
+  text-align: left;
+  margin-bottom: 0.35em;
+}
+.md-typeset .build-card-row--wide .pentagon-svg-mount {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 150px;
+}
+.md-typeset .build-card-row--wide .pentagon-badge-extra {
+  margin-top: 0.45em;
+  padding-top: 0;
+  width: 100%;
+  /* Ссылки в один ряд - главный источник высоты у окошка, которое
+     растянуто на всю ширину. */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4em 0.7em;
+}
+.md-typeset .build-card-row--wide .pentagon-badge-extra .video-chip {
+  margin-bottom: 0;
+}
+/* Уже окошком - на мобильных лишь слегка сужаем, раскладка та же. */
+@media screen and (max-width: 720px) {
+  .md-typeset .build-card-row--wide .pentagon-svg-mount {
+    max-width: 132px;
+  }
+}
+
+/* "Кому подходит" под бейджем сложности/Тризиона. Заменяет удалённые
+   «Лучше всего»/«Компромисс»: карточка билда без них оставалась почти
+   пустой и читалась как сломанная. Оформлено как короткая эпиграфная
+   реплика - вертикальная акцентная черта + курсив, - чтобы не путалась с
+   перечислением плюсов-минусов и не спорила с пентагоном справа. */
+.md-typeset .build-card-lede {
+  margin: 0.75em 0 0.15em;
+  padding: 0.1em 0 0.1em 0.85em;
+  border-left: 3px solid rgba(var(--dbc-teal-rgb), 0.65);
+  color: var(--dbc-slate);
+  font-style: italic;
+  font-size: 0.98em;
+  line-height: 1.5;
+}
+
+/* На узких экранах карточка бейджа и пентагон складываются в колонку
+   (см. .build-card-row ниже), и вертикальная черта начинает читаться как
+   случайный отступ - уменьшаем её и оставляем просто курсив. */
+@media screen and (max-width: 720px) {
+  .md-typeset .build-card-lede {
+    padding-left: 0.6em;
+    border-left-width: 2px;
+    font-size: 0.95em;
+  }
+}
 .md-typeset a.video-chip {
   display: inline-flex;
   align-items: center;
@@ -10334,6 +10416,44 @@ body.page-333-blitz input[type="text"] {
   background-color: rgba(var(--dbc-rose-rgb), 0.14);
   border-color: rgba(var(--dbc-rose-rgb), 0.4);
 }
+/* Простая сноска сбоку - без панели, рамки-контейнера и стрелки
+   сворачивания. У «Стандарта без ядер» заметка одна и она длинная, так
+   что тяжёлая .setup-panel ради неё давала пустую рамку вокруг одного
+   абзаца; здесь текст идёт сразу за полосой слева. */
+.md-typeset .build-sidenote {
+  margin: 0.4em 0 1.2em;
+  padding: 0.1em 0 0.1em 0.9em;
+  border-left: 3px solid rgba(var(--dbc-red-rgb), 0.4);
+}
+.md-typeset .build-sidenote > p {
+  margin: 0.35em 0;
+}
+.md-typeset .build-sidenote .setup-note-tag {
+  color: var(--dbc-red);
+  background-color: rgba(var(--dbc-red-rgb), 0.12);
+  border-color: rgba(var(--dbc-red-rgb), 0.35);
+  margin-right: 0.45em;
+}
+
+/* Callout-версия .setup-note без <summary> - блок «Важно» в ротации
+   111 Классики. Селекторы тега выше намеренно заканчиваются на
+   `> summary >`, поэтому цвет и заливка задаются здесь отдельно: тот же
+   розовый, что у «Внимание», плюс рамка слева, чтобы блок читался как
+   выделенный, а не как обычный абзац. */
+.md-typeset aside.setup-note[data-kind="danger"] {
+  margin: 0.8em 0;
+  padding: 0.6em 0.85em;
+  border-left: 3px solid rgba(var(--dbc-rose-rgb), 0.55);
+  border-radius: 4px;
+  background: rgba(var(--dbc-rose-rgb), 0.07);
+}
+.md-typeset aside.setup-note[data-kind="danger"] .setup-note-tag {
+  color: var(--dbc-pink);
+  background-color: rgba(var(--dbc-rose-rgb), 0.14);
+  border-color: rgba(var(--dbc-rose-rgb), 0.4);
+  margin-right: 0.4em;
+}
+
 /* Disclosure arrow - a real span (like .skill-card-arrow) rather than a
    reused pseudo-element, so it doesn't fight the Material icon-removal
    rule above over the same ::before/::after slot. */

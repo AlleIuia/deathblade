@@ -24,7 +24,6 @@
 //     difficulty    - should match pentagon[0]
 //     trixion       - the Trixion DPS multiplier, or null if unmeasured
 //     trixionConfirmed - false shows the diagonal-stripe "unconfirmed" fill
-//     playstyle     - short playstyle tag
 //     accent        - hex color used for this build's line/fill everywhere
 //     bestFor       - SHORT blurb for the compare table only. The build's
 //                     own page keeps its own longer "Best For:" prose
@@ -63,7 +62,6 @@
           difficulty: 8,
           trixion: 1.2,
           trixionConfirmed: true,
-          playstyle: "Сброс скилов",
           bestFor: "\u2728 Всесторонний потолок урона",
           recommended: true,
           compareEnabled: true,
@@ -77,7 +75,6 @@
           difficulty: 7.5,
           trixion: 1.17,
           trixionConfirmed: true,
-          playstyle: "Быстро и комфортно",
           bestFor: "\uD83D\uDC9C Комфорт и восстановление",
           recommended: false,
           compareEnabled: true,
@@ -91,7 +88,6 @@
           difficulty: 9,
           trixion: 1.18,
           trixionConfirmed: true,
-          playstyle: "Быстро и карательно",
           bestFor: "\uD83D\uDD2A Раскрытие скилов и оглушение",
           recommended: false,
           compareEnabled: true,
@@ -105,7 +101,6 @@
           difficulty: 6,
           trixion: null,
           trixionConfirmed: true,
-          playstyle: "Симулятор AFK",
           bestFor: "\uD83C\uDF31 Билд для новичка до А.Р.К.",
           recommended: false,
           compareEnabled: true,
@@ -131,7 +126,6 @@
           difficulty: 7.5,
           trixion: 1.23,
           trixionConfirmed: true,
-          playstyle: "Комбо-вспышка",
           bestFor: "\uD83E\uDD81 Классичный геймплей Твёрдой воли",
           recommended: false,
           compareEnabled: true,
@@ -145,7 +139,6 @@
           difficulty: 7,
           trixion: 1.25,
           trixionConfirmed: true,
-          playstyle: "Максимальная мобильность",
           bestFor: "\uD83D\uDC06 Простое удержание урона",
           recommended: false,
           compareEnabled: true,
@@ -159,7 +152,6 @@
           difficulty: 8,
           trixion: 1.2,
           trixionConfirmed: false,
-          playstyle: "Сброс скилов",
           bestFor: "\uD83D\uDC2F Ожидание баффов",
           recommended: false,
           compareEnabled: true,

@@ -1,7 +1,7 @@
 # 111 Классика 🔪
 
 <div class="build-card-row" markdown>
-<div class="build-card" data-updated="2026-09-19" markdown>
+<div class="build-card" markdown>
 
 <!-- Difficulty/Trixion/Playstyle stats above, AND the pentagon badge below,
      both read from javascripts/build-data.js (window.DB_BUILD_DATA) - there is
@@ -11,20 +11,20 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="111-head-hunt" data-family="re"></div>
 
-**Лучше всего:**{: .best-для } Тем, кто хочет максимума свободы в ротации и скорости.
+**Кому подходит:**{: .best-для } Тем, кто любит свободу в ротации.
 
-**Компромисс:**{: .tradeoff } Не прощает ошибок: в ротации почти нет запаса на промах.
+**Описание:**{: .tradeoff } Почти не прощает ошибки (нет запаса на промах)
 
-- Это финальная форма старой школы Остаточной энергии.
-- «Хитроумный финт» занят в ротации, поэтому он может быть недоступен для восстановления или <span class="skill-mention" data-glossary-id="counter">контр</span>.
-- Генерация сфер ниже и меньше вариантов восстановления, чем в билдах на «Воздушных шакрамах».
+- «Хитроумный финт» занят в ротации, поэтому он может быть недоступен для восстановления ротации или для <span class="skill-mention" data-glossary-id="counter">контртаки</span>.
+- В некоторых рейдах куда приятнее билда 333 (Шакрамов).
+- Не сильно проигрывает по урону билду 333.
 
 </div>
 <div class="pentagon-badge" data-build="111-head-hunt" data-family="re" markdown>
 <div class="pentagon-badge-title">Профиль билда</div>
 <div class="pentagon-svg-mount"></div>
 <div class="pentagon-badge-extra" markdown>
-[Video Guide](https://www.youtube.com/watch?v=z8KE3HG_ggg){ .video-chip } [Gameplay](https://www.youtube.com/watch?v=4O9THIPhVuY){ .video-chip }
+[Видео-гайд](https://www.youtube.com/watch?v=z8KE3HG_ggg){ .video-chip } [Геймплей](https://www.youtube.com/watch?v=4O9THIPhVuY){ .video-chip }
 </div>
 </div>
 </div>
@@ -42,7 +42,7 @@
 <details class="setup-note" data-kind="danger" open markdown>
 <summary><span class="setup-note-tag">Внимание</span>Перед импортом<span class="setup-note-arrow"></span></summary>
 
-Убедись, что прочитал [Основы](essentials.md), затем примени и <span class="skill-mention" data-glossary-id="arkpassive">Пассивные таланты</span>" и "Навык", чтобы не ошибиться. По самоцветам ([Gems](#gems)) следуй гайду.
+Убедись, что прочитал [Основы](essentials.md) перед импортом! Самоцветы сравни с гайдом ([Самоцветы](#gems)).
 
 </details>
 
@@ -115,14 +115,14 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
+- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать «Экспансию».
 
 </details>
 
 <details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Дерево талантов</span><span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Заметка</span><span class="skill-mention" data-glossary-id="arkgrid">Созвездия А.Р.К.</span><span class="setup-note-arrow"></span></summary>
 
-- Играется вообще без вложений в «Дерево талантов», но не рекомендуется.
+- Можно играть без созвездий, но не рекомендуется.
 
 </details>
 
@@ -175,29 +175,11 @@
 
 <div class="setup-notes" markdown>
 
-<details class="setup-note" data-kind="tip" open markdown>
-<summary><span class="setup-note-tag">Советы</span>Руны<span class="setup-note-arrow"></span></summary>
-
-- Используй <span class="skill-mention" data-rune-name="Purify">Солум</span> на «Хитроумном финте», если это абсолютно необходимо.
-
-</details>
-
-<details class="setup-note" data-kind="note" open markdown>
-<summary><span class="setup-note-tag">Заметка</span>Опции и триподы<span class="setup-note-arrow"></span></summary>
-
-- Можно использовать «Быстрые пальцы» <span class="skill-mention" data-glossary-id="tripod">трипод</span> на «Охоте за головами» ради роста DPS и удобства.
-    - Это потеря урона, если ты не используешь выросшие CPM и удобство.
-    - Несовместимо с очень низкой Специализацией или линией браслета +КД%.
-    - По перечисленным причинам это **рекомендуется**, но не выставлено по умолчанию.
-    - Подними «Искусство меча» до Ур. 13, а «Охоту за головами» до Ур. 12, если решишь взять этот трипод.
-
-</details>
-
 </div>
 
 </div>
 
-## Гемы {#gems}
+## Самоцветы {#gems}
 
 <!-- Ranked skill-id lists per column (dmg/cd), top = highest priority.
      Full schema, including the expandable "alts" form for a swappable
@@ -232,7 +214,7 @@
 
 === "Циклы"
 
-    Используй **Открытие**, затем чередуй эти два цикла по необходимости:
+    Используй **Открытие**, затем чередуй эти два цикла.
 
     <div class="cycle-card">
 
@@ -256,7 +238,7 @@
 
     <script type="application/json">
     ["soulabsorber", "blitzrush", "twinshadows", "deathsentence", "turningslash",
-     { "id": "headhunt", "situational": "recovery" },
+     { "id": "headhunt", "situational": "восстановление" },
      "surge"]
     </script>
 
@@ -264,17 +246,19 @@
 
     </div>
 
-    Старайся уместить «Двойную плеть» из цикла **2** под «Плащ клинков» из цикла **1**, чтобы набрать 3 сферы без повторного применения или восстановления. Если не вышло, в конце цикла **2** понадобится дополнительное применение «Хитроумного финта».
 
-    Использование «Хитроумного финта» в цикле **2** может заставить применить его в конце следующего цикла **1**, что создаёт простой.
 
     Управление «Плащом клинков» крайне важно: когда ротация сбоит, при необходимости применяй его сразу после окончания перезарядки.
 
-    Из-за ограниченной генерации сфер добивающие попадания «Иссечения» могут переноситься на следующий цикл.
+
+<aside class="setup-note" data-kind="danger" markdown>
+<p><span class="setup-note-tag">Важно</span> <strong>Старайтесь сдавать все скиллы под «Плащом клинков».</strong> Научитесь правильно нажимать плащ и держать его на себе. 100% аптайм держать получится только с 10 на КД «Плащ клинков».</p>
+</aside>
+
 
 === "Открытия"
 
-    Открытие <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и примени <span class="skill-mention" data-glossary-id="synergy">синергии</span> эффективно. Если покажется сложным, просто применяй синергию и «Концентрацию воли» на полных сферах — этого достаточно, чтобы начать чередовать циклы.
+    Открытие нужно, чтобы накачать адреналин, навесить синергию.
 
     *С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
     { .lead }
@@ -283,20 +267,16 @@
 
     <script type="application/json">
     [{ "id": "headhunt", "swapNext": true }, "twinshadows", "deathsentence", "maelstrom", "turningslash", "deathlyslash", "surge",
-     { "cycleRef": 2, "title": "Soul Absorber + Blitz Rush Cycle" },
-     { "cycleRef": 1, "title": "Void Strike + Deathly Slash Cycle" },
-     { "suffix": "etc." }]
+     { "cycleRef": 2, "title": "Цикл «Длани Авесты» + «Охоты за головами»" },
+     { "cycleRef": 1, "title": "Цикл «Искусства меча» + «Убийственной стали»" },
+     { "suffix": "и так далее" }]
     </script>
 
     </div>
 
-    1. Если доступен, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> взаимозаменяем с циклом **2**.
-    2. Эффективно применять <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> после «Убийственной стали», когда доступны «Призрачные клинки».
 
-    *С нуля/части сфер:*
     { .lead }
 
-    1. Цикл **1**, если доступна «Убийственная сталь», иначе начни с «Плаща клинков» + цикл **2**.
 
 === "Восстановление"
 
@@ -308,7 +288,6 @@
 
     <summary><span class="setup-note-tag">Советы</span>Видео по восстановлению<span class="setup-note-arrow"></span></summary>
 
-    Посмотри это 54-минутное [видео по восстановлению в 111](https://www.youtube.com/watch?v=z8KE3HG_ggg) или выбери более простой билд.
 
     </details>
 
@@ -316,7 +295,6 @@
 
     </div>
 
-    1. Используй свободные стаки «Двойной плети»/«Плаща клинков» и/или «Охоту за головами», если пропустил важные скиллы.
 
 ## Распределение Урона {#dps-spread}
 
