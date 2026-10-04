@@ -2250,14 +2250,18 @@ h3 { color: var(--dbc-teal); }
   margin: 0.4em 0 0.7em;
 }
 
-/* ---- Разреженная карточка билда: профиль по центру ----
-   У «Стандарта без ядер» нет ни «Лучше всего», ни «Компромисс», ни
+/* ---- Профиль билда в разряженной карточке ----
+   У «Стандарта без ядер» нет ни «Кому подходит», ни «Описание», ни
    буллетов, поэтому карточка почти пустая, а пентагон остаётся узкой
    колонкой 168px у правого края - получается пустое поле. Модификатор
    --wide кладёт карточку на всю ширину, а профиль превращает в
-   компактное окошко по центру под ней: заголовок в левом верхнем углу,
-   пентагон по центру, ссылки под ним. Остальные билды модификатор не
-   носят и остаются в прежней двухколоночной раскладке. */
+   горизонтальную полосу под ней: пентагон слева, справа заголовок и
+   ссылки, всё выровнено по левому краю. Остальные билды модификатор не
+   носят и остаются в прежней вертикальной двухколоночной раскладке.
+
+   Сетка, а не flex: заголовок и ссылки - отдельные элементы .pentagon-badge,
+   и в ряд они встали бы бок о бок. grid-area складывает их в правую
+   колонку, а пентагон растягивает на обе строки. */
 .md-typeset .build-card-row--wide {
   flex-direction: column;
   align-items: stretch;
@@ -2269,28 +2273,38 @@ h3 { color: var(--dbc-teal); }
   flex: 1 1 auto;
   width: 100%;
   max-width: none;
-  margin: 0.8em 0 0;
-  padding: 0.6em 0.9em 0.6em;
-}
-/* Заголовок - в левый верхний угол окошка, а не по центру: он подписывает
-   блок, а не является его содержимым. */
-.md-typeset .build-card-row--wide .pentagon-badge-title {
-  align-self: flex-start;
-  text-align: left;
-  margin-bottom: 0.35em;
+  margin: 0.75em 0 0;
+  padding: 0.7em 1em;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas:
+    "svg title"
+    "svg extra";
+  align-items: center;
+  column-gap: 1.15em;
+  row-gap: 0.45em;
 }
 .md-typeset .build-card-row--wide .pentagon-svg-mount {
+  grid-area: svg;
+  align-self: center;
   flex: 0 0 auto;
-  width: 100%;
-  max-width: 150px;
+  width: 128px;
+  max-width: 128px;
+}
+/* Заголовок подписывает блок, поэтому стоит в левом верхнем углу своей
+   колонки, а не по центру окошка. */
+.md-typeset .build-card-row--wide .pentagon-badge-title {
+  grid-area: title;
+  align-self: end;
+  text-align: left;
+  margin-bottom: 0;
 }
 .md-typeset .build-card-row--wide .pentagon-badge-extra {
-  margin-top: 0.45em;
+  grid-area: extra;
+  align-self: start;
+  margin-top: 0;
   padding-top: 0;
   width: 100%;
-  /* Ссылки в один ряд - главный источник высоты у окошка, которое
-     растянуто на всю ширину; прижаты влево, чтобы читались как
-     содержимое окошка, а не висели по центру пустого поля. */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -2300,10 +2314,23 @@ h3 { color: var(--dbc-teal); }
 .md-typeset .build-card-row--wide .pentagon-badge-extra .video-chip {
   margin-bottom: 0;
 }
-/* Уже окошком - на мобильных лишь слегка сужаем, раскладка та же. */
-@media screen and (max-width: 720px) {
+/* На узком экране пентагон сверху, текст под ним - в две колонки он всё
+   равно сжимается в две строки текста. */
+@media screen and (max-width: 620px) {
+  .md-typeset .build-card-row--wide .pentagon-badge {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "svg"
+      "title"
+      "extra";
+    justify-items: start;
+    row-gap: 0.5em;
+  }
   .md-typeset .build-card-row--wide .pentagon-svg-mount {
-    max-width: 132px;
+    width: 118px;
+  }
+  .md-typeset .build-card-row--wide .pentagon-badge-title {
+    align-self: start;
   }
 }
 
