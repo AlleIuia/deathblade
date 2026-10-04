@@ -163,7 +163,7 @@
   const STAGGER_DPS_SHARE = 0.05; // assumed % of a fight's DPS that happens during Stagger - matches the sheet's own default
   const BACK_DMG_TABLE = { Low: 0.025, Mid: 0.03, High: 0.035 };
   const BACK_ATTACK_DPS_SHARE = 0.95; // assumed % of DPS that lands as a Back Attack
-  const DEMON_DMG_ADD = 0.025; // the "& Dmg vs Demon/Archdemon +2.5%" tag's fixed Additional Dmg component
+  const DEMON_DMG_ADD = 0.025; // the "& Dmg против демонов +2.5%" tag's fixed Additional Dmg component
 
   // ----- Accessory Line Comparison lookup tables -----
   // Sourced from Arsonistic's "Acc" sheet (Acc!C2:E10), same methodology
@@ -2002,7 +2002,7 @@
   //     Non-positional Dmg need that same per-skill breakdown with no
   //     comparable fixed-% stand-in, so they're left out entirely rather
   //     than guessed at.
-  //   - Additional Damage vs Demon/Archdemon: the sheet's own Demon Dmg %
+  //   - Additional Damage против демонов: the sheet's own Demon Dmg %
   //     value is hardcoded to 7% (see readInputs's demonDmgPct comment)
   //     instead of being derived or left as a direct input.
   //   - Spec +80/100/120: the sheet ties this to your own profile's live
@@ -2242,8 +2242,8 @@
         ...tiers((t) => critLikeGain("braceletDmg", t, null)),
       },
       {
-        label: ["Стат крита +", ...trip("80", "100", "120")],
-        note: "Укажите текущий стат крита браслета, чтобы не учитывать его дважды.",
+        label: ["Смертоносность +", ...trip("80", "100", "120")],
+        note: "Укажите текущий Смертоносность браслета, чтобы не учитывать его дважды.",
         low: critStatGain(CRIT_STAT_TABLE.Low),
         mid: critStatGain(CRIT_STAT_TABLE.Mid),
         high: critStatGain(CRIT_STAT_TABLE.High),
@@ -2284,7 +2284,7 @@
         mid: (addDmgGain("braceletAddB", "Mid") + 1) * (DEMON_DMG_ADD / (1 + demonDmgPct) + 1) - 1,
         high: (addDmgGain("braceletAddB", "High") + 1) * (DEMON_DMG_ADD / (1 + demonDmgPct) + 1) - 1,
         // Sorts by its Additional-Damage-only portion (ignoring the
-        // situational vs Demon/Archdemon bonus above), not by the full
+        // situational против демонов bonus above), not by the full
         // displayed High value the rest of this sort otherwise uses - see
         // the sort call below. Keeps it from reading as a strictly better
         // pick than the plain Additional Damage line by default, without
@@ -2317,7 +2317,7 @@
       const k = specGainPerPoint(deathbladeSpecMultiplier, cfg.share, cfg.awakeningShare);
       rows.push({
         id: "spec",
-        label: ["Стат спец. +", ...trip("80", "100", "120")],
+        label: ["Мастерство +", ...trip("80", "100", "120")],
         low: k * 80,
         mid: k * 100,
         high: k * 120,
@@ -2516,7 +2516,7 @@
   //   - add_b: ctx.demons defaults to false (unchecked) and values ONLY
   //     the Additional Damage half, same treatment computeBraceletComparison's
   //     own addB row now always uses (see that row's comment); checked
-  //     adds the vs Demon/Archdemon half back in via the same compounding
+  //     adds the против демонов half back in via the same compounding
   //     this used to always do unconditionally.
   function braceletFlatLineGain(typeId, tier, ctx) {
     switch (typeId) {
@@ -5513,7 +5513,7 @@
       // Displayed Crit Dmg excludes Breaking Moon's own add when active -
       // base.critDmg itself stays the real shared.critDmgTotal (the DPS
       // math's actual number, unchanged), this just subtracts it back out
-      // for THIS row's text so it isn't shown twice now that the T→Z CDmg
+      // for THIS row's text so it isn't shown twice now that the T→Z Крит. урон
       // row below surfaces it on its own. critDmg is only ever read here
       // for display (not reused in any further calc), so this is safe.
       const baseCritDmgDisplay = base.critDmg - (base.breakingMoonActive ? base.breakingMoonAdd : 0);

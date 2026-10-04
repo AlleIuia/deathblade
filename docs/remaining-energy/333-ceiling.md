@@ -125,7 +125,7 @@
 
 - Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
 - <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Божественное вдохновение 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Пробужденное сознание 1</span> может решить проблемы с маной ценой совсем небольшой потери урона.
-    - Менее комфортен с +КД% <span class="skill-mention" data-glossary-id="bracelet">браслет</span> линия и/или низкий <span class="skill-mention" data-glossary-id="specializationstat">Специализация</span>.
+    - Менее комфортен с +КД% <span class="skill-mention" data-glossary-id="bracelet">браслет</span> линия и/или Необычный <span class="skill-mention" data-glossary-id="specializationstat">Специализация</span>.
 
 </details>
 
@@ -309,7 +309,7 @@
 <details class="setup-note" data-kind="note" markdown>
 <summary><span class="setup-note-tag">Заметка</span>Общие самоцветы<span class="setup-note-arrow"></span></summary>
 
-- При желании эту схему самоцветов можно разделить с альтами [313 (Высокий шакрам)](313-high-floor.md) и 113 (Искусства).
+- При желании эту схему самоцветов можно разделить с альтами [313 (Легендарный шакрам)](313-high-floor.md) и 113 (Искусства).
 
 </details>
 

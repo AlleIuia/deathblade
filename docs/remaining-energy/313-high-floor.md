@@ -13,7 +13,7 @@
 
 **Лучше всего:**{: .best-для } Тем, кому нужен более простой, быстрый и прощающий билд на «Воздушных шакрамах».
 
-**Компромисс:**{: .tradeoff } Более низкий потолок урона, но проще восстанавливаться после ошибок.
+**Компромисс:**{: .tradeoff } Более Необычный потолок урона, но проще восстанавливаться после ошибок.
 
 - «Хитроумный финт» всегда свободен для контр-скиллов, восстановления, очищения или <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> поддержания.
 - Доступно с 14 очками в Звезде как 113 (Искусства) — переходный вариант с ограничением по ядрам.
@@ -49,7 +49,7 @@
 </div>
 </div>
 
-=== "313 Высокий шакрам ★"
+=== "313 Легендарный шакрам ★"
 
     ```
     3C737E487FD0FDB67FEB883196135CED1CE05F2123097ECB878B14A177BFE26890DDBB5C6AE3B18CB34871BBE1E17D0CC47A0DAFAE4272BEA4FD33FCF57AF2FC
@@ -124,7 +124,7 @@
 
 - Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
 - <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Божественное вдохновение 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Пробужденное сознание 1</span> может решить проблемы с маной ценой небольшой потери урона.
-    - Менее комфортен с +КД% <span class="skill-mention" data-glossary-id="bracelet">браслет</span> линия и/или низкий <span class="skill-mention" data-glossary-id="specializationstat">Специализация</span>.
+    - Менее комфортен с +КД% <span class="skill-mention" data-glossary-id="bracelet">браслет</span> линия и/или Необычный <span class="skill-mention" data-glossary-id="specializationstat">Специализация</span>.
 
 </details>
 

@@ -6903,7 +6903,7 @@ h3 { color: var(--dbc-teal); }
   color: var(--dbc-pink);
 }
 /* The fixed "+1.5%" Crit Hit Damage tag on the two Crit Rate/Crit Dmg
-   dual lines, and the fixed "+2.5%" Dmg vs Demon/Archdemon tag on the
+   dual lines, and the fixed "+2.5%" Dmg против демонов tag on the
    Additional Damage B line, aren't Low/Mid/High tier figures either -
    they're flat bonuses that don't change with tier. Colored with the
    teal/green Low used to use (now freed up by Low's move to blue above)
