@@ -96,7 +96,15 @@
 
       var nameCell = document.createElement("td");
       var nameLink = document.createElement("a");
-      nameLink.href = buildUrl(family, build);
+      // Ссылка в столбце «Билд» ведёт на видео-гайд билда, а не на его
+      // страницу: таблица сравнения нужна чтобы быстро открыть ролик и
+      // сравнить, а не чтобы переходить по сайту. Страница билда остаётся
+      // на своём месте - в меню и через переход из пентагона.
+      nameLink.href = build.video || buildUrl(family, build);
+      if (build.video) {
+        nameLink.target = "_blank";
+        nameLink.rel = "noopener";
+      }
       nameLink.className = "build-compare-name";
       var dot = document.createElement("span");
       dot.className = "build-compare-dot";

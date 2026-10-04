@@ -56,6 +56,7 @@
         {
           id: "333-ceiling",
              description: "{turningslash} откатывает умение {fatalwave}.",
+          video: "https://www.youtube.com/watch?v=MP--TuRX3xI",
           name: "333 Шакрамы",
           accent: "#e56c7e",
           pentagon: [8, 9, 5, 8.5, 8.5],
@@ -69,6 +70,7 @@
         {
           id: "313-high-floor",
              description: "{surge} откатывает умение {fatalwave}.",
+          video: "https://www.youtube.com/watch?v=6ez2lS4AI6Q",
           name: "313 Шакрамы 2.0",
           accent: "#e6b422",
           pentagon: [7.5, 8, 5, 9, 10],
@@ -82,6 +84,7 @@
         {
           id: "111-head-hunt",
              description: "Классический билд без {fatalwave:Воздушных шакрам}, с {deathsentence:Смертным приговором}.",
+          video: "https://www.youtube.com/watch?v=z8KE3HG_ggg",
           name: "111 Классика",
           accent: "#59c08f",
           pentagon: [9, 8, 5, 7, 10],
@@ -95,6 +98,7 @@
         {
           id: "standard",
              description: "Билд без использования ядер, с {spincutter:Разрубающими лезвиями}.",
+          video: "https://www.youtube.com/watch?v=pZDYek5l1og",
           name: "Стандарт без ядер",
           accent: "#8d8b93",
           pentagon: [6, 6, 8.5, 4, 6],
@@ -120,6 +124,7 @@
         {
           id: "111-classic",
              description: "Классичный геймплей Твёрдой воли.",
+          video: "https://www.youtube.com/watch?v=pzFa5zOuNik",
           name: "111 Классика",
           accent: "#e56c7e",
           pentagon: [7.5, 9, 7, 6.5, 7],
@@ -133,6 +138,7 @@
         {
           id: "222-speedy",
              description: "Видоизменённый 111 — ощущается быстрее.",
+          video: "https://www.youtube.com/watch?v=V1UQhE37Yjs",
           name: "222 Ускоренный",
           accent: "#59c08f",
           pentagon: [7, 9, 9, 8, 8],
@@ -146,6 +152,7 @@
         {
           id: "333-blitz",
              description: "Билд через {blitzrush:Охоту за головами}.",
+          video: "https://www.youtube.com/watch?v=pzFa5zOuNik",
           name: "333 Охота за головами",
           accent: "#a8a2b2",
           pentagon: [8, 8, 8, 9, 6],

@@ -76,8 +76,8 @@
     { "id": "evolution", "nodes": [
       { "id": "crit", "level": 10 },
       { "id": "specialization", "level": 30 },
-      { "id": "keensense", "level": 2 },
-      { "id": "limitbreakevo", "level": 1 },
+      { "id": "limitbreakevo", "level": 2 },
+      { "id": "keensense", "level": 1 },
       { "id": "strike", "level": 2 },
       { "id": "master", "level": 1 },
       { "id": "pulverize", "level": 1 },

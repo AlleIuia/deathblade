@@ -74,8 +74,8 @@
     { "id": "evolution", "nodes": [
       { "id": "crit", "level": 10 },
       { "id": "specialization", "level": 30 },
-      { "id": "keensense", "level": 2 },
-      { "id": "limitbreakevo", "level": 1 },
+      { "id": "limitbreakevo", "level": 2 },
+      { "id": "keensense", "level": 1 },
       { "id": "strike", "level": 2 },
       { "id": "master", "level": 1 },
       { "id": "pulverize", "level": 1 },
@@ -252,7 +252,7 @@
 
 
 <aside class="setup-note" data-kind="danger" markdown>
-<p><span class="setup-note-tag">Важно</span> <strong>Старайтесь сдавать все скиллы под «Плащом клинков».</strong> Научитесь правильно нажимать плащ и держать его на себе. 100% аптайм держать получится только с 10 на КД «Плащ клинков».</p>
+<p><span class="setup-note-tag">Важно</span> <strong>Старайтесь сдавать все скиллы под «Плащом клинков».</strong> Научитесь правильно нажимать плащ и держать его на себе. 97% аптайм держать получится только с 10 на КД «Плащ клинков».</p>
 </aside>
 
 

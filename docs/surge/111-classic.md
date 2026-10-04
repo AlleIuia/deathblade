@@ -76,8 +76,8 @@
     { "id": "evolution", "nodes": [
       { "id": "crit", "level": 10 },
       { "id": "specialization", "level": 30 },
-      { "id": "keensense", "level": 2 },
-      { "id": "limitbreakevo", "level": 1 },
+      { "id": "limitbreakevo", "level": 2 },
+      { "id": "keensense", "level": 1 },
       { "id": "strike", "level": 2 },
       { "id": "master", "level": 1 },
       { "id": "pulverize", "level": 1 },
@@ -186,7 +186,7 @@
 - Используй <span class="skill-mention" data-rune-name="Purify">Солум</span> на «Разрубающих лезвиях» при необходимости.
 - <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span> на «Плаще клинков» + вино должно хватить по мане, ведь циклы с «Неуловимым пируэтом» её восстанавливают.
     - Если не доверяешь своему аптайму или аптайму саппорта (спец барды), бери еду на ману вместо вина как страховку.
-- Альтернативно <span class="skill-mention" data-rune-name="Bleed" data-rune-tier="legendary">Легендарный Джар</span> на «Плаще клинков» + еда на ману: выше потолок и ниже пол, даже с «Неутомимым натиском».
+- Альтернативно <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span> на «Плаще клинков» + еда на ману: выше потолок и ниже пол, даже с «Неутомимым натиском».
 
 </details>
 
