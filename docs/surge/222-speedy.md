@@ -133,6 +133,10 @@
 
 </div>
 
+=== "Картинка"
+
+    ![222 TL;DR flowchart](../assets/tldr-222.svg){ .zoomable-image loading=lazy }
+
 ## Гравировки {#engravings}
 
 <div class="setup-panel" data-accent="lavender" markdown>

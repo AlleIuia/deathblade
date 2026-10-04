@@ -1,6 +1,6 @@
 # Гайд по Клинку смерти | от Henstly
 
-![Схема пути Клинка смерти](assets/shared/flowchart-deathblade-paths.svg)
+![Схема пути Клинка смерти](assets/shared/flowchart-deathblade-paths.svg?v=2)
 
 <div class="grid cards" markdown>
 
