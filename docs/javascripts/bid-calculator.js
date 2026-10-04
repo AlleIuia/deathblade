@@ -322,7 +322,7 @@
     function reset() {
       copyBtn.innerHTML = COPY_ICON;
       copyBtn.classList.remove("bid-calc-copy-btn-copied");
-      copyBtn.setAttribute("data-tooltip", "Copy amount");
+      copyBtn.setAttribute("data-tooltip", "Скопировать сумму");
     }
 
     copyBtn.addEventListener("click", function () {
@@ -333,12 +333,12 @@
           clearTimeout(resetTimer);
           copyBtn.innerHTML = CHECK_ICON;
           copyBtn.classList.add("bid-calc-copy-btn-copied");
-          copyBtn.setAttribute("data-tooltip", "Copied!");
+          copyBtn.setAttribute("data-tooltip", "Скопировано!");
           resetTimer = setTimeout(reset, 1500);
         })
         .catch(function () {
           clearTimeout(resetTimer);
-          copyBtn.setAttribute("data-tooltip", "Couldn't copy");
+          copyBtn.setAttribute("data-tooltip", "Не удалось скопировать");
           resetTimer = setTimeout(reset, 2000);
         });
     });

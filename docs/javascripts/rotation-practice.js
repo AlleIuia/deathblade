@@ -110,7 +110,7 @@
     getSteps(unit).forEach(function (step) {
       step.classList.remove("practice-current");
     });
-    if (unit._practiceToggle) unit._practiceToggle.textContent = "▶ Practice";
+    if (unit._practiceToggle) unit._practiceToggle.textContent = "▶ Тренировка";
     if (activeLine === unit) activeLine = null;
   }
 
@@ -136,8 +136,8 @@
     var toggle = document.createElement("button");
     toggle.type = "button";
     toggle.className = "rotation-practice-toggle";
-    toggle.textContent = "▶ Practice";
-    toggle.setAttribute("aria-label", "Practice this rotation step by step");
+    toggle.textContent = "▶ Тренировка";
+    toggle.setAttribute("aria-label", "Тренировать эту ротацию пошагово");
     line._practiceToggle = toggle;
 
     var card = line.closest(".cycle-card");
@@ -186,8 +186,8 @@
     var toggle = document.createElement("button");
     toggle.type = "button";
     toggle.className = "rotation-practice-toggle";
-    toggle.textContent = "▶ Practice";
-    toggle.setAttribute("aria-label", "Practice this rotation step by step");
+    toggle.textContent = "▶ Тренировка";
+    toggle.setAttribute("aria-label", "Тренировать эту ротацию пошагово");
     card._practiceToggle = toggle;
 
     var header = card.querySelector(".cycle-card-header");

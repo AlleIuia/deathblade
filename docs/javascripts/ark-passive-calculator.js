@@ -979,9 +979,9 @@
   const CRIT_DMG_BASE = 2.0;
 
   const EVOLUTION_SPLITS = [
-    { key: "lb3ks0", limitBreak: 3, keenSense: 0, label: "ИД3" },
-    { key: "lb2ks1", limitBreak: 2, keenSense: 1, label: "ИД2/ОР1" },
-    { key: "lb1ks2", limitBreak: 1, keenSense: 2, label: "ИД1/ОР2" },
+    { key: "lb3ks0", limitBreak: 3, keenSense: 0, label: "Исключительный дар 3" },
+    { key: "lb2ks1", limitBreak: 2, keenSense: 1, label: "Исключительный дар 2 / Отточенные рефлексы 1" },
+    { key: "lb1ks2", limitBreak: 1, keenSense: 2, label: "Исключительный дар 1 / Отточенные рефлексы 2" },
   ];
   // Optimized Training Lv 1 (the .ap-ot1 checkbox) takes one of the same 3
   // keystone levels Limit Break/Keen Sense share, so with it on only 2 are
@@ -991,9 +991,9 @@
   // made in one mode can never be mistaken for a combo in the other (see
   // update()'s pin check).
   const EVOLUTION_SPLITS_OT1 = [
-    { key: "ot1-lb2ks0", limitBreak: 2, keenSense: 0, label: "ИТ1/ИД2" },
-    { key: "ot1-lb1ks1", limitBreak: 1, keenSense: 1, label: "ИТ1/ИД1/ОР1" },
-    { key: "ot1-lb0ks2", limitBreak: 0, keenSense: 2, label: "ИТ1/ОР2" },
+    { key: "ot1-lb2ks0", limitBreak: 2, keenSense: 0, label: "Изнурительные тренировки 1 / Исключительный дар 2" },
+    { key: "ot1-lb1ks1", limitBreak: 1, keenSense: 1, label: "Изнурительные тренировки 1 / Исключительный дар 1 / Отточенные рефлексы 1" },
+    { key: "ot1-lb0ks2", limitBreak: 0, keenSense: 2, label: "Изнурительные тренировки 1 / Отточенные рефлексы 2" },
   ];
   const OPTIMIZED_TRAINING_EVO_DMG = 0.05;
   // The one place that decides which split set is in play - every loop
@@ -1183,7 +1183,9 @@
       shPet: getSelect(root, ".ap-sh-pet", "High"),
 
       adrenaline: getSelect(root, ".ap-adrenaline", "4 Nodes"),
-      adrenalineUptime: Math.max(0, Math.min(100, getNumber(root, ".ap-adrenaline-uptime", 97))),
+      // Поле "Активность Адреналина" убрано из UI: значение считается
+      // всегда равным 100% (полные стаки всё время боя).
+      adrenalineUptime: 100,
       adrenalineStone: getSelect(root, ".ap-adrenaline-stone", "0 Lv."),
       kbw: getSelect(root, ".ap-kbw", "4 Nodes"),
       kbwStone: getSelect(root, ".ap-kbw-stone", "0 Lv."),
@@ -2248,7 +2250,7 @@
       },
       {
         label: ["Наносимый урон +", ...trip("4.5", "5", "5.5"), "% и откат умений +", { downside: true, text: "2" }, "%"],
-        note: "Расчётный урон учитывает штраф +CDR%.",
+        note: "Расчётный урон учитывает штраф +КДР%.",
         // Surge uses the temporary flat -1 override (see
         // DAMAGE_CD_SURGE_TABLE above) instead of the divided-by-penalty
         // figures RE still uses. isSurge comes from the selected build's
@@ -2258,8 +2260,8 @@
         high: braceSpecConfig(inputs).isSurge ? DAMAGE_CD_SURGE_TABLE.High : DAMAGE_CD_TABLE.High,
       },
       {
-        label: ["Наносимый урон +", ...trip("2", "2.5", "3"), "% и урон по оглушённым +", ...trip("4", "4.5", "5"), "%"],
-        note: "Assumes " + (STAGGER_DPS_SHARE * 100).toFixed(0) + "% всего урона приходится на окна оглушения.",
+        label: ["Наносимый урон +", ...trip("2", "2.5", "3"), "% и урон по изнурённым +", ...trip("4", "4.5", "5"), "%"],
+        note: "Считает, что " + (STAGGER_DPS_SHARE * 100).toFixed(0) + "% всего урона приходится на окна изнурения.",
         low: OUTGOING_DMG_TABLE.Low + STAGGER_DMG_TABLE.Low * STAGGER_DPS_SHARE,
         mid: OUTGOING_DMG_TABLE.Mid + STAGGER_DMG_TABLE.Mid * STAGGER_DPS_SHARE,
         high: OUTGOING_DMG_TABLE.High + STAGGER_DMG_TABLE.High * STAGGER_DPS_SHARE,
@@ -2298,7 +2300,7 @@
       },
       {
         label: ["Урон атаки в спину +", ...trip("2.5", "3", "3.5"), "%"],
-        note: "Assumes " + (BACK_ATTACK_DPS_SHARE * 100).toFixed(0) + "% всего урона приходится на умения, помеченные как атака в спину.",
+        note: "Считает, что " + (BACK_ATTACK_DPS_SHARE * 100).toFixed(0) + "% всего урона приходится на умения, помеченные как атака в спину.",
         low: BACK_DMG_TABLE.Low * BACK_ATTACK_DPS_SHARE,
         mid: BACK_DMG_TABLE.Mid * BACK_ATTACK_DPS_SHARE,
         high: BACK_DMG_TABLE.High * BACK_ATTACK_DPS_SHARE,
@@ -2371,13 +2373,13 @@
           gearApTotal(wp + deltaWp * wpPercentMult, mainStat, baseApMult, flatAp, percentApMult, supApBuff) / baselineAp - 1;
 
         rows.push({
-          label: ["СИЛ/ЛОВ/ДУХ +", ...trip("12000", "14000", "16000")],
+          label: ["СИЛ/ЛОВ/ИНТ +", ...trip("12000", "14000", "16000")],
           low: statGain(12000),
           mid: statGain(14000),
           high: statGain(16000),
         });
         rows.push({
-          label: ["Сила оружия +", ...trip("7200", "8100", "9000")],
+          label: ["Урон оружия +", ...trip("7200", "8100", "9000")],
           low: wpGain(7200),
           mid: wpGain(8100),
           high: wpGain(9000),
@@ -2391,7 +2393,7 @@
             "% на 10 сек. (макс. 6 раз)",
           ],
           note:
-            "Assumes " +
+            "Считает, что " +
             ONHIT_WP_STACK_ASSUMPTION +
             " в среднем из 6 максимальных стаков. Часть с силой атаки/передвижением не учитывается.",
           low: wpGain(1160 * ONHIT_WP_STACK_ASSUMPTION),
@@ -2400,7 +2402,7 @@
         });
         rows.push({
           label: [
-            "Сила оружия +",
+            "Урон оружия +",
             ...trip("6900", "7800", "8700"),
             " & при попадании, +",
             ...trip("130", "140", "150"),
@@ -2413,13 +2415,13 @@
         });
         rows.push({
           label: [
-            "Сила оружия +",
+            "Урон оружия +",
             ...trip("7200", "8100", "9000"),
             " & >50% HP: при попадании, +",
             ...trip("2000", "2200", "2400"),
             " на 5 сек.",
           ],
-          note: "Assumes " + (HP_GATED_WP_UPTIME * 100).toFixed(0) + "% времени активности эффекта.",
+          note: "Считает, что " + (HP_GATED_WP_UPTIME * 100).toFixed(0) + "% времени активности эффекта.",
           low: wpGain(7200 + 2000 * HP_GATED_WP_UPTIME),
           mid: wpGain(8100 + 2200 * HP_GATED_WP_UPTIME),
           high: wpGain(9000 + 2400 * HP_GATED_WP_UPTIME),
@@ -2986,7 +2988,7 @@
             combos: earringCombos.first,
           },
           {
-            label: ["Сила оружия +", ...trip("0.8", "1.8", "3"), "%"],
+            label: ["Урон оружия +", ...trip("0.8", "1.8", "3"), "%"],
             ...earringWp,
             combos: earringCombos.second,
           },
@@ -3059,7 +3061,7 @@
 
           universal = [
             {
-              label: ["Сила оружия +", ...trip("195", "480", "960")],
+              label: ["Урон оружия +", ...trip("195", "480", "960")],
               low: universalWpDeltaGain(ACC_FLAT_WP_TABLE.Low),
               mid: universalWpDeltaGain(ACC_FLAT_WP_TABLE.Mid),
               high: universalWpDeltaGain(ACC_FLAT_WP_TABLE.High),
@@ -3071,7 +3073,7 @@
               high: universalApDeltaGain(ACC_FLAT_AP_TABLE.High),
             },
             {
-              label: ["Качество СИЛ/ЛОВ/ДУХ (макс. − мин.): ", ...trip("1935", "2083", "2679")],
+              label: ["Качество СИЛ/ЛОВ/ИНТ (макс. − мин.): ", ...trip("1935", "2083", "2679")],
               low: universalStatDeltaGain(ACC_QUALITY_MAIN_STAT_TABLE.Low),
               mid: universalStatDeltaGain(ACC_QUALITY_MAIN_STAT_TABLE.Mid),
               high: universalStatDeltaGain(ACC_QUALITY_MAIN_STAT_TABLE.High),
@@ -3218,17 +3220,17 @@
   // only so every slot has the same shape.
   const AVB_SLOT_LABELS = {
     necklace: {
-      name: "Necklace", line1: "Дополнительный урон", line2: "Наносимый урон", gridLabel: "Доп. урон",
+      name: "Ожерелье", line1: "Дополнительный урон", line2: "Наносимый урон", gridLabel: "Доп. урон",
       hasGrid: true, hasFlat: true, hasOther: false, hasWpRow: true, hasLineRatioRow: false, line1Table: ACC_NECKLACE_ADD_TABLE, line2Table: ACC_NECKLACE_OUT_TABLE,
       otherLine1Default: "Mid", otherLine2Default: "High",
     },
     ring: {
-      name: "Ring", line1: "Шанс крит. удара", line2: "Крит. урон", gridLabel: "Шанс крита/урон",
+      name: "Кольцо", line1: "Шанс крит. удара", line2: "Крит. урон", gridLabel: "Шанс крита/урон",
       hasGrid: true, hasFlat: false, hasOther: true, hasWpRow: true, hasLineRatioRow: false, line1Table: RING_RATE_TABLE, line2Table: ACC_RING_DMG_TABLE,
       otherLine1Default: "Mid", otherLine2Default: "High",
     },
     earring: {
-      name: "Earring", line1: "Сила атаки %", line2: "Сила оружия %", gridLabel: "",
+      name: "Серьга", line1: "Сила атаки %", line2: "Урон оружия %", gridLabel: "",
       hasGrid: false, hasFlat: false, hasOther: true, hasWpRow: true, hasLineRatioRow: true, line1Table: ACC_EARRING_AP_TABLE, line2Table: ACC_EARRING_WP_TABLE,
       otherLine1Default: "High", otherLine2Default: "Mid",
     },
@@ -3670,7 +3672,7 @@
     // at 10p and 17p (nothing changes at 14p or 18-20p), so the 14p
     // columns reuse the 10p figure and 20p reuses 17p's.
     rows.push({
-      label: "Ядро хаоса: Быстрая атака — урон по криту и урон, %",
+      label: "Солнце Хаоса: Решительный натиск — критический урон и урон, %",
       ...points6((grade, pts) => {
         const chitKey = pts === "14P" ? "Epic-Leg 10P" : grade + " 17P";
         const chit = critLikeGain((c) => { c.flashyAtk = chitKey; });
@@ -3685,21 +3687,21 @@
     // tracks), run through stableAddGain's re-optimized with/without
     // search - see that function's own comment above.
     rows.push({
-      label: "Ядро хаоса: Стабильная атака — доп. урон",
+      label: "Солнце Хаоса: Непоколибимость — доп. урон",
       ...points6((grade, pts) => stableAddGain(STABLE_ATK_TABLE[grade + "|" + pts])),
     });
 
     // Chaos Core: Swift - Crit Dmg only (Attack Speed excluded). Own
     // tracked field (zeroed in arkNB above), same treatment as Flashy.
     rows.push({
-      label: "Ядро хаоса: Скорость — сила крита",
+      label: "Солнце Хаоса: Сверхскорость — критический урон",
       ...points6((grade, pts) => critLikeGain((c) => { c.swiftCore = grade + "|" + pts; })),
     });
 
     // Chaos Core: Crushing - Crit Rate only (Weapon Power Cooldown
     // reduction excluded). Own tracked field (zeroed in arkNB above).
     rows.push({
-      label: "Ядро хаоса: Раздача — шанс крита",
+      label: "Луна Хаоса: Разрушительный удар — шанс крита",
       ...points6((grade, pts) => critLikeGain((c) => { c.crushingCore = grade + "|" + pts; })),
     });
 
@@ -3708,7 +3710,7 @@
     // comment for why that half is a fixed grade-only estimate rather
     // than Points-scaled).
     rows.push({
-      label: "Ядро хаоса: Тление — урон по боссу и горение",
+      label: "Луна Хаоса: Пламя гордыни — урон по «легендарным» и горение",
       ...points6((grade, pts) => {
         const bossDmg = ARK_SMOLDERING_BOSSDMG_TABLE[grade + "|" + pts];
         const burn = ARK_SMOLDERING_BURN_TABLE[grade];
@@ -3719,7 +3721,7 @@
     // Chaos Core: Absorbing - Dmg only (Healing excluded). Untracked
     // elsewhere, so a flat addition same as Smoldering's Boss Dmg half.
     rows.push({
-      label: "Ядро хаоса: Поглощение — урон",
+      label: "Луна Хаоса: Кровопийца — урон",
       ...points6((grade, pts) => ARK_ABSORBING_DMG_TABLE[grade + "|" + pts]),
     });
 
@@ -3745,7 +3747,7 @@
         // gearApTotal takes both directly as parameters, no folding
         // trick needed (unlike Weapon below).
         rows.push({
-          label: "Ядро хаоса: Атака — постоянная сила атаки и её %",
+          label: "Звезда Хаоса: Чистая мощь — постоянная сила атаки и её %",
           ...points6((grade, pts) => {
             const t = GEAR_AP_CHAOS_STAR_TABLE[grade + "|" + pts] || { pct: 0, flat: 0 };
             return (
@@ -3766,7 +3768,7 @@
         // get the same treatment a real equipped Weapon Core's payout
         // would).
         rows.push({
-          label: "Ядро хаоса: Оружие — постоянная сила оружия и её %",
+          label: "Звезда Хаоса: Путь стали — постоянная сила оружия и её %",
           ...points6((grade, pts) => {
             const t = ARK_WEAPON_CORE_TABLE[grade + "|" + pts] || { pct: 0, flat: 0 };
             const newWp = wp * (1 + t.pct / 100 / wpPercentMult) + t.flat * wpPercentMult;
@@ -5799,7 +5801,7 @@
     const diffEl = root.querySelector(".ap-avb-diff");
     if (diffEl) {
       const aWins = result.aVsB >= 0;
-      diffEl.textContent = "Accessory " + (aWins ? "A" : "B") + " выигрывает на " + formatBvbPct(Math.abs(result.aVsB));
+      diffEl.textContent = "Аксессуар " + (aWins ? "A" : "B") + " выигрывает на " + formatBvbPct(Math.abs(result.aVsB));
       // .ap-avb-diff's own base class is .ap-esvs-diff (see its markup in
       // resources.md), not .ap-bvb-diff - so the winner accent has to come
       // from .ap-esvs-diff-a/-b, not .ap-bvb-diff-a/-b. An earlier version
@@ -7075,7 +7077,7 @@
       if (msEl) {
         msEl.min = range.min;
         msEl.max = range.max;
-        msEl.title = "Основной стат этого аксессуара (" + cfg.name + " range: " + range.min.toLocaleString() + "-" + range.max.toLocaleString() + ").";
+        msEl.title = "Основной стат этого аксессуара (" + cfg.name + ": от " + range.min.toLocaleString() + "-" + range.max.toLocaleString() + ").";
         // Clamp whatever was already typed into the new slot's range -
         // switching Ring -> Necklace otherwise leaves e.g. 12897 sitting
         // in a 15178-17857 field, which the browser flags as :invalid

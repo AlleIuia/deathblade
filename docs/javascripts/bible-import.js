@@ -730,13 +730,13 @@
     // (280-line: "Ark Grid"/"3"/...; 243-line, no Ark Grid equipped: the
     // only "Ark Grid" line is the breakdown one, followed by "+0.00%").
     // A THIRD shape exists too: some no-Ark-Grid characters render an
-    // explicit "This character has no Ark Grid cores equipped." message
+    // explicit "На этом персонаже нет надетых ядер Дерева талантов." message
     // right after the equipment-section "Ark Grid" header (confirmed on a
     // real 238-line dump) - that message doesn't end in "%" either, so the
     // old check above misread it as an equipped section and set hasArkGrid
     // true. Check for this message first and short-circuit to false before
     // falling back to the number/name heuristic.
-    var NO_ARK_GRID_MSG = "This character has no Ark Grid cores equipped.";
+    var NO_ARK_GRID_MSG = "На этом персонаже нет надетых ядер Дерева талантов.";
     var agIdx = -1;
     if (idxOf(NO_ARK_GRID_MSG) === -1) {
       for (var agScan = 0; agScan < lines.length; agScan++) {
@@ -894,7 +894,7 @@
       return { error: "Не удалось подтвердить, что это страница персонажа Клинка смерти — убедитесь, что она загрузилась полностью, и повторите." };
     }
     if (classCheck === "wrong-class") {
-      return { error: "This doesn't look like a Deathblade character - Bible import only supports Deathblade." };
+      return { error: "Это не похоже на персонажа Клинка смерти — импорт из Bible работает только с Клинком Смерти." };
     }
     var characterName = extractCharacterName(lines);
 
@@ -903,7 +903,7 @@
     var warnings = [];
 
     if (hydration.noRaidLoadout) {
-      warnings.push("No raid loadout snapshot found for this character - Weapon Power, Main Stat, Crit Stat, and Karma couldn't be auto-filled from that source. Chaos Grid core grades are read independently from the page HTML, so they're unaffected. Accessories, bracelet, gems, engravings, and ability stone were still read from the page text below; fill in the rest manually.");
+      warnings.push("Не найден снимок снаряжения из рейда для этого персонажа — Урон оружия, Основной стат, Стат крита и Карму не удалось заполнить автоматически. Грейды ядер Дерева талантов читаются отдельно из HTML страницы, поэтому они не затронуты. Аксессуары, браслет, самоцветы, гравировки и камень усиления всё же прочитаны из текста страницы ниже; остальное заполни вручную.");
     }
 
     if (hydration.weaponPower != null) data["ap-gear-wp"] = String(hydration.weaponPower);
@@ -1093,7 +1093,7 @@
         // warning, not as an override.
         var hydrationCore = hydration.gridSlots && hydration.gridSlots[CHAOS_SLOT_TO_KEY[slotLabel]];
         if (hydrationCore && hydrationCore.points != null && hydrationCore.points !== core.points) {
-          warnings.push(slotLabel + ": page text says " + core.points + "P but the page's own data (most-recent-raid snapshot) says " + hydrationCore.points + "P - kept the page text's " + core.points + "P since that reflects what's currently equipped; the snapshot can be stale. Worth a second look if this doesn't match what you expect.");
+      warnings.push(slotLabel + ": текст страницы говорит " + core.points + "P, но данные самой страницы (снимок последнего рейда) говорят " + hydrationCore.points + "P — оставлено значение из текста страницы: " + core.points + "P, ведь оно отражает то, что надето сейчас; снимок может быть устаревшим. Стоит перепроверить, если значение не совпадает с ожидаемым.");
         }
         if (core.points < 10) {
           // The real investment tiers are 0/10/14/17/18/19/20 - nothing below
@@ -1177,7 +1177,7 @@
           } else if (gradeDebug && gradeDebug.markerFound === false) {
             gradeDetail = " (маркер слота на странице вообще не найден)";
           }
-          warnings.push(slotLabel + " (" + core.name + ", " + core.points + "P): не удалось прочитать грейд (Реликвия/Древний) со страницы" + gradeDetail + " — оставлено пустым, проверьте вручную.");
+      warnings.push(slotLabel + " (" + core.name + ", " + core.points + "P): не удалось прочитать грейд (Реликвия/Древняя) со страницы" + gradeDetail + " — оставлено пустым, проверьте вручную.");
           return;
         }
         if (target.format === "space17") {
@@ -1232,7 +1232,7 @@
         // running one of the 6 builds, this scan just failed to place
         // them, so leave the master Build toggle wherever it already was
         // and let them pick manually.
-        warnings.push("Order Sun/Moon (\"" + text.orderCores["Order Sun"].name + "\" / \"" + text.orderCores["Order Moon"].name + "\" не совпала ни с одной известной сборкой — Build не установлен автоматически, проверьте вручную.");
+        warnings.push("Солнце/Луна Порядка (\"" + text.orderCores["Order Sun"].name + "\" / \"" + text.orderCores["Order Moon"].name + "\" не совпали ни с одной известной сборкой — билд не установлен автоматически, проверьте вручную.");
       }
     } else {
       // No fallback value to write here (unlike Chaos cores/adrenaline/
@@ -1243,7 +1243,7 @@
       // stale value from a previous import) with no signal that it
       // wasn't touched. Warn instead, same as the unmatched-pair case
       // above, so this doesn't look like a confirmed auto-detected build.
-      warnings.push("Не найдены ядра Order Sun/Moon на этой странице (сетка Order не надета или не удалось прочитать) — Build не установлен автоматически, сверьте с вашей реальной сборкой.");
+      warnings.push("Не найдены ядра Солнца/Луны Порядка на этой странице (сетка Порядка не надета или не удалось прочитать) — билд не установлен автоматически, сверьте с вашей реальной сборкой.");
     }
 
     // Sanity check: if the raid loadout's own hydration data shows real
@@ -1762,7 +1762,7 @@
 
       var importBtn = root.querySelector(".ap-calc-import");
       var popover = root.querySelector('.ap-calc-popover[data-popover="import"]');
-      if (!importBtn || !popover) { setStatus("Import control not found on this page.", true); return; }
+      if (!importBtn || !popover) { setStatus("Кнопка импорта на этой странице не найдена.", true); return; }
       importBtn.click();
       var textarea = popover.querySelector(".ap-calc-popover-textarea");
       textarea.value = JSON.stringify(payload.data);
@@ -1799,7 +1799,7 @@
       // lingering highlight ring the user never actually clicked for.
       importBtn.blur();
 
-      var msg = payload.characterName ? "Imported " + payload.characterName + " from Bible." : "Imported from Bible.";
+      var msg = payload.characterName ? "Импортирован " + payload.characterName + " из Bible." : "Импортировано из Bible.";
       if (payload.warnings && payload.warnings.length) msg += " " + payload.warnings.length + " field(s) need a manual look - see below.";
       setStatus(msg, false);
 

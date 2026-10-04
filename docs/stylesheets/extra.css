@@ -10885,7 +10885,7 @@ body.page-333-blitz *:hover {
 .md-typeset img.sticker-image {
   display: block;
   margin: 0 auto 1.2em;
-  max-width: min(340px, 100%);
+  max-width: min(220px, 100%);
   height: auto;
   border-radius: 6px;
 }

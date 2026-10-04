@@ -39,7 +39,7 @@
 
     var badge = document.createElement("span");
     badge.className = "last-updated-badge";
-    badge.textContent = "Updated " + formatted;
+    badge.textContent = "Обновлено " + formatted;
     card.appendChild(badge);
   }
 
