@@ -10877,6 +10877,18 @@ body.page-333-blitz *:hover {
 .md-typeset img.zoomable-image:hover {
   cursor: zoom-in !important;
 }
+/* Standalone build sticker (sticker-313 on the resources page). Material
+   only constrains images through .md-typeset img, which leaves a 436px-wide
+   sticker pinned hard left at full size on desktop and overflowing narrow
+   viewports. Constrain and centre it here; the paired .zoomable-image class
+   still gives it the click-to-zoom overlay from image-lightbox.js. */
+.md-typeset img.sticker-image {
+  display: block;
+  margin: 0 auto 1.2em;
+  max-width: min(340px, 100%);
+  height: auto;
+  border-radius: 6px;
+}
 /* The lightbox overlay gets zoom-OUT rather than the zoom-in above - it is
    the "click anywhere to close" surface, not a thing you click to open. Its
    own rule because of that, hence not a comma list on the previous one. It

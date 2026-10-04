@@ -1,6 +1,6 @@
 # Дополнительная информация
 
-![313 sticker](assets/shared/sticker-313.png)
+![Стикер 313](assets/shared/sticker-313.png){ .sticker-image .zoomable-image loading=lazy }
 
 ## Дополнительные коды билдов
 
