@@ -368,7 +368,7 @@
     Открытие <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и примени <span class="skill-mention" data-glossary-id="synergy">синергии</span> эффективно. Если покажется сложным, просто применяй синергию и «Концентрацию воли» на полных сферах — этого достаточно, чтобы начать чередовать циклы.
 
     *С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
-    { .lead }
+    {: .lead }
 
     <div class="rotation-line">
 
@@ -385,7 +385,7 @@
     2. Эффективно применять <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> после «Убийственной стали», когда доступны «Призрачные клинки».
 
     *С нуля/части сфер:*
-    { .lead }
+    {: .lead }
 
     1. Цикл **1**, если доступна «Убийственная сталь», иначе начни с «Плаща клинков» + цикл **2**.
     2. Комбо FTF применяй раньше ради лучшего аптайма групповой синергии.

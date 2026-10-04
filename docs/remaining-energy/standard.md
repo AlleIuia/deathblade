@@ -203,7 +203,7 @@
 Открытие нужно, чтобы накачать <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>, навесить <span class="skill-mention" data-glossary-id="synergy">синергии</span> и накачать шары.
 
 *Открытие с нуля сфер:*
-{ .lead }
+{: .lead }
 
 <div class="rotation-line" markdown>
 <script type="application/json">
@@ -212,7 +212,7 @@
 </div>
 
 *Основной повторяющийся цикл:*
-{ .lead }
+{: .lead }
 
 <div class="rotation-line" markdown>
 <script type="application/json">
@@ -221,8 +221,6 @@
  "turningslash", "earthcleaver", "soulabsorber", "voidstrike", "surge"]
 </script>
 </div>
-
-{ .lead }
 
 1. <span class="skill-inline" data-skill-id="deathlyslash"><span class="skill-inline-name">Убийственная сталь</span></span> (T) доступна каждый второй цикл. Если T на перезарядке, нажимай без этого умения.
 2. <span class="skill-mention" data-skill-id="spincutter">Разрубающие лезвия</span> используй для мобильности.

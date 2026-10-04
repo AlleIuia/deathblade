@@ -261,7 +261,7 @@
     Открытие нужно, чтобы накачать адреналин, навесить синергию.
 
     *С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
-    { .lead }
+    {: .lead }
 
     <div class="rotation-line">
 
@@ -275,7 +275,7 @@
     </div>
 
 
-    { .lead }
+    {: .lead }
 
 
 === "Восстановление"

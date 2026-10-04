@@ -326,7 +326,7 @@ h3 { color: var(--dbc-teal); }
 /* ---------- Lead paragraph (opt-in) ---------- */
 /* A lighter-colored treatment for the first sentence introducing a
    dense section - a softer entry point before a wall of tabs/bullets/
-   rotation-lines hits. Opt-in only, not automatic: add `{ .lead }` on
+   rotation-lines hits. Opt-in only, not automatic: add `{: .lead }` on
    the line right after the paragraph you want it on.
    No longer sized up (was font-size: 1.08em) - read as a different
    text size from the rest of the page's body copy, not just a softer
@@ -2289,10 +2289,11 @@ h3 { color: var(--dbc-teal); }
   padding-top: 0;
   width: 100%;
   /* Ссылки в один ряд - главный источник высоты у окошка, которое
-     растянуто на всю ширину. */
+     растянуто на всю ширину; прижаты влево, чтобы читались как
+     содержимое окошка, а не висели по центру пустого поля. */
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 0.4em 0.7em;
 }

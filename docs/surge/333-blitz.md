@@ -262,7 +262,7 @@
 Наносит урон <span class="skill-mention" data-glossary-id="synergy">синергия</span> если нужно, затем повторяй цикл ротации как можешь.
 
 *С 3 сфер:*
-{ .lead }
+{: .lead }
 
 <div class="rotation-line" markdown>
 <script type="application/json">
@@ -289,7 +289,7 @@
 </div>
 
 *С нуля сфер:*
-{ .lead }
+{: .lead }
 
 1. Используй a <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span> (рекомендуется) или переходи к #2.
       - Стая: используй трипод «Плаща клинков» «Контроль сфер» и <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> пробуждения.
