@@ -309,7 +309,7 @@
 <details class="setup-note" data-kind="note" markdown>
 <summary><span class="setup-note-tag">Заметка</span>Общие самоцветы<span class="setup-note-arrow"></span></summary>
 
-- При желании эту схему самоцветов можно разделить с альтами [313 (Высокий шакрам)](313-high-floor.md) и 113 (Искусства).
+- При желании эту схему самоцветов можно разделить с альтами [313 (Легендарный шакрам)](313-high-floor.md) и 113 (Искусства).
 
 </details>
 

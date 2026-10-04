@@ -52,8 +52,8 @@
   // In load order. See the ordering note above before reordering.
   var LAZY_BUNDLE = [
     "bid-calculator.js?v=7",
-    "ark-passive-calculator.js?v=76",
-    "bible-import.js?v=18",   // must follow ark-passive-calculator.js
+    "ark-passive-calculator.js?v=77",
+    "bible-import.js?v=19",   // must follow ark-passive-calculator.js
     "ap-brace-tooltip.js?v=5", // needs skill-tooltip.js, which is still global
   ];
 
