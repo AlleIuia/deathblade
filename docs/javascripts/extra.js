@@ -200,6 +200,17 @@
     });
   }
 
+  // Material hardcodes title="Permanent link" on every heading anchor and
+  // has no headerlink entry in any of its language partials, so
+  // theme.language: ru cannot reach it. Re-set the attribute here instead.
+  function localizeHeaderlinks() {
+    document.querySelectorAll(".md-content .headerlink[title]").forEach(function (a) {
+      if (a.getAttribute("title") === "Permanent link") {
+        a.setAttribute("title", "Постоянная ссылка");
+      }
+    });
+  }
+
   function togglePageBodyClasses() {
     // 333 Blitz gets its own tiny signature touch - a paw-print cursor,
     // scoped via this body class rather than a sitewide cursor change.
@@ -271,6 +282,7 @@
       externalLinksNewTab();
       buildQuickJumpPills();
       buildSectionTracker();
+      localizeHeaderlinks();
       wrapEmojisForWiggle();
       var isBlitzPage = togglePageBodyClasses();
       handleVisibilityChange();

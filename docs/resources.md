@@ -1487,7 +1487,7 @@
       <table class="ap-brace-compare-table ap-engr-contrib-table">
         <thead>
           <tr>
-            <th class="ap-brace-th-label">Engraving</th>
+            <th class="ap-brace-th-label">Гравировка</th>
             <th>Вклад в DPS</th>
             <th colspan="4">Фетранит</th>
           </tr>
