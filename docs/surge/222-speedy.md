@@ -133,10 +133,6 @@
 
 </div>
 
-=== "Картинка"
-
-    ![222 TL;DR flowchart](../assets/tldr-222.svg){ .zoomable-image loading=lazy }
-
 ## Гравировки {#engravings}
 
 <div class="setup-panel" data-accent="lavender" markdown>
@@ -402,6 +398,10 @@
 
 1. Используй <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> прямо перед «Убийственной сталью» и умести две пары «Убийственная сталь» + «Концентрация воли» в 10 секунд.
 2. Выполняй самые быстрые циклы, адаптируясь к числу стаков и паттернам босса.
+
+=== "Картинка"
+
+    ![222 TL;DR flowchart](../assets/tldr-222.svg){ .zoomable-image loading=lazy }
 
 ## Распределение Урона {#dps-spread}
 

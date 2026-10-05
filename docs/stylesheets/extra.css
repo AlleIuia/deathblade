@@ -10463,6 +10463,102 @@ body.page-333-blitz input[type="text"] {
   margin-right: 0.45em;
 }
 
+/* ---------- Gameplay blocks (essentials: Identity / Buffs / Party / Playstyle) ----------
+   Три оформительских обёртки, которые раньше существовали только в
+   английской версии. Стили перенесены оттуда без правок: все четыре
+   переменные (--dbc-rose-rgb, --dbc-teal-rgb, --dbc-purple-rgb,
+   --dbc-pink-bright) и --dbc-arrow уже есть в теме, так что блоки
+   переехали целиком.
+
+   - .gameplay-cards - термин + пояснение в плитках (grid, перенос по
+     ширине). Акцент задаётся data-accent: pink по умолчанию, tealt.
+   - .gameplay-chips - короткие значения пилюлями, число розовым.
+   - .gameplay-flow - шаги цикла пилюлями со стрелками между ними;
+     последний шаг с пунктирной рамкой, потому что цикл замыкается. */
+
+.md-typeset .gameplay-cards {
+  --gp-rgb: var(--dbc-rose-rgb);
+}
+.md-typeset .gameplay-cards[data-accent="teal"] {
+  --gp-rgb: var(--dbc-teal-rgb);
+}
+.md-typeset .gameplay-cards > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: 0.6em;
+  margin: 0.8em 0 1em;
+  padding: 0;
+  list-style: none;
+}
+.md-typeset .gameplay-cards > ul > li {
+  min-width: 0;
+  margin: 0;
+  padding: 0.7em 0.95em;
+  border: 1px solid rgba(var(--gp-rgb), 0.32);
+  border-radius: 10px;
+  background-color: rgba(var(--gp-rgb), 0.05);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+.md-typeset .gameplay-cards > ul > li > strong:first-child {
+  display: block;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+  color: rgb(var(--gp-rgb));
+}
+.md-typeset .gameplay-chips > ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+  margin: 0.8em 0 1em;
+  padding: 0;
+  list-style: none;
+}
+.md-typeset .gameplay-chips > ul > li {
+  min-width: 0;
+  margin: 0;
+  padding: 0.3em 0.85em;
+  border: 1px solid rgba(var(--dbc-purple-rgb), 0.4);
+  border-radius: 999px;
+  background-color: rgba(var(--dbc-purple-rgb), 0.08);
+  font-size: 0.82em;
+}
+.md-typeset .gameplay-chips > ul > li > strong:first-child {
+  color: var(--dbc-pink-bright);
+}
+.md-typeset .gameplay-flow > ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5em 1.7em;
+  margin: 0.9em 0 1.1em;
+  padding: 0 1.4em 0 0;
+  list-style: none;
+}
+.md-typeset .gameplay-flow > ol > li {
+  position: relative;
+  margin: 0;
+  padding: 0.35em 0.9em;
+  border: 1px solid rgba(var(--dbc-purple-rgb), 0.45);
+  border-radius: 8px;
+  background-color: rgba(var(--dbc-purple-rgb), 0.1);
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.md-typeset .gameplay-flow > ol > li:not(:last-child)::after {
+  content: "\2192";
+  position: absolute;
+  top: 50%;
+  right: -1.35em;
+  transform: translateY(-50%);
+  font-size: 1.15em;
+  font-weight: 400;
+  color: var(--dbc-arrow);
+}
+.md-typeset .gameplay-flow > ol > li:last-child {
+  border-style: dashed;
+}
+
 /* Callout-версия .setup-note без <summary> - блок «Важно» в ротации
    111 Классики. Селекторы тега выше намеренно заканчиваются на
    `> summary >`, поэтому цвет и заливка задаются здесь отдельно: тот же

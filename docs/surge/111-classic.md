@@ -134,10 +134,6 @@
 
 </div>
 
-=== "Картинка"
-
-    ![111 TL;DR flowchart](../assets/tldr-111.svg){ .zoomable-image loading=lazy }
-
 ## Гравировки {#engravings}
 
 <div class="setup-panel" data-accent="lavender" markdown>
@@ -379,6 +375,10 @@
 1. Умести три «Концентрации воли» в 10 секунд. Используй <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> прямо перед попаданием первой «Концентрации воли».
 2. Вторая или третья «Концентрация воли» должна быть частью цикла с «Неуловимым пируэтом», иначе не хватит стаков.
 3. Стаки и обстановка постоянно меняются, так что фиксированная ротация была бы путами.
+
+=== "Картинка"
+
+    ![111 TL;DR flowchart](../assets/tldr-111.svg){ .zoomable-image loading=lazy }
 
 ## Распределение Урона {#dps-spread}
 
