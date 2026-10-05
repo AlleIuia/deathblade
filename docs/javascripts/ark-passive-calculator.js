@@ -2390,7 +2390,7 @@
             ...trip("1160", "1320", "1480"),
             ", сила атаки/передвижение +",
             { tier: "fixed", text: "1" },
-            "% на 10 сек. (макс. 6 раз)",
+            "% на 10 сек. (макс. 6 стаков)",
           ],
           note:
             "Считает, что " +
@@ -2404,9 +2404,9 @@
           label: [
             "Урон оружия +",
             ...trip("6900", "7800", "8700"),
-            " & при попадании, +",
+            " и при попадании, +",
             ...trip("130", "140", "150"),
-            " (откат 30 сек., макс. 30 раз)",
+            " (откат 30 сек., макс. 30 стаков)",
           ],
           note: "Предполагается, что " + PERIODIC_WP_FIGHT_MINUTES + "-минутный бой.",
           low: wpGain(6900 + periodicWpAvgBonus(PERIODIC_WP_FIGHT_MINUTES, 130)),
@@ -2417,7 +2417,7 @@
           label: [
             "Урон оружия +",
             ...trip("7200", "8100", "9000"),
-            " & >50% HP: при попадании, +",
+            ". Если твоё HP > 50%: при попадании, +",
             ...trip("2000", "2200", "2400"),
             " на 5 сек.",
           ],
@@ -3225,7 +3225,7 @@
       otherLine1Default: "Mid", otherLine2Default: "High",
     },
     ring: {
-      name: "Кольцо", line1: "Шанс крит. удара", line2: "Крит. урон", gridLabel: "Шанс крита/урон",
+      name: "Кольца", line1: "Шанс крит. удара", line2: "Крит. урон", gridLabel: "Шанс крита/урон",
       hasGrid: true, hasFlat: false, hasOther: true, hasWpRow: true, hasLineRatioRow: false, line1Table: RING_RATE_TABLE, line2Table: ACC_RING_DMG_TABLE,
       otherLine1Default: "Mid", otherLine2Default: "High",
     },
@@ -4923,7 +4923,7 @@
         ? { id: "massincrease", label: "Карающая длань", gain: massIncreaseGain(engrInputs, inputs) }
         : null,
       {
-        label: "Базовая сила атаки (камень)",
+        label: "Базовая сила атаки (Фетранит)",
         gain: abilityStoneBaseApGain(inputs, engrInputs),
         // Mirrors engravingStoneImpliesBaseAp's own threshold check
         // (5+ total nodes across BOTH isolated stone slots combined, not
@@ -5877,8 +5877,8 @@
     const manaFoodLabelEl = root.querySelector(".ap-engr-manafood-label");
     if (manaFoodLabelEl) {
       manaFoodLabelEl.textContent = manaFoodHasBleed
-        ? "Mana Food (+Maelstrom Bleed)"
-        : "Mana Food (Main Stat only)";
+        ? "Еда на ману (+Плащ клинков)"
+        : "Еда на ману (Только основной стат)";
     }
     const miRow = root.querySelector(".ap-engr-mi-row");
     if (miRow) miRow.style.display = isSurge ? "" : "none";
