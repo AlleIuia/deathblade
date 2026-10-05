@@ -49,7 +49,7 @@
 </div>
 </div>
 
-=== "111 Хитроумный финт"
+=== "111 Классика ★"
 
     ```
     C289D8EB08E331EA88A2C65A57DD383C979E48ABE184E47D357E8FB1E3E01A8DF959893AEA9B7713908581D63D17398B194369FAE09C50791B5BF3022A729D92
@@ -115,7 +115,7 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать «Экспансию».
+- Используй [Калькулятор Созвездий А.Р.К.](../resources.md#ark-passive-calculator), чтобы оптимизировать вкладку «Экспансию».
 
 </details>
 
@@ -206,80 +206,70 @@
 
 ## Ротация {#rotation}
 
-<!-- Each `.rotation-line` is a compact JSON step list of skill ids in
-     order - names/icons resolve automatically, same id vocabulary as Skill
-     Setup and Gems above. Full schema (situational steps, swapNext,
-     cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
-     "EASY EDIT GUIDE" comment. -->
+Используй **Открытие** (по желанию), затем чередуй **Цикл 1** и **2** до конца боя. Открытие набирает стаки «Адреналина» и навешивает синергии.
 
+Открытие с 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>)
+{ .rotation-stage }
 
-Используй **Открытие**, затем чередуй эти два цикла.
-
-<div class="cycle-card">
-
-<div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Искусства меча» + «Убийственной стали»</span></div>
-
-<div class="rotation-line">
-
-<script type="application/json">
-["maelstrom", "voidstrike", "twinshadows", "headhunt", "deathlyslash", "deathsentence", "turningslash", "surge"]
-</script>
-
-</div>
-
-</div>
-
-<div class="cycle-card">
-
-<div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл «Длани Авесты» + «Охоты за головами»</span></div>
-
-<div class="rotation-line">
-
-<script type="application/json">
-["soulabsorber", "blitzrush", "twinshadows", "deathsentence", "turningslash",
- { "id": "headhunt", "situational": "восстановление" },
- "surge"]
-</script>
-
-</div>
-
-</div>
-
-
-
-Управление «Плащом клинков» крайне важно: когда ротация сбоит, при необходимости применяй его сразу после окончания перезарядки.
-
-
-<aside class="setup-note" data-kind="danger" markdown>
-<p><span class="setup-note-tag">Важно</span> <strong>Старайтесь сдавать все скиллы под «Плащом клинков».</strong> Научитесь правильно нажимать плащ и держать его на себе. 97% аптайм держать получится только с 10 на КД «Плащ клинков».</p>
-</aside>
-
-
-
-Открытие нужно, чтобы накачать адреналин, навесить синергию.
-
-*С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
-{: .lead }
-
-<div class="rotation-line">
-
+<div class="rotation-line" markdown>
 <script type="application/json">
 [{ "id": "headhunt", "swapNext": true }, "twinshadows", "deathsentence", "maelstrom", "turningslash", "deathlyslash", "surge",
  { "cycleRef": 2, "title": "Цикл «Длани Авесты» + «Охоты за головами»" },
  { "cycleRef": 1, "title": "Цикл «Искусства меча» + «Убийственной стали»" },
  { "suffix": "и так далее" }]
 </script>
+</div>
+
+Чередующиеся циклы
+{ .rotation-stage }
+
+<div class="cycle-card" markdown>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Искусства меча» + «Убийственной стали»</span></div>
+<div class="rotation-line" markdown>
+<script type="application/json">
+["maelstrom", "voidstrike", "twinshadows", "headhunt", "deathlyslash", "deathsentence", "turningslash", "surge"]
+</script>
+</div>
+</div>
+
+<div class="cycle-card" markdown>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл «Длани Авесты» + «Охоты за головами»</span></div>
+<div class="rotation-line" markdown>
+<script type="application/json">
+["soulabsorber", "blitzrush", "twinshadows", "deathsentence", "turningslash",
+ { "id": "headhunt", "situational": "восстановление" },
+ "surge"]
+</script>
+</div>
+</div>
+
+<div class="rotation-notes" markdown>
+
+Старайся уместить «Двойную плеть» из **Цикла 2** под «Плащ клинков» из **Цикла 1**, чтобы набрать 3 сферы без повторного применения плаща.
 
 </div>
 
+<aside class="setup-note" data-kind="danger" markdown>
+<p><span class="setup-note-tag">Важно</span> Правильное использование «Плаща клинков» крайне важно. Научись правильно нажимать и держать его на себе.</p>
+</aside>
 
+Открытие с 0-2 сфер
+{ .rotation-stage }
 
-<div class="setup-panel" data-accent="lavender">
+<div class="rotation-notes" markdown>
 
-<div class="setup-notes">
+1. **Цикл 1**, если доступна «Убийственная сталь», иначе начни с «Плаща клинков» + **Цикл 2**.
 
-<details class="setup-note" data-kind="tip" open>
+</div>
 
+Восстановление
+{ .rotation-stage }
+
+<div class="setup-panel" data-accent="lavender" markdown>
+
+<div class="setup-notes" markdown>
+
+<details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Видео по восстановлению<span class="setup-note-arrow"></span></summary>
 
 Посмотри это 54-минутное [видео по восстановлению в 111](https://www.youtube.com/watch?v=z8KE3HG_ggg) или выбери более простой билд.
@@ -291,7 +281,6 @@
 </div>
 
 </div>
-
 
 ## Распределение Урона {#dps-spread}
 

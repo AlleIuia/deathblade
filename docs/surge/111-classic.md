@@ -11,9 +11,7 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="111-classic" data-family="surge"></div>
 
-**Лучше всего:**{: .best-для } Тем, кому нравится копить заряд ради одного мощного и приятного удара.
-
-**Компромисс:**{: .tradeoff } Всё держится на балансе «Концентрации воли» (Концентрация воли) и «Плаща клинков».
+**Кому подходит:**{: .best-для } Тем, кому нравится копить заряд ради одного мощного и приятного удара.
 
 - Мощные окна для прорывного урона с комбо «Неуловимого пируэта».
 - Не нужно придерживать <span class="skill-mention" data-glossary-id="counter">Контр</span>, он заряжается до двух стаков.
@@ -117,7 +115,7 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
+- Используй [Калькулятор Созвездий А.Р.К.](../resources.md#ark-passive-calculator), чтобы оптимизировать вкладку «Экспансию».
 - <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> используется, потому что простой, смена фаз в рейде или смерть иногда позволяют применить его ещё раз.
     - Альтернатива — <span class="skill-mention" data-ap-id="transcendentpower" data-level="3">Ключевой аспект 3</span>, что реально полезно только для стражей или твоего четвёртого рейда на Хилвуде без золота.
 
@@ -254,8 +252,8 @@
 
 Используй цикл с «Неуловимым пируэтом» и его добивку, когда они доступны, иначе повторяй обычный цикл.
 
-*С 3 сфер:*
-{: .lead }
+С 3 сфер
+{ .rotation-stage }
 
 <div class="cycle-card cycle-card-multi" markdown>
 <div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Неуловимого пируэта» + добивка</span></div>
@@ -301,6 +299,8 @@
 </div>
 </div>
 
+<div class="rotation-notes" markdown>
+
 1. Стаки в следующей фазе в дефиците: применяй «Плащ клинков» (если есть 2 стака), затем первый «Внезапный выпад» или «Разрубающие лезвия» при необходимости.
     - Это в основном относится к первой фазе рейда; дальше лишние стаки копятся сами по ходу боя.
     - «Иссечение» в открытии или фазовый скилл пробуждения тоже дают достаточный запас.
@@ -310,6 +310,8 @@
 3. <span class="skill-mention" data-skill-id="bladeassault">Призрачные клинки</span> масштабируется намного хуже на «Концентрации воли», чем на Остаточной энергии, и кастуется слишком долго.
       - Он всё ещё полезен для <span class="skill-mention" data-skill-id="atropine">Ардопин-Х</span> открывающих скиллов, или его можно придержать ради жадности с <span class="skill-mention" data-glossary-id="pushimmunity">иммунитет к отбросу</span>/Гиперпробуждения.
 4. Кажется сложнее, чем есть: посмотри [это видео](https://www.youtube.com/watch?v=4bwhDT--0fo), чтобы увидеть полный цикл в деле.
+
+</div>
 
 <!-- Community-contributed alternative: a full replacement for both cycles
      above (not a recommendation over them), for players who'd rather keep
@@ -362,23 +364,29 @@
 </div>
 </div>
 
-*С нуля сфер:*
-{: .lead }
+С нуля сфер
+{ .rotation-stage }
+
+<div class="rotation-notes" markdown>
 
 1. Используй <span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span> (рекомендуется) или переходи к #2.
       - Стая: используй трипод «Плаща клинков» «Контроль сфер» и <span class="skill-mention" data-skill-id="flashblink">Сверхновая</span> пробуждения.
 2. Сгенерируй одну сферу, набери минимум 40 стаков, затем «Концентрация воли» вернёт все 3 сферы.
 
-*Применение «Ардопина-Х»:*
-{: .lead }
+</div>
+
+Применение «Ардопина-Х»
+{ .rotation-stage }
+
+<div class="rotation-notes" markdown>
 
 1. Умести три «Концентрации воли» в 10 секунд. Используй <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> прямо перед попаданием первой «Концентрации воли».
 2. Вторая или третья «Концентрация воли» должна быть частью цикла с «Неуловимым пируэтом», иначе не хватит стаков.
 3. Стаки и обстановка постоянно меняются, так что фиксированная ротация была бы путами.
 
-=== "Картинка"
+</div>
 
-    ![111 TL;DR flowchart](../assets/tldr-111.svg){ .zoomable-image loading=lazy }
+![111 TL;DR flowchart](../assets/tldr-111.svg){ .zoomable-image loading=lazy }
 
 ## Распределение Урона {#dps-spread}
 

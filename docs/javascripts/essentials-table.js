@@ -107,7 +107,7 @@
     var table = document.createElement("table");
     var thead = document.createElement("thead");
     var headRow = document.createElement("tr");
-    ["", "Skill", "Tags", "Notes"].forEach(function (label) {
+    ["", "Скилл", "Теги", "Заметки"].forEach(function (label) {
       var th = document.createElement("th");
       th.textContent = label;
       headRow.appendChild(th);

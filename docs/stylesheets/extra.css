@@ -965,7 +965,7 @@ h3 { color: var(--dbc-teal); }
    <div class="gem-priority" markdown>
    <div class="gem-col gem-col-dmg" markdown>
    <div class="gem-col-header" markdown>
-   <span class="gem-col-title">Damage</span>
+   <img class="gem-col-icon" alt="" src="../assets/GemDD.png" /> <span class="gem-col-title">Урон</span>
    </div>
    <div class="gem-list" markdown>
    <div class="gem-item" data-rank="1" markdown>
@@ -1037,6 +1037,15 @@ h3 { color: var(--dbc-teal); }
 }
 .md-typeset .gem-col-header p {
   display: contents;
+}
+/* Header icon for the gem columns (assets/GemDD.png / GemCD.png). Just
+   sized, no frame or fill: the two are square 300x300 exports that are
+   genuinely transparent (45% and 36% fully clear alpha), so the gem
+   reads on its own once it's big enough to recognise. */
+.md-typeset .gem-col-icon {
+  width: 2.4em;
+  height: 2.4em;
+  flex: 0 0 auto;
 }
 .md-typeset .gem-col-title {
   font-weight: 700;
@@ -1313,6 +1322,44 @@ h3 { color: var(--dbc-teal); }
   box-shadow: 0 0 0 1px rgba(var(--dbc-purple-rgb), 0.28);
 }
 
+
+/* Stage label above a rotation group ("Открытие с 3 сфер", "Чередующиеся
+   циклы", ...) - a small uppercase caption with a hairline running off to
+   the right edge. Rules carried over from the reference theme verbatim; the
+   technique is the trailing ::after: a 1px-tall inline-block whose negative
+   right margin (-100%) pulls it past the caption's own width, while the
+   parent's overflow:hidden clips it at the container edge so it stops
+   exactly at the text column instead of overflowing the page. The gradient
+   fades the line out rather than ending it on a hard stop.
+
+   Colour is the one deliberate departure from the reference, which uses
+   lavender: these render as plain <p>, and red is this site's primary
+   accent (h2 headings, table borders, warn badges), so the stage captions
+   now match that instead of introducing a second accent hue here. */
+.md-typeset .rotation-stage {
+  display: block;
+  overflow: hidden;
+  margin: 1.7em 0 0.3em;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dbc-red);
+}
+/* The hairline stays purple, not red: it belongs to the same neutral as
+   the panel and table rules around it, and tinting it red as well made it
+   read as a second red line competing with the caption beside it. It is
+   just a touch stronger than the reference's 0.16 - enough to actually
+   register against the dark panel without becoming a hard edge. */
+.md-typeset .rotation-stage::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 1px;
+  margin: 0 -100% 0 0.7em;
+  background: linear-gradient(90deg, rgba(var(--dbc-purple-rgb), 0.26), transparent 85%);
+}
 
 /* ---------- Rotation/opener sequences, styled as cards ---------- */
 /* Authored as a compact JSON step list, not handwritten span markup -
@@ -10525,8 +10572,26 @@ body.page-333-blitz input[type="text"] {
   background-color: rgba(var(--dbc-purple-rgb), 0.08);
   font-size: 0.82em;
 }
+/* The figure in each chip is a literal rather than a token because nothing
+   else on the site wants it. Both --dbc-pink-bright (#ffa3b0) and
+   --dbc-pink (#e05a6e) were wrong for it: the first is the hover/active
+   state for links and tabs, and on the chip's purple-tinted fill it
+   desaturated into reading as plain grey text - the number stopped
+   looking like a highlighted figure at all; the second is the site's
+   primary red, which at 4.26:1 fails AA for text this small.
+
+   #ff7d99 sits between them: clearly pink (R sits 116 above the G/B
+   average, versus 85 for #ffa3b0) and still 6.29:1 against the chip's
+   own #252528 fill, comfortably over the 4.5 threshold. Same hue as
+   #ffa3b0, just more saturated.
+
+   The right margin is not decoration - with only a literal space between
+   the number and its label the two run together as one run-on token
+   ("10/15/20%скорости атаки") at this font size, which is where the
+   "the numbers don't fit" complaint came from. */
 .md-typeset .gameplay-chips > ul > li > strong:first-child {
-  color: var(--dbc-pink-bright);
+  color: #ff7d99;
+  margin-right: 0.28em;
 }
 .md-typeset .gameplay-flow > ol {
   display: flex;

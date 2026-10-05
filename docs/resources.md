@@ -24,7 +24,7 @@
     5BC069F349F703CA2B9B9B732BB3629E493826BE8BEA2FF11FF1575D1258D07FAA57A9FADBF188946EF1E2DB1CD6779759FF6F7EA4138A86EB19F6505242CC98
     ```
 
-## Калькулятор Созвездий А.Р.К.
+## Калькулятор Созвездий А.Р.К. {#ark-passive-calculator}
 
 *Поможет найти оптимальную сборку для твоего Клинка смерти и в составе группы. Можешь сверить результаты этого калькулятора и уже популярных таблиц [1](https://docs.google.com/spreadsheets/d/1RKpzg6sPNe7fuPDudJHAs0qbFukOwSyhMynDOijfoKY/edit?usp=sharing) или [2](https://docs.google.com/spreadsheets/d/1_0J7liyM_yw16pyn6TKlF1YGaIt5n_A9hSoLnT3yTUc/edit?usp=sharing).*
 

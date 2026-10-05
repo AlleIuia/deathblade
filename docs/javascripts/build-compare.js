@@ -75,8 +75,20 @@
   // generated from the same data array the picker below reads instead
   // of being hand-typed a second time). Deliberately a real <table>
   // with NO class attribute so it inherits the sitewide
-  // `table:not([class])` styling every other table on the site gets -
-  // see the CSS comment above .build-compare table for why. ----------
+//   `table:not([class])` styling every other table on the site gets -
+  //   see the CSS comment above .build-compare table for why. ----------
+
+  // Which builds the comparison UI may show, in one place so the overview
+  // rows and the two-build picker can never disagree:
+  //   compareEnabled: false - stays in the overview rows, out of the picker
+  //   compareHidden: true   - out of both. Used to retire a build from the
+  //                          comparison without deleting it from
+  //                          build-data.js, since its own page still reads
+  //                          the pentagon/difficulty by id from there.
+  function isCompareVisible(b) {
+    return b.compareEnabled !== false && !b.compareHidden;
+  }
+
   function buildOverviewTable(family, data) {
     var table = document.createElement("table");
 
@@ -91,7 +103,7 @@
     table.appendChild(thead);
 
     var tbody = document.createElement("tbody");
-    data.builds.forEach(function (build) {
+    data.builds.filter(isCompareVisible).forEach(function (build) {
       var row = document.createElement("tr");
 
       var nameCell = document.createElement("td");
@@ -435,7 +447,7 @@
     var data = window.DB_BUILD_DATA && window.DB_BUILD_DATA[family];
     if (!data) return;
 
-    var compareBuilds = data.builds.filter(function (b) { return b.compareEnabled !== false; });
+    var compareBuilds = data.builds.filter(isCompareVisible);
 
     var urlPair = getUrlPair(compareBuilds);
     var idA = (urlPair && urlPair[0]) || container.getAttribute("data-build-a") || compareBuilds[data.defaultPair[0]].id;

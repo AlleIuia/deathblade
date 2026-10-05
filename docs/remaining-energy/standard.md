@@ -1,6 +1,6 @@
 # Стандарт без ядер 🌱
 
-<div class="build-card-row build-card-row--wide" markdown>
+<div class="build-card-row" markdown>
 <div class="build-card" markdown>
 
 <!-- Difficulty/Trixion stats above, AND the pentagon badge below,
@@ -11,7 +11,11 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="standard" data-family="re"></div>
 
-<p class="build-card-lede">Билд подходит новичкам и твину блейду без ядер.</p>
+**Кому подходит:**{: .best-для } Тем, кто ещё не открыл «Созвездия А.Р.К.» ядра.
+
+- Последний оплот классической Остаточной энергии, уже сильно устаревший.
+- «Контр» постоянно нужен в ротации, придётся придерживать его под ситуации.
+- Просто в освоении и исполнении, с лучшей мобильностью, чем у современных билдов.
 
 </div>
 <div class="pentagon-badge" data-build="standard" data-family="re" markdown>
@@ -23,10 +27,18 @@
 </div>
 </div>
 
-<aside class="build-sidenote" data-kind="note" markdown>
-<p><span class="setup-note-tag">Заметка</span>Об этом билде</p>
-<p>Не вижу смысла расписывать данный билд подробно, так как он является проходным (используется короткий промежуток времени). В данном билде не нужна еда или же эйфория.</p>
-</aside>
+<div class="setup-panel" data-accent="lavender" markdown>
+<div class="setup-notes" markdown>
+
+<details class="setup-note" data-kind="note" open markdown>
+<summary><span class="setup-note-tag">Заметка</span>Об этом билде<span class="setup-note-arrow"></span></summary>
+
+Не вижу смысла расписывать данный билд подробно, так как он является проходным (используется короткий промежуток времени). В данном билде не нужна еда или же эйфория.
+
+</details>
+
+</div>
+</div>
 
 
 ## Код билда {#skill-codes}

@@ -49,16 +49,18 @@
 //   </div>
 //
 //   Root is always exactly 2 entries, one per column, in whatever order
-//   you want them to appear (Damage then Cooldown is the site
+//   you want them to appear (Урон then Перезарядка is the site
 //   convention so far, but nothing enforces it).
 //
 //   Per column:
 //     col   - REQUIRED. "dmg" | "cd" - picks the rose/teal accent
 //             styling (.gem-col-dmg / .gem-col-cd in extra.css), which
-//             flavor of tooltip gem-dps-tooltip.js attaches (a Damage
+//             flavor of tooltip gem-dps-tooltip.js attaches (a Урон
 //             row leads with its damage-share figure from the page's
-//             "## Trixion DPS" chart, a Cooldown row doesn't), AND the
-//             default header text ("dmg" -> "Damage", "cd" -> "Cooldown").
+//             "## Распределение Урона" chart, a Перезарядка row
+//             doesn't), AND the default header text ("dmg" -> "Урон",
+//             "cd" -> "Перезарядка") plus its header icon
+//             (assets/GemDD.png / assets/GemCD.png).
 //     label - OPTIONAL override of the "dmg"/"cd" default header text
 //             above. Every column on this site uses the default as-is.
 //     items - REQUIRED array of gem entries, ROW ORDER IS RANK - the
@@ -105,9 +107,18 @@
   var SITE_ROOT = window.SiteUtils.detectSiteRoot("gem-priority.js");
 
   // Every column on this site uses its "col" value's own obvious header
-  // text ("dmg" -> "Damage", "cd" -> "Cooldown") - col.label only needs
+  // text ("dmg" -> "Урон", "cd" -> "Перезарядка") - col.label only needs
   // authoring for a genuine one-off different header.
-  var DEFAULT_COL_LABELS = { dmg: "Damage", cd: "Cooldown" };
+  var DEFAULT_COL_LABELS = { dmg: "Урон", cd: "Перезарядка" };
+
+  // Icon shown before each column's header text, so the two columns read
+  // apart at a glance instead of relying on the rose/teal title color
+  // alone. These two live in assets/ rather than assets/shared/ - they're
+  // page furniture, not skill icons - so they skip the shared iconSrc()
+  // helper (which hardcodes the assets/shared/ prefix) and are built as
+  // plain SITE_ROOT-relative URLs, the same shape header-links.js uses
+  // for the media_icons.
+  var DEFAULT_COL_ICONS = { dmg: "GemDD.png", cd: "GemCD.png" };
 
   var el = window.SiteUtils.el;
   var iconSrc = window.SiteUtils.iconSrc;
@@ -195,6 +206,15 @@
     var wrap = el("div", "gem-col gem-col-" + (col.col || "dmg"));
 
     var header = el("div", "gem-col-header");
+    var colIcon = DEFAULT_COL_ICONS[col.col];
+    if (colIcon) {
+      var icon = document.createElement("img");
+      icon.className = "gem-col-icon";
+      icon.alt = "";
+      icon.loading = "lazy";
+      icon.src = SITE_ROOT + "assets/" + colIcon;
+      header.appendChild(icon);
+    }
     header.appendChild(el("span", "gem-col-title", col.label || DEFAULT_COL_LABELS[col.col] || col.col));
     wrap.appendChild(header);
 

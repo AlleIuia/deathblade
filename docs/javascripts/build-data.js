@@ -33,6 +33,11 @@
 //     compareEnabled - false keeps a build in the compare table's overview
 //                      rows but out of the two-build picker (no pentagon
 //                      data to overlay)
+//     compareHidden  - true drops a build from the comparison entirely
+//                      (overview rows AND picker). Use this to retire a
+//                      build from the comparison without deleting its data:
+//                      its own page still reads pentagon/difficulty by id,
+//                      so removing the entry would break that page.
 //
 //   RE and Surge are never compared against each other - RE's fifth axis
 //   is Recovery (higher is better), Surge's is Exposure (lower is
@@ -108,6 +113,13 @@
           bestFor: "\uD83C\uDF31 Билд для новичка до А.Р.К.",
           recommended: false,
           compareEnabled: true,
+          // Retired from the build comparison along with the page itself:
+          // it's the pre-Ark-Grid legacy build and isn't being recommended
+          // to new players, so a 6/10 row next to the real builds only
+          // invites someone to pick the weakest one off the list. Kept in
+          // the data (rather than deleted) because this build's own page
+          // still reads its pentagon, difficulty and blurb by id.
+          compareHidden: true,
         },
       ],
     },

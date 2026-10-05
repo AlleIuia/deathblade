@@ -11,14 +11,11 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="333-ceiling" data-family="re"></div>
 
-**Лучше всего:**{: .best-для } Тем, кто хочет максимальный урон в Остаточной энергии.
-
-**Компромисс:**{: .tradeoff } Чуть меньше генерации сфер и менее прощающая ротация.
+**Кому подходит:**{: .best-для } Тем, кто хочет максимальный урон в Остаточной энергии.
 
 - Использует «Воздушные шакрамы» как два быстрых каста (<span class="skill-mention" data-glossary-id="ftfcombo">FTF</span> комбо) через сброс скилла.
 - «Хитроумный финт» всегда свободен для контр-скиллов, восстановления, очищения или <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> поддержания.
 - Высокая эффективность самоцветов: «Воздушные шакрамы» и «Убийственная сталь» — основа твоего урона.
-- Чувствителен к высокому пингу или низкому FPS, но это компенсируется несколькими правками.
 
 </div>
 <div class="pentagon-badge" data-build="333-ceiling" data-family="re" markdown>
@@ -123,7 +120,7 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
+- Используй [Калькулятор Созвездий А.Р.К.](../resources.md#ark-passive-calculator), чтобы оптимизировать вкладку «Экспансию».
 - <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Божественное вдохновение 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Пробужденное сознание 1</span> может решить проблемы с маной ценой совсем небольшой потери урона.
     - Менее комфортен с +КД% <span class="skill-mention" data-glossary-id="bracelet">браслет</span> линия и/или низкий <span class="skill-mention" data-glossary-id="specializationstat">Специализация</span>.
 
@@ -228,52 +225,16 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Руны<span class="setup-note-arrow"></span></summary>
 
-- Используй <span class="skill-mention" data-rune-name="Galewind" data-rune-tier="legendary">Легендарный Агель</span>, <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span> или <span class="skill-mention" data-rune-name="Purify">Солум</span> на «Хитроумном финте», если предпочитаешь.
+- Используй <span class="skill-mention" data-rune-name="Focus" data-rune-tier="legendary">Легендарный Марх</span> на «Плаще клинков», если проблемы с маной, или используй <span class="skill-mention" data-rune-name="Purify">Солум</span> на «Хитроумном финте», что бы снять негативный эффект.
 
 </details>
 
 <details class="setup-note" data-kind="note" open markdown>
 <summary><span class="setup-note-tag">Заметка</span>Опции и триподы<span class="setup-note-arrow"></span></summary>
 
-- Трипод «Контроль сфер» на «Воздушных шакрамах» **нерабочий**, брать его не стоит.
-- Можно использовать «Быстрая подготовка» <span class="skill-mention" data-glossary-id="tripod">трипод</span> на «Хитроумном финте», если проблем с маной нет.
-- Можно опустить «Хитроумный финт» до Ур. 1 ради меньшего расхода маны и дополнительной мобильности.
-    - Однако Ур. 7 практичнее и делает восстановление намного проще и быстрее.
-
-</details>
-
-<details class="setup-note" data-kind="example" markdown>
-<summary><span class="setup-note-tag">Альтернатива</span>Опасное богатство<span class="setup-note-arrow"></span></summary>
-
-- <span class="skill-mention" data-rune-name="Wealth" data-rune-tier="epic">Эпический Эйге</span> руна на «Воздушных шакрамах» может сделать билд прощающим ценой примерно 4% урона.
-- Цикл пойдёт не так гладко, но снижение стресса и спешки может кому-то подойти.
-- Если честно, не играй так; 333 с <span class="skill-mention" data-ap-id="orbcirculation" data-level="5">Циркуляция энергии 5</span>, 313 или вообще любой билд на «Твёрдой воли» покажет себя лучше.
-
-<div class="skill-setup" data-family="re" markdown>
-<script type="application/json">
-[
-  {"id": "fatalwave", "level": 14, "rune": {"tier": "epic", "name": "Wealth"}},
-  {"id": "voidstrike", "level": 11, "rune": {"tier": "epic", "name": "Wealth"}},
-  {"id": "soulabsorber", "level": 14, "rune": {"tier": "legendary", "name": "Wealth"}},
-  {"id": "twinshadows", "level": 14, "rune": {"tier": "rare", "name": "Wealth"}},
-  {"id": "maelstrom", "level": 10, "rune": {"tier": "uncommon", "name": "Wealth"}}
-]
-</script>
-</div>
-
-<div class="ark-passives ark-passives-compact" data-family="re" markdown>
-<script type="application/json">
-[
-  { "id": "leap", "nodes": [
-    { "id": "awakeningamplifier", "level": 1 },
-    { "id": "unleashedpower", "level": 5 },
-    { "id": "releasepotential", "level": 3 },
-    { "id": "instantspell", "level": 3 },
-    { "id": "danceofnightmares", "level": 3 }
-  ] }
-]
-</script>
-</div>
+- Можно поднять «Хитроумный финт» до Ур. 7
+- На первом уровне триподов можно выбрать сокращение перезарядки («Быстрая подготовка»), а так же можно снизить расход маны («Сосредоточение»)
+- На втором уровне можно выбрать трипод «Подсечка» и умение начнет применяться мгновенно и без рывка
 
 </details>
 
@@ -304,17 +265,6 @@
 </script>
 </div>
 
-<div class="setup-notes" markdown>
-
-<details class="setup-note" data-kind="note" markdown>
-<summary><span class="setup-note-tag">Заметка</span>Общие самоцветы<span class="setup-note-arrow"></span></summary>
-
-- При желании эту схему самоцветов можно разделить с альтами [313 (Легендарный шакрам)](313-high-floor.md) и 113 (Искусства).
-
-</details>
-
-</div>
-
 </div>
 
 ## Ротация {#rotation}
@@ -325,79 +275,82 @@
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
+Используй **Открытие** (по желанию), затем чередуй **Цикл 1** и **2** до конца боя. Открытие набирает стаки «Адреналина» и навешивает синергии.
 
-Используй **Открытие**, затем чередуй эти два цикла по необходимости:
+Открытие с 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>)
+{ .rotation-stage }
 
-<div class="cycle-card">
+<div class="rotation-line" markdown>
+<script type="application/json">
+[{ "id": "headhunt", "swapNext": true }, "twinshadows", "maelstrom", "turningslash", "deathlyslash", "fatalwave", "surge",
+ { "cycleRef": 2, "title": "Цикл «Длани Авесты» + «Охоты за головами»" },
+ { "cycleRef": 1, "title": "Цикл «Искусства меча» + «Убийственной стали»" },
+ { "suffix": "и так далее" }]
+</script>
+</div>
 
+Чередующиеся циклы
+{ .rotation-stage }
+
+<div class="cycle-card" markdown>
 <div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Искусства меча» + «Убийственной стали»</span></div>
-
-<div class="rotation-line">
-
+<div class="rotation-line" markdown>
 <script type="application/json">
 ["maelstrom", "voidstrike", "twinshadows", "deathlyslash", "fatalwave", "turningslash", "fatalwave", "surge"]
 </script>
-
+</div>
 </div>
 
-</div>
-
-<div class="cycle-card">
-
+<div class="cycle-card" markdown>
 <div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл «Длани Авесты» + «Охоты за головами»</span></div>
-
-<div class="rotation-line">
-
+<div class="rotation-line" markdown>
 <script type="application/json">
 ["soulabsorber", "blitzrush", "twinshadows",
- { "id": "maelstrom", "situational": "recovery" },
+ { "id": "maelstrom", "situational": "восстановление" },
  "fatalwave", "turningslash", "fatalwave", "surge"]
 </script>
+</div>
+</div>
+
+<div class="rotation-notes" markdown>
+
+1. Старайся уместить «Двойную плеть» из **Цикла 2** под «Плащ клинков» из **Цикла 1**, чтобы набрать 3 сферы без повторного применения или восстановления. Если дошёл только до «Длани Авесты», обычно хватает одного дополнительного применения «Хитроумного финта».
+2. «Плащ клинков» в **Цикле 2** применяется, только если иначе не хватит 3 сфер. Решай сам. Если применил, он действует минимум до «Искусства меча» в **Цикле 1**; повторное применение на истечении перезарядки синхронизирует их. Если он не был нужен или не дожил, ничего не меняется.
 
 </div>
 
-</div>
+<aside class="setup-note" data-kind="danger" markdown>
+<p><span class="setup-note-tag">Важно</span> Если у тебя что-то пошло в ротации не так, ты можешь поменять местами <span class="skill-mention" data-skill-id="soulabsorber">Длань Авесты</span> и <span class="skill-mention" data-skill-id="voidstrike">Искусство меча</span>, если это поможет.</p>
+</aside>
 
-Старайся уместить «Двойную плеть» из цикла **2** под «Плащ клинков» из цикла **1**, чтобы набрать 3 сферы без повторного применения или восстановления. Если дошёл только до «Длани Авесты», обычно хватает одного дополнительного применения «Хитроумного финта».
+<div class="rotation-notes" markdown>
 
-«Плащ клинков» в цикле **2** применяется, только если иначе не хватит 3 сфер. Решай сам. Если применил, он действует минимум до «Искусства меча» в цикле **1**; повторное применение на истечении перезарядки синхронизирует их. If it wasn't needed или it didn't last, nothing changes.
-
-
-Открытие <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и примени <span class="skill-mention" data-glossary-id="synergy">синергии</span> эффективно. Если покажется сложным, просто применяй синергию и «Концентрацию воли» на полных сферах — этого достаточно, чтобы начать чередовать циклы.
-
-*С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
-{: .lead }
-
-<div class="rotation-line">
-
-<script type="application/json">
-[{ "id": "headhunt", "swapNext": true }, "twinshadows", "maelstrom", "turningslash", "deathlyslash", "fatalwave", "surge",
- { "cycleRef": 2, "title": "Soul Absorber + Blitz Rush Cycle" },
- { "cycleRef": 1, "title": "Void Strike + Deathly Slash Cycle" },
- { "suffix": "etc." }]
-</script>
+- <span class="skill-mention" data-skill-id="soulabsorber">Длань Авесты</span> + <span class="skill-mention" data-skill-id="deathlyslash">Убийственная сталь</span>
+- <span class="skill-mention" data-skill-id="voidstrike">Искусство меча</span> + <span class="skill-mention" data-skill-id="blitzrush">Охота за головами</span>
 
 </div>
 
-1. Если доступен, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> + <span class="skill-inline"><span class="skill-inline-name">FTF</span></span> взаимозаменяем с циклом **2**.
-2. Эффективно применять <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> после «Убийственной стали», когда доступны «Призрачные клинки».
+Открытие с 0-2 сфер
+{ .rotation-stage }
 
-*С нуля/части сфер:*
-{: .lead }
+<div class="rotation-notes" markdown>
 
-1. Цикл **1**, если доступна «Убийственная сталь», иначе начни с «Плаща клинков» + цикл **2**.
-2. Комбо FTF применяй раньше ради лучшего аптайма групповой синергии.
+1. Цикл 1, если доступна «Убийственная сталь», иначе начни с «Плаща клинков» + Цикл 2.
+2. Комбо «Шакрам» + «Иссечение» + «Шакрам» применяй раньше ради групповой синергии.
 
+</div>
 
-<div class="setup-panel" data-accent="lavender">
+Восстановление
+{ .rotation-stage }
 
-<div class="setup-notes">
+<div class="setup-panel" data-accent="lavender" markdown>
 
-<details class="setup-note" data-kind="tip" open>
+<div class="setup-notes" markdown>
 
+<details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Видео по восстановлению<span class="setup-note-arrow"></span></summary>
 
-Посмотри это 2-минутное [видео по восстановлению в 333](https://www.youtube.com/watch?v=4478vFVX4VA) и прочитай названия глав.
+Посмотри это 2-минутное [видео по восстановлению в 333](https://www.youtube.com/watch?v=4478vFVX4VA).
 
 </details>
 
@@ -405,15 +358,15 @@
 
 </div>
 
-1. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> когда сфер немного не хватает, просто применяй, если сомневаешься.
-2. Используй свободные стаки «Двойной плети»/«Плаща клинков» и/или «Охоту за головами», если пропустил важные скиллы.
-3. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> вместо <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Двойная плеть</span></span> в цикле для восстановления стаков, если они закончатся.
-4. Используй «Плащ клинков» в комбо с FTF раньше, если ждёшь основные скиллы генерации сфер.
-5. При несовпадении фаз придержи «Убийственную сталь» до следующего цикла **1**. Потеря урона, но проще.
+<div class="rotation-notes" markdown>
 
-=== "Картинка"
+1. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> когда сфер немного не хватает, или просто используй, если сомневаешься, что не доберёшь сфер
+2. Используй свободные стаки «Двойной плети» или «Охоты за головами», в том случае если пропустил важные скиллы
+3. Не забывай, что в рейде нет чёткого паттерна восстановления ротации — отталкивайся от механик босса и от того, какие именно скиллы сколько заполняют и перезаряжаются. Понимание восстановления ротации придёт со временем
 
-    ![333 TL;DR flowchart](../assets/tldr-333.svg){ .zoomable-image loading=lazy }
+</div>
+
+![333 TL;DR flowchart](../assets/tldr-333.svg){ .zoomable-image loading=lazy }
 
 ## Распределение Урона {#dps-spread}
 

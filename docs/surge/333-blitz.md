@@ -13,9 +13,7 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="333-blitz" data-family="surge"></div>
 
-**Лучше всего:**{: .best-для } Пожалуйста, не играй так.
-
-**Компромисс:**{: .tradeoff } Усилий не стоят затрат.
+**Кому подходит:**{: .best-для } Пожалуйста, не играй так.
 
 - Использует «Охоту за головами» как два быстрых каста (<span class="skill-mention" data-glossary-id="btbcombo">BTB</span> комбо) через сброс скилла.
 - Высокая эффективность самоцветов: «Концентрация воли» и «Охота за головами» — основа твоего урона.
@@ -129,7 +127,7 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
+- Используй [Калькулятор Созвездий А.Р.К.](../resources.md#ark-passive-calculator), чтобы оптимизировать вкладку «Экспансию».
 
 </details>
 

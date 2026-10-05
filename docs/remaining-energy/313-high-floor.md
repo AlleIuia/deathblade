@@ -11,9 +11,7 @@
      all update together from that one place. -->
 <div class="build-stats" data-build="313-high-floor" data-family="re"></div>
 
-**Лучше всего:**{: .best-для } Тем, кому нужен более простой, быстрый и прощающий билд на «Воздушных шакрамах».
-
-**Компромисс:**{: .tradeoff } Более низкий потолок урона, но проще восстанавливаться после ошибок.
+**Кому подходит:**{: .best-для } Тем, кому нужен более простой, быстрый и прощающий билд на «Воздушных шакрамах».
 
 - «Хитроумный финт» всегда свободен для контр-скиллов, восстановления, очищения или <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> поддержания.
 - Доступно с 14 очками в Звезде как 113 (Искусства) — переходный вариант с ограничением по ядрам.
@@ -122,7 +120,7 @@
 <details class="setup-note" data-kind="tip" open markdown>
 <summary><span class="setup-note-tag">Советы</span>Советы по А.Р.К.<span class="setup-note-arrow"></span></summary>
 
-- Используй [калькулятор Пассивных талантов](../resources.md#ark-passive-calculator), чтобы оптимизировать узлы «Экспансия».
+- Используй [Калькулятор Созвездий А.Р.К.](../resources.md#ark-passive-calculator), чтобы оптимизировать вкладку «Экспансию».
 - <span class="skill-mention" data-ap-id="releasepotential" data-level="3">Стремительное восстановление 3</span> / <span class="skill-mention" data-ap-id="instantspell" data-level="3">Божественное вдохновение 3</span> / <span class="skill-mention" data-ap-id="awakeningamplifier" data-level="1">Пробужденное сознание 1</span> может решить проблемы с маной ценой небольшой потери урона.
     - Менее комфортен с +КД% <span class="skill-mention" data-glossary-id="bracelet">браслет</span> линия и/или низкий <span class="skill-mention" data-glossary-id="specializationstat">Специализация</span>.
 
