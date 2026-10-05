@@ -269,94 +269,91 @@
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
-=== "Циклы"
 
-    Используй **Открытие**, затем чередуй эти два цикла по необходимости:
+Используй **Открытие**, затем чередуй эти два цикла по необходимости:
 
-    <div class="cycle-card">
+<div class="cycle-card">
 
-    <div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Искусства меча» + «Убийственной стали»</span></div>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Искусства меча» + «Убийственной стали»</span></div>
 
-    <div class="rotation-line">
+<div class="rotation-line">
 
-    <script type="application/json">
-    ["maelstrom", "voidstrike", "twinshadows", "deathlyslash", "turningslash", "fatalwave", "surge"]
-    </script>
+<script type="application/json">
+["maelstrom", "voidstrike", "twinshadows", "deathlyslash", "turningslash", "fatalwave", "surge"]
+</script>
 
-    </div>
+</div>
 
-    </div>
+</div>
 
-    <div class="cycle-card">
+<div class="cycle-card">
 
-    <div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл «Длани Авесты» + «Охоты за головами»</span></div>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл «Длани Авесты» + «Охоты за головами»</span></div>
 
-    <div class="rotation-line">
+<div class="rotation-line">
 
-    <script type="application/json">
-    ["soulabsorber", "blitzrush", "twinshadows",
-     { "id": "maelstrom", "situational": "recovery" },
-     "turningslash", "fatalwave", "surge"]
-    </script>
+<script type="application/json">
+["soulabsorber", "blitzrush", "twinshadows",
+ { "id": "maelstrom", "situational": "recovery" },
+ "turningslash", "fatalwave", "surge"]
+</script>
 
-    </div>
+</div>
 
-    </div>
+</div>
 
-    Старайся уместить «Двойную плеть» из цикла **2** под «Плащ клинков» из цикла **1**, чтобы набрать 3 сферы без повторного применения или восстановления. Если дошёл только до «Длани Авесты», обычно хватает одного дополнительного применения «Хитроумного финта».
+Старайся уместить «Двойную плеть» из цикла **2** под «Плащ клинков» из цикла **1**, чтобы набрать 3 сферы без повторного применения или восстановления. Если дошёл только до «Длани Авесты», обычно хватает одного дополнительного применения «Хитроумного финта».
 
-    «Плащ клинков» в цикле **2** применяется, только если иначе не хватит 3 сфер. Решай сам. Если применил, он действует минимум до «Искусства меча» в цикле **1**; повторное применение на истечении перезарядки синхронизирует их. If it wasn't needed или it didn't last, nothing changes.
+«Плащ клинков» в цикле **2** применяется, только если иначе не хватит 3 сфер. Решай сам. Если применил, он действует минимум до «Искусства меча» в цикле **1**; повторное применение на истечении перезарядки синхронизирует их. If it wasn't needed или it didn't last, nothing changes.
 
-=== "Открытия"
 
-    Открытие <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и примени <span class="skill-mention" data-glossary-id="synergy">синергии</span> эффективно. Если покажется сложным, просто применяй синергию и «Концентрацию воли» на полных сферах — этого достаточно, чтобы начать чередовать циклы.
+Открытие <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span> и примени <span class="skill-mention" data-glossary-id="synergy">синергии</span> эффективно. Если покажется сложным, просто применяй синергию и «Концентрацию воли» на полных сферах — этого достаточно, чтобы начать чередовать циклы.
 
-    *С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
-    {: .lead }
+*С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
+{: .lead }
 
-    <div class="rotation-line">
+<div class="rotation-line">
 
-    <script type="application/json">
-    [{ "id": "headhunt", "swapNext": true }, "twinshadows", "maelstrom", "turningslash", "deathlyslash", "surge",
-     { "cycleRef": 2, "title": "Soul Absorber + Blitz Rush Cycle" },
-     { "cycleRef": 1, "title": "Void Strike + Deathly Slash Cycle" },
-     { "suffix": "etc." }]
-    </script>
+<script type="application/json">
+[{ "id": "headhunt", "swapNext": true }, "twinshadows", "maelstrom", "turningslash", "deathlyslash", "surge",
+ { "cycleRef": 2, "title": "Soul Absorber + Blitz Rush Cycle" },
+ { "cycleRef": 1, "title": "Void Strike + Deathly Slash Cycle" },
+ { "suffix": "etc." }]
+</script>
 
-    </div>
+</div>
 
-    1. Если доступен, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> взаимозаменяем с циклом **2**.
-    2. Эффективно применять <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> после «Убийственной стали», когда доступны «Призрачные клинки».
+1. Если доступен, <span class="skill-inline" data-skill-id="bladeassault"><span class="skill-inline-name">Призрачные клинки</span></span> взаимозаменяем с циклом **2**.
+2. Эффективно применять <span class="food-req-item">![](../assets/shared/icon-atropine.png){: .skill-icon } Ардопин-Х</span> после «Убийственной стали», когда доступны «Призрачные клинки».
 
-    *С нуля/части сфер:*
-    {: .lead }
+*С нуля/части сфер:*
+{: .lead }
 
-    1. Цикл **1**, если доступна «Убийственная сталь», иначе начни с «Плаща клинков» + цикл **2**.
-    2. «Иссечение» применяй раньше ради синергии, а «Убийственную сталь» — в конце на <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>/бафф Остаточной энергии.
+1. Цикл **1**, если доступна «Убийственная сталь», иначе начни с «Плаща клинков» + цикл **2**.
+2. «Иссечение» применяй раньше ради синергии, а «Убийственную сталь» — в конце на <span class="skill-mention" data-skill-id="adrenaline">Адреналин</span>/бафф Остаточной энергии.
 
-=== "Восстановление"
 
-    <div class="setup-panel" data-accent="lavender">
+<div class="setup-panel" data-accent="lavender">
 
-    <div class="setup-notes">
+<div class="setup-notes">
 
-    <details class="setup-note" data-kind="tip" open>
+<details class="setup-note" data-kind="tip" open>
 
-    <summary><span class="setup-note-tag">Советы</span>Видео по восстановлению<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Видео по восстановлению<span class="setup-note-arrow"></span></summary>
 
-    Посмотри это 2-минутное [видео по восстановлению в 333](https://www.youtube.com/watch?v=4478vFVX4VA) и прочитай названия глав.
+Посмотри это 2-минутное [видео по восстановлению в 333](https://www.youtube.com/watch?v=4478vFVX4VA) и прочитай названия глав.
 
-    </details>
+</details>
 
-    </div>
+</div>
 
-    </div>
+</div>
 
-    1. 313 играется похоже, только «Иссечение» → «Воздушные шакрамы» вместо <span class="skill-mention" data-glossary-id="ftfcombo">FTF</span>.
-    2. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> когда сфер немного не хватает, просто применяй, если сомневаешься.
-    3. Используй свободные стаки «Двойной плети»/«Плаща клинков» и/или «Охоту за головами», если пропустил важные скиллы.
-    4. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> вместо <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Двойная плеть</span></span> в цикле для восстановления стаков, если они закончатся.
-    5. Используй «Плащ клинков» + «Воздушные шакрамы» раньше, если ждёшь основные скиллы генерации сфер.
+1. 313 играется похоже, только «Иссечение» → «Воздушные шакрамы» вместо <span class="skill-mention" data-glossary-id="ftfcombo">FTF</span>.
+2. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> когда сфер немного не хватает, просто применяй, если сомневаешься.
+3. Используй свободные стаки «Двойной плети»/«Плаща клинков» и/или «Охоту за головами», если пропустил важные скиллы.
+4. Используй <span class="skill-inline" data-skill-id="headhunt"><span class="skill-inline-name">Хитроумный финт</span></span> вместо <span class="skill-inline" data-skill-id="twinshadows"><span class="skill-inline-name">Двойная плеть</span></span> в цикле для восстановления стаков, если они закончатся.
+5. Используй «Плащ клинков» + «Воздушные шакрамы» раньше, если ждёшь основные скиллы генерации сфер.
 
 === "Коротко:"
 

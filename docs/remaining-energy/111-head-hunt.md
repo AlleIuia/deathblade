@@ -212,88 +212,85 @@
      cycleRef, trailing suffix, etc.) is in javascripts/rotation-line.js's
      "EASY EDIT GUIDE" comment. -->
 
-=== "Циклы"
 
-    Используй **Открытие**, затем чередуй эти два цикла.
+Используй **Открытие**, затем чередуй эти два цикла.
 
-    <div class="cycle-card">
+<div class="cycle-card">
 
-    <div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Искусства меча» + «Убийственной стали»</span></div>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-1">1</span><span class="cycle-title">Цикл «Искусства меча» + «Убийственной стали»</span></div>
 
-    <div class="rotation-line">
+<div class="rotation-line">
 
-    <script type="application/json">
-    ["maelstrom", "voidstrike", "twinshadows", "headhunt", "deathlyslash", "deathsentence", "turningslash", "surge"]
-    </script>
+<script type="application/json">
+["maelstrom", "voidstrike", "twinshadows", "headhunt", "deathlyslash", "deathsentence", "turningslash", "surge"]
+</script>
 
-    </div>
+</div>
 
-    </div>
+</div>
 
-    <div class="cycle-card">
+<div class="cycle-card">
 
-    <div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл «Длани Авесты» + «Охоты за головами»</span></div>
+<div class="cycle-card-header"><span class="cycle-num cycle-num-2">2</span><span class="cycle-title">Цикл «Длани Авесты» + «Охоты за головами»</span></div>
 
-    <div class="rotation-line">
+<div class="rotation-line">
 
-    <script type="application/json">
-    ["soulabsorber", "blitzrush", "twinshadows", "deathsentence", "turningslash",
-     { "id": "headhunt", "situational": "восстановление" },
-     "surge"]
-    </script>
+<script type="application/json">
+["soulabsorber", "blitzrush", "twinshadows", "deathsentence", "turningslash",
+ { "id": "headhunt", "situational": "восстановление" },
+ "surge"]
+</script>
 
-    </div>
+</div>
 
-    </div>
-
+</div>
 
 
-    Управление «Плащом клинков» крайне важно: когда ротация сбоит, при необходимости применяй его сразу после окончания перезарядки.
+
+Управление «Плащом клинков» крайне важно: когда ротация сбоит, при необходимости применяй его сразу после окончания перезарядки.
 
 
-    <aside class="setup-note" data-kind="danger" markdown>
-    <p><span class="setup-note-tag">Важно</span> <strong>Старайтесь сдавать все скиллы под «Плащом клинков».</strong> Научитесь правильно нажимать плащ и держать его на себе. 97% аптайм держать получится только с 10 на КД «Плащ клинков».</p>
-    </aside>
+<aside class="setup-note" data-kind="danger" markdown>
+<p><span class="setup-note-tag">Важно</span> <strong>Старайтесь сдавать все скиллы под «Плащом клинков».</strong> Научитесь правильно нажимать плащ и держать его на себе. 97% аптайм держать получится только с 10 на КД «Плащ клинков».</p>
+</aside>
 
 
-=== "Открытия"
 
-    Открытие нужно, чтобы накачать адреналин, навесить синергию.
+Открытие нужно, чтобы накачать адреналин, навесить синергию.
 
-    *С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
-    {: .lead }
+*С 3 сфер (<span class="food-req-item">![](../assets/shared/icon-stimulant.png){: .skill-icon } Мощная «Эйфория»</span>):*
+{: .lead }
 
-    <div class="rotation-line">
+<div class="rotation-line">
 
-    <script type="application/json">
-    [{ "id": "headhunt", "swapNext": true }, "twinshadows", "deathsentence", "maelstrom", "turningslash", "deathlyslash", "surge",
-     { "cycleRef": 2, "title": "Цикл «Длани Авесты» + «Охоты за головами»" },
-     { "cycleRef": 1, "title": "Цикл «Искусства меча» + «Убийственной стали»" },
-     { "suffix": "и так далее" }]
-    </script>
+<script type="application/json">
+[{ "id": "headhunt", "swapNext": true }, "twinshadows", "deathsentence", "maelstrom", "turningslash", "deathlyslash", "surge",
+ { "cycleRef": 2, "title": "Цикл «Длани Авесты» + «Охоты за головами»" },
+ { "cycleRef": 1, "title": "Цикл «Искусства меча» + «Убийственной стали»" },
+ { "suffix": "и так далее" }]
+</script>
 
-    </div>
+</div>
 
 
-=== "Восстановление"
 
-    <div class="setup-panel" data-accent="lavender">
+<div class="setup-panel" data-accent="lavender">
 
-    <div class="setup-notes">
+<div class="setup-notes">
 
-    <details class="setup-note" data-kind="tip" open>
+<details class="setup-note" data-kind="tip" open>
 
-    <summary><span class="setup-note-tag">Советы</span>Видео по восстановлению<span class="setup-note-arrow"></span></summary>
+<summary><span class="setup-note-tag">Советы</span>Видео по восстановлению<span class="setup-note-arrow"></span></summary>
 
-    Посмотри это 54-минутное [видео по восстановлению в 111](https://www.youtube.com/watch?v=z8KE3HG_ggg) или выбери более простой билд.
+Посмотри это 54-минутное [видео по восстановлению в 111](https://www.youtube.com/watch?v=z8KE3HG_ggg) или выбери более простой билд.
 
-    Используй свободные стаки «Двойной плети»/«Плаща клинков»/«Охоты за головами». Искусство меча, Длань Авесты НЕ рекомендую нажимать для фикса ротации.
+Используй свободные стаки «Двойной плети»/«Плаща клинков»/«Охоты за головами». Искусство меча, Длань Авесты НЕ рекомендую нажимать для фикса ротации.
 
-    </details>
+</details>
 
-    </div>
+</div>
 
-    </div>
+</div>
 
 
 ## Распределение Урона {#dps-spread}
