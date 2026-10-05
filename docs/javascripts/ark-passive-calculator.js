@@ -2390,7 +2390,7 @@
             ...trip("1160", "1320", "1480"),
             ", сила атаки/передвижение +",
             { tier: "fixed", text: "1" },
-            "% на 10 сек. (макс. 6 раз)",
+            "% на 10 сек. (макс. 6 стаков)",
           ],
           note:
             "Считает, что " +
@@ -2404,9 +2404,9 @@
           label: [
             "Урон оружия +",
             ...trip("6900", "7800", "8700"),
-            " & при попадании, +",
+            " и при попадании, +",
             ...trip("130", "140", "150"),
-            " (откат 30 сек., макс. 30 раз)",
+            " (откат 30 сек., макс. 30 стаков)",
           ],
           note: "Предполагается, что " + PERIODIC_WP_FIGHT_MINUTES + "-минутный бой.",
           low: wpGain(6900 + periodicWpAvgBonus(PERIODIC_WP_FIGHT_MINUTES, 130)),
@@ -2417,7 +2417,7 @@
           label: [
             "Урон оружия +",
             ...trip("7200", "8100", "9000"),
-            " & >50% HP: при попадании, +",
+            ". Если ваше HP > 50% : при попадании, +",
             ...trip("2000", "2200", "2400"),
             " на 5 сек.",
           ],
@@ -3225,7 +3225,7 @@
       otherLine1Default: "Mid", otherLine2Default: "High",
     },
     ring: {
-      name: "Кольцо", line1: "Шанс крит. удара", line2: "Крит. урон", gridLabel: "Шанс крита/урон",
+      name: "Кольца", line1: "Шанс крит. удара", line2: "Крит. урон", gridLabel: "Шанс крита/урон",
       hasGrid: true, hasFlat: false, hasOther: true, hasWpRow: true, hasLineRatioRow: false, line1Table: RING_RATE_TABLE, line2Table: ACC_RING_DMG_TABLE,
       otherLine1Default: "Mid", otherLine2Default: "High",
     },
@@ -3672,7 +3672,7 @@
     // at 10p and 17p (nothing changes at 14p or 18-20p), so the 14p
     // columns reuse the 10p figure and 20p reuses 17p's.
     rows.push({
-      label: "Солнце Хаоса: Решительный натиск — критический урон и урон, %",
+      label: "Солнце Хаоса: Решительный натиск - критический урон и урон, %",
       ...points6((grade, pts) => {
         const chitKey = pts === "14P" ? "Epic-Leg 10P" : grade + " 17P";
         const chit = critLikeGain((c) => { c.flashyAtk = chitKey; });
@@ -3687,21 +3687,21 @@
     // tracks), run through stableAddGain's re-optimized with/without
     // search - see that function's own comment above.
     rows.push({
-      label: "Солнце Хаоса: Непоколибимость — доп. урон",
+      label: "Солнце Хаоса: Непоколибимость - доп. урон",
       ...points6((grade, pts) => stableAddGain(STABLE_ATK_TABLE[grade + "|" + pts])),
     });
 
     // Chaos Core: Swift - Crit Dmg only (Attack Speed excluded). Own
     // tracked field (zeroed in arkNB above), same treatment as Flashy.
     rows.push({
-      label: "Солнце Хаоса: Сверхскорость — критический урон",
+      label: "Солнце Хаоса: Сверхскорость - критический урон",
       ...points6((grade, pts) => critLikeGain((c) => { c.swiftCore = grade + "|" + pts; })),
     });
 
     // Chaos Core: Crushing - Crit Rate only (Weapon Power Cooldown
     // reduction excluded). Own tracked field (zeroed in arkNB above).
     rows.push({
-      label: "Луна Хаоса: Разрушительный удар — шанс крита",
+      label: "Луна Хаоса: Разрушительный удар - шанс крита",
       ...points6((grade, pts) => critLikeGain((c) => { c.crushingCore = grade + "|" + pts; })),
     });
 
@@ -3710,7 +3710,7 @@
     // comment for why that half is a fixed grade-only estimate rather
     // than Points-scaled).
     rows.push({
-      label: "Луна Хаоса: Пламя гордыни — урон по «легендарным» и горение",
+      label: "Луна Хаоса: Пламя гордыни - урон по «легендарным» и горение",
       ...points6((grade, pts) => {
         const bossDmg = ARK_SMOLDERING_BOSSDMG_TABLE[grade + "|" + pts];
         const burn = ARK_SMOLDERING_BURN_TABLE[grade];
@@ -3721,7 +3721,7 @@
     // Chaos Core: Absorbing - Dmg only (Healing excluded). Untracked
     // elsewhere, so a flat addition same as Smoldering's Boss Dmg half.
     rows.push({
-      label: "Луна Хаоса: Кровопийца — урон",
+      label: "Луна Хаоса: Кровопийца - урон",
       ...points6((grade, pts) => ARK_ABSORBING_DMG_TABLE[grade + "|" + pts]),
     });
 
@@ -3747,7 +3747,7 @@
         // gearApTotal takes both directly as parameters, no folding
         // trick needed (unlike Weapon below).
         rows.push({
-          label: "Звезда Хаоса: Чистая мощь — постоянная сила атаки и её %",
+          label: "Звезда Хаоса: Чистая мощь - постоянная сила атаки и её %",
           ...points6((grade, pts) => {
             const t = GEAR_AP_CHAOS_STAR_TABLE[grade + "|" + pts] || { pct: 0, flat: 0 };
             return (
@@ -3768,7 +3768,7 @@
         // get the same treatment a real equipped Weapon Core's payout
         // would).
         rows.push({
-          label: "Звезда Хаоса: Путь стали — постоянная сила оружия и её %",
+          label: "Звезда Хаоса: Путь стали - постоянная сила оружия и её %",
           ...points6((grade, pts) => {
             const t = ARK_WEAPON_CORE_TABLE[grade + "|" + pts] || { pct: 0, flat: 0 };
             const newWp = wp * (1 + t.pct / 100 / wpPercentMult) + t.flat * wpPercentMult;
@@ -4923,7 +4923,7 @@
         ? { id: "massincrease", label: "Карающая длань", gain: massIncreaseGain(engrInputs, inputs) }
         : null,
       {
-        label: "Базовая сила атаки (камень)",
+        label: "Базовая сила атаки (Фетранит)",
         gain: abilityStoneBaseApGain(inputs, engrInputs),
         // Mirrors engravingStoneImpliesBaseAp's own threshold check
         // (5+ total nodes across BOTH isolated stone slots combined, not
@@ -5877,8 +5877,8 @@
     const manaFoodLabelEl = root.querySelector(".ap-engr-manafood-label");
     if (manaFoodLabelEl) {
       manaFoodLabelEl.textContent = manaFoodHasBleed
-        ? "Mana Food (+Maelstrom Bleed)"
-        : "Mana Food (Main Stat only)";
+        ? "Еда на ману (+Плащ клинков)"
+        : "Еда на ману (Только основной стат)";
     }
     const miRow = root.querySelector(".ap-engr-mi-row");
     if (miRow) miRow.style.display = isSurge ? "" : "none";
